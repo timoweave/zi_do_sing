@@ -1,0 +1,1602 @@
+[
+    {
+        "trad": "肇慶",
+        "simp": "肇庆",
+        "jyutping": "ziu6 hing3",
+        "pinyin": "zhao4 qing4",
+        "en": "Zhaoqing",
+        "zh": "肇慶 / 肇庆"
+    },
+    {
+        "trad": "韶關",
+        "simp": "韶关",
+        "jyutping": "siu4 gwaan1",
+        "pinyin": "shao2 guan1",
+        "en": "Shaoguan",
+        "zh": "韶關 / 韶关"
+    },
+    {
+        "trad": "河源",
+        "simp": "河源",
+        "jyutping": "ho4 jyun4",
+        "pinyin": "he2 yuan2",
+        "en": "Heyuan",
+        "zh": "河源 / 河源"
+    },
+    {
+        "trad": "梅州",
+        "simp": "梅州",
+        "jyutping": "mui4 zau1",
+        "pinyin": "mei2 zhou1",
+        "en": "Meizhou",
+        "zh": "梅州 / 梅州"
+    },
+    {
+        "trad": "汕尾",
+        "simp": "汕尾",
+        "jyutping": "saan3 mei5",
+        "pinyin": "shan4 wei3",
+        "en": "Shanwei",
+        "zh": "汕尾 / 汕尾"
+    },
+    {
+        "trad": "陽江",
+        "simp": "阳江",
+        "jyutping": "joeng4 gong1",
+        "pinyin": "yang2 jiang1",
+        "en": "Yangjiang",
+        "zh": "陽江 / 阳江"
+    },
+    {
+        "trad": "湛江",
+        "simp": "湛江",
+        "jyutping": "zim3 gong1",
+        "pinyin": "zhan4 jiang1",
+        "en": "Zhanjiang",
+        "zh": "湛江 / 湛江"
+    },
+    {
+        "trad": "茂名",
+        "simp": "茂名",
+        "jyutping": "mau6 ming4",
+        "pinyin": "mao4 ming2",
+        "en": "Maoming",
+        "zh": "茂名 / 茂名"
+    },
+    {
+        "trad": "清遠",
+        "simp": "清远",
+        "jyutping": "cing1 jyun5",
+        "pinyin": "qing1 yuan3",
+        "en": "Qingyuan",
+        "zh": "清遠 / 清远"
+    },
+    {
+        "trad": "潮州",
+        "simp": "潮州",
+        "jyutping": "ciu4 zau1",
+        "pinyin": "chao2 zhou1",
+        "en": "Chaozhou",
+        "zh": "潮州 / 潮州"
+    },
+    {
+        "trad": "揭陽",
+        "simp": "揭阳",
+        "jyutping": "kit3 joeng4",
+        "pinyin": "jie1 yang2",
+        "en": "Jieyang",
+        "zh": "揭陽 / 揭阳"
+    },
+    {
+        "trad": "雲浮",
+        "simp": "云浮",
+        "jyutping": "wan4 fau4",
+        "pinyin": "yun2 fu2",
+        "en": "Yunfu",
+        "zh": "雲浮 / 云浮"
+    },
+    {
+        "trad": "順德",
+        "simp": "顺德",
+        "jyutping": "seon6 dak1",
+        "pinyin": "shun4 de2",
+        "en": "Shunde",
+        "zh": "順德 / 顺德"
+    },
+    {
+        "trad": "台山",
+        "simp": "台山",
+        "jyutping": "toi4 saan1",
+        "pinyin": "tai2 shan1",
+        "en": "Taishan",
+        "zh": "台山 / 台山"
+    },
+    {
+        "trad": "開平",
+        "simp": "开平",
+        "jyutping": "hoi1 ping4",
+        "pinyin": "kai1 ping2",
+        "en": "Kaiping",
+        "zh": "開平 / 开平"
+    },
+    {
+        "trad": "恩平",
+        "simp": "恩平",
+        "jyutping": "jan1 ping4",
+        "pinyin": "en1 ping2",
+        "en": "Enping",
+        "zh": "恩平 / 恩平"
+    },
+    {
+        "trad": "鶴山",
+        "simp": "鹤山",
+        "jyutping": "hok6 saan1",
+        "pinyin": "he4 shan1",
+        "en": "Heshan",
+        "zh": "鶴山 / 鹤山"
+    },
+    {
+        "trad": "普寧",
+        "simp": "普宁",
+        "jyutping": "pou2 ning4",
+        "pinyin": "pu3 ning2",
+        "en": "Puning",
+        "zh": "普寧 / 普宁"
+    },
+    {
+        "trad": "英德",
+        "simp": "英德",
+        "jyutping": "jing1 dak1",
+        "pinyin": "ying1 de2",
+        "en": "Yingde",
+        "zh": "英德 / 英德"
+    },
+    {
+        "trad": "柳州",
+        "simp": "柳州",
+        "jyutping": "lau4 zau1",
+        "pinyin": "liu3 zhou1",
+        "en": "Liuzhou",
+        "zh": "柳州 / 柳州"
+    },
+    {
+        "trad": "梧州",
+        "simp": "梧州",
+        "jyutping": "ng4 zau1",
+        "pinyin": "wu2 zhou1",
+        "en": "Wuzhou",
+        "zh": "梧州 / 梧州"
+    },
+    {
+        "trad": "北海",
+        "simp": "北海",
+        "jyutping": "bak1 hoi2",
+        "pinyin": "bei3 hai3",
+        "en": "Beihai",
+        "zh": "北海 / 北海"
+    },
+    {
+        "trad": "防城港",
+        "simp": "防城港",
+        "jyutping": "fong4 sing4 gong2",
+        "pinyin": "fang2 cheng2 gang3",
+        "en": "Fangchenggang",
+        "zh": "防城港 / 防城港"
+    },
+    {
+        "trad": "欽州",
+        "simp": "钦州",
+        "jyutping": "jam1 zau1",
+        "pinyin": "qin1 zhou1",
+        "en": "Qinzhou",
+        "zh": "欽州 / 钦州"
+    },
+    {
+        "trad": "貴港",
+        "simp": "贵港",
+        "jyutping": "gwai3 gong2",
+        "pinyin": "gui4 gang3",
+        "en": "Guigang",
+        "zh": "貴港 / 贵港"
+    },
+    {
+        "trad": "玉林",
+        "simp": "玉林",
+        "jyutping": "juk6 lam4",
+        "pinyin": "yu4 lin2",
+        "en": "Yulin",
+        "zh": "玉林 / 玉林"
+    },
+    {
+        "trad": "百色",
+        "simp": "百色",
+        "jyutping": "baak3 sik1",
+        "pinyin": "bai3 se4",
+        "en": "Baise",
+        "zh": "百色 / 百色"
+    },
+    {
+        "trad": "賀州",
+        "simp": "贺州",
+        "jyutping": "ho6 zau1",
+        "pinyin": "he4 zhou1",
+        "en": "Hezhou",
+        "zh": "賀州 / 贺州"
+    },
+    {
+        "trad": "河池",
+        "simp": "河池",
+        "jyutping": "ho4 ci4",
+        "pinyin": "he2 chi2",
+        "en": "Hechi",
+        "zh": "河池 / 河池"
+    },
+    {
+        "trad": "來賓",
+        "simp": "来宾",
+        "jyutping": "loi4 ban1",
+        "pinyin": "lai2 bin1",
+        "en": "Laibin",
+        "zh": "來賓 / 来宾"
+    },
+    {
+        "trad": "崇左",
+        "simp": "崇左",
+        "jyutping": "sung4 zo2",
+        "pinyin": "chong2 zuo3",
+        "en": "Chongzuo",
+        "zh": "崇左 / 崇左"
+    },
+    {
+        "trad": "岑溪",
+        "simp": "岑溪",
+        "jyutping": "sam4 kai1",
+        "pinyin": "cen2 xi1",
+        "en": "Cenxi",
+        "zh": "岑溪 / 岑溪"
+    },
+    {
+        "trad": "東興",
+        "simp": "东兴",
+        "jyutping": "dung1 hing1",
+        "pinyin": "dong1 xing1",
+        "en": "Dongxing",
+        "zh": "東興 / 东兴"
+    },
+    {
+        "trad": "桂平",
+        "simp": "桂平",
+        "jyutping": "gwai3 ping4",
+        "pinyin": "gui4 ping2",
+        "en": "Guiping",
+        "zh": "桂平 / 桂平"
+    },
+    {
+        "trad": "漳州",
+        "simp": "漳州",
+        "jyutping": "zoeng1 zau1",
+        "pinyin": "zhang1 zhou1",
+        "en": "Zhangzhou",
+        "zh": "漳州 / 漳州"
+    },
+    {
+        "trad": "莆田",
+        "simp": "莆田",
+        "jyutping": "pou4 tin4",
+        "pinyin": "pu2 tian2",
+        "en": "Putian",
+        "zh": "莆田 / 莆田"
+    },
+    {
+        "trad": "三明",
+        "simp": "三明",
+        "jyutping": "saam1 ming4",
+        "pinyin": "san1 ming2",
+        "en": "Sanming",
+        "zh": "三明 / 三明"
+    },
+    {
+        "trad": "南平",
+        "simp": "南平",
+        "jyutping": "naam4 ping4",
+        "pinyin": "nan2 ping2",
+        "en": "Nanping",
+        "zh": "南平 / 南平"
+    },
+    {
+        "trad": "龍岩",
+        "simp": "龙岩",
+        "jyutping": "lung4 ngaam4",
+        "pinyin": "long2 yan2",
+        "en": "Longyan",
+        "zh": "龍岩 / 龙岩"
+    },
+    {
+        "trad": "寧德",
+        "simp": "宁德",
+        "jyutping": "ning4 dak1",
+        "pinyin": "ning2 de2",
+        "en": "Ningde",
+        "zh": "寧德 / 宁德"
+    },
+    {
+        "trad": "邵武",
+        "simp": "邵武",
+        "jyutping": "siu6 mou5",
+        "pinyin": "shao4 wu3",
+        "en": "Shaowu",
+        "zh": "邵武 / 邵武"
+    },
+    {
+        "trad": "武夷山",
+        "simp": "武夷山",
+        "jyutping": "mou4 jat6 saan1",
+        "pinyin": "wu3 yi2 shan1",
+        "en": "Wuyishan",
+        "zh": "武夷山 / 武夷山"
+    },
+    {
+        "trad": "建甌",
+        "simp": "建瓯",
+        "jyutping": "gin3 au1",
+        "pinyin": "jian4 ou1",
+        "en": "Jian'ou",
+        "zh": "建甌 / 建瓯"
+    },
+    {
+        "trad": "漳平",
+        "simp": "漳平",
+        "jyutping": "zoeng1 ping4",
+        "pinyin": "zhang1 ping2",
+        "en": "Zhangping",
+        "zh": "漳平 / 漳平"
+    },
+    {
+        "trad": "福安",
+        "simp": "福安",
+        "jyutping": "fuk1 on1",
+        "pinyin": "fu2 an1",
+        "en": "Fu'an",
+        "zh": "福安 / 福安"
+    },
+    {
+        "trad": "福鼎",
+        "simp": "福鼎",
+        "jyutping": "fuk1 ding2",
+        "pinyin": "fu2 ding3",
+        "en": "Fuding",
+        "zh": "福鼎 / 福鼎"
+    },
+    {
+        "trad": "海口",
+        "simp": "海口",
+        "jyutping": "hoi2 hau2",
+        "pinyin": "hai3 kou3",
+        "en": "Haikou",
+        "zh": "海口 / 海口"
+    },
+    {
+        "trad": "三亞",
+        "simp": "三亚",
+        "jyutping": "saam1 aa3",
+        "pinyin": "san1 ya4",
+        "en": "Sanya",
+        "zh": "三亞 / 三亚"
+    },
+    {
+        "trad": "三沙",
+        "simp": "三沙",
+        "jyutping": "saam1 saa1",
+        "pinyin": "san1 sha1",
+        "en": "Sansha",
+        "zh": "三沙 / 三沙"
+    },
+    {
+        "trad": "儋州",
+        "simp": "儋州",
+        "jyutping": "daam6 zau1",
+        "pinyin": "dan1 zhou1",
+        "en": "Danzhou",
+        "zh": "儋州 / 儋州"
+    },
+    {
+        "trad": "文昌",
+        "simp": "文昌",
+        "jyutping": "man4 coeng1",
+        "pinyin": "wen2 chang1",
+        "en": "Wenchang",
+        "zh": "文昌 / 文昌"
+    },
+    {
+        "trad": "瓊海",
+        "simp": "琼海",
+        "jyutping": "king4 hoi2",
+        "pinyin": "qiong2 hai3",
+        "en": "Qionghai",
+        "zh": "瓊海 / 琼海"
+    },
+    {
+        "trad": "萬寧",
+        "simp": "万宁",
+        "jyutping": "maan6 ning4",
+        "pinyin": "wan4 ning2",
+        "en": "Wanning",
+        "zh": "萬寧 / 万宁"
+    },
+    {
+        "trad": "東方",
+        "simp": "东方",
+        "jyutping": "dung1 fong1",
+        "pinyin": "dong1 fang1",
+        "en": "Dongfang",
+        "zh": "東方 / 东方"
+    },
+    {
+        "trad": "曲靖",
+        "simp": "曲靖",
+        "jyutping": "kuk3 ging1",
+        "pinyin": "qu1 jing4",
+        "en": "Qujing",
+        "zh": "曲靖 / 曲靖"
+    },
+    {
+        "trad": "玉溪",
+        "simp": "玉溪",
+        "jyutping": "juk6 sai1",
+        "pinyin": "yu4 xi1",
+        "en": "Yuxi",
+        "zh": "玉溪 / 玉溪"
+    },
+    {
+        "trad": "保山",
+        "simp": "保山",
+        "jyutping": "bou2 saan1",
+        "pinyin": "bao3 shan1",
+        "en": "Baoshan",
+        "zh": "保山 / 保山"
+    },
+    {
+        "trad": "昭通",
+        "simp": "昭通",
+        "jyutping": "ciu1 tung1",
+        "pinyin": "zhao1 tong1",
+        "en": "Zhaotong",
+        "zh": "昭通 / 昭通"
+    },
+    {
+        "trad": "麗江",
+        "simp": "丽江",
+        "jyutping": "lai6 gong1",
+        "pinyin": "li4 jiang1",
+        "en": "Lijiang",
+        "zh": "麗江 / 丽江"
+    },
+    {
+        "trad": "普洱",
+        "simp": "普洱",
+        "jyutping": "pou2 lai5",
+        "pinyin": "pu3 er3",
+        "en": "Pu'er",
+        "zh": "普洱 / 普洱"
+    },
+    {
+        "trad": "臨滄",
+        "simp": "临沧",
+        "jyutping": "lam4 cong1",
+        "pinyin": "lin2 cang1",
+        "en": "Lincang",
+        "zh": "臨滄 / 临沧"
+    },
+    {
+        "trad": "大理",
+        "simp": "大理",
+        "jyutping": "daai6 lei5",
+        "pinyin": "da4 li3",
+        "en": "Dali",
+        "zh": "大理 / 大理"
+    },
+    {
+        "trad": "楚雄",
+        "simp": "楚雄",
+        "jyutping": "coi3 hung4",
+        "pinyin": "chu3 xiong2",
+        "en": "Chuxiong",
+        "zh": "楚雄 / 楚雄"
+    },
+    {
+        "trad": "蒙自",
+        "simp": "蒙自",
+        "jyutping": "mung4 zi6",
+        "pinyin": "meng2 zi4",
+        "en": "Mengzi",
+        "zh": "蒙自 / 蒙自"
+    },
+    {
+        "trad": "個舊",
+        "simp": "个旧",
+        "jyutping": "go3 gau6",
+        "pinyin": "ge4 jiu4",
+        "en": "Gejiu",
+        "zh": "個舊 / 个旧"
+    },
+    {
+        "trad": "開遠",
+        "simp": "开远",
+        "jyutping": "hoi1 jyun5",
+        "pinyin": "kai1 yuan3",
+        "en": "Kaiyuan",
+        "zh": "開遠 / 开远"
+    },
+    {
+        "trad": "安寧",
+        "simp": "安宁",
+        "jyutping": "on1 ning4",
+        "pinyin": "an1 ning2",
+        "en": "Anning",
+        "zh": "安寧 / 安宁"
+    },
+    {
+        "trad": "宣威",
+        "simp": "宣威",
+        "jyutping": "syun1 wai1",
+        "pinyin": "xuan1 wei1",
+        "en": "Xuanwei",
+        "zh": "宣威 / 宣威"
+    },
+    {
+        "trad": "芒市",
+        "simp": "芒市",
+        "jyutping": "mong4 si5",
+        "pinyin": "mang2 shi4",
+        "en": "Mangshi",
+        "zh": "芒市 / 芒市"
+    },
+    {
+        "trad": "瑞麗",
+        "simp": "瑞丽",
+        "jyutping": "seoi6 lai6",
+        "pinyin": "rui4 li4",
+        "en": "Ruili",
+        "zh": "瑞麗 / 瑞丽"
+    },
+    {
+        "trad": "香格里拉",
+        "simp": "香格里拉",
+        "jyutping": "hoeng1 gaak3 lei5 laai1",
+        "pinyin": "xiang1 ge2 li3 la1",
+        "en": "Shangri-La",
+        "zh": "香格里拉 / 香格里拉"
+    },
+    {
+        "trad": "騰衝",
+        "simp": "腾冲",
+        "jyutping": "tang4 cung1",
+        "pinyin": "teng2 chong1",
+        "en": "Tengchong",
+        "zh": "騰衝 / 腾冲"
+    },
+    {
+        "trad": "六盤水",
+        "simp": "六盘水",
+        "jyutping": "luk6 bun4 seoi2",
+        "pinyin": "liu4 pan2 shui3",
+        "en": "Liupanshui",
+        "zh": "六盤水 / 六盘水"
+    },
+    {
+        "trad": "遵義",
+        "simp": "遵义",
+        "jyutping": "zeon1 ji6",
+        "pinyin": "zun1 yi4",
+        "en": "Zunyi",
+        "zh": "遵義 / 遵义"
+    },
+    {
+        "trad": "安順",
+        "simp": "安顺",
+        "jyutping": "on1 seon6",
+        "pinyin": "an1 shun4",
+        "en": "Anshun",
+        "zh": "安順 / 安顺"
+    },
+    {
+        "trad": "畢節",
+        "simp": "毕节",
+        "jyutping": "bat1 zit3",
+        "pinyin": "bi4 jie2",
+        "en": "Bijie",
+        "zh": "畢節 / 毕节"
+    },
+    {
+        "trad": "銅仁",
+        "simp": "铜仁",
+        "jyutping": "tung4 jan4",
+        "pinyin": "tong2 ren2",
+        "en": "Tongren",
+        "zh": "銅仁 / 铜仁"
+    },
+    {
+        "trad": "黔西南",
+        "simp": "黔西南",
+        "jyutping": "kim4 sai1 naam4",
+        "pinyin": "qian2 xi1 nan2",
+        "en": "Qianxinan",
+        "zh": "黔西南 / 黔西南"
+    },
+    {
+        "trad": "黔東南",
+        "simp": "黔东南",
+        "jyutping": "kim4 dung1 naam4",
+        "pinyin": "qian2 dong1 nan2",
+        "en": "Qiandongnan",
+        "zh": "黔東南 / 黔东南"
+    },
+    {
+        "trad": "黔南",
+        "simp": "黔南",
+        "jyutping": "kim4 naam4",
+        "pinyin": "qian2 nan2",
+        "en": "Qiannan",
+        "zh": "黔南 / 黔南"
+    },
+    {
+        "trad": "清鎮",
+        "simp": "清镇",
+        "jyutping": "cing1 zan3",
+        "pinyin": "qing1 zhen4",
+        "en": "Qingzhen",
+        "zh": "清鎮 / 清镇"
+    },
+    {
+        "trad": "仁懷",
+        "simp": "仁怀",
+        "jyutping": "jan4 waai4",
+        "pinyin": "ren2 huai2",
+        "en": "Renhuai",
+        "zh": "仁懷 / 仁怀"
+    },
+    {
+        "trad": "赤水",
+        "simp": "赤水",
+        "jyutping": "cek3 seoi2",
+        "pinyin": "chi4 shui3",
+        "en": "Chishui",
+        "zh": "赤水 / 赤水"
+    },
+    {
+        "trad": "凱里",
+        "simp": "凯里",
+        "jyutping": "hoi2 lei5",
+        "pinyin": "kai3 li3",
+        "en": "Kaili",
+        "zh": "凱里 / 凯里"
+    },
+    {
+        "trad": "都勻",
+        "simp": "都匀",
+        "jyutping": "dou1 wan4",
+        "pinyin": "du1 yun2",
+        "en": "Duyun",
+        "zh": "都勻 / 都匀"
+    },
+    {
+        "trad": "福泉",
+        "simp": "福泉",
+        "jyutping": "fuk1 cyun4",
+        "pinyin": "fu2 quan2",
+        "en": "Fuquan",
+        "zh": "福泉 / 福泉"
+    },
+    {
+        "trad": "興義",
+        "simp": "兴义",
+        "jyutping": "hing1 ji6",
+        "pinyin": "xing1 yi4",
+        "en": "Xingyi",
+        "zh": "興義 / 兴义"
+    },
+    {
+        "trad": "株洲",
+        "simp": "株洲",
+        "jyutping": "zau1 zau1",
+        "pinyin": "zhu1 zhou1",
+        "en": "Zhuzhou",
+        "zh": "株洲 / 株洲"
+    },
+    {
+        "trad": "湘潭",
+        "simp": "湘潭",
+        "jyutping": "siu4 tong4",
+        "pinyin": "xiang1 tan2",
+        "en": "Xiangtan",
+        "zh": "湘潭 / 湘潭"
+    },
+    {
+        "trad": "衡陽",
+        "simp": "衡阳",
+        "jyutping": "hang4 joeng4",
+        "pinyin": "heng2 yang2",
+        "en": "Hengyang",
+        "zh": "衡陽 / 衡阳"
+    },
+    {
+        "trad": "邵陽",
+        "simp": "邵阳",
+        "jyutping": "siu6 joeng4",
+        "pinyin": "shao4 yang2",
+        "en": "Shaoyang",
+        "zh": "邵陽 / 邵阳"
+    },
+    {
+        "trad": "岳陽",
+        "simp": "岳阳",
+        "jyutping": "ngok6 joeng4",
+        "pinyin": "yue4 yang2",
+        "en": "Yueyang",
+        "zh": "岳陽 / 岳阳"
+    },
+    {
+        "trad": "常德",
+        "simp": "常德",
+        "jyutping": "soeng4 dak1",
+        "pinyin": "chang2 de2",
+        "en": "Changde",
+        "zh": "常德 / 常德"
+    },
+    {
+        "trad": "張家界",
+        "simp": "张家界",
+        "jyutping": "zoeng1 gaa1 gaai3",
+        "pinyin": "zhang1 jia1 jie4",
+        "en": "Zhangjiajie",
+        "zh": "張家界 / 张家界"
+    },
+    {
+        "trad": "益陽",
+        "simp": "益阳",
+        "jyutping": "jik1 joeng4",
+        "pinyin": "yi4 yang2",
+        "en": "Yiyang",
+        "zh": "益陽 / 益阳"
+    },
+    {
+        "trad": "郴州",
+        "simp": "郴州",
+        "jyutping": "sam1 zau1",
+        "pinyin": "chen1 zhou1",
+        "en": "Chenzhou",
+        "zh": "郴州 / 郴州"
+    },
+    {
+        "trad": "永州",
+        "simp": "永州",
+        "jyutping": "wing5 zau1",
+        "pinyin": "yong3 zhou1",
+        "en": "Yongzhou",
+        "zh": "永州 / 永州"
+    },
+    {
+        "trad": "懷化",
+        "simp": "怀化",
+        "jyutping": "waai4 faa1",
+        "pinyin": "huai4 hua1",
+        "en": "Huaihua",
+        "zh": "懷化 / 怀化"
+    },
+    {
+        "trad": "婁底",
+        "simp": "娄底",
+        "jyutping": "lau4 dai2",
+        "pinyin": "lou2 di3",
+        "en": "Loudi",
+        "zh": "婁底 / 娄底"
+    },
+    {
+        "trad": "湘西",
+        "simp": "湘西",
+        "jyutping": "sai1 fun1",
+        "pinyin": "xiang1 xi1",
+        "en": "Xiangxi",
+        "zh": "湘西 / 湘西"
+    },
+    {
+        "trad": "醴陵",
+        "simp": "醴陵",
+        "jyutping": "lai5 ling4",
+        "pinyin": "li3 ling2",
+        "en": "Liling",
+        "zh": "醴陵 / 醴陵"
+    },
+    {
+        "trad": "湘鄉",
+        "simp": "湘乡",
+        "jyutping": "siu1 hoeng1",
+        "pinyin": "xiang1 xiang1",
+        "en": "Xiangxiang",
+        "zh": "湘鄉 / 湘乡"
+    },
+    {
+        "trad": "黃石",
+        "simp": "黄石",
+        "jyutping": "wong4 sek6",
+        "pinyin": "huang2 shi2",
+        "en": "Huangshi",
+        "zh": "黃石 / 黄石"
+    },
+    {
+        "trad": "十堰",
+        "simp": "十堰",
+        "jyutping": "sap6 gin3",
+        "pinyin": "shi2 yan4",
+        "en": "Shiyan",
+        "zh": "十堰 / 十堰"
+    },
+    {
+        "trad": "宜昌",
+        "simp": "宜昌",
+        "jyutping": "ji4 coeng1",
+        "pinyin": "yi2 chang1",
+        "en": "Yichang",
+        "zh": "宜昌 / 宜昌"
+    },
+    {
+        "trad": "襄陽",
+        "simp": "襄阳",
+        "jyutping": "soeng1 joeng4",
+        "pinyin": "xiang1 yang2",
+        "en": "Xiangyang",
+        "zh": "襄陽 / 襄阳"
+    },
+    {
+        "trad": "鄂州",
+        "simp": "鄂州",
+        "jyutping": "ngok6 zau1",
+        "pinyin": "e4 zhou1",
+        "en": "Ezhou",
+        "zh": "鄂州 / 鄂州"
+    },
+    {
+        "trad": "荊門",
+        "simp": "荆门",
+        "jyutping": "ging1 mun4",
+        "pinyin": "jing1 men2",
+        "en": "Jingmen",
+        "zh": "荊門 / 荆门"
+    },
+    {
+        "trad": "孝感",
+        "simp": "孝感",
+        "jyutping": "haau3 dou6",
+        "pinyin": "xiao4 gan3",
+        "en": "Xiaogan",
+        "zh": "孝感 / 孝感"
+    },
+    {
+        "trad": "荊州",
+        "simp": "荆州",
+        "jyutping": "ging1 zau1",
+        "pinyin": "jing1 zhou1",
+        "en": "Jingzhou",
+        "zh": "荊州 / 荆州"
+    },
+    {
+        "trad": "黃岡",
+        "simp": "黄冈",
+        "jyutping": "wong4 gong1",
+        "pinyin": "huang2 gang1",
+        "en": "Huanggang",
+        "zh": "黃岡 / 黄冈"
+    },
+    {
+        "trad": "咸寧",
+        "simp": "咸宁",
+        "jyutping": "haam4 ning4",
+        "pinyin": "xian2 ning2",
+        "en": "Xianning",
+        "zh": "咸寧 / 咸宁"
+    },
+    {
+        "trad": "隨州",
+        "simp": "随州",
+        "jyutping": "ceoi4 zau1",
+        "pinyin": "sui2 zhou1",
+        "en": "Suizhou",
+        "zh": "隨州 / 随州"
+    },
+    {
+        "trad": "恩施",
+        "simp": "恩施",
+        "jyutping": "jan1 si1",
+        "pinyin": "en1 shi1",
+        "en": "Enshi",
+        "zh": "恩施 / 恩施"
+    },
+    {
+        "trad": "仙桃",
+        "simp": "仙桃",
+        "jyutping": "sin1 tou4",
+        "pinyin": "xian1 tao2",
+        "en": "Xiantao",
+        "zh": "仙桃 / 仙桃"
+    },
+    {
+        "trad": "潛江",
+        "simp": "潜江",
+        "jyutping": "cim4 gong1",
+        "pinyin": "qian2 jiang1",
+        "en": "Qianjiang",
+        "zh": "潛江 / 潜江"
+    },
+    {
+        "trad": "天門",
+        "simp": "天门",
+        "jyutping": "tin1 mun4",
+        "pinyin": "tian1 men2",
+        "en": "Tianmen",
+        "zh": "天門 / 天门"
+    },
+    {
+        "trad": "大冶",
+        "simp": "大冶",
+        "jyutping": "daai6 je5",
+        "pinyin": "da4 ye3",
+        "en": "Daye",
+        "zh": "大冶 / 大冶"
+    },
+    {
+        "trad": "丹江口",
+        "simp": "丹江口",
+        "jyutping": "daan1 gong1 hau2",
+        "pinyin": "dan1 jiang1 kou3",
+        "en": "Danjiangkou",
+        "zh": "丹江口 / 丹江口"
+    },
+    {
+        "trad": "當陽",
+        "simp": "当阳",
+        "jyutping": "dong1 joeng4",
+        "pinyin": "dang1 yang2",
+        "en": "Dangyang",
+        "zh": "當陽 / 当阳"
+    },
+    {
+        "trad": "枝江",
+        "simp": "枝江",
+        "jyutping": "zi1 gong1",
+        "pinyin": "zhi1 jiang1",
+        "en": "Zhijiang",
+        "zh": "枝江 / 枝江"
+    },
+    {
+        "trad": "景德鎮",
+        "simp": "景德镇",
+        "jyutping": "ging1 dak1 zan3",
+        "pinyin": "jing3 de2 zhen4",
+        "en": "Jingdezhen",
+        "zh": "景德鎮 / 景德镇"
+    },
+    {
+        "trad": "萍鄉",
+        "simp": "萍乡",
+        "jyutping": "ping4 hoeng1",
+        "pinyin": "ping2 xiang1",
+        "en": "Pingxiang",
+        "zh": "萍鄉 / 萍乡"
+    },
+    {
+        "trad": "九江",
+        "simp": "九江",
+        "jyutping": "gau2 gong1",
+        "pinyin": "jiu3 jiang1",
+        "en": "Jiujiang",
+        "zh": "九江 / 九江"
+    },
+    {
+        "trad": "新餘",
+        "simp": "新余",
+        "jyutping": "san1 jyu4",
+        "pinyin": "xin1 yu2",
+        "en": "Xinyu",
+        "zh": "新餘 / 新余"
+    },
+    {
+        "trad": "鷹潭",
+        "simp": "鹰潭",
+        "jyutping": "jing1 taam4",
+        "pinyin": "ying1 tan2",
+        "en": "Yingtan",
+        "zh": "鷹潭 / 鹰潭"
+    },
+    {
+        "trad": "贛州",
+        "simp": "赣州",
+        "jyutping": "gam3 zau1",
+        "pinyin": "gan4 zhou1",
+        "en": "Ganzhou",
+        "zh": "贛州 / 赣州"
+    },
+    {
+        "trad": "吉安",
+        "simp": "吉安",
+        "jyutping": "gat1 on1",
+        "pinyin": "ji2 an1",
+        "en": "Ji'an",
+        "zh": "吉安 / 吉安"
+    },
+    {
+        "trad": "宜春",
+        "simp": "宜春",
+        "jyutping": "ji4 ceon1",
+        "pinyin": "yi2 chun1",
+        "en": "Yichun",
+        "zh": "宜春 / 宜春"
+    },
+    {
+        "trad": "樂平",
+        "simp": "乐平",
+        "jyutping": "lok6 ping4",
+        "pinyin": "le4 ping2",
+        "en": "Leping",
+        "zh": "樂平 / 乐平"
+    },
+    {
+        "trad": "上饒",
+        "simp": "上饶",
+        "jyutping": "soeng6 jiu4",
+        "pinyin": "shang4 rao2",
+        "en": "Shangrao",
+        "zh": "上饒 / 上饶"
+    },
+    {
+        "trad": "瑞昌",
+        "simp": "瑞昌",
+        "jyutping": "seoi6 coeng1",
+        "pinyin": "rui4 chang1",
+        "en": "Ruichang",
+        "zh": "瑞昌 / 瑞昌"
+    },
+    {
+        "trad": "廬山",
+        "simp": "庐山",
+        "jyutping": "lou4 saan1",
+        "pinyin": "lu2 shan1",
+        "en": "Lushan",
+        "zh": "廬山 / 庐山"
+    },
+    {
+        "trad": "貴溪",
+        "simp": "贵溪",
+        "jyutping": "gwai3 kai1",
+        "pinyin": "gui4 xi1",
+        "en": "Guixi",
+        "zh": "貴溪 / 贵溪"
+    },
+    {
+        "trad": "瑞金",
+        "simp": "瑞金",
+        "jyutping": "seoi6 gam1",
+        "pinyin": "rui4 jin1",
+        "en": "Ruijin",
+        "zh": "瑞金 / 瑞金"
+    },
+    {
+        "trad": "蕪湖",
+        "simp": "芜湖",
+        "jyutping": "mou4 wu4",
+        "pinyin": "wu2 hu2",
+        "en": "Wuhu",
+        "zh": "蕪湖 / 芜湖"
+    },
+    {
+        "trad": "蚌埠",
+        "simp": "蚌埠",
+        "jyutping": "pong5 fau6",
+        "pinyin": "beng4 bu4",
+        "en": "Bengbu",
+        "zh": "蚌埠 / 蚌埠"
+    },
+    {
+        "trad": "淮南",
+        "simp": "淮南",
+        "jyutping": "waai4 naam4",
+        "pinyin": "huai2 nan2",
+        "en": "Huainan",
+        "zh": "淮南 / 淮南"
+    },
+    {
+        "trad": "馬鞍山",
+        "simp": "马鞍山",
+        "jyutping": "maa5 on1 saan1",
+        "pinyin": "ma3 an1 shan1",
+        "en": "Ma'anshan",
+        "zh": "馬鞍山 / 马鞍山"
+    },
+    {
+        "trad": "淮北",
+        "simp": "淮北",
+        "jyutping": "waai4 bak1",
+        "pinyin": "huai2 bei3",
+        "en": "Huaibei",
+        "zh": "淮北 / 淮北"
+    },
+    {
+        "trad": "銅陵",
+        "simp": "铜陵",
+        "jyutping": "tung4 ling4",
+        "pinyin": "tong2 ling2",
+        "en": "Tongling",
+        "zh": "銅陵 / 铜陵"
+    },
+    {
+        "trad": "安慶",
+        "simp": "安庆",
+        "jyutping": "on1 hing3",
+        "pinyin": "an1 qing4",
+        "en": "Anqing",
+        "zh": "安慶 / 安庆"
+    },
+    {
+        "trad": "黃山",
+        "simp": "黄山",
+        "jyutping": "wong4 saan1",
+        "pinyin": "huang2 shan1",
+        "en": "Huangshan",
+        "zh": "黃山 / 黄山"
+    },
+    {
+        "trad": "滁州",
+        "simp": "滁州",
+        "jyutping": "cyu4 zau1",
+        "pinyin": "chu2 zhou1",
+        "en": "Chuzhou",
+        "zh": "滁州 / 滁州"
+    },
+    {
+        "trad": "阜陽",
+        "simp": "阜阳",
+        "jyutping": "fau6 joeng4",
+        "pinyin": "fu4 yang2",
+        "en": "Fuyang",
+        "zh": "阜陽 / 阜阳"
+    },
+    {
+        "trad": "界首",
+        "simp": "界首",
+        "jyutping": "gaai3 sau2",
+        "pinyin": "jie4 shou3",
+        "en": "Jieshou",
+        "zh": "界首 / 界首"
+    },
+    {
+        "trad": "六安",
+        "simp": "六安",
+        "jyutping": "luk6 on1",
+        "pinyin": "lu4 an1",
+        "en": "Lu'an",
+        "zh": "六安 / 六安"
+    },
+    {
+        "trad": "亳州",
+        "simp": "亳州",
+        "jyutping": "bok3 zau1",
+        "pinyin": "bo2 zhou1",
+        "en": "Bozhou",
+        "zh": "亳州 / 亳州"
+    },
+    {
+        "trad": "池州",
+        "simp": "池州",
+        "jyutping": "ci4 zau1",
+        "pinyin": "chi2 zhou1",
+        "en": "Chizhou",
+        "zh": "池州 / 池州"
+    },
+    {
+        "trad": "宣城",
+        "simp": "宣城",
+        "jyutping": "syun1 sing4",
+        "pinyin": "xuan1 cheng2",
+        "en": "Xuancheng",
+        "zh": "宣城 / 宣城"
+    },
+    {
+        "trad": "巢湖",
+        "simp": "巢湖",
+        "jyutping": "ciu4 wu4",
+        "pinyin": "chao2 hu2",
+        "en": "Chaohu",
+        "zh": "巢湖 / 巢湖"
+    },
+    {
+        "trad": "桐城",
+        "simp": "桐城",
+        "jyutping": "tung4 sing4",
+        "pinyin": "tong2 cheng2",
+        "en": "Tongcheng",
+        "zh": "桐城 / 桐城"
+    },
+    {
+        "trad": "天長",
+        "simp": "天长",
+        "jyutping": "tin1 coeng4",
+        "pinyin": "tian1 chang2",
+        "en": "Tianchang",
+        "zh": "天長 / 天长"
+    },
+    {
+        "trad": "明光",
+        "simp": "明光",
+        "jyutping": "ming4 gwong1",
+        "pinyin": "ming2 guang1",
+        "en": "Mingguang",
+        "zh": "明光 / 明光"
+    },
+    {
+        "trad": "寧國",
+        "simp": "宁国",
+        "jyutping": "ning4 gwok3",
+        "pinyin": "ning2 guo2",
+        "en": "Ningguo",
+        "zh": "寧國 / 宁国"
+    },
+    {
+        "trad": "嘉興",
+        "simp": "嘉兴",
+        "jyutping": "gaa1 hing1",
+        "pinyin": "jia1 xing1",
+        "en": "Jiaxing",
+        "zh": "嘉興 / 嘉兴"
+    },
+    {
+        "trad": "湖州",
+        "simp": "湖州",
+        "jyutping": "wu4 zau1",
+        "pinyin": "hu2 zhou1",
+        "en": "Huzhou",
+        "zh": "湖州 / 湖州"
+    },
+    {
+        "trad": "紹興",
+        "simp": "绍兴",
+        "jyutping": "siu6 hing1",
+        "pinyin": "shao4 xing1",
+        "en": "Shaoxing",
+        "zh": "紹興 / 绍兴"
+    },
+    {
+        "trad": "金華",
+        "simp": "金华",
+        "jyutping": "gam1 waa4",
+        "pinyin": "jin1 hua2",
+        "en": "Jinhua",
+        "zh": "金華 / 金华"
+    },
+    {
+        "trad": "衢州",
+        "simp": "衢州",
+        "jyutping": "keui4 zau1",
+        "pinyin": "qu2 zhou1",
+        "en": "Quzhou",
+        "zh": "衢州 / 衢州"
+    },
+    {
+        "trad": "舟山",
+        "simp": "舟山",
+        "jyutping": "zau1 saan1",
+        "pinyin": "zhou1 shan1",
+        "en": "Zhoushan",
+        "zh": "舟山 / 舟山"
+    },
+    {
+        "trad": "台州",
+        "simp": "台州",
+        "jyutping": "toi4 zau1",
+        "pinyin": "tai1 zhou1",
+        "en": "Taizhou",
+        "zh": "台州 / 台州"
+    },
+    {
+        "trad": "麗水",
+        "simp": "丽水",
+        "jyutping": "lai6 seoi2",
+        "pinyin": "li2 shui3",
+        "en": "Lishui",
+        "zh": "麗水 / 丽水"
+    },
+    {
+        "trad": "義烏",
+        "simp": "义乌",
+        "jyutping": "ji6 wu1",
+        "pinyin": "yi4 wu1",
+        "en": "Yiwu",
+        "zh": "義烏 / 义乌"
+    },
+    {
+        "trad": "諸暨",
+        "simp": "诸暨",
+        "jyutping": "zyu1 lai6",
+        "pinyin": "zhu1 ji4",
+        "en": "Zhuji",
+        "zh": "諸暨 / 诸暨"
+    },
+    {
+        "trad": "海寧",
+        "simp": "海宁",
+        "jyutping": "hoi2 ning4",
+        "pinyin": "hai3 ning2",
+        "en": "Haining",
+        "zh": "海寧 / 海宁"
+    },
+    {
+        "trad": "平湖",
+        "simp": "平湖",
+        "jyutping": "ping4 wu4",
+        "pinyin": "ping2 hu2",
+        "en": "Pinghu",
+        "zh": "平湖 / 平湖"
+    },
+    {
+        "trad": "桐鄉",
+        "simp": "桐乡",
+        "jyutping": "tung4 hoeng1",
+        "pinyin": "tong2 xiang1",
+        "en": "Tongxiang",
+        "zh": "桐鄉 / 桐乡"
+    },
+    {
+        "trad": "永康",
+        "simp": "永康",
+        "jyutping": "wing5 hong1",
+        "pinyin": "yong3 kang1",
+        "en": "Yongkang",
+        "zh": "永康 / 永康"
+    },
+    {
+        "trad": "蘭溪",
+        "simp": "兰溪",
+        "jyutping": "laan4 kai1",
+        "pinyin": "lan2 xi1",
+        "en": "Lanxi",
+        "zh": "蘭溪 / 兰溪"
+    },
+    {
+        "trad": "東陽",
+        "simp": "东阳",
+        "jyutping": "dung1 joeng4",
+        "pinyin": "dong1 yang2",
+        "en": "Dongyang",
+        "zh": "東陽 / 东阳"
+    },
+    {
+        "trad": "臨海",
+        "simp": "临海",
+        "jyutping": "lam4 hoi2",
+        "pinyin": "lin2 hai3",
+        "en": "Linhai",
+        "zh": "臨海 / 临海"
+    },
+    {
+        "trad": "溫嶺",
+        "simp": "温岭",
+        "jyutping": "wan1 ling5",
+        "pinyin": "wen1 ling3",
+        "en": "Wenling",
+        "zh": "溫嶺 / 温岭"
+    },
+    {
+        "trad": "玉環",
+        "simp": "玉环",
+        "jyutping": "juk6 waan4",
+        "pinyin": "yu4 huan2",
+        "en": "Yuhuan",
+        "zh": "玉環 / 玉环"
+    },
+    {
+        "trad": "龍泉",
+        "simp": "龙泉",
+        "jyutping": "lung4 cyun4",
+        "pinyin": "long2 quan2",
+        "en": "Longquan",
+        "zh": "龍泉 / 龙泉"
+    },
+    {
+        "trad": "徐州",
+        "simp": "徐州",
+        "jyutping": "ceoi4 zau1",
+        "pinyin": "xu2 zhou1",
+        "en": "Xuzhou",
+        "zh": "徐州 / 徐州"
+    },
+    {
+        "trad": "連雲港",
+        "simp": "连云港",
+        "jyutping": "lin4 wan4 gong2",
+        "pinyin": "lian2 yun2 gang3",
+        "en": "Lianyungang",
+        "zh": "連雲港 / 连云港"
+    },
+    {
+        "trad": "淮安",
+        "simp": "淮安",
+        "jyutping": "waai4 on1",
+        "pinyin": "huai2 an1",
+        "en": "Huai'an",
+        "zh": "淮安 / 淮安"
+    },
+    {
+        "trad": "鹽城",
+        "simp": "盐城",
+        "jyutping": "jim4 sing4",
+        "pinyin": "yan2 cheng2",
+        "en": "Yancheng",
+        "zh": "鹽城 / 盐城"
+    },
+    {
+        "trad": "揚州",
+        "simp": "扬州",
+        "jyutping": "joeng4 zau1",
+        "pinyin": "yang2 zhou1",
+        "en": "Yangzhou",
+        "zh": "揚州 / 扬州"
+    },
+    {
+        "trad": "鎮江",
+        "simp": "镇江",
+        "jyutping": "zan3 gong1",
+        "pinyin": "zhen4 jiang1",
+        "en": "Zhenjiang",
+        "zh": "鎮江 / 镇江"
+    },
+    {
+        "trad": "高郵",
+        "simp": "高邮",
+        "jyutping": "gou1 jau4",
+        "pinyin": "gao1 you2",
+        "en": "Gaoyou",
+        "zh": "高郵 / 高邮"
+    },
+    {
+        "trad": "宿遷",
+        "simp": "宿迁",
+        "jyutping": "suk1 cin1",
+        "pinyin": "su4 qian1",
+        "en": "Suqian",
+        "zh": "宿遷 / 宿迁"
+    },
+    {
+        "trad": "常熟",
+        "simp": "常熟",
+        "jyutping": "soeng6 suk6",
+        "pinyin": "chang2 shu2",
+        "en": "Changshu",
+        "zh": "常熟 / 常熟"
+    },
+    {
+        "trad": "張家港",
+        "simp": "张家港",
+        "jyutping": "zoeng1 gaa1 gong2",
+        "pinyin": "zhang1 jia1 gang3",
+        "en": "Zhangjiagang",
+        "zh": "張家港 / 张家港"
+    },
+    {
+        "trad": "崑山",
+        "simp": "昆山",
+        "jyutping": "gwan1 saan1",
+        "pinyin": "kun1 shan1",
+        "en": "Kunshan",
+        "zh": "崑山 / 昆山"
+    },
+    {
+        "trad": "太倉",
+        "simp": "太仓",
+        "jyutping": "taai3 cong1",
+        "pinyin": "tai4 cang1",
+        "en": "Taicang",
+        "zh": "太倉 / 太仓"
+    },
+    {
+        "trad": "啟東",
+        "simp": "启东",
+        "jyutping": "kai2 dung1",
+        "pinyin": "qi3 dong1",
+        "en": "Qidong",
+        "zh": "啟東 / 启东"
+    },
+    {
+        "trad": "如皋",
+        "simp": "如皋",
+        "jyutping": "jyu4 gou1",
+        "pinyin": "ru2 gao1",
+        "en": "Rugao",
+        "zh": "如皋 / 如皋"
+    },
+    {
+        "trad": "海安",
+        "simp": "海安",
+        "jyutping": "hoi2 on1",
+        "pinyin": "hai3 an1",
+        "en": "Hai'an",
+        "zh": "海安 / 海安"
+    },
+    {
+        "trad": "揚中",
+        "simp": "扬中",
+        "jyutping": "joeng4 zung1",
+        "pinyin": "yang2 zhong1",
+        "en": "Yangzhong",
+        "zh": "揚中 / 扬中"
+    },
+    {
+        "trad": "句容",
+        "simp": "句容",
+        "jyutping": "gau3 jung4",
+        "pinyin": "ju4 rong2",
+        "en": "Jurong",
+        "zh": "句容 / 句容"
+    },
+    {
+        "trad": "丹陽",
+        "simp": "丹阳",
+        "jyutping": "daan1 joeng4",
+        "pinyin": "dan1 yang2",
+        "en": "Danyang",
+        "zh": "丹陽 / 丹阳"
+    },
+    {
+        "trad": "興化",
+        "simp": "兴化",
+        "jyutping": "hing1 faa1",
+        "pinyin": "xing1 hua4",
+        "en": "Xinghua",
+        "zh": "興化 / 兴化"
+    },
+    {
+        "trad": "靖江",
+        "simp": "靖江",
+        "jyutping": "zing3 gong1",
+        "pinyin": "jing4 jiang1",
+        "en": "Jingjiang",
+        "zh": "靖江 / 靖江"
+    },
+    {
+        "trad": "晉江",
+        "simp": "晋江",
+        "jyutping": "zeon3 gong1",
+        "pinyin": "jin4 jiang1",
+        "en": "Jinjiang",
+        "zh": "晉江 / 晋江"
+    },
+    {
+        "trad": "南安",
+        "simp": "南安",
+        "jyutping": "naam4 on1",
+        "pinyin": "nan2 an1",
+        "en": "Nan'an",
+        "zh": "南安 / 南安"
+    },
+    {
+        "trad": "龍海",
+        "simp": "龙海",
+        "jyutping": "lung4 hoi2",
+        "pinyin": "long2 hai3",
+        "en": "Longhai",
+        "zh": "龍海 / 龙海"
+    },
+    {
+        "trad": "永安",
+        "simp": "永安",
+        "jyutping": "wing5 on1",
+        "pinyin": "yong3 an1",
+        "en": "Yong'an",
+        "zh": "永安 / 永安"
+    },
+    {
+        "trad": "建陽",
+        "simp": "建阳",
+        "jyutping": "gin3 joeng4",
+        "pinyin": "jian4 yang2",
+        "en": "Jianyang",
+        "zh": "建陽 / 建阳"
+    }
+]

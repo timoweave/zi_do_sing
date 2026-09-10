@@ -1,0 +1,802 @@
+[
+    {
+        "trad": "香港",
+        "simp": "香港",
+        "jyutping": "hoeng1 gong2",
+        "pinyin": "xiang1 gang3",
+        "en": "Hong Kong Special Administrative Region",
+        "zh": "香港特別行政區"
+    },
+    {
+        "trad": "澳門",
+        "simp": "澳门",
+        "jyutping": "ou3 mun4",
+        "pinyin": "ao4 men2",
+        "en": "Macao Special Administrative Region",
+        "zh": "澳門特別行政區"
+    },
+    {
+        "trad": "廣州",
+        "simp": "广州",
+        "jyutping": "gwong2 zau1",
+        "pinyin": "guang3 zhou1",
+        "en": "Guangzhou City, Guangdong Province",
+        "zh": "廣東省廣州市"
+    },
+    {
+        "trad": "深圳",
+        "simp": "深圳",
+        "jyutping": "sam1 zan3",
+        "pinyin": "shen1 zhen4",
+        "en": "Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市"
+    },
+    {
+        "trad": "珠海",
+        "simp": "珠海",
+        "jyutping": "zyu1 hoi2",
+        "pinyin": "zhu1 hai3",
+        "en": "Zhuhai City, Guangdong Province",
+        "zh": "廣東省珠海市"
+    },
+    {
+        "trad": "佛山",
+        "simp": "佛山",
+        "jyutping": "fat1 saan1",
+        "pinyin": "fo2 shan1",
+        "en": "Foshan City, Guangdong Province",
+        "zh": "廣東省佛山市"
+    },
+    {
+        "trad": "東莞",
+        "simp": "东莞",
+        "jyutping": "dung1 gun2",
+        "pinyin": "dong1 guan1",
+        "en": "Dongguan City, Guangdong Province",
+        "zh": "廣東省東莞市"
+    },
+    {
+        "trad": "中山",
+        "simp": "中山",
+        "jyutping": "zung1 saan1",
+        "pinyin": "zhong1 shan1",
+        "en": "Zhongshan City, Guangdong Province",
+        "zh": "廣東省中山市"
+    },
+    {
+        "trad": "江門",
+        "simp": "江门",
+        "jyutping": "gong1 mun4",
+        "pinyin": "jiang1 men2",
+        "en": "Jiangmen City, Guangdong Province",
+        "zh": "廣東省江門市"
+    },
+    {
+        "trad": "惠州",
+        "simp": "惠州",
+        "jyutping": "wai6 zau1",
+        "pinyin": "hui4 zhou1",
+        "en": "Huizhou City, Guangdong Province",
+        "zh": "廣東省惠州市"
+    },
+    {
+        "trad": "肇慶",
+        "simp": "肇庆",
+        "jyutping": "siu6 hing3",
+        "pinyin": "zhao4 qing4",
+        "en": "Zhaoqing City, Guangdong Province",
+        "zh": "廣東省肇慶市"
+    },
+    {
+        "trad": "台山",
+        "simp": "台山",
+        "jyutping": "toi4 saan1",
+        "pinyin": "tai2 shan1",
+        "en": "Taishan City, Jiangmen City, Guangdong Province",
+        "zh": "廣東省江門市台山市"
+    },
+    {
+        "trad": "開平",
+        "simp": "开平",
+        "jyutping": "hoi1 ping4",
+        "pinyin": "kai1 ping2",
+        "en": "Kaiping City, Jiangmen City, Guangdong Province",
+        "zh": "廣東省江門市開平市"
+    },
+    {
+        "trad": "鶴山",
+        "simp": "鹤山",
+        "jyutping": "hok6 saan1",
+        "pinyin": "he4 shan1",
+        "en": "Heshan City, Jiangmen City, Guangdong Province",
+        "zh": "廣東省江門市鶴山市"
+    },
+    {
+        "trad": "恩平",
+        "simp": "恩平",
+        "jyutping": "jan1 ping4",
+        "pinyin": "en1 ping2",
+        "en": "Enping City, Jiangmen City, Guangdong Province",
+        "zh": "廣東省江門市恩平市"
+    },
+    {
+        "trad": "四會",
+        "simp": "四会",
+        "jyutping": "sei3 wui6",
+        "pinyin": "si4 hui4",
+        "en": "Sihui City, Zhaoqing City, Guangdong Province",
+        "zh": "廣東省肇慶市四會市"
+    },
+    {
+        "trad": "九龍",
+        "simp": "九龙",
+        "jyutping": "gau2 lung4",
+        "pinyin": "jiu3 long2",
+        "en": "Kowloon, Hong Kong",
+        "zh": "香港九龍"
+    },
+    {
+        "trad": "荃灣",
+        "simp": "荃湾",
+        "jyutping": "cyun4 waan1",
+        "pinyin": "quan4 wan1",
+        "en": "Tsuen Wan, Hong Kong",
+        "zh": "香港荃灣"
+    },
+    {
+        "trad": "沙田",
+        "simp": "沙田",
+        "jyutping": "saa1 tin4",
+        "pinyin": "sha1 tian2",
+        "en": "Shatin, Hong Kong",
+        "zh": "香港沙田"
+    },
+    {
+        "trad": "屯門",
+        "simp": "屯门",
+        "jyutping": "tyun4 mun4",
+        "pinyin": "tun2 men2",
+        "en": "Tuen Mun, Hong Kong",
+        "zh": "香港屯門"
+    },
+    {
+        "trad": "元朗",
+        "simp": "元朗",
+        "jyutping": "jyun4 long5",
+        "pinyin": "yuan2 lang3",
+        "en": "Yuen Long, Hong Kong",
+        "zh": "香港元朗"
+    },
+    {
+        "trad": "西貢",
+        "simp": "西贡",
+        "jyutping": "sai1 gung3",
+        "pinyin": "xi1 gong3",
+        "en": "Sai Kung, Hong Kong",
+        "zh": "香港西貢"
+    },
+    {
+        "trad": "大埔",
+        "simp": "大埔",
+        "jyutping": "daai6 bou3",
+        "pinyin": "da4 bu3",
+        "en": "Tai Po, Hong Kong",
+        "zh": "香港大埔"
+    },
+    {
+        "trad": "葵涌",
+        "simp": "葵涌",
+        "jyutping": "kwai1 cung1",
+        "pinyin": "kui1 chong1",
+        "en": "Kwai Chung, Hong Kong",
+        "zh": "香港葵涌"
+    },
+    {
+        "trad": "青衣",
+        "simp": "青衣",
+        "jyutping": "cing1 ji1",
+        "pinyin": "qing1 yi1",
+        "en": "Tsing Yi, Hong Kong",
+        "zh": "香港青衣"
+    },
+    {
+        "trad": "赤鱲角",
+        "simp": "赤鱲角",
+        "jyutping": "cik3 laap6 gok3",
+        "pinyin": "chi4 lie4 jiao3",
+        "en": "Chek Lap Kok, Hong Kong",
+        "zh": "香港赤鱲角"
+    },
+    {
+        "trad": "銅鑼灣",
+        "simp": "铜锣湾",
+        "jyutping": "tung4 lo4 waan1",
+        "pinyin": "tong2 luo2 wan1",
+        "en": "Causeway Bay, Hong Kong",
+        "zh": "香港銅鑼灣"
+    },
+    {
+        "trad": "筲箕灣",
+        "simp": "筲箕湾",
+        "jyutping": "saau1 gei1 waan1",
+        "pinyin": "shao1 ji1 wan1",
+        "en": "Shau Kei Wan, Hong Kong",
+        "zh": "香港筲箕灣"
+    },
+    {
+        "trad": "柴灣",
+        "simp": "柴湾",
+        "jyutping": "caai4 waan1",
+        "pinyin": "chai2 wan1",
+        "en": "Chai Wan, Hong Kong",
+        "zh": "香港柴灣"
+    },
+    {
+        "trad": "堅尼地",
+        "simp": "坚尼地",
+        "jyutping": "gin1 nei4 dei6",
+        "pinyin": "jian1 ni2 di4",
+        "en": "Kennedy Town, Hong Kong",
+        "zh": "香港堅尼地城"
+    },
+    {
+        "trad": "石塘咀",
+        "simp": "石塘咀",
+        "jyutping": "sek6 tong4 zeoi2",
+        "pinyin": "shi2 tang2 zui3",
+        "en": "Shek Tong Tsui, Hong Kong",
+        "zh": "香港石塘咀"
+    },
+    {
+        "trad": "鴨脷洲",
+        "simp": "鸭脷洲",
+        "jyutping": "aap3 lei6 zau1",
+        "pinyin": "ya1 li4 zhou1",
+        "en": "Ap Lei Chau, Hong Kong",
+        "zh": "香港鴨脷洲"
+    },
+    {
+        "trad": "將軍澳",
+        "simp": "将军澳",
+        "jyutping": "zoeng1 gwan1 ou3",
+        "pinyin": "jiang1 jun1 ao4",
+        "en": "Tseung Kwan O, Hong Kong",
+        "zh": "香港將軍澳"
+    },
+    {
+        "trad": "馬鞍山",
+        "simp": "马鞍山",
+        "jyutping": "maa5 on1 saan1",
+        "pinyin": "ma3 an1 shan1",
+        "en": "Ma On Shan, Hong Kong",
+        "zh": "香港馬鞍山"
+    },
+    {
+        "trad": "天水圍",
+        "simp": "天水围",
+        "jyutping": "tin1 seui2 wai4",
+        "pinyin": "tian1 shui3 wei2",
+        "en": "Tin Shui Wai, Hong Kong",
+        "zh": "香港天水圍"
+    },
+    {
+        "trad": "落馬洲",
+        "simp": "落马洲",
+        "jyutping": "lok6 maa5 zau1",
+        "pinyin": "luo4 ma3 zhou1",
+        "en": "Lok Ma Chau, Hong Kong",
+        "zh": "香港落馬洲"
+    },
+    {
+        "trad": "石鼓洲",
+        "simp": "石鼓洲",
+        "jyutping": "sek6 gu2 zau1",
+        "pinyin": "shi2 gu3 zhou1",
+        "en": "Shek Kwu Chau, Hong Kong",
+        "zh": "香港石鼓洲"
+    },
+    {
+        "trad": "蒲台島",
+        "simp": "蒲台岛",
+        "jyutping": "pou4 toi4 dou2",
+        "pinyin": "pu4 tai2 dao3",
+        "en": "Po Toi Island, Hong Kong",
+        "zh": "香港蒲台島"
+    },
+    {
+        "trad": "坪洲",
+        "simp": "坪洲",
+        "jyutping": "ping4 zau1",
+        "pinyin": "ping2 zhou1",
+        "en": "Peng Chau, Hong Kong",
+        "zh": "香港坪洲"
+    },
+    {
+        "trad": "長洲",
+        "simp": "长洲",
+        "jyutping": "coeng4 zau1",
+        "pinyin": "chang2 zhou1",
+        "en": "Cheung Chau, Hong Kong",
+        "zh": "香港長洲"
+    },
+    {
+        "trad": "南丫島",
+        "simp": "南丫岛",
+        "jyutping": "naam4 aa1 dou2",
+        "pinyin": "nan2 ya1 dao3",
+        "en": "Lamma Island, Hong Kong",
+        "zh": "香港南丫島"
+    },
+    {
+        "trad": "大嶼山",
+        "simp": "大屿山",
+        "jyutping": "daai6 jyu4 saan1",
+        "pinyin": "da4 yu2 shan1",
+        "en": "Lantau Island, Hong Kong",
+        "zh": "香港大嶼山"
+    },
+    {
+        "trad": "昂坪",
+        "simp": "昂坪",
+        "jyutping": "ngong4 ping4",
+        "pinyin": "ang2 ping2",
+        "en": "Ngong Ping, Hong Kong",
+        "zh": "香港昂坪"
+    },
+    {
+        "trad": "梅窩",
+        "simp": "梅窝",
+        "jyutping": "mui4 wo1",
+        "pinyin": "mei2 wo1",
+        "en": "Mui Wo, Hong Kong",
+        "zh": "香港梅窩"
+    },
+    {
+        "trad": "大澳",
+        "simp": "大澳",
+        "jyutping": "daai6 ou3",
+        "pinyin": "da4 ao4",
+        "en": "Tai O, Hong Kong",
+        "zh": "香港大澳"
+    },
+    {
+        "trad": "東涌",
+        "simp": "东涌",
+        "jyutping": "dung1 cung1",
+        "pinyin": "dong1 chong1",
+        "en": "Tung Chung, Hong Kong",
+        "zh": "香港東涌"
+    },
+    {
+        "trad": "愉景灣",
+        "simp": "愉景湾",
+        "jyutping": "jyu4 ging2 waan1",
+        "pinyin": "yu2 jing3 wan1",
+        "en": "Discovery Bay, Hong Kong",
+        "zh": "香港愉景灣"
+    },
+    {
+        "trad": "馬灣",
+        "simp": "马湾",
+        "jyutping": "maa5 waan1",
+        "pinyin": "ma3 wan1",
+        "en": "Ma Wan, Hong Kong",
+        "zh": "香港馬灣"
+    },
+    {
+        "trad": "尖沙咀",
+        "simp": "尖沙咀",
+        "jyutping": "zim1 saa1 zeoi2",
+        "pinyin": "jian1 sha1 zui3",
+        "en": "Tsim Sha Tsui, Hong Kong",
+        "zh": "香港尖沙咀"
+    },
+    {
+        "trad": "旺角",
+        "simp": "旺角",
+        "jyutping": "wong6 gok3",
+        "pinyin": "wang4 jiao3",
+        "en": "Mong Kok, Hong Kong",
+        "zh": "香港旺角"
+    },
+    {
+        "trad": "油麻地",
+        "simp": "油麻地",
+        "jyutping": "jau4 maa4 dei6",
+        "pinyin": "you2 ma2 di4",
+        "en": "Yau Ma Tei, Hong Kong",
+        "zh": "香港油麻地"
+    },
+    {
+        "trad": "深水埗",
+        "simp": "深水埗",
+        "jyutping": "sam1 seui2 bou2",
+        "pinyin": "shen1 shui3 bu4",
+        "en": "Sham Shui Po, Hong Kong",
+        "zh": "香港深水埗"
+    },
+    {
+        "trad": "九龍城",
+        "simp": "九龙城",
+        "jyutping": "gau2 lung4 sing4",
+        "pinyin": "jiu3 long2 cheng2",
+        "en": "Kowloon City, Hong Kong",
+        "zh": "香港九龍城"
+    },
+    {
+        "trad": "黃大仙",
+        "simp": "黄大仙",
+        "jyutping": "wong4 daai6 sin1",
+        "pinyin": "huang2 da4 xian1",
+        "en": "Wong Tai Sin, Hong Kong",
+        "zh": "香港黃大仙"
+    },
+    {
+        "trad": "觀塘",
+        "simp": "观塘",
+        "jyutping": "gun1 tong4",
+        "pinyin": "guan1 tang2",
+        "en": "Kwun Tong, Hong Kong",
+        "zh": "香港觀塘"
+    },
+    {
+        "trad": "土瓜灣",
+        "simp": "土瓜湾",
+        "jyutping": "tou2 gwaa1 waan1",
+        "pinyin": "tu3 gua1 wan1",
+        "en": "To Kwa Wan, Hong Kong",
+        "zh": "香港土瓜灣"
+    },
+    {
+        "trad": "紅磡",
+        "simp": "红磡",
+        "jyutping": "hung4 ham3",
+        "pinyin": "hong2 kan3",
+        "en": "Hung Hom, Hong Kong",
+        "zh": "香港紅磡"
+    },
+    {
+        "trad": "荔枝角",
+        "simp": "荔枝角",
+        "jyutping": "lai6 zi1 gok3",
+        "pinyin": "li4 zhi1 jiao3",
+        "en": "Lai Chi Kok, Hong Kong",
+        "zh": "香港荔枝角"
+    },
+    {
+        "trad": "美孚",
+        "simp": "美孚",
+        "jyutping": "mei5 fu1",
+        "pinyin": "mei3 fu2",
+        "en": "Mei Foo, Hong Kong",
+        "zh": "香港美孚"
+    },
+    {
+        "trad": "石硖尾",
+        "simp": "石硖尾",
+        "jyutping": "sek6 haap6 mei5",
+        "pinyin": "shi2 xia2 wei3",
+        "en": "Shek Kip Mei, Hong Kong",
+        "zh": "香港石硤尾"
+    },
+    {
+        "trad": "長沙灣",
+        "simp": "长沙湾",
+        "jyutping": "coeng4 saa1 waan1",
+        "pinyin": "chang2 sha1 wan1",
+        "en": "Cheung Sha Wan, Hong Kong",
+        "zh": "香港長沙灣"
+    },
+    {
+        "trad": "鑽石山",
+        "simp": "钻石山",
+        "jyutping": "zyun3 sek6 saan1",
+        "pinyin": "zuan3 shi2 shan1",
+        "en": "Diamond Hill, Hong Kong",
+        "zh": "香港鑽石山"
+    },
+    {
+        "trad": "慈雲山",
+        "simp": "慈云山",
+        "jyutping": "ci4 wan4 saan1",
+        "pinyin": "ci2 yun2 shan1",
+        "en": "Tsz Wan Shan, Hong Kong",
+        "zh": "香港慈雲山"
+    },
+    {
+        "trad": "牛池灣",
+        "simp": "牛池湾",
+        "jyutping": "ngau4 ci4 waan1",
+        "pinyin": "niu2 chi2 wan1",
+        "en": "Ngau Chi Wan, Hong Kong",
+        "zh": "香港牛池灣"
+    },
+    {
+        "trad": "九龍灣",
+        "simp": "九龙湾",
+        "jyutping": "gau2 lung4 waan1",
+        "pinyin": "jiu3 long2 wan1",
+        "en": "Kowloon Bay, Hong Kong",
+        "zh": "香港九龍灣"
+    },
+    {
+        "trad": "牛頭角",
+        "simp": "牛头角",
+        "jyutping": "ngau4 tau4 gok3",
+        "pinyin": "niu2 tou2 jiao3",
+        "en": "Ngau Tau Kok, Hong Kong",
+        "zh": "香港牛頭角"
+    },
+    {
+        "trad": "藍田",
+        "simp": "蓝田",
+        "jyutping": "laam4 tin4",
+        "pinyin": "lan2 tian2",
+        "en": "Lam Tin, Hong Kong",
+        "zh": "香港藍田"
+    },
+    {
+        "trad": "油塘",
+        "simp": "油塘",
+        "jyutping": "jau4 tong4",
+        "pinyin": "you2 tang2",
+        "en": "Yau Tong, Hong Kong",
+        "zh": "香港油塘"
+    },
+    {
+        "trad": "鯉魚門",
+        "simp": "鲤鱼门",
+        "jyutping": "lei5 jyu4 mun4",
+        "pinyin": "li3 yu2 men2",
+        "en": "Lei Yue Mun, Hong Kong",
+        "zh": "香港鯉魚門"
+    },
+    {
+        "trad": "橫琴",
+        "simp": "横琴",
+        "jyutping": "waang4 kam4",
+        "pinyin": "heng2 qin2",
+        "en": "Hengqin, Zhuhai City, Guangdong Province",
+        "zh": "廣東省珠海市橫琴"
+    },
+    {
+        "trad": "前海",
+        "simp": "前海",
+        "jyutping": "cin4 hoi2",
+        "pinyin": "qian2 hai3",
+        "en": "Qianhai, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市前海"
+    },
+    {
+        "trad": "南沙",
+        "simp": "南沙",
+        "jyutping": "naam4 saa1",
+        "pinyin": "nan2 sha1",
+        "en": "Nansha, Guangzhou City, Guangdong Province",
+        "zh": "廣東省廣州市南沙"
+    },
+    {
+        "trad": "蛇口",
+        "simp": "蛇口",
+        "jyutping": "se1 hau2",
+        "pinyin": "she2 kou3",
+        "en": "Shekou, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市蛇口"
+    },
+    {
+        "trad": "鹽田",
+        "simp": "盐田",
+        "jyutping": "jim4 tin4",
+        "pinyin": "yan2 tian2",
+        "en": "Yantian, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市鹽田"
+    },
+    {
+        "trad": "寶安",
+        "simp": "宝安",
+        "jyutping": "bou2 on1",
+        "pinyin": "bao3 an1",
+        "en": "Bao'an, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市寶安"
+    },
+    {
+        "trad": "龍崗",
+        "simp": "龙岗",
+        "jyutping": "lung4 gong1",
+        "pinyin": "long2 gang1",
+        "en": "Longgang, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市龍崗"
+    },
+    {
+        "trad": "龍華",
+        "simp": "龙华",
+        "jyutping": "lung4 waa4",
+        "pinyin": "long2 hua2",
+        "en": "Longhua, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市龍華"
+    },
+    {
+        "trad": "坪山",
+        "simp": "坪山",
+        "jyutping": "ping4 saan1",
+        "pinyin": "ping2 shan1",
+        "en": "Pingshan, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市坪山"
+    },
+    {
+        "trad": "光明",
+        "simp": "光明",
+        "jyutping": "gwong1 ming4",
+        "pinyin": "guang1 ming2",
+        "en": "Guangming, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市光明"
+    },
+    {
+        "trad": "大鵬",
+        "simp": "大鹏",
+        "jyutping": "daai6 pang4",
+        "pinyin": "da4 peng2",
+        "en": "Dapeng, Shenzhen City, Guangdong Province",
+        "zh": "廣東省深圳市大鵬"
+    },
+    {
+        "trad": "番禺",
+        "simp": "番禺",
+        "jyutping": "pun1 jyu4",
+        "pinyin": "pan1 yu2",
+        "en": "Panyu, Guangzhou City, Guangdong Province",
+        "zh": "廣東省廣州市番禺"
+    },
+    {
+        "trad": "花都",
+        "simp": "花都",
+        "jyutping": "faa1 dou1",
+        "pinyin": "hua1 dou1",
+        "en": "Huadu, Guangzhou City, Guangdong Province",
+        "zh": "廣東省廣州市花都"
+    },
+    {
+        "trad": "增城",
+        "simp": "增城",
+        "jyutping": "zang1 sing4",
+        "pinyin": "zeng1 cheng2",
+        "en": "Zengcheng, Guangzhou City, Guangdong Province",
+        "zh": "廣東省廣州市增城"
+    },
+    {
+        "trad": "從化",
+        "simp": "从化",
+        "jyutping": "cung4 faa3",
+        "pinyin": "cong2 hua4",
+        "en": "Conghua, Guangzhou City, Guangdong Province",
+        "zh": "廣東省廣州市從化"
+    },
+    {
+        "trad": "順德",
+        "simp": "顺德",
+        "jyutping": "seun6 dak1",
+        "pinyin": "shun4 de2",
+        "en": "Shunde, Foshan City, Guangdong Province",
+        "zh": "廣東省佛山市順德"
+    },
+    {
+        "trad": "南海",
+        "simp": "南海",
+        "jyutping": "naam4 hoi2",
+        "pinyin": "nan2 hai3",
+        "en": "Nanhai, Foshan City, Guangdong Province",
+        "zh": "廣東省佛山市南海"
+    },
+    {
+        "trad": "三水",
+        "simp": "三水",
+        "jyutping": "saam1 seui2",
+        "pinyin": "san1 shui3",
+        "en": "Sanshui, Foshan City, Guangdong Province",
+        "zh": "廣東省佛山市三水"
+    },
+    {
+        "trad": "高明",
+        "simp": "高明",
+        "jyutping": "gou1 ming4",
+        "pinyin": "gao1 ming2",
+        "en": "Gaoming, Foshan City, Guangdong Province",
+        "zh": "廣東省佛山市高明"
+    },
+    {
+        "trad": "新會",
+        "simp": "新会",
+        "jyutping": "san1 wui6",
+        "pinyin": "xin1 hui4",
+        "en": "Xinhui, Jiangmen City, Guangdong Province",
+        "zh": "廣東省江門市新會"
+    },
+    {
+        "trad": "惠陽",
+        "simp": "惠阳",
+        "jyutping": "wai6 joeng4",
+        "pinyin": "hui4 yang2",
+        "en": "Huiyang, Huizhou City, Guangdong Province",
+        "zh": "廣東省惠州市惠陽"
+    },
+    {
+        "trad": "惠東",
+        "simp": "惠东",
+        "jyutping": "wai6 dung1",
+        "pinyin": "hui4 dong1",
+        "en": "Huidong, Huizhou City, Guangdong Province",
+        "zh": "廣東省惠州市惠東"
+    },
+    {
+        "trad": "博羅",
+        "simp": "博罗",
+        "jyutping": "bok3 lo4",
+        "pinyin": "bo2 luo2",
+        "en": "Boluo, Huizhou City, Guangdong Province",
+        "zh": "廣東省惠州市博羅"
+    },
+    {
+        "trad": "龍門",
+        "simp": "龙门",
+        "jyutping": "lung4 mun4",
+        "pinyin": "long2 men2",
+        "en": "Longmen, Huizhou City, Guangdong Province",
+        "zh": "廣東省惠州市龍門"
+    },
+    {
+        "trad": "廣寧",
+        "simp": "广宁",
+        "jyutping": "gwong2 ning4",
+        "pinyin": "guang3 ning2",
+        "en": "Guangning, Zhaoqing City, Guangdong Province",
+        "zh": "廣東省肇慶市廣寧"
+    },
+    {
+        "trad": "懷集",
+        "simp": "怀集",
+        "jyutping": "waai4 zaap6",
+        "pinyin": "huai2 ji2",
+        "en": "Huaiji, Zhaoqing City, Guangdong Province",
+        "zh": "廣東省肇慶市懷集"
+    },
+    {
+        "trad": "封開",
+        "simp": "封开",
+        "jyutping": "fung1 hoi1",
+        "pinyin": "feng1 kai1",
+        "en": "Fengkai, Zhaoqing City, Guangdong Province",
+        "zh": "廣東省肇慶市封開"
+    },
+    {
+        "trad": "德慶",
+        "simp": "德庆",
+        "jyutping": "dak1 hing3",
+        "pinyin": "de2 qing4",
+        "en": "Dequing, Zhaoqing City, Guangdong Province",
+        "zh": "廣東省肇慶市德慶"
+    },
+    {
+        "trad": "斗門",
+        "simp": "斗门",
+        "jyutping": "dau2 mun4",
+        "pinyin": "dou3 men2",
+        "en": "Doumen, Zhuhai City, Guangdong Province",
+        "zh": "廣東省珠海市斗門"
+    },
+    {
+        "trad": "金灣",
+        "simp": "金湾",
+        "jyutping": "gam1 waan1",
+        "pinyin": "jin1 wan1",
+        "en": "Jinwan, Zhuhai City, Guangdong Province",
+        "zh": "廣東省珠海市金灣"
+    },
+    {
+        "trad": "虎門",
+        "simp": "虎门",
+        "jyutping": "fu2 mun4",
+        "pinyin": "hu3 men2",
+        "en": "Humen, Dongguan City, Guangdong Province",
+        "zh": "廣東省東莞市虎門"
+    }
+]

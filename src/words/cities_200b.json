@@ -1,0 +1,1842 @@
+[
+    {
+        "trad": "佛羅倫斯",
+        "simp": "佛罗伦萨",
+        "jyutping": "fat6 lo4 leon4 si1",
+        "pinyin": "fo2 luo2 lun2 sa4",
+        "en": "Florence",
+        "zh": "佛羅倫斯 / 佛罗伦萨"
+    },
+    {
+        "trad": "維也納",
+        "simp": "维也纳",
+        "jyutping": "wai4 jaa5 naap6",
+        "pinyin": "wei2 ye3 na4",
+        "en": "Vienna",
+        "zh": "維也納 / 维也纳"
+    },
+    {
+        "trad": "布魯塞爾",
+        "simp": "布鲁塞尔",
+        "jyutping": "bou3 lou1 coi3 ji5",
+        "pinyin": "bu4 luo3 sai1 er3",
+        "en": "Brussels",
+        "zh": "布魯塞爾 / 布鲁塞尔"
+    },
+    {
+        "trad": "阿姆斯特丹",
+        "simp": "阿姆斯特丹",
+        "jyutping": "aa3 mou5 si1 dak1 daan1",
+        "pinyin": "a1 mu3 si1 te4 dan1",
+        "en": "Amsterdam",
+        "zh": "阿姆斯特丹 / 阿姆斯特丹"
+    },
+    {
+        "trad": "哥本哈根",
+        "simp": "哥本哈根",
+        "jyutping": "go1 bun2 haa1 gan1",
+        "pinyin": "ge1 ben3 ha1 gen1",
+        "en": "Copenhagen",
+        "zh": "哥本哈根 / 哥本哈根"
+    },
+    {
+        "trad": "斯德哥爾摩",
+        "simp": "斯德哥尔摩",
+        "jyutping": "si1 dak1 go1 ji5 mo1",
+        "pinyin": "si1 de2 ge1 er3 mo2",
+        "en": "Stockholm",
+        "zh": "斯德哥爾摩 / 斯德哥尔摩"
+    },
+    {
+        "trad": "赫爾辛基",
+        "simp": "赫尔辛基",
+        "jyutping": "haak3 ji5 san1 gei1",
+        "pinyin": "he4 er3 xin1 ji1",
+        "en": "Helsinki",
+        "zh": "赫爾辛基 / 赫尔辛基"
+    },
+    {
+        "trad": "布達佩斯",
+        "simp": "布达佩斯",
+        "jyutping": "bou3 daat6 pui3 si1",
+        "pinyin": "bu4 da2 pei1 si1",
+        "en": "Budapest",
+        "zh": "布達佩斯 / 布达佩斯"
+    },
+    {
+        "trad": "布加勒斯特",
+        "simp": "布加勒斯特",
+        "jyutping": "bou3 gaa1 lak6 si1 dak1",
+        "pinyin": "bu4 jia1 lei1 si1 te4",
+        "en": "Bucharest",
+        "zh": "布加勒斯特 / 布加勒斯特"
+    },
+    {
+        "trad": "貝爾格萊德",
+        "simp": "贝尔格莱德",
+        "jyutping": "bui3 ji5 gaak3 loi4 dak1",
+        "pinyin": "bei3 er3 ge2 lai2 de2",
+        "en": "Belgrade",
+        "zh": "貝爾格萊德 / 贝尔格莱德"
+    },
+    {
+        "trad": "薩格勒布",
+        "simp": "萨格勒布",
+        "jyutping": "saat3 gaak3 lak6 bou3",
+        "pinyin": "sa4 ge2 lei1 bu4",
+        "en": "Zagreb",
+        "zh": "薩格勒布 / 萨格勒布"
+    },
+    {
+        "trad": "斯科普里",
+        "simp": "斯科普里",
+        "jyutping": "si1 fo1 pou3 lei5",
+        "pinyin": "si1 ke1 pu3 li3",
+        "en": "Skopje",
+        "zh": "斯科普里 / 斯科普里"
+    },
+    {
+        "trad": "雷克雅未克",
+        "simp": "雷克雅未克",
+        "jyutping": "leoi4 hak1 ngaa5 mei6 hak1",
+        "pinyin": "lei2 ke4 ya3 wei4 ke4",
+        "en": "Reykjavik",
+        "zh": "雷克雅未克 / 雷克雅未克"
+    },
+    {
+        "trad": "法蘭克福",
+        "simp": "法兰克福",
+        "jyutping": "faat3 laan4 hak1 fuk1",
+        "pinyin": "fa3 lan2 ke4 fu2",
+        "en": "Frankfurt",
+        "zh": "法蘭克福 / 法兰克福"
+    },
+    {
+        "trad": "斯圖加特",
+        "simp": "斯图加特",
+        "jyutping": "si1 tou4 gaa1 dak1",
+        "pinyin": "si1 tu2 jia1 te4",
+        "en": "Stuttgart",
+        "zh": "斯圖加特 / 斯图加特"
+    },
+    {
+        "trad": "巴塞隆拿",
+        "simp": "巴塞罗那",
+        "jyutping": "baa1 coi3 leung4 naa1",
+        "pinyin": "ba1 sai1 luo2 na4",
+        "en": "Barcelona",
+        "zh": "巴塞隆拿 / 巴塞罗那"
+    },
+    {
+        "trad": "塞維利亞",
+        "simp": "塞维利亚",
+        "jyutping": "coi3 wai4 lei6 aa3",
+        "pinyin": "sai1 wei2 li4 ya3",
+        "en": "Seville",
+        "zh": "塞維利亞 / 塞维利亚"
+    },
+    {
+        "trad": "瓦倫西亞",
+        "simp": "瓦伦西亚",
+        "jyutping": "ngaa5 leon4 sai1 aa3",
+        "pinyin": "wa3 lun2 xi1 ya3",
+        "en": "Valencia",
+        "zh": "瓦倫西亞 / 瓦伦西亚"
+    },
+    {
+        "trad": "曼徹斯特",
+        "simp": "曼彻斯特",
+        "jyutping": "maan6 cit3 si1 dak1",
+        "pinyin": "man4 che4 si1 te4",
+        "en": "Manchester",
+        "zh": "曼徹斯特 / 曼彻斯特"
+    },
+    {
+        "trad": "格拉斯哥",
+        "simp": "格拉斯哥",
+        "jyutping": "gaak3 laai1 si1 go1",
+        "pinyin": "ge2 la1 si1 ge1",
+        "en": "Glasgow",
+        "zh": "格拉斯哥 / 格拉斯哥"
+    },
+    {
+        "trad": "貝爾法斯特",
+        "simp": "贝尔法斯特",
+        "jyutping": "bui3 ji5 faat3 faat3 si1 dak1",
+        "pinyin": "bei3 er3 fa3 fa3 si1 te4",
+        "en": "Belfast",
+        "zh": "貝爾法斯特 / 贝尔法斯特"
+    },
+    {
+        "trad": "洛杉磯",
+        "simp": "洛杉矶",
+        "jyutping": "lok3 caam3 gei1",
+        "pinyin": "luo4 shan1 ji1",
+        "en": "Los Angeles",
+        "zh": "洛杉磯 / 洛杉矶"
+    },
+    {
+        "trad": "聖安東尼奧",
+        "simp": "圣安东尼奥",
+        "jyutping": "sing3 on1 dung1 nei4 ou3",
+        "pinyin": "sheng4 an1 dong1 ni2 ao4",
+        "en": "San Antonio",
+        "zh": "聖安東尼奧 / 圣安东尼奥"
+    },
+    {
+        "trad": "聖地亞哥",
+        "simp": "圣地亚哥",
+        "jyutping": "sing3 dei6 aa3 go1",
+        "pinyin": "sheng4 di4 ya3 ge1",
+        "en": "San Diego",
+        "zh": "聖地亞哥 / 圣地亚哥"
+    },
+    {
+        "trad": "達拉斯",
+        "simp": "达拉斯",
+        "jyutping": "daat6 laai1 si1",
+        "pinyin": "da2 la1 si1",
+        "en": "Dallas",
+        "zh": "達拉斯 / 达拉斯"
+    },
+    {
+        "trad": "積遜威爾",
+        "simp": "杰克逊维尔",
+        "jyutping": "zik1 seon3 wai1 ji5",
+        "pinyin": "jie2 ke4 xun4 wei2 er3",
+        "en": "Jacksonville",
+        "zh": "積遜威爾 / 杰克逊维尔"
+    },
+    {
+        "trad": "哥倫布",
+        "simp": "哥伦布",
+        "jyutping": "go1 leon4 bou3",
+        "pinyin": "ge1 lun2 bu4",
+        "en": "Columbus",
+        "zh": "哥倫布 / 哥伦布"
+    },
+    {
+        "trad": "印第安納波利斯",
+        "simp": "印第安纳波利斯",
+        "jyutping": "jan3 dai6 on1 naap6 bo1 lei6 si1",
+        "pinyin": "yin4 di4 an1 na4 bo1 li4 si1",
+        "en": "Indianapolis",
+        "zh": "印第安納波利斯 / 印第安纳波利斯"
+    },
+    {
+        "trad": "華盛頓",
+        "simp": "华盛顿",
+        "jyutping": "waa4 sing6 deun1",
+        "pinyin": "hua2 sheng4 dun1",
+        "en": "Washington",
+        "zh": "華盛頓 / 华盛顿"
+    },
+    {
+        "trad": "納什維爾",
+        "simp": "纳什维尔",
+        "jyutping": "naap6 sap6 wai4 ji5",
+        "pinyin": "na4 shi2 wei2 er3",
+        "en": "Nashville",
+        "zh": "納什維爾 / 纳什维尔"
+    },
+    {
+        "trad": "拉斯維加斯",
+        "simp": "拉斯维加斯",
+        "jyutping": "laai1 si1 wai4 gaa1 si1",
+        "pinyin": "la1 si1 wei2 jia1 si1",
+        "en": "Las Vegas",
+        "zh": "拉斯維加斯 / 拉斯维加斯"
+    },
+    {
+        "trad": "路易斯維爾",
+        "simp": "路易斯维尔",
+        "jyutping": "lou6 ji6 si1 wai4 ji5",
+        "pinyin": "lu4 yi4 si1 wei2 er3",
+        "en": "Louisville",
+        "zh": "路易斯維爾 / 路易斯维尔"
+    },
+    {
+        "trad": "巴爾的摩",
+        "simp": "巴尔的摩",
+        "jyutping": "baa1 ji5 dik1 mo1",
+        "pinyin": "ba1 er3 de5 mo1",
+        "en": "Baltimore",
+        "zh": "巴爾的摩 / 巴尔的摩"
+    },
+    {
+        "trad": "密爾沃基",
+        "simp": "密尔沃基",
+        "jyutping": "mat6 ji5 ak1 gei1",
+        "pinyin": "mi4 er3 wo4 ji1",
+        "en": "Milwaukee",
+        "zh": "密爾沃基 / 密尔沃基"
+    },
+    {
+        "trad": "阿爾伯克基",
+        "simp": "阿尔伯克基",
+        "jyutping": "aa3 ji5 baak3 hak1 gei1",
+        "pinyin": "a1 er3 bo2 ke4 ji1",
+        "en": "Albuquerque",
+        "zh": "阿爾伯克基 / 阿尔伯克基"
+    },
+    {
+        "trad": "沙加緬度",
+        "simp": "萨克拉门托",
+        "jyutping": "saa1 gaa1 min5 dou6",
+        "pinyin": "sa4 ke4 la1 men2 tuo1",
+        "en": "Sacramento",
+        "zh": "沙加緬度 / 萨克拉门托"
+    },
+    {
+        "trad": "堪薩斯城",
+        "simp": "堪萨斯城",
+        "jyutping": "ham1 saat3 si1 sing4",
+        "pinyin": "kan1 sa4 si1 cheng2",
+        "en": "Kansas City",
+        "zh": "堪薩斯城 / 堪萨斯城"
+    },
+    {
+        "trad": "亞特蘭大",
+        "simp": "亚特兰大",
+        "jyutping": "aa3 dak1 laan4 daai6",
+        "pinyin": "ya4 te4 lan2 da4",
+        "en": "Atlanta",
+        "zh": "亞特蘭大 / 亚特兰大"
+    },
+    {
+        "trad": "科羅拉多斯普林斯",
+        "simp": "科罗拉多斯普林斯",
+        "jyutping": "fo1 lo4 laai1 do1 si1 pou3 lam4 si1",
+        "pinyin": "ke1 luo2 la1 duo1 si1 pu3 lin2 si1",
+        "en": "Colorado Springs",
+        "zh": "科羅拉多斯普林斯 / 科罗拉多斯普林斯"
+    },
+    {
+        "trad": "明尼阿波利斯",
+        "simp": "明尼阿波利斯",
+        "jyutping": "ming4 nei4 aa3 bo1 lei6 si1",
+        "pinyin": "ming2 ni2 a1 bo1 li4 si1",
+        "en": "Minneapolis",
+        "zh": "明尼阿波利斯 / 明尼阿波利斯"
+    },
+    {
+        "trad": "克利夫蘭",
+        "simp": "克利夫兰",
+        "jyutping": "hak1 lei6 fu1 laan4",
+        "pinyin": "ke4 li4 fu1 lan2",
+        "en": "Cleveland",
+        "zh": "克利夫蘭 / 克利夫兰"
+    },
+    {
+        "trad": "火奴魯魯",
+        "simp": "火奴鲁鲁",
+        "jyutping": "fo2 nou4 lou4 lou4",
+        "pinyin": "huo3 nu2 lu3 lu3",
+        "en": "Honolulu",
+        "zh": "火奴魯魯 / 火奴鲁鲁"
+    },
+    {
+        "trad": "蒙特利爾",
+        "simp": "蒙特利尔",
+        "jyutping": "mung4 dak1 lei6 ji5",
+        "pinyin": "meng2 te4 li4 er3",
+        "en": "Montreal",
+        "zh": "蒙特利爾 / 蒙特利尔"
+    },
+    {
+        "trad": "卡爾加里",
+        "simp": "卡尔加里",
+        "jyutping": "kaa1 ji5 gaa1 lei5",
+        "pinyin": "ka3 er3 jia1 li3",
+        "en": "Calgary",
+        "zh": "卡爾加里 / 卡尔加里"
+    },
+    {
+        "trad": "埃德蒙頓",
+        "simp": "埃德蒙顿",
+        "jyutping": "oi1 dak1 mung4 deun1",
+        "pinyin": "ai1 de2 meng2 dun1",
+        "en": "Edmonton",
+        "zh": "埃德蒙頓 / 埃德蒙顿"
+    },
+    {
+        "trad": "魁北克市",
+        "simp": "魁北克市",
+        "jyutping": "fui1 bak1 hak1 si5",
+        "pinyin": "kui2 bei3 ke4 shi4",
+        "en": "Quebec City",
+        "zh": "魁北克市 / 魁北克市"
+    },
+    {
+        "trad": "布里斯班",
+        "simp": "布里斯班",
+        "jyutping": "bou3 lei5 si1 baan1",
+        "pinyin": "bu4 li3 si1 ban1",
+        "en": "Brisbane",
+        "zh": "布里斯班 / 布里斯班"
+    },
+    {
+        "trad": "阿德萊德",
+        "simp": "阿德莱德",
+        "jyutping": "aa3 dak1 loi4 dak1",
+        "pinyin": "a1 de2 lai2 de2",
+        "en": "Adelaide",
+        "zh": "阿德萊德 / 阿德莱德"
+    },
+    {
+        "trad": "新加坡",
+        "simp": "新加坡",
+        "jyutping": "san1 gaa1 po1",
+        "pinyin": "xin1 jia1 po1",
+        "en": "Singapore",
+        "zh": "新加坡 / 新加坡"
+    },
+    {
+        "trad": "吉隆坡",
+        "simp": "吉隆坡",
+        "jyutping": "gat1 lung4 po1",
+        "pinyin": "ji2 long2 po1",
+        "en": "Kuala Lumpur",
+        "zh": "吉隆坡 / 吉隆坡"
+    },
+    {
+        "trad": "雅加達",
+        "simp": "雅加达",
+        "jyutping": "ngaa5 gaa1 daat6",
+        "pinyin": "ya3 jia1 da2",
+        "en": "Jakarta",
+        "zh": "雅加達 / 雅加达"
+    },
+    {
+        "trad": "馬尼拉",
+        "simp": "马尼拉",
+        "jyutping": "maa5 nei4 laai1",
+        "pinyin": "ma3 ni2 la1",
+        "en": "Manila",
+        "zh": "馬尼拉 / 马尼拉"
+    },
+    {
+        "trad": "胡志明市",
+        "simp": "胡志明市",
+        "jyutping": "wu4 zi3 ming4 si5",
+        "pinyin": "hu2 zhi4 ming2 shi4",
+        "en": "Ho Chi Minh City",
+        "zh": "胡志明市 / 胡志明市"
+    },
+    {
+        "trad": "曼德勒",
+        "simp": "曼德勒",
+        "jyutping": "maan6 dak1 lak6",
+        "pinyin": "man4 de2 le4",
+        "en": "Mandalay",
+        "zh": "曼德勒 / 曼德勒"
+    },
+    {
+        "trad": "班加羅爾",
+        "simp": "班加罗尔",
+        "jyutping": "baan1 gaa1 lo4 ji5",
+        "pinyin": "ban1 jia1 luo2 er3",
+        "en": "Bangalore",
+        "zh": "班加羅爾 / 班加罗尔"
+    },
+    {
+        "trad": "加爾各答",
+        "simp": "加尔各答",
+        "jyutping": "gaa1 ji5 gok3 daap3",
+        "pinyin": "jia1 er3 ge4 da1",
+        "en": "Kolkata",
+        "zh": "加爾各答 / 加尔各答"
+    },
+    {
+        "trad": "海德拉巴",
+        "simp": "海德拉巴",
+        "jyutping": "hoi2 dak1 laai1 baa1",
+        "pinyin": "hai3 de2 la1 ba1",
+        "en": "Hyderabad",
+        "zh": "海德拉巴 / 海德拉巴"
+    },
+    {
+        "trad": "伊斯蘭堡",
+        "simp": "伊斯兰堡",
+        "jyutping": "yi1 si1 laan4 bou2",
+        "pinyin": "yi1 si1 lan2 bao3",
+        "en": "Islamabad",
+        "zh": "伊斯蘭堡 / 伊斯兰堡"
+    },
+    {
+        "trad": "卡拉奇",
+        "simp": "卡拉奇",
+        "jyutping": "kaa1 laai1 kei4",
+        "pinyin": "ka3 la1 qi2",
+        "en": "Karachi",
+        "zh": "卡拉奇 / 卡拉奇"
+    },
+    {
+        "trad": "加德滿都",
+        "simp": "加德满都",
+        "jyutping": "gaa1 dak1 mun5 dou1",
+        "pinyin": "jia1 de2 man3 dou1",
+        "en": "Kathmandu",
+        "zh": "加德滿都 / 加德满都"
+    },
+    {
+        "trad": "喀布爾",
+        "simp": "喀布尔",
+        "jyutping": "haak3 bou3 ji5",
+        "pinyin": "ka1 bu4 er3",
+        "en": "Kabul",
+        "zh": "喀布爾 / 喀布尔"
+    },
+    {
+        "trad": "德黑蘭",
+        "simp": "德黑兰",
+        "jyutping": "dak1 hak1 laan4",
+        "pinyin": "de2 hei1 lan2",
+        "en": "Tehran",
+        "zh": "德黑蘭 / 德黑兰"
+    },
+    {
+        "trad": "阿布扎比",
+        "simp": "阿布扎比",
+        "jyutping": "aa3 bou3 zaat3 bei3",
+        "pinyin": "a1 bu4 zha1 bi3",
+        "en": "Abu Dhabi",
+        "zh": "阿布扎比 / 阿布扎比"
+    },
+    {
+        "trad": "科威特城",
+        "simp": "科威特城",
+        "jyutping": "fo1 wai1 dak1 sing4",
+        "pinyin": "ke1 wei1 te4 cheng2",
+        "en": "Kuwait City",
+        "zh": "科威特城 / 科威特城"
+    },
+    {
+        "trad": "馬斯喀特",
+        "simp": "马斯喀特",
+        "jyutping": "maa5 si1 haak3 dak1",
+        "pinyin": "ma3 si1 ka1 te4",
+        "en": "Muscat",
+        "zh": "馬斯喀特 / 马斯喀特"
+    },
+    {
+        "trad": "大馬士革",
+        "simp": "大马士革",
+        "jyutping": "daai6 maa5 si6 gaak3",
+        "pinyin": "da4 ma3 shi4 ge2",
+        "en": "Damascus",
+        "zh": "大馬士革 / 大马士革"
+    },
+    {
+        "trad": "耶路撒冷",
+        "simp": "耶路撒冷",
+        "jyutping": "je4 lo4 saat3 laang5",
+        "pinyin": "ye1 luo2 sa1 leng3",
+        "en": "Jerusalem",
+        "zh": "耶路撒冷 / 耶路撒冷"
+    },
+    {
+        "trad": "特拉維夫",
+        "simp": "特拉维夫",
+        "jyutping": "dak1 laai1 wai4 fu1",
+        "pinyin": "te4 la1 wei2 fu1",
+        "en": "Tel Aviv",
+        "zh": "特拉維夫 / 特拉维夫"
+    },
+    {
+        "trad": "伊斯坦堡",
+        "simp": "伊斯坦布尔",
+        "jyutping": "yi1 si1 taan2 bou2",
+        "pinyin": "yi1 si1 tan3 bu4 er3",
+        "en": "Istanbul",
+        "zh": "伊斯坦堡 / 伊斯坦布尔"
+    },
+    {
+        "trad": "亞歷山大",
+        "simp": "亚历山大",
+        "jyutping": "aa3 lik6 saan1 daai6",
+        "pinyin": "ya4 li4 shan1 da4",
+        "en": "Alexandria",
+        "zh": "亞歷山大 / 亚历山大"
+    },
+    {
+        "trad": "卡薩布蘭卡",
+        "simp": "卡萨布兰卡",
+        "jyutping": "kaa1 saat3 bou3 laan4 kaa1",
+        "pinyin": "ka3 sa4 bu4 lan2 ka3",
+        "en": "Casablanca",
+        "zh": "卡薩布蘭卡 / 卡萨布兰卡"
+    },
+    {
+        "trad": "突尼斯城",
+        "simp": "突尼斯城",
+        "jyutping": "dat6 nei4 si1 sing4",
+        "pinyin": "tu1 ni2 si1 cheng2",
+        "en": "Tunis",
+        "zh": "突尼斯城 / 突尼斯城"
+    },
+    {
+        "trad": "阿爾及爾",
+        "simp": "阿尔及尔",
+        "jyutping": "aa3 ji5 kap1 ji5",
+        "pinyin": "a1 er3 ji2 er3",
+        "en": "Algiers",
+        "zh": "阿爾及爾 / 阿尔及尔"
+    },
+    {
+        "trad": "的黎波里",
+        "simp": "的黎波里",
+        "jyutping": "dik1 lai4 bo1 lei5",
+        "pinyin": "di2 li2 bo1 li3",
+        "en": "Tripoli",
+        "zh": "的黎波里 / 的黎波里"
+    },
+    {
+        "trad": "亞的斯亞貝巴",
+        "simp": "亚的斯亚贝巴",
+        "jyutping": "aa3 dik1 si1 aa3 bui3 baa1",
+        "pinyin": "ya4 de5 si1 ya3 bei3 ba1",
+        "en": "Addis Ababa",
+        "zh": "亞的斯亞貝巴 / 亚的斯亚贝巴"
+    },
+    {
+        "trad": "約翰尼斯堡",
+        "simp": "约翰尼斯堡",
+        "jyutping": "joek3 hon3 nei4 si1 bou2",
+        "pinyin": "yue1 han4 ni2 si1 bao3",
+        "en": "Johannesburg",
+        "zh": "約翰尼斯堡 / 约翰尼斯堡"
+    },
+    {
+        "trad": "比勒陀利亞",
+        "simp": "比勒陀利亚",
+        "jyutping": "bei2 lak6 to4 lei6 aa3",
+        "pinyin": "bi3 lei1 tuo2 li4 ya3",
+        "en": "Pretoria",
+        "zh": "比勒陀利亞 / 比勒陀利亚"
+    },
+    {
+        "trad": "墨西哥城",
+        "simp": "墨西哥城",
+        "jyutping": "mak6 sai1 go1 sing4",
+        "pinyin": "mo4 xi1 ge1 cheng2",
+        "en": "Mexico City",
+        "zh": "墨西哥城 / 墨西哥城"
+    },
+    {
+        "trad": "瓜達拉哈拉",
+        "simp": "瓜达拉哈拉",
+        "jyutping": "gwaa1 daat6 laai1 haa1 laai1",
+        "pinyin": "gua1 da2 la1 ha1 la1",
+        "en": "Guadalajara",
+        "zh": "瓜達拉哈拉 / 瓜达拉哈拉"
+    },
+    {
+        "trad": "聖多明哥",
+        "simp": "圣多明各",
+        "jyutping": "sing3 do1 ming4 go1",
+        "pinyin": "sheng4 duo1 ming2 ge4",
+        "en": "Santo Domingo",
+        "zh": "聖多明哥 / 圣多明各"
+    },
+    {
+        "trad": "加拉加斯",
+        "simp": "加拉加斯",
+        "jyutping": "gaa1 laai1 gaa1 si1",
+        "pinyin": "jia1 la1 jia1 si1",
+        "en": "Caracas",
+        "zh": "加拉加斯 / 加拉加斯"
+    },
+    {
+        "trad": "瓜亞基爾",
+        "simp": "瓜亚基尔",
+        "jyutping": "gwaa1 aa3 gei1 ji5",
+        "pinyin": "gua1 ya3 ji1 er3",
+        "en": "Guayaquil",
+        "zh": "瓜亞基爾 / 瓜亚基尔"
+    },
+    {
+        "trad": "布宜諾斯艾利斯",
+        "simp": "布宜诺斯艾利斯",
+        "jyutping": "bou3 ji4 lok6 si1 ngaai6 lei6 si1",
+        "pinyin": "bu4 yi2 nuo4 si1 ai4 li4 si1",
+        "en": "Buenos Aires",
+        "zh": "布宜諾斯艾利斯 / 布宜诺斯艾利斯"
+    },
+    {
+        "trad": "科爾多瓦",
+        "simp": "科尔多瓦",
+        "jyutping": "fo1 ji5 do1 ngaa5",
+        "pinyin": "ke1 er3 duo1 wa3",
+        "en": "Cordoba",
+        "zh": "科爾多瓦 / 科尔多瓦"
+    },
+    {
+        "trad": "蒙特維多",
+        "simp": "蒙得维的亚",
+        "jyutping": "mung4 dak1 wai4 do1",
+        "pinyin": "meng2 de2 wei2 de5 ya3",
+        "en": "Montevideo",
+        "zh": "蒙特維多 / 蒙得维的亚"
+    },
+    {
+        "trad": "里約熱內盧",
+        "simp": "里约热内卢",
+        "jyutping": "lei5 joek3 jit6 noi6 lou4",
+        "pinyin": "li3 yue1 re4 nei4 lu2",
+        "en": "Rio de Janeiro",
+        "zh": "里約熱內盧 / 里约热内卢"
+    },
+    {
+        "trad": "巴西利亞",
+        "simp": "巴西利亚",
+        "jyutping": "baa1 sai1 lei6 aa3",
+        "pinyin": "ba1 xi1 li4 ya3",
+        "en": "Brasilia",
+        "zh": "巴西利亞 / 巴西利亚"
+    },
+    {
+        "trad": "薩爾瓦多",
+        "simp": "萨尔瓦多",
+        "jyutping": "saat3 ji5 ngaa5 do1",
+        "pinyin": "sa4 er3 wa3 duo1",
+        "en": "Salvador",
+        "zh": "薩爾瓦多 / 萨尔瓦多"
+    },
+    {
+        "trad": "哈爾濱",
+        "simp": "哈尔滨",
+        "jyutping": "haa1 ji5 ban1",
+        "pinyin": "ha1 er3 bin1",
+        "en": "Harbin",
+        "zh": "哈爾濱 / 哈尔滨"
+    },
+    {
+        "trad": "石家莊",
+        "simp": "石家庄",
+        "jyutping": "sek6 gaa1 zong1",
+        "pinyin": "shi2 jia1 zhuang1",
+        "en": "Shijiazhuang",
+        "zh": "石家莊 / 石家庄"
+    },
+    {
+        "trad": "呼和浩特",
+        "simp": "呼和浩特",
+        "jyutping": "fu1 wo4 hou6 dak1",
+        "pinyin": "hu1 he2 hao4 te4",
+        "en": "Hohhot",
+        "zh": "呼和浩特 / 呼和浩特"
+    },
+    {
+        "trad": "烏魯木齊",
+        "simp": "乌鲁木齐",
+        "jyutping": "wu1 lou5 muk6 cai4",
+        "pinyin": "wu1 lu3 mu4 qi2",
+        "en": "Urumqi",
+        "zh": "烏魯木齊 / 乌鲁木齐"
+    },
+    {
+        "trad": "海牙",
+        "simp": "海牙",
+        "jyutping": "hoi2 ngaa4",
+        "pinyin": "hai3 ya2",
+        "en": "The Hague",
+        "zh": "海牙 / 海牙"
+    },
+    {
+        "trad": "鹿特丹",
+        "simp": "鹿特丹",
+        "jyutping": "luk6 dak1 daan1",
+        "pinyin": "lu4 te4 dan1",
+        "en": "Rotterdam",
+        "zh": "鹿特丹 / 鹿特丹"
+    },
+    {
+        "trad": "安特衛普",
+        "simp": "安特卫普",
+        "jyutping": "on1 dak1 wai6 pou2",
+        "pinyin": "an1 te4 wei4 pu3",
+        "en": "Antwerp",
+        "zh": "安特衛普 / 安特卫普"
+    },
+    {
+        "trad": "日內瓦",
+        "simp": "日内瓦",
+        "jyutping": "jat6 noi6 ngaa5",
+        "pinyin": "ri4 nei4 wa3",
+        "en": "Geneva",
+        "zh": "日內瓦 / 日内瓦"
+    },
+    {
+        "trad": "蘇黎世",
+        "simp": "苏黎世",
+        "jyutping": "sou1 lai4 sai3",
+        "pinyin": "su1 li2 shi4",
+        "en": "Zurich",
+        "zh": "蘇黎世 / 苏黎世"
+    },
+    {
+        "trad": "伯爾尼",
+        "simp": "伯尔尼",
+        "jyutping": "baak3 ji5 nei4",
+        "pinyin": "bo2 er3 ni2",
+        "en": "Bern",
+        "zh": "伯爾尼 / 伯尔尼"
+    },
+    {
+        "trad": "薩爾茨堡",
+        "simp": "萨尔茨堡",
+        "jyutping": "saat3 ji5 ci1 bou2",
+        "pinyin": "sa4 er3 ci2 bao3",
+        "en": "Salzburg",
+        "zh": "薩爾茨堡 / 萨尔茨堡"
+    },
+    {
+        "trad": "因斯布魯克",
+        "simp": "因斯布鲁克",
+        "jyutping": "jan1 si1 bou3 lou1 hak1",
+        "pinyin": "yin1 si1 bu4 luo3 ke4",
+        "en": "Innsbruck",
+        "zh": "因斯布魯克 / 因斯布鲁克"
+    },
+    {
+        "trad": "格拉茨",
+        "simp": "格拉茨",
+        "jyutping": "gaak3 laai1 ci1",
+        "pinyin": "ge2 la1 ci2",
+        "en": "Graz",
+        "zh": "格拉茨 / 格拉茨"
+    },
+    {
+        "trad": "克拉科夫",
+        "simp": "克拉科夫",
+        "jyutping": "hak1 laai1 fo1 fu1",
+        "pinyin": "ke4 la1 ke1 fu1",
+        "en": "Krakow",
+        "zh": "克拉科夫 / 克拉科夫"
+    },
+    {
+        "trad": "格丹斯克",
+        "simp": "格旦斯克",
+        "jyutping": "gaak3 daan1 si1 hak1",
+        "pinyin": "ge2 dan1 si1 ke4",
+        "en": "Gdansk",
+        "zh": "格丹斯克 / 格旦斯克"
+    },
+    {
+        "trad": "弗羅茨瓦夫",
+        "simp": "弗罗茨瓦夫",
+        "jyutping": "fat1 lo4 ci1 ngaa5 fu1",
+        "pinyin": "fu2 luo2 ci2 wa3 fu1",
+        "en": "Wroclaw",
+        "zh": "弗羅茨瓦夫 / 弗罗茨瓦夫"
+    },
+    {
+        "trad": "波茲南",
+        "simp": "波兹南",
+        "jyutping": "bo1 zi1 naam4",
+        "pinyin": "bo1 zi1 nan2",
+        "en": "Poznan",
+        "zh": "波茲南 / 波兹南"
+    },
+    {
+        "trad": "布拉提斯拉瓦",
+        "simp": "布拉迪斯拉发",
+        "jyutping": "bou3 laai1 tai4 si1 laai1 ngaa5",
+        "pinyin": "bu4 la1 di2 si1 la1 fa1",
+        "en": "Bratislava",
+        "zh": "布拉提斯拉瓦 / 布拉迪斯拉发"
+    },
+    {
+        "trad": "盧布爾雅那",
+        "simp": "卢布尔雅那",
+        "jyutping": "lou4 bou3 ji5 ngaa5 naa1",
+        "pinyin": "lu2 bu4 er3 ya3 na4",
+        "en": "Ljubljana",
+        "zh": "盧布爾雅那 / 卢布尔雅那"
+    },
+    {
+        "trad": "杜布羅夫尼克",
+        "simp": "杜布罗夫尼克",
+        "jyutping": "dou6 bou3 lo4 fu1 nei4 hak1",
+        "pinyin": "du4 bu4 luo2 fu1 ni2 ke4",
+        "en": "Dubrovnik",
+        "zh": "杜布羅夫尼克 / 杜布罗夫尼克"
+    },
+    {
+        "trad": "斯普利特",
+        "simp": "斯普利特",
+        "jyutping": "si1 pou3 lei6 dak1",
+        "pinyin": "si1 pu3 li4 te4",
+        "en": "Split",
+        "zh": "斯普利特 / 斯普利特"
+    },
+    {
+        "trad": "薩拉熱窩",
+        "simp": "萨拉热窝",
+        "jyutping": "saat3 laai1 jit6 wo1",
+        "pinyin": "sa4 la1 re4 wo1",
+        "en": "Sarajevo",
+        "zh": "薩拉熱窩 / 萨拉热窝"
+    },
+    {
+        "trad": "波德戈里察",
+        "simp": "波德戈里察",
+        "jyutping": "bo1 dak1 go1 lei5 caat3",
+        "pinyin": "bo1 de2 ge1 li3 cha2",
+        "en": "Podgorica",
+        "zh": "波德戈里察 / 波德戈里察"
+    },
+    {
+        "trad": "普里什蒂納",
+        "simp": "普里什蒂纳",
+        "jyutping": "pou3 lei5 sap6 dai3 naa1",
+        "pinyin": "pu3 li3 shi2 di4 na4",
+        "en": "Pristina",
+        "zh": "普里什蒂納 / 普里什蒂纳"
+    },
+    {
+        "trad": "基希訥烏",
+        "simp": "基希讷乌",
+        "jyutping": "gei1 hei1 naap6 wu1",
+        "pinyin": "ji1 xi1 ne4 wu1",
+        "en": "Chisinau",
+        "zh": "基希訥烏 / 基希讷乌"
+    },
+    {
+        "trad": "明斯克",
+        "simp": "明斯克",
+        "jyutping": "ming4 si1 hak1",
+        "pinyin": "ming2 si1 ke4",
+        "en": "Minsk",
+        "zh": "明斯克 / 明斯克"
+    },
+    {
+        "trad": "塔林",
+        "simp": "塔林",
+        "jyutping": "taap3 lam4",
+        "pinyin": "ta3 lin2",
+        "en": "Tallinn",
+        "zh": "塔林 / 塔林"
+    },
+    {
+        "trad": "里加",
+        "simp": "里加",
+        "jyutping": "lei5 gaa1",
+        "pinyin": "li3 jia1",
+        "en": "Riga",
+        "zh": "里加 / 里加"
+    },
+    {
+        "trad": "維爾紐斯",
+        "simp": "维尔纽斯",
+        "jyutping": "wai4 ji5 nau2 si1",
+        "pinyin": "wei2 er3 niu3 si1",
+        "en": "Vilnius",
+        "zh": "維爾紐斯 / 维尔纽斯"
+    },
+    {
+        "trad": "聖彼得堡",
+        "simp": "圣彼得堡",
+        "jyutping": "sing3 bei2 dak1 bou2",
+        "pinyin": "sheng4 bi3 de2 bao3",
+        "en": "Saint Petersburg",
+        "zh": "聖彼得堡 / 圣彼得堡"
+    },
+    {
+        "trad": "新西伯利亞",
+        "simp": "新西伯利亚",
+        "jyutping": "san1 sai1 baak3 lei6 aa3",
+        "pinyin": "xin1 xi1 bo2 li4 ya3",
+        "en": "Novosibirsk",
+        "zh": "新西伯利亞 / 新西伯利亚"
+    },
+    {
+        "trad": "葉卡捷琳堡",
+        "simp": "叶卡捷琳堡",
+        "jyutping": "jip6 kaa1 zit6 lam4 bou2",
+        "pinyin": "ye4 ka3 jie2 lin2 bao3",
+        "en": "Yekaterinburg",
+        "zh": "葉卡捷琳堡 / 叶卡捷琳堡"
+    },
+    {
+        "trad": "喀山",
+        "simp": "喀山",
+        "jyutping": "haak3 saan1",
+        "pinyin": "ka1 shan1",
+        "en": "Kazan",
+        "zh": "喀山 / 喀山"
+    },
+    {
+        "trad": "下諾夫哥羅德",
+        "simp": "下诺夫哥罗德",
+        "jyutping": "haa6 lok6 fu1 go1 lo4 dak1",
+        "pinyin": "xia4 nuo4 fu1 ge1 luo2 de2",
+        "en": "Nizhny Novgorod",
+        "zh": "下諾夫哥羅德 / 下诺夫哥罗德"
+    },
+    {
+        "trad": "車里雅賓斯克",
+        "simp": "车里雅宾斯克",
+        "jyutping": "gei1 lei5 ngaa5 ban1 si1 hak1",
+        "pinyin": "che1 li3 ya3 bin1 si1 ke4",
+        "en": "Chelyabinsk",
+        "zh": "車里雅賓斯克 / 车里雅宾斯克"
+    },
+    {
+        "trad": "薩馬拉",
+        "simp": "萨马拉",
+        "jyutping": "saat3 maa5 laai1",
+        "pinyin": "sa4 ma3 la1",
+        "en": "Samara",
+        "zh": "薩馬拉 / 萨马拉"
+    },
+    {
+        "trad": "鄂木斯克",
+        "simp": "鄂木斯克",
+        "jyutping": "ngok6 muk6 si1 hak1",
+        "pinyin": "e4 mu3 si1 ke4",
+        "en": "Omsk",
+        "zh": "鄂木斯克 / 鄂木斯克"
+    },
+    {
+        "trad": "頓河畔羅斯托夫",
+        "simp": "顿河畔罗斯托夫",
+        "jyutping": "deun1 ho4 bun6 lo4 si1 tok3 fu1",
+        "pinyin": "dun4 he2 pan4 luo2 si1 tuo1 fu1",
+        "en": "Rostov-on-Don",
+        "zh": "頓河畔羅斯托夫 / 顿河畔罗斯托夫"
+    },
+    {
+        "trad": "烏法",
+        "simp": "乌法",
+        "jyutping": "wu1 faat3",
+        "pinyin": "wu1 fa3",
+        "en": "Ufa",
+        "zh": "烏法 / 乌法"
+    },
+    {
+        "trad": "克拉斯諾亞爾斯克",
+        "simp": "克拉斯诺亚尔斯克",
+        "jyutping": "hak1 laai1 si1 lok6 aa3 ji5 si1 hak1",
+        "pinyin": "ke4 la1 si1 nuo4 ya3 er3 si1 ke4",
+        "en": "Krasnoyarsk",
+        "zh": "克拉斯諾亞爾斯克 / 克拉斯诺亚尔斯克"
+    },
+    {
+        "trad": "沃羅涅日",
+        "simp": "沃罗涅日",
+        "jyutping": "ak1 lo4 nip6 jat6",
+        "pinyin": "wo4 luo2 nie4 ri4",
+        "en": "Voronezh",
+        "zh": "沃羅涅日 / 沃罗涅日"
+    },
+    {
+        "trad": "彼爾姆",
+        "simp": "彼尔姆",
+        "jyutping": "bei2 ji5 moi4",
+        "pinyin": "bi3 er3 mu3",
+        "en": "Perm",
+        "zh": "彼爾姆 / 彼尔姆"
+    },
+    {
+        "trad": "伏爾加格勒",
+        "simp": "伏尔加格勒",
+        "jyutping": "fuk6 ji5 gaa1 gaak3 lak6",
+        "pinyin": "fu2 er3 jia1 ge2 lei1",
+        "en": "Volgograd",
+        "zh": "伏爾加格勒 / 伏尔加格勒"
+    },
+    {
+        "trad": "薩拉托夫",
+        "simp": "萨拉托夫",
+        "jyutping": "saat3 maa5 tok3 fu1",
+        "pinyin": "sa4 la1 tuo1 fu1",
+        "en": "Saratov",
+        "zh": "薩拉托夫 / 萨拉托夫"
+    },
+    {
+        "trad": "海參崴",
+        "simp": "符拉迪沃斯托克",
+        "jyutping": "hoi2 sam1 waai2",
+        "pinyin": "fu2 la1 di2 wo4 si1 tuo1 ke4",
+        "en": "Vladivostok",
+        "zh": "海參崴 / 符拉迪沃斯托克"
+    },
+    {
+        "trad": "伊爾庫茨克",
+        "simp": "伊尔库茨克",
+        "jyutping": "yi1 ji5 fu3 ci1 hak1",
+        "pinyin": "yi1 er3 ku4 ci2 ke4",
+        "en": "Irkutsk",
+        "zh": "伊爾庫茨克 / 伊尔库茨克"
+    },
+    {
+        "trad": "敖德薩",
+        "simp": "敖德萨",
+        "jyutping": "ngou4 dak1 saat3",
+        "pinyin": "ao2 de2 sa4",
+        "en": "Odesa",
+        "zh": "敖德薩 / 敖德萨"
+    },
+    {
+        "trad": "哈爾科夫",
+        "simp": "哈尔科夫",
+        "jyutping": "haa1 ji5 fo1 fu1",
+        "pinyin": "ha1 er3 ke1 fu1",
+        "en": "Kharkiv",
+        "zh": "哈爾科夫 / 哈尔科夫"
+    },
+    {
+        "trad": "利沃夫",
+        "simp": "利沃夫",
+        "jyutping": "lei6 ak1 fu1",
+        "pinyin": "li4 wo4 fu1",
+        "en": "Lviv",
+        "zh": "利沃夫 / 利沃夫"
+    },
+    {
+        "trad": "第聶伯羅",
+        "simp": "第聂伯罗",
+        "jyutping": "dai6 nip6 baak3 lo4",
+        "pinyin": "di4 nie4 bo2 luo2",
+        "en": "Dnipro",
+        "zh": "第聶伯羅 / 第聂伯罗"
+    },
+    {
+        "trad": "第比利斯",
+        "simp": "第比利斯",
+        "jyutping": "dai6 bei2 lei5 si1",
+        "pinyin": "di4 bi3 li3 si1",
+        "en": "Tbilisi",
+        "zh": "第比利斯 / 第比利斯"
+    },
+    {
+        "trad": "埃里溫",
+        "simp": "埃里温",
+        "jyutping": "oi1 lei5 wan1",
+        "pinyin": "ai1 li3 wen1",
+        "en": "Yerevan",
+        "zh": "埃里溫 / 埃里温"
+    },
+    {
+        "trad": "巴庫",
+        "simp": "巴库",
+        "jyutping": "baa1 fu3",
+        "pinyin": "ba1 ku1",
+        "en": "Baku",
+        "zh": "巴庫 / 巴库"
+    },
+    {
+        "trad": "阿斯塔納",
+        "simp": "阿斯塔纳",
+        "jyutping": "aa3 si1 taap3 naa1",
+        "pinyin": "a1 si1 ta3 na4",
+        "en": "Astana",
+        "zh": "阿斯塔納 / 阿斯塔纳"
+    },
+    {
+        "trad": "阿拉木圖",
+        "simp": "阿拉木图",
+        "jyutping": "aa3 laai1 muk6 tou4",
+        "pinyin": "a1 la1 mu3 tu2",
+        "en": "Almaty",
+        "zh": "阿拉木圖 / 阿拉木图"
+    },
+    {
+        "trad": "塔什干",
+        "simp": "塔什干",
+        "jyutping": "taap3 sap6 gon1",
+        "pinyin": "ta3 shi2 gan1",
+        "en": "Tashkent",
+        "zh": "塔什干 / 塔什干"
+    },
+    {
+        "trad": "撒馬爾罕",
+        "simp": "撒马尔罕",
+        "jyutping": "saat3 maa5 ji5 hon2",
+        "pinyin": "sa3 ma3 er3 han3",
+        "en": "Samarkand",
+        "zh": "撒馬爾罕 / 撒马尔罕"
+    },
+    {
+        "trad": "比什凱克",
+        "simp": "比什凯克",
+        "jyutping": "bei2 sap6 hoi2 hak1",
+        "pinyin": "bi3 shi2 kai3 ke4",
+        "en": "Bishkek",
+        "zh": "比什凱克 / 比什凯克"
+    },
+    {
+        "trad": "杜尚別",
+        "simp": "杜尚别",
+        "jyutping": "dou6 seung6 bit6",
+        "pinyin": "du4 shang4 bie2",
+        "en": "Dushanbe",
+        "zh": "杜尚別 / 杜尚别"
+    },
+    {
+        "trad": "阿什哈巴德",
+        "simp": "阿什哈巴德",
+        "jyutping": "aa3 sap6 haa1 baa1 dak1",
+        "pinyin": "a1 shi2 ha1 ba1 de2",
+        "en": "Ashgabat",
+        "zh": "阿什哈巴德 / 阿什哈巴德"
+    },
+    {
+        "trad": "烏蘭巴托",
+        "simp": "乌兰巴托",
+        "jyutping": "wu1 laan4 baa1 tok3",
+        "pinyin": "wu1 lan2 ba1 tuo1",
+        "en": "Ulaanbaatar",
+        "zh": "烏蘭巴托 / 乌兰巴托"
+    },
+    {
+        "trad": "加德滿都",
+        "simp": "加德满都",
+        "jyutping": "gaa1 dak1 mun5 dou1",
+        "pinyin": "jia1 de2 man3 dou1",
+        "en": "Kathmandu",
+        "zh": "加德滿都 / 加德满都"
+    },
+    {
+        "trad": "廷布",
+        "simp": "廷布",
+        "jyutping": "ting4 bou3",
+        "pinyin": "ting2 bu4",
+        "en": "Thimphu",
+        "zh": "廷布 / 廷布"
+    },
+    {
+        "trad": "馬爾代夫馬累",
+        "simp": "马累",
+        "jyutping": "maa5 leui4",
+        "pinyin": "ma3 lei2",
+        "en": "Male",
+        "zh": "馬累 / 马累"
+    },
+    {
+        "trad": "內比都",
+        "simp": "内比都",
+        "jyutping": "noi6 bei2 dou1",
+        "pinyin": "nei4 bi3 dou1",
+        "en": "Naypyidaw",
+        "zh": "內比都 / 内比都"
+    },
+    {
+        "trad": "瑯勃拉邦",
+        "simp": "琅勃拉邦",
+        "jyutping": "long4 buk6 laai1 bong1",
+        "pinyin": "lang2 bo2 la1 bang1",
+        "en": "Luang Prabang",
+        "zh": "瑯勃拉邦 / 琅勃拉邦"
+    },
+    {
+        "trad": "胡志明市",
+        "simp": "胡志明市",
+        "jyutping": "wu4 zi3 ming4 si5",
+        "pinyin": "hu2 zhi4 ming2 shi4",
+        "en": "Ho Chi Minh City",
+        "zh": "胡志明市 / 胡志明市"
+    },
+    {
+        "trad": "芽莊",
+        "simp": "芽庄",
+        "jyutping": "ngaa4 zong1",
+        "pinyin": "ya2 zhuang1",
+        "en": "Nha Trang",
+        "zh": "芽莊 / 芽庄"
+    },
+    {
+        "trad": "順化",
+        "simp": "顺化",
+        "jyutping": "seun6 faa3",
+        "pinyin": "shun4 hua4",
+        "en": "Hue",
+        "zh": "順化 / 顺化"
+    },
+    {
+        "trad": "會安",
+        "simp": "会安",
+        "jyutping": "wui6 on1",
+        "pinyin": "hui4 an1",
+        "en": "Hoi An",
+        "zh": "會安 / 会安"
+    },
+    {
+        "trad": "檳城",
+        "simp": "槟城",
+        "jyutping": "ban1 sing4",
+        "pinyin": "bin1 cheng2",
+        "en": "Penang",
+        "zh": "檳城 / 槟城"
+    },
+    {
+        "trad": "馬六甲",
+        "simp": "马六甲",
+        "jyutping": "maa5 luk6 gaap3",
+        "pinyin": "ma3 liu4 jia3",
+        "en": "Malacca",
+        "zh": "馬六甲 / 马六甲"
+    },
+    {
+        "trad": "新山",
+        "simp": "新山",
+        "jyutping": "san1 saan1",
+        "pinyin": "xin1 shan1",
+        "en": "Johor Bahru",
+        "zh": "新山 / 新山"
+    },
+    {
+        "trad": "古晉",
+        "simp": "古晋",
+        "jyutping": "gu2 zeun3",
+        "pinyin": "gu3 jin3",
+        "en": "Kuching",
+        "zh": "古晉 / 古晋"
+    },
+    {
+        "trad": "亞庇",
+        "simp": "亚庇",
+        "jyutping": "aa3 bai3",
+        "pinyin": "ya4 bi4",
+        "en": "Kota Kinabalu",
+        "zh": "亞庇 / 亚庇"
+    },
+    {
+        "trad": "斯里巴加灣",
+        "simp": "斯里巴加湾",
+        "jyutping": "si1 lei5 baa1 gaa1 waan1",
+        "pinyin": "si1 li3 ba1 jia1 wan1",
+        "en": "Bandar Seri Begawan",
+        "zh": "斯里巴加灣 / 斯里巴加湾"
+    },
+    {
+        "trad": "日惹",
+        "simp": "日惹",
+        "jyutping": "jat6 je5",
+        "pinyin": "ri4 re3",
+        "en": "Yogyakarta",
+        "zh": "日惹 / 日惹"
+    },
+    {
+        "trad": "棉蘭",
+        "simp": "棉兰",
+        "jyutping": "min4 laan4",
+        "pinyin": "mian2 lan2",
+        "en": "Medan",
+        "zh": "棉蘭 / 棉兰"
+    },
+    {
+        "trad": "望加錫",
+        "simp": "望加锡",
+        "jyutping": "mong6 gaa1 sik1",
+        "pinyin": "wang4 jia1 xi1",
+        "en": "Makassar",
+        "zh": "望加錫 / 望加锡"
+    },
+    {
+        "trad": "達沃",
+        "simp": "达沃",
+        "jyutping": "daat6 ak1",
+        "pinyin": "da2 wo4",
+        "en": "Davao",
+        "zh": "達沃 / 达沃"
+    },
+    {
+        "trad": "奎松市",
+        "simp": "奎松市",
+        "jyutping": "fui1 zung1 si5",
+        "pinyin": "kui1 song1 shi4",
+        "en": "Quezon City",
+        "zh": "奎松市 / 奎松市"
+    },
+    {
+        "trad": "碧瑤",
+        "simp": "碧瑶",
+        "jyutping": "bik1 jiu4",
+        "pinyin": "bi4 yao2",
+        "en": "Baguio",
+        "zh": "碧瑤 / 碧瑶"
+    },
+    {
+        "trad": "墨爾本",
+        "simp": "墨尔本",
+        "jyutping": "mak6 ji5 bun2",
+        "pinyin": "mo4 er3 ben3",
+        "en": "Melbourne",
+        "zh": "墨爾本 / 墨尔本"
+    },
+    {
+        "trad": "堪培拉",
+        "simp": "堪培拉",
+        "jyutping": "ham1 pui4 laai1",
+        "pinyin": "kan1 pei2 la1",
+        "en": "Canberra",
+        "zh": "堪培拉 / 堪培拉"
+    },
+    {
+        "trad": "奧克蘭",
+        "simp": "奥克兰",
+        "jyutping": "ou3 hak1 laan4",
+        "pinyin": "ao4 ke4 lan2",
+        "en": "Auckland",
+        "zh": "奧克蘭 / 奥克兰"
+    },
+    {
+        "trad": "威靈頓",
+        "simp": "惠灵顿",
+        "jyutping": "wai1 ling4 deun1",
+        "pinyin": "hui4 ling2 dun1",
+        "en": "Wellington",
+        "zh": "威靈頓 / 惠灵顿"
+    },
+    {
+        "trad": "基督城",
+        "simp": "基督城",
+        "jyutping": "gei1 duk1 sing4",
+        "pinyin": "ji1 du1 cheng2",
+        "en": "Christchurch",
+        "zh": "基督城 / 基督城"
+    },
+    {
+        "trad": "皇后鎮",
+        "simp": "皇后镇",
+        "jyutping": "wong4 hau6 zan3",
+        "pinyin": "huang2 hou4 zhen1",
+        "en": "Queenstown",
+        "zh": "皇后鎮 / 皇后镇"
+    },
+    {
+        "trad": "莫爾斯比港",
+        "simp": "莫尔斯比港",
+        "jyutping": "mok6 ji5 si1 bei2 gong2",
+        "pinyin": "mo4 er3 si1 bi3 gang3",
+        "en": "Port Moresby",
+        "zh": "莫爾斯比港 / 莫尔斯比港"
+    },
+    {
+        "trad": "蘇瓦",
+        "simp": "苏瓦",
+        "jyutping": "sou1 ngaa5",
+        "pinyin": "su1 wa3",
+        "en": "Suva",
+        "zh": "蘇瓦 / 苏瓦"
+    },
+    {
+        "trad": "阿皮亞",
+        "simp": "阿皮亚",
+        "jyutping": "aa3 pei4 aa3",
+        "pinyin": "a1 pi2 ya3",
+        "en": "Apia",
+        "zh": "阿皮亞 / 阿皮亚"
+    },
+    {
+        "trad": "努庫阿洛法",
+        "simp": "努库阿洛法",
+        "jyutping": "nou4 fu3 aa3 lo3 faat3",
+        "pinyin": "nu3 ku4 a1 luo2 fa3",
+        "en": "Nuku'alofa",
+        "zh": "努庫阿洛法 / 努库阿洛法"
+    },
+    {
+        "trad": "渥太華",
+        "simp": "渥太华",
+        "jyutping": "ak1 taai3 waa4",
+        "pinyin": "wo4 tai4 hua2",
+        "en": "Ottawa",
+        "zh": "渥太華 / 渥太华"
+    },
+    {
+        "trad": "溫尼伯",
+        "simp": "温尼伯",
+        "jyutping": "wan1 nei4 paak3",
+        "pinyin": "wen1 ni2 bo2",
+        "en": "Winnipeg",
+        "zh": "溫尼伯 / 温尼伯"
+    },
+    {
+        "trad": "哈利法克斯",
+        "simp": "哈利法克斯",
+        "jyutping": "haa1 lei6 faat3 hak1 si1",
+        "pinyin": "ha1 li4 fa3 ke4 si1",
+        "en": "Halifax",
+        "zh": "哈利法克斯 / 哈利法克斯"
+    },
+    {
+        "trad": "維多利亞",
+        "simp": "维多利亚",
+        "jyutping": "wai4 do1 lei6 aa3",
+        "pinyin": "wei2 duo1 li4 ya3",
+        "en": "Victoria",
+        "zh": "維多利亞 / 维多利亚"
+    },
+    {
+        "trad": "基隆拿",
+        "simp": "基洛纳",
+        "jyutping": "gei1 lung4 naa1",
+        "pinyin": "ji1 luo2 na4",
+        "en": "Kelowna",
+        "zh": "基隆拿 / 基洛纳"
+    },
+    {
+        "trad": "薩斯卡通",
+        "simp": "萨斯卡通",
+        "jyutping": "saat3 si1 kaa1 tung1",
+        "pinyin": "sa4 si1 ka3 tong1",
+        "en": "Saskatoon",
+        "zh": "薩斯卡通 / 萨斯卡通"
+    },
+    {
+        "trad": "里賈納",
+        "simp": "里贾纳",
+        "jyutping": "lei5 gaa2 naa1",
+        "pinyin": "li3 jia3 na4",
+        "en": "Regina",
+        "zh": "里賈納 / 里贾纳"
+    },
+    {
+        "trad": "哈密爾頓",
+        "simp": "哈密尔顿",
+        "jyutping": "haa1 mat6 ji5 deun1",
+        "pinyin": "ha1 mi4 er3 dun1",
+        "en": "Hamilton",
+        "zh": "哈密爾頓 / 哈密尔顿"
+    },
+    {
+        "trad": "倫敦",
+        "simp": "伦敦",
+        "jyutping": "leon4 deon1",
+        "pinyin": "lun2 dun1",
+        "en": "London (Ontario)",
+        "zh": "倫敦 / 伦敦"
+    },
+    {
+        "trad": "基奇納",
+        "simp": "基奇纳",
+        "jyutping": "gei1 kei4 naap6",
+        "pinyin": "ji1 qi2 na4",
+        "en": "Kitchener",
+        "zh": "基奇納 / 基奇纳"
+    },
+    {
+        "trad": "溫莎",
+        "simp": "温莎",
+        "jyutping": "wan1 so1",
+        "pinyin": "wen1 sha1",
+        "en": "Windsor",
+        "zh": "溫莎 / 温莎"
+    },
+    {
+        "trad": "金斯頓",
+        "simp": "金斯敦",
+        "jyutping": "gam1 si1 deun1",
+        "pinyin": "jin1 si1 dun1",
+        "en": "Kingston",
+        "zh": "金斯頓 / 金斯敦"
+    },
+    {
+        "trad": "查洛城",
+        "simp": "夏洛特敦",
+        "jyutping": "caa4 lok6 sing4",
+        "pinyin": "xia4 luo4 te4 dun1",
+        "en": "Charlottetown",
+        "zh": "查洛城 / 夏洛特敦"
+    },
+    {
+        "trad": "聖約翰斯",
+        "simp": "圣约翰斯",
+        "jyutping": "sing3 joek3 hon3 si1",
+        "pinyin": "sheng4 yue1 han4 si1",
+        "en": "St. John's",
+        "zh": "聖約翰斯 / 圣约翰斯"
+    },
+    {
+        "trad": "黃刀鎮",
+        "simp": "黄刀镇",
+        "jyutping": "wong4 dou1 zan3",
+        "pinyin": "huang2 dao1 zhen1",
+        "en": "Yellowknife",
+        "zh": "黃刀鎮 / 黄刀镇"
+    },
+    {
+        "trad": "白馬市",
+        "simp": "白马市",
+        "jyutping": "baak3 maa5 si5",
+        "pinyin": "bai2 ma3 shi4",
+        "en": "Whitehorse",
+        "zh": "白馬市 / 白马市"
+    },
+    {
+        "trad": "安克雷奇",
+        "simp": "安克雷奇",
+        "jyutping": "on1 hak1 leui4 kei4",
+        "pinyin": "an1 ke4 lei2 qi2",
+        "en": "Anchorage",
+        "zh": "安克雷奇 / 安克雷奇"
+    },
+    {
+        "trad": "費爾班克斯",
+        "simp": "费尔班克斯",
+        "jyutping": "fai3 ji5 baan1 hak1 si1",
+        "pinyin": "fei4 er3 ban1 ke4 si1",
+        "en": "Fairbanks",
+        "zh": "費爾班克斯 / 费尔班克斯"
+    },
+    {
+        "trad": "朱諾",
+        "simp": "朱诺",
+        "jyutping": "zyu1 nok6",
+        "pinyin": "zhu1 nuo4",
+        "en": "Juneau",
+        "zh": "朱諾 / 朱诺"
+    },
+    {
+        "trad": "斯波坎",
+        "simp": "斯波坎",
+        "jyutping": "si1 bo1 hon1",
+        "pinyin": "si1 bo1 kan3",
+        "en": "Spokane",
+        "zh": "斯波坎 / 斯波坎"
+    },
+    {
+        "trad": "塔科馬",
+        "simp": "塔科马",
+        "jyutping": "taap3 fo1 maa5",
+        "pinyin": "ta3 ke1 ma3",
+        "en": "Tacoma",
+        "zh": "塔科馬 / 塔科马"
+    },
+    {
+        "trad": "博伊西",
+        "simp": "博伊西",
+        "jyutping": "bok3 ji1 sai1",
+        "pinyin": "bo2 yi1 xi1",
+        "en": "Boise",
+        "zh": "博伊西 / 博伊西"
+    },
+    {
+        "trad": "鹽湖城",
+        "simp": "盐湖城",
+        "jyutping": "jim4 wu4 sing4",
+        "pinyin": "yan2 hu2 cheng2",
+        "en": "Salt Lake City",
+        "zh": "鹽湖城 / 盐湖城"
+    },
+    {
+        "trad": "雷諾",
+        "simp": "雷诺",
+        "jyutping": "leoi4 nok6",
+        "pinyin": "lei2 nuo4",
+        "en": "Reno",
+        "zh": "雷諾 / 雷诺"
+    },
+    {
+        "trad": "阿靈頓",
+        "simp": "阿灵顿",
+        "jyutping": "aa3 ling4 deun1",
+        "pinyin": "a1 ling2 dun1",
+        "en": "Arlington",
+        "zh": "阿靈頓 / 阿灵顿"
+    },
+    {
+        "trad": "柯林斯堡",
+        "simp": "柯林斯堡",
+        "jyutping": "o1 lam4 si1 bou2",
+        "pinyin": "ke1 lin2 si1 bao3",
+        "en": "Fort Collins",
+        "zh": "柯林斯堡 / 柯林斯堡"
+    },
+    {
+        "trad": "塔爾薩",
+        "simp": "塔尔萨",
+        "jyutping": "taap3 ji5 saat3",
+        "pinyin": "ta3 er3 sa4",
+        "en": "Tulsa",
+        "zh": "塔爾薩 / 塔尔萨"
+    },
+    {
+        "trad": "奧克拉荷馬城",
+        "simp": "俄克拉荷马城",
+        "jyutping": "ou3 hak1 laai1 ho4 maa5 sing4",
+        "pinyin": "e2 ke4 la1 he2 ma3 cheng2",
+        "en": "Oklahoma City",
+        "zh": "奧克拉荷馬城 / 俄克拉荷马城"
+    },
+    {
+        "trad": "利特爾洛克",
+        "simp": "小石城",
+        "jyutping": "lei6 dak1 ji5 lok3",
+        "pinyin": "xiao3 shi2 cheng2",
+        "en": "Little Rock",
+        "zh": "利特爾洛克 / 小石城"
+    },
+    {
+        "trad": "巴吞魯日",
+        "simp": "巴吞鲁日",
+        "jyutping": "baa1 tan1 lou1 jat6",
+        "pinyin": "ba1 tun1 lu3 ri4",
+        "en": "Baton Rouge",
+        "zh": "巴吞魯日 / 巴吞鲁日"
+    },
+    {
+        "trad": "新奧爾良",
+        "simp": "新奥尔良",
+        "jyutping": "san1 ou3 ji5 leung4",
+        "pinyin": "xin1 ao4 er3 liang2",
+        "en": "New Orleans",
+        "zh": "新奧爾良 / 新奥尔良"
+    },
+    {
+        "trad": "伯明翰",
+        "simp": "伯明翰",
+        "jyutping": "baak3 ming4 hoi3",
+        "pinyin": "bo2 ming2 han4",
+        "en": "Birmingham (Alabama)",
+        "zh": "伯明翰 / 伯明翰"
+    },
+    {
+        "trad": "蒙哥馬利",
+        "simp": "蒙哥马利",
+        "jyutping": "mung4 go1 maa5 lei6",
+        "pinyin": "meng2 ge1 ma3 li4",
+        "en": "Montgomery",
+        "zh": "蒙哥馬利 / 蒙哥马利"
+    },
+    {
+        "trad": "查爾斯頓",
+        "simp": "查尔斯顿",
+        "jyutping": "caa4 ji5 si1 deun1",
+        "pinyin": "cha2 er3 si1 dun1",
+        "en": "Charleston",
+        "zh": "查爾斯頓 / 查尔斯顿"
+    },
+    {
+        "trad": "哥倫比亞",
+        "simp": "哥伦比亚",
+        "jyutping": "go1 leon4 bei2 aa3",
+        "pinyin": "ge1 lun2 bi3 ya3",
+        "en": "Columbia",
+        "zh": "哥倫比亞 / 哥伦比亚"
+    },
+    {
+        "trad": "夏洛特",
+        "simp": "夏洛特",
+        "jyutping": "haa6 lok6 dak1",
+        "pinyin": "xia4 luo4 te4",
+        "en": "Charlotte",
+        "zh": "夏洛特 / 夏洛特"
+    },
+    {
+        "trad": "里士滿",
+        "simp": "里士满",
+        "jyutping": "lei5 si6 mun5",
+        "pinyin": "li3 shi4 man3",
+        "en": "Richmond",
+        "zh": "里士滿 / 里士满"
+    },
+    {
+        "trad": "諾福克",
+        "simp": "诺福克",
+        "jyutping": "lok6 fuk1 hak1",
+        "pinyin": "nuo4 fu2 ke4",
+        "en": "Norfolk",
+        "zh": "諾福克 / 诺福克"
+    },
+    {
+        "trad": "匹茲堡",
+        "simp": "匹兹堡",
+        "jyutping": "pat1 zi1 bou2",
+        "pinyin": "pi3 zi1 bao3",
+        "en": "Pittsburgh",
+        "zh": "匹茲堡 / 匹兹堡"
+    },
+    {
+        "trad": "哈里斯堡",
+        "simp": "哈里斯堡",
+        "jyutping": "haa1 lei6 si1 bou2",
+        "pinyin": "ha1 li4 si1 bao3",
+        "en": "Harrisburg",
+        "zh": "哈里斯堡 / 哈里斯堡"
+    },
+    {
+        "trad": "水牛城",
+        "simp": "布法罗",
+        "jyutping": "seui2 ngau4 sing4",
+        "pinyin": "bu4 fa3 luo2",
+        "en": "Buffalo",
+        "zh": "水牛城 / 布法罗"
+    },
+    {
+        "trad": "羅徹斯特",
+        "simp": "罗彻斯特",
+        "jyutping": "lo4 cit3 si1 dak1",
+        "pinyin": "luo2 che4 si1 te4",
+        "en": "Rochester",
+        "zh": "羅徹斯特 / 罗彻斯特"
+    },
+    {
+        "trad": "雪城",
+        "simp": "雪城",
+        "jyutping": "syut3 sing4",
+        "pinyin": "xue3 cheng2",
+        "en": "Syracuse",
+        "zh": "雪城 / 雪城"
+    },
+    {
+        "trad": "奧爾巴尼",
+        "simp": "奥尔巴尼",
+        "jyutping": "ou3 ji5 baa1 nei4",
+        "pinyin": "ao4 er3 ba1 ni2",
+        "en": "Albany",
+        "zh": "奧爾巴尼 / 奥尔巴尼"
+    },
+    {
+        "trad": "哈特福德",
+        "simp": "哈特福德",
+        "jyutping": "haa1 dak1 fuk1 dak1",
+        "pinyin": "ha1 te4 fu2 de2",
+        "en": "Hartford",
+        "zh": "哈特福德 / 哈特福德"
+    },
+    {
+        "trad": "紐黑文",
+        "simp": "纽黑文",
+        "jyutping": "nau2 hak1 man4",
+        "pinyin": "niu3 hei1 wen2",
+        "en": "New Haven",
+        "zh": "紐黑文 / 纽黑文"
+    },
+    {
+        "trad": "普羅維登斯",
+        "simp": "普罗维登斯",
+        "jyutping": "pou3 lo4 wai4 dang1 si1",
+        "pinyin": "pu3 luo2 wei2 deng1 si1",
+        "en": "Providence",
+        "zh": "普羅維登斯 / 普罗维登斯"
+    },
+    {
+        "trad": "曼徹斯特",
+        "simp": "曼彻斯特",
+        "jyutping": "maan6 cit3 si1 dak1",
+        "pinyin": "man4 che4 si1 te4",
+        "en": "Manchester (NH)",
+        "zh": "曼徹斯特 / 曼彻斯特"
+    },
+    {
+        "trad": "伯靈頓",
+        "simp": "伯灵顿",
+        "jyutping": "baak3 ling4 deun1",
+        "pinyin": "bo2 ling2 dun1",
+        "en": "Burlington",
+        "zh": "伯靈頓 / 伯灵顿"
+    },
+    {
+        "trad": "波特蘭",
+        "simp": "波特兰",
+        "jyutping": "bo1 dak1 laan4",
+        "pinyin": "bo1 te4 lan2",
+        "en": "Portland (Maine)",
+        "zh": "波特蘭 / 波特兰"
+    }
+]

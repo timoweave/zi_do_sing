@@ -1,0 +1,802 @@
+[
+    {
+        "trad": "舊金山",
+        "simp": "旧金山",
+        "jyutping": "gau6 gam1 saan1",
+        "pinyin": "jiu4 jin1 shan1",
+        "en": "San Francisco, California",
+        "zh": "加利福尼亞州舊金山"
+    },
+    {
+        "trad": "屋崙",
+        "simp": "屋仑",
+        "jyutping": "uk1 leon4",
+        "pinyin": "wu1 lun2",
+        "en": "Oakland, California",
+        "zh": "加利福尼亞州屋崙"
+    },
+    {
+        "trad": "聖荷西",
+        "simp": "圣荷西",
+        "jyutping": "sing3 ho4 sai1",
+        "pinyin": "sheng4 he2 xi1",
+        "en": "San Jose, California",
+        "zh": "加利福尼亞州聖荷西"
+    },
+    {
+        "trad": "伯克利",
+        "simp": "伯克利",
+        "jyutping": "baak3 hak1 lei6",
+        "pinyin": "bo2 ke4 li4",
+        "en": "Berkeley, California",
+        "zh": "加利福尼亞州伯克利"
+    },
+    {
+        "trad": "費利蒙",
+        "simp": "费利蒙",
+        "jyutping": "fai3 lei6 mung4",
+        "pinyin": "fei4 li4 meng2",
+        "en": "Fremont, California",
+        "zh": "加利福尼亞州費利蒙"
+    },
+    {
+        "trad": "海沃德",
+        "simp": "海沃德",
+        "jyutping": "hoi2 wo6 dak1",
+        "pinyin": "hai3 wo4 de2",
+        "en": "Hayward, California",
+        "zh": "加利福尼亞州海沃德"
+    },
+    {
+        "trad": "桑尼維爾",
+        "simp": "桑尼维尔",
+        "jyutping": "song1 nei4 wai4",
+        "pinyin": "sang1 ni1 wei2 er3",
+        "en": "Sunnyvale, California",
+        "zh": "加利福尼亞州桑尼維爾"
+    },
+    {
+        "trad": "庫比蒂諾",
+        "simp": "库比蒂诺",
+        "jyutping": "fu3 bei2 dai3 nok6",
+        "pinyin": "ku4 bi3 di4 nuo4",
+        "en": "Cupertino, California",
+        "zh": "加利福尼亞州庫比蒂諾"
+    },
+    {
+        "trad": "帕羅奧圖",
+        "simp": "帕罗奥图",
+        "jyutping": "paak3 lo4 ou3 tou4",
+        "pinyin": "pa4 luo2 ao4 tu2",
+        "en": "Palo Alto, California",
+        "zh": "加利福尼亞州帕羅奧圖"
+    },
+    {
+        "trad": "門洛公園",
+        "simp": "门洛公园",
+        "jyutping": "mun4 lok6 gung1 jyun2",
+        "pinyin": "men2 luo4 gong1 yuan2",
+        "en": "Menlo Park, California",
+        "zh": "加利福尼亞州門洛公園"
+    },
+    {
+        "trad": "山景城",
+        "simp": "山景城",
+        "jyutping": "saan1 ging2 sing4",
+        "pinyin": "shan1 jing3 cheng2",
+        "en": "Mountain View, California",
+        "zh": "加利福尼亞州山景城"
+    },
+    {
+        "trad": "聖克拉拉",
+        "simp": "圣克拉拉",
+        "jyutping": "sing3 hak1 laai1 laai1",
+        "pinyin": "sheng4 ke4 la1 la1",
+        "en": "Santa Clara, California",
+        "zh": "加利福尼亞州聖克拉拉"
+    },
+    {
+        "trad": "聖馬刁",
+        "simp": "圣马刁",
+        "jyutping": "sing3 maa5 tiu1",
+        "pinyin": "sheng4 ma3 diao1",
+        "en": "San Mateo, California",
+        "zh": "加利福尼亞州聖馬刁"
+    },
+    {
+        "trad": "紅木城",
+        "simp": "红木城",
+        "jyutping": "hung4 muk6 sing4",
+        "pinyin": "hong2 mu4 cheng2",
+        "en": "Redwood City, California",
+        "zh": "加利福尼亞州紅木城"
+    },
+    {
+        "trad": "戴利城",
+        "simp": "戴利城",
+        "jyutping": "daai3 lei6 sing4",
+        "pinyin": "dai4 li4 cheng2",
+        "en": "Daly City, California",
+        "zh": "加利福尼亞州戴利城"
+    },
+    {
+        "trad": "南舊金山",
+        "simp": "南旧金山",
+        "jyutping": "naam4 gau6 gam1 saan1",
+        "pinyin": "nan2 jiu4 jin1 shan1",
+        "en": "South San Francisco, California",
+        "zh": "加利福尼亞州南舊金山"
+    },
+    {
+        "trad": "聖拉菲爾",
+        "simp": "圣拉菲尔",
+        "jyutping": "sing3 laai1 fai3 ji3",
+        "pinyin": "sheng4 la1 fei4 er3",
+        "en": "San Rafael, California",
+        "zh": "加利福尼亞州聖拉菲爾"
+    },
+    {
+        "trad": "納帕",
+        "simp": "纳帕",
+        "jyutping": "naap6 paa1",
+        "pinyin": "na4 pa4",
+        "en": "Napa, California",
+        "zh": "加利福尼亞州納帕"
+    },
+    {
+        "trad": "瓦列霍",
+        "simp": "瓦列霍",
+        "jyutping": "ngaa5 lit6 fok3",
+        "pinyin": "wa3 lie4 huo4",
+        "en": "Vallejo, California",
+        "zh": "加利福尼亞州瓦列霍"
+    },
+    {
+        "trad": "費爾菲爾德",
+        "simp": "费尔菲尔德",
+        "jyutping": "fai3 ji3 fai3 ji3 dak1",
+        "pinyin": "fei4 er3 fei4 er3 de2",
+        "en": "Fairfield, California",
+        "zh": "加利福尼亞州費爾菲爾德"
+    },
+    {
+        "trad": "康科德",
+        "simp": "康科德",
+        "jyutping": "hong1 fo3 dak1",
+        "pinyin": "kang1 ke1 de2",
+        "en": "Concord, California",
+        "zh": "加利福尼亞州康科德"
+    },
+    {
+        "trad": "列治文",
+        "simp": "列治文",
+        "jyutping": "lit6 zi6 man4",
+        "pinyin": "lie4 zhi4 wen2",
+        "en": "Richmond, California",
+        "zh": "加利福尼亞州列治文"
+    },
+    {
+        "trad": "安條克",
+        "simp": "安条克",
+        "jyutping": "on1 tiu4 hak1",
+        "pinyin": "an1 tiao2 ke4",
+        "en": "Antioch, California",
+        "zh": "加利福尼亞州安條克"
+    },
+    {
+        "trad": "利物摩爾",
+        "simp": "利物摩尔",
+        "jyutping": "lei6 mat6 mo1 ji3",
+        "pinyin": "li4 wu4 mo1 er3",
+        "en": "Livermore, California",
+        "zh": "加利福尼亞州利物摩爾"
+    },
+    {
+        "trad": "普萊森頓",
+        "simp": "普莱森顿",
+        "jyutping": "pou2 loi4 sam1 deun1",
+        "pinyin": "pu3 lai2 sen1 dun2",
+        "en": "Pleasanton, California",
+        "zh": "加利福尼亞州普萊森頓"
+    },
+    {
+        "trad": "都柏林",
+        "simp": "都柏林",
+        "jyutping": "dou1 paak3 lam4",
+        "pinyin": "dou1 bai3 lin2",
+        "en": "Dublin, California",
+        "zh": "加利福尼亞州都柏林"
+    },
+    {
+        "trad": "聖拉蒙",
+        "simp": "圣拉蒙",
+        "jyutping": "sing3 laai1 mung4",
+        "pinyin": "sheng4 la1 meng2",
+        "en": "San Ramon, California",
+        "zh": "加利福尼亞州聖拉蒙"
+    },
+    {
+        "trad": "胡桃溪",
+        "simp": "胡桃溪",
+        "jyutping": "wu4 tou4 kai1",
+        "pinyin": "hu2 tao2 xi1",
+        "en": "Walnut Creek, California",
+        "zh": "加利福尼亞州胡桃溪"
+    },
+    {
+        "trad": "米爾皮塔斯",
+        "simp": "米尔皮塔斯",
+        "jyutping": "mai5 ji3 bei2 taap3 si1",
+        "pinyin": "mi3 er3 pi2 ta3 si1",
+        "en": "Milpitas, California",
+        "zh": "加利福尼亞州米爾皮塔斯"
+    },
+    {
+        "trad": "吉爾羅伊",
+        "simp": "吉尔罗伊",
+        "jyutping": "gat1 ji3 lo4 ji1",
+        "pinyin": "ji2 er3 luo2 yi1",
+        "en": "Gilroy, California",
+        "zh": "加利福尼亞州吉爾羅伊"
+    },
+    {
+        "trad": "摩根山丘",
+        "simp": "摩根山丘",
+        "jyutping": "mo1 gan1 saan1 jau1",
+        "pinyin": "mo1 gen1 shan1 qiu1",
+        "en": "Morgan Hill, California",
+        "zh": "加利福尼亞州摩根山丘"
+    },
+    {
+        "trad": "薩拉托加",
+        "simp": "萨拉托加",
+        "jyutping": "saat3 laai1 tok3 gaa1",
+        "pinyin": "sa4 la1 tuo2 jia1",
+        "en": "Saratoga, California",
+        "zh": "加利福尼亞州薩拉托加"
+    },
+    {
+        "trad": "洛斯阿圖斯",
+        "simp": "洛斯阿图斯",
+        "jyutping": "lok6 si1 aa3 tou4 si1",
+        "pinyin": "luo4 si1 a1 tu2 si1",
+        "en": "Los Altos, California",
+        "zh": "加利福尼亞州洛斯阿圖斯"
+    },
+    {
+        "trad": "坎貝爾",
+        "simp": "坎贝尔",
+        "jyutping": "ham3 bui3 ji3",
+        "pinyin": "kan3 bei3 er3",
+        "en": "Campbell, California",
+        "zh": "加利福尼亞州坎貝爾"
+    },
+    {
+        "trad": "洛斯加托斯",
+        "simp": "洛斯加托斯",
+        "jyutping": "lok6 si1 gaa1 tok3 si1",
+        "pinyin": "luo4 si1 jia1 tuo2 si1",
+        "en": "Los Gatos, California",
+        "zh": "加利福尼亞州洛斯加托斯"
+    },
+    {
+        "trad": "柏林甘",
+        "simp": "柏林甘",
+        "jyutping": "baak3 lam4 gam1",
+        "pinyin": "bai3 lin2 gan1",
+        "en": "Burlingame, California",
+        "zh": "加利福尼亞州柏林甘"
+    },
+    {
+        "trad": "聖布魯諾",
+        "simp": "圣布鲁诺",
+        "jyutping": "sing3 bou3 lou1 nok6",
+        "pinyin": "sheng4 bu4 luo2 nuo4",
+        "en": "San Bruno, California",
+        "zh": "加利福尼亞州聖布魯諾"
+    },
+    {
+        "trad": "密爾布瑞",
+        "simp": "密尔布瑞",
+        "jyutping": "mat6 ji3 bou3 seui6",
+        "pinyin": "mi4 er3 bu4 rui1",
+        "en": "Millbrae, California",
+        "zh": "加利福尼亞州密爾布瑞"
+    },
+    {
+        "trad": "太平洋城",
+        "simp": "太平洋城",
+        "jyutping": "taai3 ping1 joeng4 sing4",
+        "pinyin": "tai3 ping2 yang2 cheng2",
+        "en": "Pacifica, California",
+        "zh": "加利福尼亞州太平洋城"
+    },
+    {
+        "trad": "半月灣",
+        "simp": "半月湾",
+        "jyutping": "bun3 jyut6 waan1",
+        "pinyin": "ban4 yue4 wan1",
+        "en": "Half Moon Bay, California",
+        "zh": "加利福尼亞州半月灣"
+    },
+    {
+        "trad": "福斯特城",
+        "simp": "福斯特城",
+        "jyutping": "fuk1 si1 dak1 sing4",
+        "pinyin": "fu2 si1 te4 cheng2",
+        "en": "Foster City, California",
+        "zh": "加利福尼亞州福斯特城"
+    },
+    {
+        "trad": "貝爾蒙特",
+        "simp": "贝尔蒙特",
+        "jyutping": "bui3 ji3 mung4 dak1",
+        "pinyin": "bei3 er3 meng2 te4",
+        "en": "Belmont, California",
+        "zh": "加利福尼亞州貝爾蒙特"
+    },
+    {
+        "trad": "聖卡洛斯",
+        "simp": "圣卡洛斯",
+        "jyutping": "sing3 kaa1 lok6 si1",
+        "pinyin": "sheng4 ka3 luo2 si1",
+        "en": "San Carlos, California",
+        "zh": "加利福尼亞州聖卡洛斯"
+    },
+    {
+        "trad": "阿瑟頓",
+        "simp": "阿瑟顿",
+        "jyutping": "aa3 sat1 deun1",
+        "pinyin": "a1 se4 dun2",
+        "en": "Atherton, California",
+        "zh": "加利福尼亞州阿瑟頓"
+    },
+    {
+        "trad": "希爾斯堡",
+        "simp": "希尔斯堡",
+        "jyutping": "hei1 ji3 si1 bou2",
+        "pinyin": "xi1 er3 si1 bao3",
+        "en": "Hillsborough, California",
+        "zh": "加利福尼亞州希爾斯堡"
+    },
+    {
+        "trad": "伍德賽德",
+        "simp": "伍德赛德",
+        "jyutping": "ng5 dak1 coi3 dak1",
+        "pinyin": "wu3 de2 sai4 de2",
+        "en": "Woodside, California",
+        "zh": "加利福尼亞州伍德賽德"
+    },
+    {
+        "trad": "波托拉谷",
+        "simp": "波托拉谷",
+        "jyutping": "bo1 tok3 laai1 guk1",
+        "pinyin": "bo1 tuo2 la1 gu3",
+        "en": "Portola Valley, California",
+        "zh": "加利福尼亞州波托拉谷"
+    },
+    {
+        "trad": "布里斯班",
+        "simp": "布里斯班",
+        "jyutping": "bou3 lei6 si1 baan1",
+        "pinyin": "bu4 li3 si1 ban1",
+        "en": "Brisbane, California",
+        "zh": "加利福尼亞州布里斯班"
+    },
+    {
+        "trad": "科爾馬",
+        "simp": "科尔马",
+        "jyutping": "fo1 ji3 maa5",
+        "pinyin": "ke1 er3 ma3",
+        "en": "Colma, California",
+        "zh": "加利福尼亞州科爾馬"
+    },
+    {
+        "trad": "阿拉米達",
+        "simp": "阿拉米达",
+        "jyutping": "aa3 laai1 mai5 daat6",
+        "pinyin": "a1 la1 mi3 da2",
+        "en": "Alameda, California",
+        "zh": "加利福尼亞州阿拉米達"
+    },
+    {
+        "trad": "阿爾巴尼",
+        "simp": "阿尔巴尼",
+        "jyutping": "aa3 ji3 baa1 nei4",
+        "pinyin": "a1 er3 ba1 ni2",
+        "en": "Albany, California",
+        "zh": "加利福尼亞州阿爾巴尼"
+    },
+    {
+        "trad": "愛莫利維爾",
+        "simp": "爱莫利维尔",
+        "jyutping": "oi3 mok6 lei6 wai4 ji3",
+        "pinyin": "ai4 mo4 li4 wei2 er3",
+        "en": "Emeryville, California",
+        "zh": "加利福尼亞州愛莫利維爾"
+    },
+    {
+        "trad": "皮埃蒙特",
+        "simp": "皮埃蒙特",
+        "jyutping": "pei4 oi1 mung4 dak1",
+        "pinyin": "pi2 ai1 meng2 te4",
+        "en": "Piedmont, California",
+        "zh": "加利福尼亞州皮埃蒙特"
+    },
+    {
+        "trad": "聖利安卓",
+        "simp": "圣利安卓",
+        "jyutping": "sing3 lei6 on1 co2",
+        "pinyin": "sheng4 li4 an1 zhao3",
+        "en": "San Leandro, California",
+        "zh": "加利福尼亞州聖利安卓"
+    },
+    {
+        "trad": "聯合城",
+        "simp": "联合城",
+        "jyutping": "lyun4 hap6 sing4",
+        "pinyin": "lian2 he2 cheng2",
+        "en": "Union City, California",
+        "zh": "加利福尼亞州聯合城"
+    },
+    {
+        "trad": "紐瓦克",
+        "simp": "纽瓦克",
+        "jyutping": "nau2 ngaa5 hak1",
+        "pinyin": "niu3 wa3 ke4",
+        "en": "Newark, California",
+        "zh": "加利福尼亞州紐瓦克"
+    },
+    {
+        "trad": "馬丁內斯",
+        "simp": "马丁内斯",
+        "jyutping": "maa5 ding1 noi6 si1",
+        "pinyin": "ma3 ding1 nei4 si1",
+        "en": "Martinez, California",
+        "zh": "加利福尼亞州馬丁內斯"
+    },
+    {
+        "trad": "匹茲堡",
+        "simp": "匹兹堡",
+        "jyutping": "pat1 zi1 bou2",
+        "pinyin": "pi1 zi1 bao3",
+        "en": "Pittsburg, California",
+        "zh": "加利福尼亞州匹茲堡"
+    },
+    {
+        "trad": "布倫特伍德",
+        "simp": "布伦特伍德",
+        "jyutping": "bou3 leon4 dak1 ng5 dak1",
+        "pinyin": "bu4 lun2 te4 wu3 de2",
+        "en": "Brentwood, California",
+        "zh": "加利福尼亞州布倫特伍德"
+    },
+    {
+        "trad": "奧克利",
+        "simp": "奥克利",
+        "jyutping": "ou3 hak1 lei6",
+        "pinyin": "ao4 ke4 li4",
+        "en": "Oakley, California",
+        "zh": "加利福尼亞州奧克利"
+    },
+    {
+        "trad": "丹維爾",
+        "simp": "丹维尔",
+        "jyutping": "daan1 wai4 ji3",
+        "pinyin": "dan1 wei2 er3",
+        "en": "Danville, California",
+        "zh": "加利福尼亞州丹維爾"
+    },
+    {
+        "trad": "拉法耶特",
+        "simp": "拉法耶特",
+        "jyutping": "laai1 faat3 je4 dak1",
+        "pinyin": "la1 fa3 ye2 te4",
+        "en": "Lafayette, California",
+        "zh": "加利福尼亞州拉法耶特"
+    },
+    {
+        "trad": "莫拉加",
+        "simp": "莫拉加",
+        "jyutping": "mok6 laai1 gaa1",
+        "pinyin": "mo4 la1 jia1",
+        "en": "Moraga, California",
+        "zh": "加利福尼亞州莫拉加"
+    },
+    {
+        "trad": "奧林達",
+        "simp": "奥林达",
+        "jyutping": "ou3 lam4 daat6",
+        "pinyin": "ao4 lin2 da2",
+        "en": "Orinda, California",
+        "zh": "加利福尼亞州奧林達"
+    },
+    {
+        "trad": "聖巴勃羅",
+        "simp": "圣巴勃罗",
+        "jyutping": "sing3 baa1 bat6 lo4",
+        "pinyin": "sheng4 ba1 bo2 luo2",
+        "en": "San Pablo, California",
+        "zh": "加利福尼亞州聖巴勃羅"
+    },
+    {
+        "trad": "赫拉克勒斯",
+        "simp": "赫拉克勒斯",
+        "jyutping": "hak1 laai1 hak1 lak6 si1",
+        "pinyin": "he4 la1 ke4 le1 si1",
+        "en": "Hercules, California",
+        "zh": "加利福尼亞州赫拉克勒斯"
+    },
+    {
+        "trad": "皮諾爾",
+        "simp": "皮诺尔",
+        "jyutping": "pei4 nok6 ji3",
+        "pinyin": "pi2 nuo4 er3",
+        "en": "Pinole, California",
+        "zh": "加利福尼亞州皮諾爾"
+    },
+    {
+        "trad": "埃爾塞里托",
+        "simp": "埃尔塞里托",
+        "jyutping": "oi1 ji3 coi1 lei4 tok3",
+        "pinyin": "ai1 er3 sai1 li2 tuo2",
+        "en": "El Cerrito, California",
+        "zh": "加利福尼亞州埃爾塞里托"
+    },
+    {
+        "trad": "索朗奴",
+        "simp": "索朗奴",
+        "jyutping": "sok3 long5 nou4",
+        "pinyin": "suo3 lang3 nu2",
+        "en": "Solano, California",
+        "zh": "加利福尼亞州索朗奴"
+    },
+    {
+        "trad": "索諾瑪",
+        "simp": "索诺玛",
+        "jyutping": "sok3 nok6 maa5",
+        "pinyin": "suo3 nuo4 ma3",
+        "en": "Sonoma, California",
+        "zh": "加利福尼亞州索諾瑪"
+    },
+    {
+        "trad": "聖羅莎",
+        "simp": "圣罗莎",
+        "jyutping": "sing3 lo4 so1",
+        "pinyin": "sheng4 luo2 sha1",
+        "en": "Santa Rosa, California",
+        "zh": "加利福尼亞州聖羅莎"
+    },
+    {
+        "trad": "佩塔盧馬",
+        "simp": "佩塔卢马",
+        "jyutping": "pui3 taap3 lou1 maa5",
+        "pinyin": "pei4 ta3 lu2 ma3",
+        "en": "Petaluma, California",
+        "zh": "加利福尼亞州佩塔盧馬"
+    },
+    {
+        "trad": "羅恩內特帕克",
+        "simp": "罗恩内特帕克",
+        "jyutping": "lo4 jan1 noi6 dak1 paak3 hak1",
+        "pinyin": "luo2 en1 nei4 te4 pa4 ke4",
+        "en": "Rohnert Park, California",
+        "zh": "加利福尼亞州羅恩內特帕克"
+    },
+    {
+        "trad": "克羅弗代爾",
+        "simp": "克罗弗代尔",
+        "jyutping": "hak1 lo4 fu1 doi6 ji3",
+        "pinyin": "ke4 luo2 fu1 dai4 er3",
+        "en": "Cloverdale, California",
+        "zh": "加利福尼亞州克羅弗代爾"
+    },
+    {
+        "trad": "希爾茲堡",
+        "simp": "希尔兹堡",
+        "jyutping": "hei1 ji3 zi1 bou2",
+        "pinyin": "xi1 er3 zi1 bao3",
+        "en": "Healdsburg, California",
+        "zh": "加利福尼亞州希爾茲堡"
+    },
+    {
+        "trad": "塞瓦斯托波爾",
+        "simp": "塞瓦斯托波尔",
+        "jyutping": "coi1 ngaa5 si1 tok3 bo1 ji3",
+        "pinyin": "sai1 wa3 si1 tuo2 bo1 er3",
+        "en": "Sebastopol, California",
+        "zh": "加利福尼亞州塞瓦斯托波爾"
+    },
+    {
+        "trad": "索諾瑪谷",
+        "simp": "索诺玛谷",
+        "jyutping": "sok3 nok6 maa5 guk1",
+        "pinyin": "suo3 nuo4 ma3 gu3",
+        "en": "Sonoma Valley, California",
+        "zh": "加利福尼亞州索諾瑪谷"
+    },
+    {
+        "trad": "諾瓦托",
+        "simp": "诺瓦托",
+        "jyutping": "nok6 ngaa5 tok3",
+        "pinyin": "nuo4 wa3 tuo2",
+        "en": "Novato, California",
+        "zh": "加利福尼亞州諾瓦托"
+    },
+    {
+        "trad": "米爾谷",
+        "simp": "米尔谷",
+        "jyutping": "mai5 ji3 guk1",
+        "pinyin": "mi3 er3 gu3",
+        "en": "Mill Valley, California",
+        "zh": "加利福尼亞州米爾谷"
+    },
+    {
+        "trad": "索薩利托",
+        "simp": "索萨利托",
+        "jyutping": "sok3 saat3 lei6 tok3",
+        "pinyin": "suo3 sa4 li4 tuo2",
+        "en": "Sausalito, California",
+        "zh": "加利福尼亞州索薩利托"
+    },
+    {
+        "trad": "蒂伯龍",
+        "simp": "蒂伯龙",
+        "jyutping": "dai3 baak3 lung4",
+        "pinyin": "di4 bo2 long2",
+        "en": "Tiburon, California",
+        "zh": "加利福尼亞州蒂伯龍"
+    },
+    {
+        "trad": "科爾特馬德拉",
+        "simp": "科尔特马德拉",
+        "jyutping": "fo1 ji3 dak1 maa5 dak1 laai1",
+        "pinyin": "ke1 er3 te4 ma3 de2 la1",
+        "en": "Corte Madera, California",
+        "zh": "加利福尼亞州科爾特馬德拉"
+    },
+    {
+        "trad": "拉克斯珀",
+        "simp": "拉克斯珀",
+        "jyutping": "laai1 hak1 si1 bok3",
+        "pinyin": "la1 ke4 si1 po1",
+        "en": "Larkspur, California",
+        "zh": "加利福尼亞州拉克斯珀"
+    },
+    {
+        "trad": "聖安塞爾莫",
+        "simp": "圣安塞尔莫",
+        "jyutping": "sing3 on1 coi1 ji3 mok6",
+        "pinyin": "sheng4 an1 sai1 er3 mo4",
+        "en": "San Anselmo, California",
+        "zh": "加利福尼亞州聖安塞爾莫"
+    },
+    {
+        "trad": "費爾法克斯",
+        "simp": "费尔法克斯",
+        "jyutping": "fai3 ji3 faat3 hak1 si1",
+        "pinyin": "fei4 er3 fa3 ke4 si1",
+        "en": "Fairfax, California",
+        "zh": "加利福尼亞州費爾法克斯"
+    },
+    {
+        "trad": "瓦卡維爾",
+        "simp": "瓦卡维尔",
+        "jyutping": "ngaa5 kaa1 wai4 ji3",
+        "pinyin": "wa3 ka3 wei2 er3",
+        "en": "Vacaville, California",
+        "zh": "加利福尼亞州瓦卡維爾"
+    },
+    {
+        "trad": "貝利埃薩",
+        "simp": "贝利埃萨",
+        "jyutping": "bui3 lei6 oi1 saat3",
+        "pinyin": "bei3 li4 ai1 sa4",
+        "en": "Berryessa, California",
+        "zh": "加利福尼亞州貝利埃薩"
+    },
+    {
+        "trad": "卡利斯托加",
+        "simp": "卡利斯托加",
+        "jyutping": "kaa1 lei6 si1 tok3 gaa1",
+        "pinyin": "ka3 li4 si1 tuo2 jia1",
+        "en": "Calistoga, California",
+        "zh": "加利福尼亞州卡利斯托加"
+    },
+    {
+        "trad": "聖海倫娜",
+        "simp": "圣海伦娜",
+        "jyutping": "sing3 hoi2 leon4 naa4",
+        "pinyin": "sheng4 hai3 lun2 na4",
+        "en": "St. Helena, California",
+        "zh": "加利福尼亞州聖海倫娜"
+    },
+    {
+        "trad": "揚特維爾",
+        "simp": "扬特维尔",
+        "jyutping": "joeng4 dak1 wai4 ji3",
+        "pinyin": "yang2 te4 wei2 er3",
+        "en": "Yountville, California",
+        "zh": "加利福尼亞州揚特維爾"
+    },
+    {
+        "trad": "美利堅峽谷",
+        "simp": "美利坚峡谷",
+        "jyutping": "mei5 lei6 gin1 haap6 guk1",
+        "pinyin": "mei3 li4 jian1 xia2 gu3",
+        "en": "American Canyon, California",
+        "zh": "加利福尼亞州美利堅峽谷"
+    },
+    {
+        "trad": "里奧維斯塔",
+        "simp": "里奥维斯塔",
+        "jyutping": "lei5 ou3 wai4 si1 taap3",
+        "pinyin": "li3 ao4 wei2 si1 ta3",
+        "en": "Rio Vista, California",
+        "zh": "加利福尼亞州里奧維斯塔"
+    },
+    {
+        "trad": "休森城",
+        "simp": "休森城",
+        "jyutping": "jau1 sam1 sing4",
+        "pinyin": "xiu1 sen1 cheng2",
+        "en": "Suisun City, California",
+        "zh": "加利福尼亞州休森城"
+    },
+    {
+        "trad": "貝尼西亞",
+        "simp": "贝尼西亚",
+        "jyutping": "bui3 nei4 sai1 aa3",
+        "pinyin": "bei3 ni2 xi1 ya1",
+        "en": "Benicia, California",
+        "zh": "加利福尼亞州貝尼西亞"
+    },
+    {
+        "trad": "克萊頓",
+        "simp": "克莱顿",
+        "jyutping": "hak1 loi4 deun1",
+        "pinyin": "ke4 lai2 dun2",
+        "en": "Clayton, California",
+        "zh": "加利福尼亞州克萊頓"
+    },
+    {
+        "trad": "普萊森特希爾",
+        "simp": "普莱森特希尔",
+        "jyutping": "pou2 loi4 sam1 dak1 hei1 ji3",
+        "pinyin": "pu3 lai2 sen1 te4 xi1 er3",
+        "en": "Pleasant Hill, California",
+        "zh": "加利福尼亞州普萊森特希爾"
+    },
+    {
+        "trad": "莫拉加谷",
+        "simp": "莫拉加谷",
+        "jyutping": "mok6 laai1 gaa1 guk1",
+        "pinyin": "mo4 la1 jia1 gu3",
+        "en": "Moraga Valley, California",
+        "zh": "加利福尼亞州莫拉加谷"
+    },
+    {
+        "trad": "聖特雷莎",
+        "simp": "圣特雷莎",
+        "jyutping": "sing3 dak1 lei4 saa1",
+        "pinyin": "sheng4 te4 lei2 sha1",
+        "en": "Santa Teresa, California",
+        "zh": "加利福尼亞州聖特雷莎"
+    },
+    {
+        "trad": "阿爾維索",
+        "simp": "阿尔维索",
+        "jyutping": "aa3 ji3 wai4 sok3",
+        "pinyin": "a1 er3 wei2 suo3",
+        "en": "Alviso, California",
+        "zh": "加利福尼亞州阿爾維索"
+    },
+    {
+        "trad": "卡斯特羅谷",
+        "simp": "卡斯特罗谷",
+        "jyutping": "kaa1 si1 dak1 lo4 guk1",
+        "pinyin": "ka3 si1 te4 luo2 gu3",
+        "en": "Castro Valley, California",
+        "zh": "加利福尼亞州卡斯特羅谷"
+    }
+]
