@@ -134,23 +134,22 @@ function FlashCardCN() {
         inputRef.current?.focus();
     };
 
-    const handlePopupKeyboardPreventScroll = (e: React.FocusEvent<HTMLInputElement>) => {
+    const handlePopupKeyboardPreventScroll = (
+        e: React.FocusEvent<HTMLInputElement>
+    ) => {
         e.target.focus({ preventScroll: true });
-    }
+    };
 
     const toggleRevealPhonetic = useCallback(() => {
         setRevealed((prev) => !prev);
-        // handlePopupKeyboardFocus();
     }, []);
 
     const toggleRevealDescription = useCallback(() => {
         setDescriptionVisible((prev) => !prev);
-        // handlePopupKeyboardFocus();
     }, []);
 
     const toggleIsThemeDark = useCallback(() => {
         setIsThemeDark((prev) => !prev);
-        // handlePopupKeyboardFocus();
     }, []);
 
     const goToPrevCard = useCallback(() => {
@@ -163,7 +162,6 @@ function FlashCardCN() {
         setInputMatched(false);
         setInputMatchedJyutpings([]);
         setInputMatchedPinyins([]);
-        // handlePopupKeyboardFocus();
     }, [
         totalCards,
         inputMatched,
@@ -183,7 +181,6 @@ function FlashCardCN() {
         setInputMatched(false);
         setInputMatchedJyutpings([]);
         setInputMatchedPinyins([]);
-        // handlePopupKeyboardFocus();
     }, [
         totalCards,
         inputMatched,
@@ -322,7 +319,6 @@ function FlashCardCN() {
 
     const handleUploadFileIcon = () => {
         fileInputRef.current?.click();
-        // handlePopupKeyboardFocus();
     };
 
     const handleUploadFile = useCallback(
@@ -417,254 +413,235 @@ function FlashCardCN() {
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
             }}
         >
-            <div className="relative w-full max-w-2xl">
-                {/* Card */}
+            {/* Card */}
+            <div
+                data-testid="words-card-container"
+                ref={cardRef}
+                className="relative w-full max-w-2xl touch-pan-y rounded-3xl bg-white p-6 shadow-lg transition-colors sm:p-8 dark:bg-gray-800"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+            >
+                {/* float left buttons */}
                 <div
-                    data-testid="words-card-container"
-                    ref={cardRef}
-                    className="relative touch-pan-y rounded-3xl bg-white p-6 shadow-lg transition-colors sm:p-8 dark:bg-gray-800"
-                    onTouchStart={handleTouchStart}
-                    onTouchEnd={handleTouchEnd}
+                    data-testid="floating-left-buttons"
+                    className="absolute top-1 left-3 text-gray-700 dark:text-gray-400"
                 >
-                    {/* float left buttons */}
-                    <div
-                        data-testid="floating-left-buttons"
-                        className="absolute top-1 left-3 text-gray-700 dark:text-gray-400"
-                    >
-                        <div className="full-width flex flex-col content-around items-stretch gap-2">
-                            <button
-                                data-testid="upload-file-button"
-                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                                onClick={() => {
-                                    handleUploadFileIcon();
-                                    handlePopupKeyboardFocus();
-                                }}
-                                // onMouseDown={handlePopupKeyboardFocus}
-                                // onTouchStart={handlePopupKeyboardFocus}
-                            >
-                                <UploadFileIcon />
-                                {/* Hidden File Input */}
-                                <input
-                                    ref={fileInputRef}
-                                    type="file"
-                                    accept=".json,.csv"
-                                    className="hidden"
-                                    onChange={handleUploadFile}
-                                />
-                            </button>
-                            <button
-                                data-testid="words-is-theme-dark-button"
-                                onClick={() => {
-                                    toggleIsThemeDark();
-                                    handlePopupKeyboardFocus();
-                                }}
-                                // onMouseDown={handlePopupKeyboardFocus}
-                                // onTouchStart={handlePopupKeyboardFocus}
-                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                            >
-                                {isThemeDark ? <MoonIcon /> : <SunIcon />}
-                            </button>
-                            <div
-                                data-testid="words-progress-status-label"
-                                className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
-                            >
-                                {currentIndex + 1} / {totalCards}
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* float right buttons */}
-                    <div
-                        data-testid="floating-right-buttons"
-                        className="absolute top-1 right-3 text-gray-700 dark:text-gray-400"
-                    >
-                        <div className="full-width flex flex-col content-around items-stretch gap-2">
-                            <button
-                                data-testid="reveal-description-button"
-                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                                onClick={() => {
-                                    toggleRevealDescription();
-                                    handlePopupKeyboardFocus();
-                                }}
-                                // onMouseDown={handlePopupKeyboardFocus}
-                                // onTouchStart={handlePopupKeyboardFocus}
-                            >
-                                {descriptionVisible ? (
-                                    <OpenDocumentIcon />
-                                ) : (
-                                    <ClosedDocumentIcon />
-                                )}
-                            </button>
-
-                            <button
-                                data-testid="reveal-phonetic-button"
-                                onClick={() => {
-                                    handlePopupKeyboardFocus();
-                                    toggleRevealPhonetic();
-                                }}
-                                // onMouseDown={handlePopupKeyboardFocus}
-                                // onTouchStart={handlePopupKeyboardFocus}
-                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                                aria-label="Toggle pronunciation"
-                            >
-                                {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* Chinese characters */}
-                    <div
-                        data-testid="words-chinese-container"
-                        className="flex flex-col items-center gap-3 py-2"
-                    >
-                        {/* Traditional */}
-                        <div
-                            data-testid="words-traditional-label"
-                            className="flex w-full flex-col items-center"
+                    <div className="full-width flex flex-col content-around items-stretch gap-2">
+                        <button
+                            data-testid="upload-file-button"
+                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
-                                speakJyutping();
+                                handleUploadFileIcon();
                                 handlePopupKeyboardFocus();
                             }}
-                            // onMouseDown={handlePopupKeyboardFocus}
-                            // onTouchStart={handlePopupKeyboardFocus}
                         >
-                            <div className="flex gap-1">
-                                {currentCardTrads.map((word, i) => {
-                                    return (
-                                        <div
-                                            key={i}
-                                            className="flex flex-col gap-1"
-                                        >
-                                            <div
-                                                data-testid={`words-trad-text-${i}`}
-                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200`}
-                                            >
-                                                {word}
-                                            </div>
-                                            <div
-                                                data-testid={`words-trad-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
-                                            >
-                                                {currentCardJyutpings[i]}
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        </div>
-
-                        {/* Simplified */}
-                        <div
-                            data-testid="words-simplified-label"
-                            className="flex w-full flex-col items-center"
+                            <UploadFileIcon />
+                            {/* Hidden File Input */}
+                            <input
+                                ref={fileInputRef}
+                                type="file"
+                                accept=".json,.csv"
+                                className="hidden"
+                                onChange={handleUploadFile}
+                            />
+                        </button>
+                        <button
+                            data-testid="words-is-theme-dark-button"
                             onClick={() => {
-                                speakPinyin();
+                                toggleIsThemeDark();
                                 handlePopupKeyboardFocus();
                             }}
-                            // onMouseDown={handlePopupKeyboardFocus}
-                            // onTouchStart={handlePopupKeyboardFocus}
+                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                         >
-                            <div className="flex gap-1">
-                                {currentCardSimps.map((word, i) => {
-                                    return (
-                                        <div
-                                            key={i}
-                                            className="flex flex-col gap-1"
-                                        >
-                                            <div
-                                                data-testid={`words-simp-text-${i}`}
-                                                className="cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200"
-                                            >
-                                                {word}
-                                            </div>
-                                            <div
-                                                data-testid={`words-simp-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
-                                            >
-                                                {currentCardPinyins[i]}
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
+                            {isThemeDark ? <MoonIcon /> : <SunIcon />}
+                        </button>
+                        <div
+                            data-testid="words-progress-status-label"
+                            className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
+                        >
+                            {currentIndex + 1} / {totalCards}
                         </div>
                     </div>
+                </div>
 
-                    {/* Description */}
+                {/* float right buttons */}
+                <div
+                    data-testid="floating-right-buttons"
+                    className="absolute top-1 right-3 text-gray-700 dark:text-gray-400"
+                >
+                    <div className="full-width flex flex-col content-around items-stretch gap-2">
+                        <button
+                            data-testid="reveal-description-button"
+                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                            onClick={() => {
+                                toggleRevealDescription();
+                                handlePopupKeyboardFocus();
+                            }}
+                        >
+                            {descriptionVisible ? (
+                                <OpenDocumentIcon />
+                            ) : (
+                                <ClosedDocumentIcon />
+                            )}
+                        </button>
+
+                        <button
+                            data-testid="reveal-phonetic-button"
+                            onClick={() => {
+                                handlePopupKeyboardFocus();
+                                toggleRevealPhonetic();
+                            }}
+                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                            aria-label="Toggle pronunciation"
+                        >
+                            {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+                        </button>
+                    </div>
+                </div>
+
+                {/* Chinese characters */}
+                <div
+                    data-testid="words-chinese-container"
+                    className="flex flex-col items-center gap-3 py-2"
+                >
+                    {/* Traditional */}
                     <div
-                        data-testid="words-description-label"
-                        className={`text-center text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
+                        data-testid="words-traditional-label"
+                        className="flex w-full flex-col items-center"
                         onClick={() => {
-                            speakEnglish();
+                            speakJyutping();
                             handlePopupKeyboardFocus();
                         }}
-                        // onMouseDown={handlePopupKeyboardFocus}
-                        // onTouchStart={handlePopupKeyboardFocus}
                     >
-                        {currentCard.en}
-                    </div>
-
-                    {/* Input row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-center gap-1 sm:gap-2">
-                        <button
-                            data-testid="prev-words-card-button"
-                            onClick={() => {
-                                goToPrevCard();
-                                handlePopupKeyboardFocus();
-                            }}
-                            // onMouseDown={handlePopupKeyboardFocus}
-                            // onTouchStart={handlePopupKeyboardFocus}
-                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                            aria-label="Previous"
-                        >
-                            <ChevronLeftIcon />
-                        </button>
-
-                        <div className="flex min-w-35 flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500">
-                            <input
-                                data-testid="words-input-box"
-                                ref={inputRef}
-                                type="text"
-                                value={inputValue}
-                                onChange={(e) => {
-                                    handleInputChange(e);
-                                    // handlePopupKeyboardPreventScroll(e);
-                                }}
-                                onFocus={handlePopupKeyboardPreventScroll}
-                                placeholder="Jyutping / Pinyin"
-                                className="min-w-15 flex-1 bg-transparent py-3 text-base text-gray-800 outline-none dark:text-gray-200"
-                                autoComplete="off"
-                                spellCheck="false"
-                            />
-                            <CheckMarkIcon
-                                data-testid="words-check-mark-icon"
-                                matched={
-                                    (inputMatchedJyutpings.length > 0 &&
-                                        inputMatchedJyutpings.every(
-                                            (a) => a === true
-                                        )) ||
-                                    (inputMatchedPinyins.length > 0 &&
-                                        inputMatchedPinyins.every(
-                                            (a) => a === true
-                                        ))
-                                }
-                            />
+                        <div className="flex gap-1">
+                            {currentCardTrads.map((word, i) => {
+                                return (
+                                    <div
+                                        key={i}
+                                        className="flex flex-col gap-1"
+                                    >
+                                        <div
+                                            data-testid={`words-trad-text-${i}`}
+                                            className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200`}
+                                        >
+                                            {word}
+                                        </div>
+                                        <div
+                                            data-testid={`words-trad-phonetic-${i}`}
+                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
+                                        >
+                                            {currentCardJyutpings[i]}
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
-
-                        <button
-                            data-testid="next-words-card-button"
-                            onClick={() => {
-                                goToNextCard();
-                                handlePopupKeyboardFocus();
-                            }}
-                            // onMouseDown={handlePopupKeyboardFocus}
-                            // onTouchStart={handlePopupKeyboardFocus}
-                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                            aria-label="Next"
-                        >
-                            <ChevronRightIcon />
-                        </button>
                     </div>
+
+                    {/* Simplified */}
+                    <div
+                        data-testid="words-simplified-label"
+                        className="flex w-full flex-col items-center"
+                        onClick={() => {
+                            speakPinyin();
+                            handlePopupKeyboardFocus();
+                        }}
+                    >
+                        <div className="flex gap-1">
+                            {currentCardSimps.map((word, i) => {
+                                return (
+                                    <div
+                                        key={i}
+                                        className="flex flex-col gap-1"
+                                    >
+                                        <div
+                                            data-testid={`words-simp-text-${i}`}
+                                            className="cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200"
+                                        >
+                                            {word}
+                                        </div>
+                                        <div
+                                            data-testid={`words-simp-phonetic-${i}`}
+                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
+                                        >
+                                            {currentCardPinyins[i]}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Description */}
+                <div
+                    data-testid="words-description-label"
+                    className={`text-center text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
+                    onClick={() => {
+                        speakEnglish();
+                        handlePopupKeyboardFocus();
+                    }}
+                >
+                    {currentCard.en}
+                </div>
+
+                {/* Input row */}
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-1 sm:gap-2">
+                    <button
+                        data-testid="prev-words-card-button"
+                        onClick={() => {
+                            goToPrevCard();
+                            handlePopupKeyboardFocus();
+                        }}
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        aria-label="Previous"
+                    >
+                        <ChevronLeftIcon />
+                    </button>
+
+                    <div className="flex min-w-35 flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500">
+                        <input
+                            data-testid="words-input-box"
+                            ref={inputRef}
+                            type="text"
+                            value={inputValue}
+                            onChange={(e) => {
+                                handleInputChange(e);
+                            }}
+                            onFocus={handlePopupKeyboardPreventScroll}
+                            placeholder="Jyutping / Pinyin"
+                            className="min-w-15 flex-1 bg-transparent py-3 text-base text-gray-800 outline-none dark:text-gray-200"
+                            autoCapitalize="none"
+                            autoCorrect="off"
+                            autoComplete="off"
+                            spellCheck="false"
+                        />
+                        <CheckMarkIcon
+                            data-testid="words-check-mark-icon"
+                            matched={
+                                (inputMatchedJyutpings.length > 0 &&
+                                    inputMatchedJyutpings.every(
+                                        (a) => a === true
+                                    )) ||
+                                (inputMatchedPinyins.length > 0 &&
+                                    inputMatchedPinyins.every(
+                                        (a) => a === true
+                                    ))
+                            }
+                        />
+                    </div>
+
+                    <button
+                        data-testid="next-words-card-button"
+                        onClick={() => {
+                            goToNextCard();
+                            handlePopupKeyboardFocus();
+                        }}
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        aria-label="Next"
+                    >
+                        <ChevronRightIcon />
+                    </button>
                 </div>
             </div>
         </div>
