@@ -5,13 +5,14 @@ import {
     ChevronRightIcon,
     ClosedDocumentIcon,
     ClosedEyeIcon,
+    DotDotDotIcon,
     MoonIcon,
     OpenDocumentIcon,
     OpenEyeIcon,
     SunIcon,
     UploadFileIcon,
 } from './Icons';
-import defaultWords from '../words/default_10.json';
+import defaultWords from '../words/chats_100.json';
 
 export interface CardItem {
     trad: string;
@@ -75,6 +76,12 @@ function FlashCardCN() {
         []
     );
     const [inputMatchedJyutpings, setInputMatchedJyutpings] = useState<
+        boolean[]
+    >([]);
+    const [inputMatchedTrads /* setInputMatchedTradls */] = useState<boolean[]>(
+        []
+    );
+    const [inputMatchedSimpls /* setInputMatchedSimpls */] = useState<
         boolean[]
     >([]);
     const [inputValue, setInputValue] = useState<string>('');
@@ -444,11 +451,12 @@ function FlashCardCN() {
                 {/* float left buttons */}
                 <div
                     data-testid="floating-left-buttons"
-                    className="absolute top-1 left-3 text-gray-700 dark:text-gray-400"
+                    className="left-３ absolute top-1 hidden text-gray-700 dark:text-gray-400"
                 >
                     <div className="full-width flex flex-col content-around items-stretch gap-2">
                         <button
                             data-testid="upload-file-button"
+                            title="select chinese word file"
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
                                 handleUploadFileIcon();
@@ -468,6 +476,7 @@ function FlashCardCN() {
                         </button>
                         <button
                             data-testid="words-is-theme-dark-button"
+                            title="toggle between light and dark mode"
                             onClick={() => {
                                 toggleIsThemeDark();
                                 handlePopupKeyboardBlur();
@@ -479,7 +488,7 @@ function FlashCardCN() {
                         </button>
                         <div
                             data-testid="words-progress-status-label"
-                            className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
+                            className="flex self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
                         >
                             {currentIndex + 1} / {totalCards}
                         </div>
@@ -489,37 +498,62 @@ function FlashCardCN() {
                 {/* float right buttons */}
                 <div
                     data-testid="floating-right-buttons"
-                    className="absolute top-1 right-3 text-gray-700 dark:text-gray-400"
+                    className="absolute top-1 right-2 text-gray-700 dark:text-gray-400"
                 >
                     <div className="full-width flex flex-col content-around items-stretch gap-2">
                         <button
-                            data-testid="reveal-description-button"
+                            data-testid="upload-file-button"
+                            title="select chinese word file"
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
-                                toggleRevealDescription();
+                                handleUploadFileIcon();
                                 handlePopupKeyboardBlur();
                             }}
                             onMouseDown={preventDefault}
                         >
-                            {descriptionVisible ? (
-                                <OpenDocumentIcon />
-                            ) : (
-                                <ClosedDocumentIcon />
-                            )}
+                            <DotDotDotIcon />
+                            {/* Hidden File Input */}
+                            <input
+                                ref={fileInputRef}
+                                type="file"
+                                accept=".json,.csv"
+                                className="hidden"
+                                onChange={handleUploadFile}
+                            />
                         </button>
-
-                        <button
-                            data-testid="reveal-phonetic-button"
-                            onClick={() => {
-                                toggleRevealPhonetic();
-                                handlePopupKeyboardBlur();
-                            }}
-                            onMouseDown={preventDefault}
-                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                            aria-label="Toggle pronunciation"
-                        >
-                            {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                        </button>
+                        <div className="hidden">
+                            <button
+                                data-testid="reveal-description-button"
+                                title="reveal description"
+                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                                onClick={() => {
+                                    toggleRevealDescription();
+                                    handlePopupKeyboardBlur();
+                                }}
+                                onMouseDown={preventDefault}
+                            >
+                                {descriptionVisible ? (
+                                    <OpenDocumentIcon />
+                                ) : (
+                                    <ClosedDocumentIcon />
+                                )}
+                            </button>
+                        </div>
+                        <div className="hidden">
+                            <button
+                                data-testid="reveal-phonetic-button"
+                                title="reveal phonetic"
+                                onClick={() => {
+                                    toggleRevealPhonetic();
+                                    handlePopupKeyboardBlur();
+                                }}
+                                onMouseDown={preventDefault}
+                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                                aria-label="Toggle pronunciation"
+                            >
+                                {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -539,7 +573,7 @@ function FlashCardCN() {
                         onMouseDown={preventDefault}
                     >
                         <div className="flex gap-1">
-                            {currentCardTrads.map((word, i) => {
+                            {currentCardTrads.map((tradWord, i) => {
                                 return (
                                     <div
                                         key={i}
@@ -547,13 +581,13 @@ function FlashCardCN() {
                                     >
                                         <div
                                             data-testid={`words-trad-text-${i}`}
-                                            className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200`}
+                                            className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
-                                            {word}
+                                            {tradWord}
                                         </div>
                                         <div
                                             data-testid={`words-trad-phonetic-${i}`}
-                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
                                             {currentCardJyutpings[i]}
                                         </div>
@@ -574,7 +608,7 @@ function FlashCardCN() {
                         onMouseDown={preventDefault}
                     >
                         <div className="flex gap-1">
-                            {currentCardSimps.map((word, i) => {
+                            {currentCardSimps.map((simplWord, i) => {
                                 return (
                                     <div
                                         key={i}
@@ -582,13 +616,13 @@ function FlashCardCN() {
                                     >
                                         <div
                                             data-testid={`words-simp-text-${i}`}
-                                            className="cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200"
+                                            className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
-                                            {word}
+                                            {simplWord}
                                         </div>
                                         <div
                                             data-testid={`words-simp-phonetic-${i}`}
-                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
                                             {currentCardPinyins[i]}
                                         </div>
@@ -614,19 +648,6 @@ function FlashCardCN() {
 
                 {/* Input row */}
                 <div className="mt-4 flex flex-wrap items-center justify-center gap-1 sm:gap-2">
-                    <button
-                        data-testid="prev-words-card-button"
-                        onClick={() => {
-                            goToPrevCard();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        aria-label="Previous"
-                    >
-                        <ChevronLeftIcon />
-                    </button>
-
                     <div className="flex min-w-35 flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500">
                         <input
                             data-testid="words-input-box"
@@ -664,9 +685,97 @@ function FlashCardCN() {
                             />
                         </div>
                     </div>
+                </div>
+
+                {/* buttons */}
+                <div
+                    data-testid="bottom-buttons"
+                    className="mt-4 flex flex-wrap items-center justify-around gap-1 sm:gap-2"
+                >
+                    <button
+                        data-testid="prev-words-card-button"
+                        title="go to previous card"
+                        onClick={() => {
+                            goToPrevCard();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        aria-label="Previous"
+                    >
+                        <ChevronLeftIcon />
+                    </button>
+                    <button
+                        data-testid="upload-file-button"
+                        title="select a chinese word file"
+                        className="hidden h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        onClick={() => {
+                            handleUploadFileIcon();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                    >
+                        <UploadFileIcon />
+                        {/* Hidden File Input */}
+                        <input
+                            ref={fileInputRef}
+                            type="file"
+                            accept=".json,.csv"
+                            className="hidden"
+                            onChange={handleUploadFile}
+                        />
+                    </button>
+                    <button
+                        data-testid="words-is-theme-dark-button"
+                        title="toggle between light and dark theme"
+                        onClick={() => {
+                            toggleIsThemeDark();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    >
+                        {isThemeDark ? <MoonIcon /> : <SunIcon />}
+                    </button>
+                    <div
+                        data-testid="words-progress-status-label"
+                        className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
+                    >
+                        {currentIndex + 1} / {totalCards}
+                    </div>
+                    <button
+                        data-testid="reveal-description-button"
+                        title="reveal description"
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        onClick={() => {
+                            toggleRevealDescription();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                    >
+                        {descriptionVisible ? (
+                            <OpenDocumentIcon />
+                        ) : (
+                            <ClosedDocumentIcon />
+                        )}
+                    </button>
 
                     <button
+                        data-testid="reveal-phonetic-button"
+                        title="reveal phonetic"
+                        onClick={() => {
+                            toggleRevealPhonetic();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        aria-label="Toggle pronunciation"
+                    >
+                        {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+                    </button>
+                    <button
                         data-testid="next-words-card-button"
+                        title="go to next card"
                         onClick={() => {
                             goToNextCard();
                             handlePopupKeyboardBlur();
