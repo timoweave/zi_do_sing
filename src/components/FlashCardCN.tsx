@@ -125,7 +125,14 @@ function FlashCardCN() {
         setInputMatched(false);
         setInputMatchedJyutpings([]);
         setInputMatchedPinyins([]);
-    }, [totalCards, inputMatched, setInputMatchedJyutpings, setInputMatchedPinyins, setRevealed, setInputValue]);
+    }, [
+        totalCards,
+        inputMatched,
+        setInputMatchedJyutpings,
+        setInputMatchedPinyins,
+        setRevealed,
+        setInputValue,
+    ]);
 
     const goToNext = useCallback(() => {
         if (totalCards === 0) return;
@@ -137,7 +144,14 @@ function FlashCardCN() {
         setInputMatched(false);
         setInputMatchedJyutpings([]);
         setInputMatchedPinyins([]);
-    }, [totalCards, inputMatched, setInputMatchedJyutpings, setInputMatchedPinyins, setInputValue, setRevealed]);
+    }, [
+        totalCards,
+        inputMatched,
+        setInputMatchedJyutpings,
+        setInputMatchedPinyins,
+        setInputValue,
+        setRevealed,
+    ]);
 
     const verifyInput = useCallback(
         (
@@ -154,21 +168,13 @@ function FlashCardCN() {
                 .toLowerCase()
                 .split(/ +/);
 
-            // const inputMatchedList =
-            //     inputList?.map(
-            //         (given, i) =>
-            //             given == answerList[i] ||
-            //             given == answerWithoutToneList[i]
-            //     ) ?? [];
-            const answerMatchedList =
-                answerList
-                    ?.map(
-                        (answer, i) =>
-                            answer == inputList?.[i] ||
-                            answerWithoutToneList[i] == inputList?.[i]
-                    );
-            const answerMatched = answerMatchedList
-                    .every((a) => a === true) ?? false;
+            const answerMatchedList = answerList?.map(
+                (answer, i) =>
+                    answer == inputList?.[i] ||
+                    answerWithoutToneList[i] == inputList?.[i]
+            );
+            const answerMatched =
+                answerMatchedList.every((a) => a === true) ?? false;
 
             setAnswerMatchedListCallback(answerMatchedList);
             if (answerMatched) {
@@ -241,8 +247,10 @@ function FlashCardCN() {
                     (inputValue.length > 0 && inputMatchedPinyins))
             ) {
                 e.preventDefault();
-                if ((inputValue.length > 0 && inputMatchedJyutpings) ||
-                    (inputValue.length > 0 && inputMatchedPinyins)) {
+                if (
+                    (inputValue.length > 0 && inputMatchedJyutpings) ||
+                    (inputValue.length > 0 && inputMatchedPinyins)
+                ) {
                     setRevealed(false);
                 }
                 goToNext();
@@ -361,7 +369,10 @@ function FlashCardCN() {
     }
 
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gray-50 p-3 transition-colors dark:bg-gray-900">
+        <div
+            data-testid="words-fash-card-container"
+            className="flex min-h-dvh items-center justify-center bg-gray-50 p-3 transition-colors dark:bg-gray-900"
+        >
             <div className="relative w-full max-w-2xl">
                 {/* Card */}
                 <div
@@ -539,7 +550,16 @@ function FlashCardCN() {
                             />
                             <CheckMarkIcon
                                 data-testid="words-check-mark-icon"
-                                matched={(inputMatchedJyutpings.length > 0 && inputMatchedJyutpings.every(a => a === true)) || (inputMatchedPinyins.length > 0 && inputMatchedPinyins.every(a => a === true))}
+                                matched={
+                                    (inputMatchedJyutpings.length > 0 &&
+                                        inputMatchedJyutpings.every(
+                                            (a) => a === true
+                                        )) ||
+                                    (inputMatchedPinyins.length > 0 &&
+                                        inputMatchedPinyins.every(
+                                            (a) => a === true
+                                        ))
+                                }
                             />
                         </div>
 
