@@ -38,6 +38,33 @@ export const shuffleCardItems = (words: CardItem[]): CardItem[] => {
     return list;
 };
 
+export function useVisualViewport() {
+    const [height, setHeight] = useState<number | null>(null);
+
+    useEffect(() => {
+        const vv = window.visualViewport;
+        if (!vv) return;
+
+        const handler = () => {
+            setHeight(vv.height);
+            // On iOS, when keyboard opens, visualViewport.height shrinks.
+            // Scroll the page back to top so nothing gets clipped.
+            if (vv.height < window.innerHeight * 0.75) {
+                window.scrollTo(500, 0);
+            }
+        };
+
+        vv.addEventListener('resize', handler);
+        vv.addEventListener('scroll', handler);
+        return () => {
+            vv.removeEventListener('resize', handler);
+            vv.removeEventListener('scroll', handler);
+        };
+    }, []);
+
+    return height;
+}
+
 function FlashCardCN() {
     const [cards, setCards] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,6 +88,7 @@ function FlashCardCN() {
         const hours = new Date().getHours();
         return hours >= 18 || hours < 6;
     });
+    const vvHeight = useVisualViewport();
 
     const currentCard = cards[currentIndex] || null;
     const totalCards = cards.length;
@@ -372,6 +400,9 @@ function FlashCardCN() {
         <div
             data-testid="words-fash-card-container"
             className="flex min-h-dvh items-center justify-center bg-gray-50 p-3 transition-colors dark:bg-gray-900"
+            style={{
+                minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
+            }}
         >
             <div className="relative w-full max-w-2xl">
                 {/* Card */}
@@ -468,13 +499,13 @@ function FlashCardCN() {
                                         >
                                             <div
                                                 data-testid={`words-trad-text-${i}`}
-                                                className={`cursor-pointer text-center text-3xl font-medium text-gray-800 sm:text-6xl dark:text-gray-200`}
+                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200`}
                                             >
                                                 {word}
                                             </div>
                                             <div
                                                 data-testid={`words-trad-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[1rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
+                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
                                             >
                                                 {currentCardJyutpings[i]}
                                             </div>
@@ -499,13 +530,13 @@ function FlashCardCN() {
                                         >
                                             <div
                                                 data-testid={`words-simp-text-${i}`}
-                                                className="cursor-pointer text-center text-3xl font-medium text-gray-800 sm:text-6xl dark:text-gray-200"
+                                                className="cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200"
                                             >
                                                 {word}
                                             </div>
                                             <div
                                                 data-testid={`words-simp-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[1rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
+                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
                                             >
                                                 {currentCardPinyins[i]}
                                             </div>

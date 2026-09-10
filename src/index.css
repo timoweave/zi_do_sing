@@ -3,6 +3,10 @@
 /* Add this line to enable class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
+@supports not (height: 100dvh) {
+  .min-h-dvh { min-height: 100vh; }
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
