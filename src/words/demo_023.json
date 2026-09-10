@@ -1,0 +1,186 @@
+[
+    {
+        "trad": "學習",
+        "simp": "学习",
+        "jyutping": "hok6 zaap6",
+        "pinyin": "xue2 xi2",
+        "en": "to learn; study",
+        "zh": "學習 / 学习"
+    },
+    {
+        "trad": "廣東話",
+        "simp": "广东话",
+        "jyutping": "gwong2 dung1 waa2",
+        "pinyin": "guang3 dong1 hua4",
+        "en": "Cantonese language",
+        "zh": "廣東話 / 广东话"
+    },
+    {
+        "trad": "船",
+        "simp": "船",
+        "jyutping": "syun4",
+        "pinyin": "chuan2",
+        "en": "ship; boat",
+        "zh": "船 / 船"
+    },
+    {
+        "trad": "餐廳",
+        "simp": "餐厅",
+        "jyutping": "caan1 teng1",
+        "pinyin": "can1 ting1",
+        "en": "restaurant",
+        "zh": "餐廳 / 餐厅"
+    },
+    {
+        "trad": "酒店",
+        "simp": "酒店",
+        "jyutping": "zau2 dim3",
+        "pinyin": "jiu3 dian4",
+        "en": "hotel",
+        "zh": "酒店 / 酒店"
+    },
+    {
+        "trad": "超市",
+        "simp": "超市",
+        "jyutping": "ciu1 si5",
+        "pinyin": "chao1 shi4",
+        "en": "supermarket",
+        "zh": "超市 / 超市"
+    },
+    {
+        "trad": "銀行",
+        "simp": "银行",
+        "jyutping": "ngan4 hong4",
+        "pinyin": "yin2 hang2",
+        "en": "bank",
+        "zh": "銀行 / 银行"
+    },
+    {
+        "trad": "醫院",
+        "simp": "医院",
+        "jyutping": "ji1 jyun6",
+        "pinyin": "yi1 yuan4",
+        "en": "hospital",
+        "zh": "醫院 / 医院"
+    },
+    {
+        "trad": "警察",
+        "simp": "警察",
+        "jyutping": "ging2 caat3",
+        "pinyin": "jing3 cha2",
+        "en": "police",
+        "zh": "警察 / 警察"
+    },
+    {
+        "trad": "消防員",
+        "simp": "消防员",
+        "jyutping": "siu1 fong4 jyun4",
+        "pinyin": "xiao1 fang2 yuan2",
+        "en": "firefighter",
+        "zh": "消防員 / 消防员"
+    },
+    {
+        "trad": "悲傷",
+        "simp": "悲伤",
+        "jyutping": "bei1 soeng1",
+        "pinyin": "bei1 shang1",
+        "en": "sad",
+        "zh": "悲傷 / 悲伤"
+    },
+    {
+        "trad": "憤怒",
+        "simp": "愤怒",
+        "jyutping": "fan5 nou6",
+        "pinyin": "fen4 nu4",
+        "en": "angry",
+        "zh": "憤怒 / 愤怒"
+    },
+    {
+        "trad": "恐懼",
+        "simp": "恐惧",
+        "jyutping": "hung2 geoi6",
+        "pinyin": "kong3 ju4",
+        "en": "fear",
+        "zh": "恐懼 / 恐惧"
+    },
+    {
+        "trad": "勇氣",
+        "simp": "勇气",
+        "jyutping": "jung5 hei3",
+        "pinyin": "yong3 qi4",
+        "en": "courage",
+        "zh": "勇氣 / 勇气"
+    },
+    {
+        "trad": "希望",
+        "simp": "希望",
+        "jyutping": "hei1 mong6",
+        "pinyin": "xi1 wang4",
+        "en": "hope",
+        "zh": "希望 / 希望"
+    },
+    {
+        "trad": "你好嗎",
+        "simp": "你好吗",
+        "jyutping": "nei5 hou2 maa1",
+        "pinyin": "ni3 hao3 ma5",
+        "en": "How are you?",
+        "zh": "你好嗎 / 你好吗"
+    },
+    {
+        "trad": "我愛你",
+        "simp": "我爱你",
+        "jyutping": "ngo5 oi3 nei5",
+        "pinyin": "wo3 ai4 ni3",
+        "en": "I love you",
+        "zh": "我愛你 / 我爱你"
+    },
+    {
+        "trad": "對不起",
+        "simp": "对不起",
+        "jyutping": "deoi3 bat1 hei2",
+        "pinyin": "dui4 bu4 qi3",
+        "en": "Sorry",
+        "zh": "對不起 / 对不起"
+    },
+    {
+        "trad": "今天天氣很好",
+        "simp": "今天天气很好",
+        "jyutping": "gam1 tin1 tin1 hei3 han2 hou2",
+        "pinyin": "jin1 tian1 tian1 qi4 hen3 hao3",
+        "en": "The weather is very nice today",
+        "zh": "今天天氣很好 / 今天天气很好"
+    },
+    {
+        "trad": "我喜歡學習中文",
+        "simp": "我喜欢学习中文",
+        "jyutping": "ngo5 hei2 fun1 hok6 zaap6 zung1 man2",
+        "pinyin": "wo3 xi3 huan1 xue2 xi2 zhong1 wen2",
+        "en": "I like learning Chinese",
+        "zh": "我喜歡學習中文 / 我喜欢学习中文"
+    },
+    {
+        "trad": "你覺得這本書怎麼樣",
+        "simp": "你觉得这本书怎么样",
+        "jyutping": "nei5 gok3 dak1 ze2 bun2 syu1 zam2 mo1 joeng6",
+        "pinyin": "ni3 jue2 de5 zhe4 ben3 shu1 zen3 me5 yang4",
+        "en": "What do you think of this book?",
+        "zh": "你覺得這本書怎麼樣 / 你觉得这本书怎么样"
+    },
+    {
+        "trad": "明天我們一起去公園",
+        "simp": "明天我们一起去公园",
+        "jyutping": "ming4 tin1 ngo5 mun4 jat1 heoi3 gung1 jyun2",
+        "pinyin": "ming2 tian1 wo3 men5 yi1 qi3 qu4 gong1 yuan2",
+        "en": "Tomorrow we go to the park together",
+        "zh": "明天我們一起去公園 / 明天我们一起去公园"
+    },
+    {
+        "trad": "這是一個很好的機會",
+        "simp": "这是一个很好的机会",
+        "jyutping": "ze2 si6 jat1 go3 han2 hou2 dik1 gei1 wui6",
+        "pinyin": "zhe4 shi4 yi1 ge4 hen3 hao3 de5 ji1 hui4",
+        "en": "This is a great opportunity",
+        "zh": "這是一個很好的機會 / 这是一个很好的机会"
+    }
+]

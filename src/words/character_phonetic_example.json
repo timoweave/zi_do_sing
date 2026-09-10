@@ -1,0 +1,3397 @@
+[
+    {
+        "top": [
+            {
+                "character": "學",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ok",
+                "tone": 6
+            },
+            {
+                "character": "習",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "aap",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "学",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ue",
+                "tone": 2
+            },
+            {
+                "character": "习",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "i",
+                "tone": 2
+            }
+        ],
+        "description": "to learn; study"
+    },
+    {
+        "top": [
+            {
+                "character": "廣",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "wong",
+                "tone": 2
+            },
+            {
+                "character": "東",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ung",
+                "tone": 1
+            },
+            {
+                "character": "話",
+                "lang": "zh-HK",
+                "initial": "w",
+                "final": "aa",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "广",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "uang",
+                "tone": 3
+            },
+            {
+                "character": "东",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ong",
+                "tone": 1
+            },
+            {
+                "character": "话",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ua",
+                "tone": 4
+            }
+        ],
+        "description": "Cantonese language"
+    },
+    {
+        "top": [
+            {
+                "character": "電",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "in",
+                "tone": 6
+            },
+            {
+                "character": "腦",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "ou",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "电",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ian",
+                "tone": 4
+            },
+            {
+                "character": "脑",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "ao",
+                "tone": 3
+            }
+        ],
+        "description": "computer"
+    },
+    {
+        "top": [
+            {
+                "character": "咖",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "aa",
+                "tone": 3
+            },
+            {
+                "character": "啡",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "e",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "咖",
+                "lang": "zh-CN",
+                "initial": "k",
+                "final": "a",
+                "tone": 1
+            },
+            {
+                "character": "啡",
+                "lang": "zh-CN",
+                "initial": "f",
+                "final": "ei",
+                "tone": 1
+            }
+        ],
+        "description": "coffee"
+    },
+    {
+        "top": [
+            {
+                "character": "學",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ok",
+                "tone": 6
+            },
+            {
+                "character": "校",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "aau",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "学",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ue",
+                "tone": 2
+            },
+            {
+                "character": "校",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "iao",
+                "tone": 4
+            }
+        ],
+        "description": "school"
+    },
+    {
+        "top": [
+            {
+                "character": "天",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "in",
+                "tone": 1
+            },
+            {
+                "character": "氣",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "天",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ian",
+                "tone": 1
+            },
+            {
+                "character": "气",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 4
+            }
+        ],
+        "description": "weather"
+    },
+    {
+        "top": [
+            {
+                "character": "多",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "o",
+                "tone": 1
+            },
+            {
+                "character": "謝",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "e",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "多",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "uo",
+                "tone": 1
+            },
+            {
+                "character": "谢",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ie",
+                "tone": 4
+            }
+        ],
+        "description": "thank you"
+    },
+    {
+        "top": [
+            {
+                "character": "汽",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 3
+            },
+            {
+                "character": "車",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "e",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "汽",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "车",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "he",
+                "tone": 1
+            }
+        ],
+        "description": "car"
+    },
+    {
+        "top": [
+            {
+                "character": "船",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "yun",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "船",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "huan",
+                "tone": 2
+            }
+        ],
+        "description": "ship; boat"
+    },
+    {
+        "top": [
+            {
+                "character": "飛",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "ei",
+                "tone": 1
+            },
+            {
+                "character": "機",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ei",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "飞",
+                "lang": "zh-CN",
+                "initial": "f",
+                "final": "ei",
+                "tone": 1
+            },
+            {
+                "character": "机",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "i",
+                "tone": 1
+            }
+        ],
+        "description": "airplane"
+    },
+    {
+        "top": [
+            {
+                "character": "火",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "o",
+                "tone": 2
+            },
+            {
+                "character": "車",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "e",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "火",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "uo",
+                "tone": 3
+            },
+            {
+                "character": "车",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "he",
+                "tone": 1
+            }
+        ],
+        "description": "train"
+    },
+    {
+        "top": [
+            {
+                "character": "地",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ei",
+                "tone": 6
+            },
+            {
+                "character": "鐵",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "it",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "地",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "铁",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ie",
+                "tone": 3
+            }
+        ],
+        "description": "subway"
+    },
+    {
+        "top": [
+            {
+                "character": "巴",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "aa",
+                "tone": 1
+            },
+            {
+                "character": "士",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "巴",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "a",
+                "tone": 1
+            },
+            {
+                "character": "士",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 4
+            }
+        ],
+        "description": "bus"
+    },
+    {
+        "top": [
+            {
+                "character": "的",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ik",
+                "tone": 1
+            },
+            {
+                "character": "士",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "的",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "i",
+                "tone": 2
+            },
+            {
+                "character": "士",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 4
+            }
+        ],
+        "description": "taxi"
+    },
+    {
+        "top": [
+            {
+                "character": "單",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "aan",
+                "tone": 1
+            },
+            {
+                "character": "車",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "e",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "单",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "an",
+                "tone": 1
+            },
+            {
+                "character": "车",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "he",
+                "tone": 1
+            }
+        ],
+        "description": "bicycle"
+    },
+    {
+        "top": [
+            {
+                "character": "電",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "in",
+                "tone": 6
+            },
+            {
+                "character": "單",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "aan",
+                "tone": 1
+            },
+            {
+                "character": "車",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "e",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "电",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ian",
+                "tone": 4
+            },
+            {
+                "character": "单",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "an",
+                "tone": 1
+            },
+            {
+                "character": "车",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "he",
+                "tone": 1
+            }
+        ],
+        "description": "motorcycle"
+    },
+    {
+        "top": [
+            {
+                "character": "餐",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "aan",
+                "tone": 1
+            },
+            {
+                "character": "廳",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "eng",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "餐",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "an",
+                "tone": 1
+            },
+            {
+                "character": "厅",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ing",
+                "tone": 1
+            }
+        ],
+        "description": "restaurant"
+    },
+    {
+        "top": [
+            {
+                "character": "酒",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "au",
+                "tone": 2
+            },
+            {
+                "character": "店",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "im",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "酒",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "iu",
+                "tone": 3
+            },
+            {
+                "character": "店",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ian",
+                "tone": 4
+            }
+        ],
+        "description": "hotel"
+    },
+    {
+        "top": [
+            {
+                "character": "超",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "iu",
+                "tone": 1
+            },
+            {
+                "character": "市",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "超",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "hao",
+                "tone": 1
+            },
+            {
+                "character": "市",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 4
+            }
+        ],
+        "description": "supermarket"
+    },
+    {
+        "top": [
+            {
+                "character": "銀",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "gan",
+                "tone": 4
+            },
+            {
+                "character": "行",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ong",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "银",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "in",
+                "tone": 2
+            },
+            {
+                "character": "行",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ang",
+                "tone": 2
+            }
+        ],
+        "description": "bank"
+    },
+    {
+        "top": [
+            {
+                "character": "醫",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "院",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "yun",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "医",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "院",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "uan",
+                "tone": 4
+            }
+        ],
+        "description": "hospital"
+    },
+    {
+        "top": [
+            {
+                "character": "警",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ing",
+                "tone": 2
+            },
+            {
+                "character": "察",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "aat",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "警",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ing",
+                "tone": 3
+            },
+            {
+                "character": "察",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "ha",
+                "tone": 2
+            }
+        ],
+        "description": "police"
+    },
+    {
+        "top": [
+            {
+                "character": "消",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "iu",
+                "tone": 1
+            },
+            {
+                "character": "防",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "ong",
+                "tone": 4
+            },
+            {
+                "character": "員",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "yun",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "消",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "iao",
+                "tone": 1
+            },
+            {
+                "character": "防",
+                "lang": "zh-CN",
+                "initial": "f",
+                "final": "ang",
+                "tone": 2
+            },
+            {
+                "character": "员",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "uan",
+                "tone": 2
+            }
+        ],
+        "description": "firefighter"
+    },
+    {
+        "top": [
+            {
+                "character": "老",
+                "lang": "zh-HK",
+                "initial": "l",
+                "final": "ou",
+                "tone": 5
+            },
+            {
+                "character": "師",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "老",
+                "lang": "zh-CN",
+                "initial": "l",
+                "final": "ao",
+                "tone": 3
+            },
+            {
+                "character": "师",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 1
+            }
+        ],
+        "description": "teacher"
+    },
+    {
+        "top": [
+            {
+                "character": "學",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ok",
+                "tone": 6
+            },
+            {
+                "character": "生",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "aang",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "学",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ue",
+                "tone": 2
+            },
+            {
+                "character": "生",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "heng",
+                "tone": 1
+            }
+        ],
+        "description": "student"
+    },
+    {
+        "top": [
+            {
+                "character": "朋",
+                "lang": "zh-HK",
+                "initial": "p",
+                "final": "ang",
+                "tone": 4
+            },
+            {
+                "character": "友",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "au",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "朋",
+                "lang": "zh-CN",
+                "initial": "p",
+                "final": "eng",
+                "tone": 2
+            },
+            {
+                "character": "友",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "ou",
+                "tone": 3
+            }
+        ],
+        "description": "friend"
+    },
+    {
+        "top": [
+            {
+                "character": "家",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "aa",
+                "tone": 1
+            },
+            {
+                "character": "人",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "an",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "家",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ia",
+                "tone": 1
+            },
+            {
+                "character": "人",
+                "lang": "zh-CN",
+                "initial": "r",
+                "final": "en",
+                "tone": 2
+            }
+        ],
+        "description": "family"
+    },
+    {
+        "top": [
+            {
+                "character": "爸",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "aa",
+                "tone": 1
+            },
+            {
+                "character": "爸",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "aa",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "爸",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "a",
+                "tone": 4
+            },
+            {
+                "character": "爸",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "a",
+                "tone": 5
+            }
+        ],
+        "description": "father"
+    },
+    {
+        "top": [
+            {
+                "character": "媽",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "aa",
+                "tone": 1
+            },
+            {
+                "character": "媽",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "aa",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "妈",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "a",
+                "tone": 1
+            },
+            {
+                "character": "妈",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "a",
+                "tone": 5
+            }
+        ],
+        "description": "mother"
+    },
+    {
+        "top": [
+            {
+                "character": "兄",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ing",
+                "tone": 1
+            },
+            {
+                "character": "弟",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ai",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "兄",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "iong",
+                "tone": 1
+            },
+            {
+                "character": "弟",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "i",
+                "tone": 4
+            }
+        ],
+        "description": "brothers"
+    },
+    {
+        "top": [
+            {
+                "character": "姊",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "i",
+                "tone": 2
+            },
+            {
+                "character": "妹",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ui",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "姊",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "妹",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "ei",
+                "tone": 4
+            }
+        ],
+        "description": "sisters"
+    },
+    {
+        "top": [
+            {
+                "character": "愛",
+                "lang": "zh-HK",
+                "initial": "o",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "情",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "ing",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "爱",
+                "lang": "zh-CN",
+                "initial": "a",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "情",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "ing",
+                "tone": 2
+            }
+        ],
+        "description": "love"
+    },
+    {
+        "top": [
+            {
+                "character": "幸",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ang",
+                "tone": 6
+            },
+            {
+                "character": "福",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "uk",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "幸",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ing",
+                "tone": 4
+            },
+            {
+                "character": "福",
+                "lang": "zh-CN",
+                "initial": "f",
+                "final": "u",
+                "tone": 2
+            }
+        ],
+        "description": "happiness"
+    },
+    {
+        "top": [
+            {
+                "character": "快",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "aai",
+                "tone": 3
+            },
+            {
+                "character": "樂",
+                "lang": "zh-HK",
+                "initial": "l",
+                "final": "ok",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "快",
+                "lang": "zh-CN",
+                "initial": "k",
+                "final": "uai",
+                "tone": 4
+            },
+            {
+                "character": "乐",
+                "lang": "zh-CN",
+                "initial": "l",
+                "final": "e",
+                "tone": 4
+            }
+        ],
+        "description": "happy"
+    },
+    {
+        "top": [
+            {
+                "character": "悲",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "ei",
+                "tone": 1
+            },
+            {
+                "character": "傷",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "oeng",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "悲",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "ei",
+                "tone": 1
+            },
+            {
+                "character": "伤",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hang",
+                "tone": 1
+            }
+        ],
+        "description": "sad"
+    },
+    {
+        "top": [
+            {
+                "character": "憤",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "an",
+                "tone": 5
+            },
+            {
+                "character": "怒",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "ou",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "愤",
+                "lang": "zh-CN",
+                "initial": "f",
+                "final": "en",
+                "tone": 4
+            },
+            {
+                "character": "怒",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "u",
+                "tone": 4
+            }
+        ],
+        "description": "angry"
+    },
+    {
+        "top": [
+            {
+                "character": "恐",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ung",
+                "tone": 2
+            },
+            {
+                "character": "懼",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "eoi",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "恐",
+                "lang": "zh-CN",
+                "initial": "k",
+                "final": "ong",
+                "tone": 3
+            },
+            {
+                "character": "惧",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "u",
+                "tone": 4
+            }
+        ],
+        "description": "fear"
+    },
+    {
+        "top": [
+            {
+                "character": "勇",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "ung",
+                "tone": 5
+            },
+            {
+                "character": "氣",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "勇",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "ong",
+                "tone": 3
+            },
+            {
+                "character": "气",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 4
+            }
+        ],
+        "description": "courage"
+    },
+    {
+        "top": [
+            {
+                "character": "希",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 1
+            },
+            {
+                "character": "望",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ong",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "希",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "望",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "ang",
+                "tone": 4
+            }
+        ],
+        "description": "hope"
+    },
+    {
+        "top": [
+            {
+                "character": "夢",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ung",
+                "tone": 6
+            },
+            {
+                "character": "想",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "oeng",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "梦",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "eng",
+                "tone": 4
+            },
+            {
+                "character": "想",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "iang",
+                "tone": 3
+            }
+        ],
+        "description": "dream"
+    },
+    {
+        "top": [
+            {
+                "character": "未",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ei",
+                "tone": 6
+            },
+            {
+                "character": "來",
+                "lang": "zh-HK",
+                "initial": "l",
+                "final": "oi",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "未",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "ei",
+                "tone": 4
+            },
+            {
+                "character": "来",
+                "lang": "zh-CN",
+                "initial": "l",
+                "final": "ai",
+                "tone": 2
+            }
+        ],
+        "description": "future"
+    },
+    {
+        "top": [
+            {
+                "character": "過",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "wo",
+                "tone": 3
+            },
+            {
+                "character": "去",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "eoi",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "过",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "uo",
+                "tone": 4
+            },
+            {
+                "character": "去",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "u",
+                "tone": 4
+            }
+        ],
+        "description": "past"
+    },
+    {
+        "top": [
+            {
+                "character": "現",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "in",
+                "tone": 6
+            },
+            {
+                "character": "在",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "oi",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "现",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ian",
+                "tone": 4
+            },
+            {
+                "character": "在",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "ai",
+                "tone": 4
+            }
+        ],
+        "description": "present; now"
+    },
+    {
+        "top": [
+            {
+                "character": "時",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "間",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "aan",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "时",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 2
+            },
+            {
+                "character": "间",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ian",
+                "tone": 1
+            }
+        ],
+        "description": "time"
+    },
+    {
+        "top": [
+            {
+                "character": "空",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ung",
+                "tone": 1
+            },
+            {
+                "character": "間",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "aan",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "空",
+                "lang": "zh-CN",
+                "initial": "k",
+                "final": "ong",
+                "tone": 1
+            },
+            {
+                "character": "间",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ian",
+                "tone": 1
+            }
+        ],
+        "description": "space"
+    },
+    {
+        "top": [
+            {
+                "character": "世",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "ai",
+                "tone": 3
+            },
+            {
+                "character": "界",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "aai",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "世",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 4
+            },
+            {
+                "character": "界",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ie",
+                "tone": 4
+            }
+        ],
+        "description": "world"
+    },
+    {
+        "top": [
+            {
+                "character": "國",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "wok",
+                "tone": 3
+            },
+            {
+                "character": "家",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "aa",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "国",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "uo",
+                "tone": 2
+            },
+            {
+                "character": "家",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ia",
+                "tone": 1
+            }
+        ],
+        "description": "country"
+    },
+    {
+        "top": [
+            {
+                "character": "城",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "ing",
+                "tone": 4
+            },
+            {
+                "character": "市",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "城",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "heng",
+                "tone": 2
+            },
+            {
+                "character": "市",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 4
+            }
+        ],
+        "description": "city"
+    },
+    {
+        "top": [
+            {
+                "character": "鄉",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "oeng",
+                "tone": 1
+            },
+            {
+                "character": "村",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "yun",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "乡",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "iang",
+                "tone": 1
+            },
+            {
+                "character": "村",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "un",
+                "tone": 1
+            }
+        ],
+        "description": "village"
+    },
+    {
+        "top": [
+            {
+                "character": "自",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "i",
+                "tone": 6
+            },
+            {
+                "character": "然",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "in",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "自",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "然",
+                "lang": "zh-CN",
+                "initial": "r",
+                "final": "an",
+                "tone": 2
+            }
+        ],
+        "description": "nature"
+    },
+    {
+        "top": [
+            {
+                "character": "環",
+                "lang": "zh-HK",
+                "initial": "w",
+                "final": "aan",
+                "tone": 4
+            },
+            {
+                "character": "境",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ing",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "环",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "uan",
+                "tone": 2
+            },
+            {
+                "character": "境",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ing",
+                "tone": 4
+            }
+        ],
+        "description": "environment"
+    },
+    {
+        "top": [
+            {
+                "character": "空",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ung",
+                "tone": 1
+            },
+            {
+                "character": "氣",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "空",
+                "lang": "zh-CN",
+                "initial": "k",
+                "final": "ong",
+                "tone": 1
+            },
+            {
+                "character": "气",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 4
+            }
+        ],
+        "description": "air"
+    },
+    {
+        "top": [
+            {
+                "character": "水",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "eoi",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "水",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hui",
+                "tone": 3
+            }
+        ],
+        "description": "water"
+    },
+    {
+        "top": [
+            {
+                "character": "火",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "o",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "火",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "uo",
+                "tone": 3
+            }
+        ],
+        "description": "fire"
+    },
+    {
+        "top": [
+            {
+                "character": "山",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "aan",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "山",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "han",
+                "tone": 1
+            }
+        ],
+        "description": "mountain"
+    },
+    {
+        "top": [
+            {
+                "character": "海",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "oi",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "海",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ai",
+                "tone": 3
+            }
+        ],
+        "description": "sea"
+    },
+    {
+        "top": [
+            {
+                "character": "太",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "aai",
+                "tone": 3
+            },
+            {
+                "character": "陽",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "oeng",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "太",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ai",
+                "tone": 4
+            },
+            {
+                "character": "阳",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "ang",
+                "tone": 2
+            }
+        ],
+        "description": "sun"
+    },
+    {
+        "top": [
+            {
+                "character": "月",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "yut",
+                "tone": 6
+            },
+            {
+                "character": "亮",
+                "lang": "zh-HK",
+                "initial": "l",
+                "final": "oeng",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "月",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "ue",
+                "tone": 4
+            },
+            {
+                "character": "亮",
+                "lang": "zh-CN",
+                "initial": "l",
+                "final": "iang",
+                "tone": 4
+            }
+        ],
+        "description": "moon"
+    },
+    {
+        "top": [
+            {
+                "character": "星",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "ing",
+                "tone": 1
+            },
+            {
+                "character": "星",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "ing",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "星",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ing",
+                "tone": 1
+            },
+            {
+                "character": "星",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ing",
+                "tone": 5
+            }
+        ],
+        "description": "star"
+    },
+    {
+        "top": [
+            {
+                "character": "花",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "aa",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "花",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ua",
+                "tone": 1
+            }
+        ],
+        "description": "flower"
+    },
+    {
+        "top": [
+            {
+                "character": "草",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "ou",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "草",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "ao",
+                "tone": 3
+            }
+        ],
+        "description": "grass"
+    },
+    {
+        "top": [
+            {
+                "character": "樹",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "yu",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "树",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hu",
+                "tone": 4
+            }
+        ],
+        "description": "tree"
+    },
+    {
+        "top": [
+            {
+                "character": "動",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ung",
+                "tone": 6
+            },
+            {
+                "character": "物",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "at",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "动",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ong",
+                "tone": 4
+            },
+            {
+                "character": "物",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "u",
+                "tone": 4
+            }
+        ],
+        "description": "animal"
+    },
+    {
+        "top": [
+            {
+                "character": "貓",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "aau",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "猫",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "ao",
+                "tone": 1
+            }
+        ],
+        "description": "cat"
+    },
+    {
+        "top": [
+            {
+                "character": "狗",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "au",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "狗",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "ou",
+                "tone": 3
+            }
+        ],
+        "description": "dog"
+    },
+    {
+        "top": [
+            {
+                "character": "魚",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "yu",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "鱼",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "u",
+                "tone": 2
+            }
+        ],
+        "description": "fish"
+    },
+    {
+        "top": [
+            {
+                "character": "鳥",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "iu",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "鸟",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "iao",
+                "tone": 3
+            }
+        ],
+        "description": "bird"
+    },
+    {
+        "top": [
+            {
+                "character": "食",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "ik",
+                "tone": 6
+            },
+            {
+                "character": "物",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "at",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "食",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 2
+            },
+            {
+                "character": "物",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "u",
+                "tone": 4
+            }
+        ],
+        "description": "food"
+    },
+    {
+        "top": [
+            {
+                "character": "米",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ai",
+                "tone": 5
+            },
+            {
+                "character": "飯",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "aan",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "米",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "饭",
+                "lang": "zh-CN",
+                "initial": "f",
+                "final": "an",
+                "tone": 4
+            }
+        ],
+        "description": "rice"
+    },
+    {
+        "top": [
+            {
+                "character": "麵",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "in",
+                "tone": 6
+            },
+            {
+                "character": "包",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "aau",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "面",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "ian",
+                "tone": 4
+            },
+            {
+                "character": "包",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "ao",
+                "tone": 1
+            }
+        ],
+        "description": "bread"
+    },
+    {
+        "top": [
+            {
+                "character": "牛",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "gau",
+                "tone": 4
+            },
+            {
+                "character": "奶",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "aai",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "牛",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "iu",
+                "tone": 2
+            },
+            {
+                "character": "奶",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "ai",
+                "tone": 3
+            }
+        ],
+        "description": "milk"
+    },
+    {
+        "top": [
+            {
+                "character": "雞",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ai",
+                "tone": 1
+            },
+            {
+                "character": "蛋",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "aan",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "鸡",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "蛋",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "an",
+                "tone": 4
+            }
+        ],
+        "description": "egg"
+    },
+    {
+        "top": [
+            {
+                "character": "水",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "eoi",
+                "tone": 2
+            },
+            {
+                "character": "果",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "wo",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "水",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hui",
+                "tone": 3
+            },
+            {
+                "character": "果",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "uo",
+                "tone": 3
+            }
+        ],
+        "description": "fruit"
+    },
+    {
+        "top": [
+            {
+                "character": "蔬",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "o",
+                "tone": 1
+            },
+            {
+                "character": "菜",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "oi",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "蔬",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hu",
+                "tone": 1
+            },
+            {
+                "character": "菜",
+                "lang": "zh-CN",
+                "initial": "c",
+                "final": "ai",
+                "tone": 4
+            }
+        ],
+        "description": "vegetable"
+    },
+    {
+        "top": [
+            {
+                "character": "肉",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "uk",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "肉",
+                "lang": "zh-CN",
+                "initial": "r",
+                "final": "ou",
+                "tone": 4
+            }
+        ],
+        "description": "meat"
+    },
+    {
+        "top": [
+            {
+                "character": "糖",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "ong",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "糖",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ang",
+                "tone": 2
+            }
+        ],
+        "description": "sugar"
+    },
+    {
+        "top": [
+            {
+                "character": "鹽",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "im",
+                "tone": 4
+            }
+        ],
+        "bottom": [
+            {
+                "character": "盐",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "an",
+                "tone": 2
+            }
+        ],
+        "description": "salt"
+    },
+    {
+        "top": [
+            {
+                "character": "味",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ei",
+                "tone": 6
+            },
+            {
+                "character": "道",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ou",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "味",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "ei",
+                "tone": 4
+            },
+            {
+                "character": "道",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ao",
+                "tone": 4
+            }
+        ],
+        "description": "taste; flavor"
+    },
+    {
+        "top": [
+            {
+                "character": "你",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "ei",
+                "tone": 5
+            },
+            {
+                "character": "好",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ou",
+                "tone": 2
+            },
+            {
+                "character": "嗎",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "aa",
+                "tone": 1
+            }
+        ],
+        "bottom": [
+            {
+                "character": "你",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "好",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ao",
+                "tone": 3
+            },
+            {
+                "character": "吗",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "a",
+                "tone": 5
+            }
+        ],
+        "description": "How are you?"
+    },
+    {
+        "top": [
+            {
+                "character": "我",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "go",
+                "tone": 5
+            },
+            {
+                "character": "愛",
+                "lang": "zh-HK",
+                "initial": "o",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "你",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "ei",
+                "tone": 5
+            }
+        ],
+        "bottom": [
+            {
+                "character": "我",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "o",
+                "tone": 3
+            },
+            {
+                "character": "爱",
+                "lang": "zh-CN",
+                "initial": "a",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "你",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "i",
+                "tone": 3
+            }
+        ],
+        "description": "I love you"
+    },
+    {
+        "top": [
+            {
+                "character": "謝",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "e",
+                "tone": 6
+            },
+            {
+                "character": "謝",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "e",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "谢",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ie",
+                "tone": 4
+            },
+            {
+                "character": "谢",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ie",
+                "tone": 5
+            }
+        ],
+        "description": "Thank you"
+    },
+    {
+        "top": [
+            {
+                "character": "對",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "eoi",
+                "tone": 3
+            },
+            {
+                "character": "不",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "at",
+                "tone": 1
+            },
+            {
+                "character": "起",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "对",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "ui",
+                "tone": 4
+            },
+            {
+                "character": "不",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "u",
+                "tone": 4
+            },
+            {
+                "character": "起",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 3
+            }
+        ],
+        "description": "Sorry"
+    },
+    {
+        "top": [
+            {
+                "character": "請",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "eng",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "请",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "ing",
+                "tone": 3
+            }
+        ],
+        "description": "Please"
+    },
+    {
+        "top": [
+            {
+                "character": "再",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "oi",
+                "tone": 3
+            },
+            {
+                "character": "見",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "in",
+                "tone": 3
+            }
+        ],
+        "bottom": [
+            {
+                "character": "再",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "ai",
+                "tone": 4
+            },
+            {
+                "character": "见",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ian",
+                "tone": 4
+            }
+        ],
+        "description": "Goodbye"
+    },
+    {
+        "top": [
+            {
+                "character": "今",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "am",
+                "tone": 1
+            },
+            {
+                "character": "天",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "in",
+                "tone": 1
+            },
+            {
+                "character": "天",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "in",
+                "tone": 1
+            },
+            {
+                "character": "氣",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 3
+            },
+            {
+                "character": "很",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "an",
+                "tone": 2
+            },
+            {
+                "character": "好",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ou",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "今",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "in",
+                "tone": 1
+            },
+            {
+                "character": "天",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ian",
+                "tone": 1
+            },
+            {
+                "character": "天",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ian",
+                "tone": 1
+            },
+            {
+                "character": "气",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 4
+            },
+            {
+                "character": "很",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "en",
+                "tone": 3
+            },
+            {
+                "character": "好",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ao",
+                "tone": 3
+            }
+        ],
+        "description": "The weather is very nice today"
+    },
+    {
+        "top": [
+            {
+                "character": "我",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "go",
+                "tone": 5
+            },
+            {
+                "character": "喜",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ei",
+                "tone": 2
+            },
+            {
+                "character": "歡",
+                "lang": "zh-HK",
+                "initial": "f",
+                "final": "un",
+                "tone": 1
+            },
+            {
+                "character": "學",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ok",
+                "tone": 6
+            },
+            {
+                "character": "習",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "aap",
+                "tone": 6
+            },
+            {
+                "character": "中",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "ung",
+                "tone": 1
+            },
+            {
+                "character": "文",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "an",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "我",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "o",
+                "tone": 3
+            },
+            {
+                "character": "喜",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "欢",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "uan",
+                "tone": 1
+            },
+            {
+                "character": "学",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "ue",
+                "tone": 2
+            },
+            {
+                "character": "习",
+                "lang": "zh-CN",
+                "initial": "x",
+                "final": "i",
+                "tone": 2
+            },
+            {
+                "character": "中",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "hong",
+                "tone": 1
+            },
+            {
+                "character": "文",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "en",
+                "tone": 2
+            }
+        ],
+        "description": "I like learning Chinese"
+    },
+    {
+        "top": [
+            {
+                "character": "你",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "ei",
+                "tone": 5
+            },
+            {
+                "character": "覺",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ok",
+                "tone": 3
+            },
+            {
+                "character": "得",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ak",
+                "tone": 1
+            },
+            {
+                "character": "這",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "e",
+                "tone": 2
+            },
+            {
+                "character": "本",
+                "lang": "zh-HK",
+                "initial": "b",
+                "final": "un",
+                "tone": 2
+            },
+            {
+                "character": "書",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "yu",
+                "tone": 1
+            },
+            {
+                "character": "怎",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "am",
+                "tone": 2
+            },
+            {
+                "character": "麼",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "o",
+                "tone": 1
+            },
+            {
+                "character": "樣",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "oeng",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "你",
+                "lang": "zh-CN",
+                "initial": "n",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "觉",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "ue",
+                "tone": 2
+            },
+            {
+                "character": "得",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "e",
+                "tone": 5
+            },
+            {
+                "character": "这",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "he",
+                "tone": 4
+            },
+            {
+                "character": "本",
+                "lang": "zh-CN",
+                "initial": "b",
+                "final": "en",
+                "tone": 3
+            },
+            {
+                "character": "书",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hu",
+                "tone": 1
+            },
+            {
+                "character": "怎",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "en",
+                "tone": 3
+            },
+            {
+                "character": "么",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "e",
+                "tone": 5
+            },
+            {
+                "character": "样",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "ang",
+                "tone": 4
+            }
+        ],
+        "description": "What do you think of this book?"
+    },
+    {
+        "top": [
+            {
+                "character": "明",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "ing",
+                "tone": 4
+            },
+            {
+                "character": "天",
+                "lang": "zh-HK",
+                "initial": "t",
+                "final": "in",
+                "tone": 1
+            },
+            {
+                "character": "我",
+                "lang": "zh-HK",
+                "initial": "n",
+                "final": "go",
+                "tone": 5
+            },
+            {
+                "character": "們",
+                "lang": "zh-HK",
+                "initial": "m",
+                "final": "un",
+                "tone": 4
+            },
+            {
+                "character": "一",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "at",
+                "tone": 1
+            },
+            {
+                "character": "起",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "eoi",
+                "tone": 3
+            },
+            {
+                "character": "去",
+                "lang": "zh-HK",
+                "initial": "c",
+                "final": "eot",
+                "tone": 1
+            },
+            {
+                "character": "公",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ung",
+                "tone": 1
+            },
+            {
+                "character": "園",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "yun",
+                "tone": 2
+            }
+        ],
+        "bottom": [
+            {
+                "character": "明",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "ing",
+                "tone": 2
+            },
+            {
+                "character": "天",
+                "lang": "zh-CN",
+                "initial": "t",
+                "final": "ian",
+                "tone": 1
+            },
+            {
+                "character": "我",
+                "lang": "zh-CN",
+                "initial": "w",
+                "final": "o",
+                "tone": 3
+            },
+            {
+                "character": "们",
+                "lang": "zh-CN",
+                "initial": "m",
+                "final": "en",
+                "tone": 5
+            },
+            {
+                "character": "一",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "起",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "i",
+                "tone": 3
+            },
+            {
+                "character": "去",
+                "lang": "zh-CN",
+                "initial": "q",
+                "final": "u",
+                "tone": 4
+            },
+            {
+                "character": "公",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "ong",
+                "tone": 1
+            },
+            {
+                "character": "园",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "uan",
+                "tone": 2
+            }
+        ],
+        "description": "Tomorrow we go to the park together"
+    },
+    {
+        "top": [
+            {
+                "character": "這",
+                "lang": "zh-HK",
+                "initial": "z",
+                "final": "e",
+                "tone": 2
+            },
+            {
+                "character": "是",
+                "lang": "zh-HK",
+                "initial": "s",
+                "final": "i",
+                "tone": 6
+            },
+            {
+                "character": "一",
+                "lang": "zh-HK",
+                "initial": "j",
+                "final": "at",
+                "tone": 1
+            },
+            {
+                "character": "個",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "o",
+                "tone": 3
+            },
+            {
+                "character": "很",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "an",
+                "tone": 2
+            },
+            {
+                "character": "好",
+                "lang": "zh-HK",
+                "initial": "h",
+                "final": "ou",
+                "tone": 2
+            },
+            {
+                "character": "的",
+                "lang": "zh-HK",
+                "initial": "d",
+                "final": "ik",
+                "tone": 1
+            },
+            {
+                "character": "機",
+                "lang": "zh-HK",
+                "initial": "g",
+                "final": "ei",
+                "tone": 1
+            },
+            {
+                "character": "會",
+                "lang": "zh-HK",
+                "initial": "w",
+                "final": "ui",
+                "tone": 6
+            }
+        ],
+        "bottom": [
+            {
+                "character": "这",
+                "lang": "zh-CN",
+                "initial": "z",
+                "final": "he",
+                "tone": 4
+            },
+            {
+                "character": "是",
+                "lang": "zh-CN",
+                "initial": "s",
+                "final": "hi",
+                "tone": 4
+            },
+            {
+                "character": "一",
+                "lang": "zh-CN",
+                "initial": "y",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "个",
+                "lang": "zh-CN",
+                "initial": "g",
+                "final": "e",
+                "tone": 4
+            },
+            {
+                "character": "很",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "en",
+                "tone": 3
+            },
+            {
+                "character": "好",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ao",
+                "tone": 3
+            },
+            {
+                "character": "的",
+                "lang": "zh-CN",
+                "initial": "d",
+                "final": "e",
+                "tone": 5
+            },
+            {
+                "character": "机",
+                "lang": "zh-CN",
+                "initial": "j",
+                "final": "i",
+                "tone": 1
+            },
+            {
+                "character": "会",
+                "lang": "zh-CN",
+                "initial": "h",
+                "final": "ui",
+                "tone": 4
+            }
+        ],
+        "description": "This is a great opportunity"
+    }
+]

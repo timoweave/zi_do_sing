@@ -1,0 +1,202 @@
+[
+    {
+        "trad": "北京",
+        "simp": "北京",
+        "jyutping": "bak1 ging1",
+        "pinyin": "bei3 jing1",
+        "en": "Beijing",
+        "zh": "北京 / 北京"
+    },
+    {
+        "trad": "台北",
+        "simp": "台北",
+        "jyutping": "toi4 bak1",
+        "pinyin": "tai2 bei3",
+        "en": "Taipei",
+        "zh": "台北 / 台北"
+    },
+    {
+        "trad": "香港",
+        "simp": "香港",
+        "jyutping": "hoeng1 gong2",
+        "pinyin": "xiang1 gang3",
+        "en": "Hong Kong",
+        "zh": "香港 / 香港"
+    },
+    {
+        "trad": "股市",
+        "simp": "股市",
+        "jyutping": "gu2 si5",
+        "pinyin": "gu3 shi4",
+        "en": "stock market",
+        "zh": "股市 / 股市"
+    },
+    {
+        "trad": "通脹",
+        "simp": "通胀",
+        "jyutping": "tung1 zoeng3",
+        "pinyin": "tong1 zhang4",
+        "en": "inflation",
+        "zh": "通脹 / 通胀"
+    },
+    {
+        "trad": "關稅",
+        "simp": "关税",
+        "jyutping": "gwaan1 seoi3",
+        "pinyin": "guan1 shui4",
+        "en": "tariff",
+        "zh": "關稅 / 关税"
+    },
+    {
+        "trad": "晶片",
+        "simp": "芯片",
+        "jyutping": "zing1 pin3",
+        "pinyin": "xin1 pian4",
+        "en": "microchip; semiconductor",
+        "zh": "晶片 / 芯片"
+    },
+    {
+        "trad": "高鐵",
+        "simp": "高铁",
+        "jyutping": "gou1 tit3",
+        "pinyin": "gao1 tie3",
+        "en": "high-speed rail",
+        "zh": "高鐵 / 高铁"
+    },
+    {
+        "trad": "颱風",
+        "simp": "台风",
+        "jyutping": "toi4 fung1",
+        "pinyin": "tai2 feng1",
+        "en": "typhoon",
+        "zh": "颱風 / 台风"
+    },
+    {
+        "trad": "地鐵",
+        "simp": "地铁",
+        "jyutping": "dei6 tit3",
+        "pinyin": "di4 tie3",
+        "en": "subway; metro",
+        "zh": "地鐵 / 地铁"
+    },
+    {
+        "trad": "央行",
+        "simp": "央行",
+        "jyutping": "joeng1 hong4",
+        "pinyin": "yang1 hang2",
+        "en": "central bank",
+        "zh": "央行 / 央行"
+    },
+    {
+        "trad": "外交部",
+        "simp": "外交部",
+        "jyutping": "ngoi6 gaau1 bou6",
+        "pinyin": "wai4 jiao1 bu4",
+        "en": "Ministry of Foreign Affairs",
+        "zh": "外交部 / 外交部"
+    },
+    {
+        "trad": "美聯儲",
+        "simp": "美联储",
+        "jyutping": "mei5 lyun4 cyu5",
+        "pinyin": "mei3 lian2 chu3",
+        "en": "Federal Reserve (Fed)",
+        "zh": "美聯儲 / 美联储"
+    },
+    {
+        "trad": "國會",
+        "simp": "国会",
+        "jyutping": "gwok3 wui6",
+        "pinyin": "guo2 hui4",
+        "en": "Congress; Parliament",
+        "zh": "國會 / 国会"
+    },
+    {
+        "trad": "華爾街",
+        "simp": "华尔街",
+        "jyutping": "waa4 ji5 gaai1",
+        "pinyin": "hua2 er3 jie1",
+        "en": "Wall Street",
+        "zh": "華爾街 / 华尔街"
+    },
+    {
+        "trad": "白宮",
+        "simp": "白宫",
+        "jyutping": "baak6 gung1",
+        "pinyin": "bai2 gong1",
+        "en": "White House",
+        "zh": "白宮 / 白宫"
+    },
+    {
+        "trad": "聯合國",
+        "simp": "联合国",
+        "jyutping": "lyun4 hap6 gwok3",
+        "pinyin": "lian2 he2 guo2",
+        "en": "United Nations (UN)",
+        "zh": "聯合國 / 联合国"
+    },
+    {
+        "trad": "海關",
+        "simp": "海关",
+        "jyutping": "hoi2 gwaan1",
+        "pinyin": "hai3 guan1",
+        "en": "customs",
+        "zh": "海關 / 海关"
+    },
+    {
+        "trad": "國防部",
+        "simp": "国防部",
+        "jyutping": "gwok3 fong4 bou6",
+        "pinyin": "guo2 fang2 bu4",
+        "en": "Ministry of Defense",
+        "zh": "國防部 / 国防部"
+    },
+    {
+        "trad": "防務",
+        "simp": "防务",
+        "jyutping": "fong4 mou6",
+        "pinyin": "fang2 wu4",
+        "en": "defense affairs",
+        "zh": "防務 / 防务"
+    },
+    {
+        "trad": "大選",
+        "simp": "大选",
+        "jyutping": "daai6 syun2",
+        "pinyin": "da4 xuan3",
+        "en": "general election",
+        "zh": "大選 / 大选"
+    },
+    {
+        "trad": "法案",
+        "simp": "法案",
+        "jyutping": "faat3 on3",
+        "pinyin": "fa3 an4",
+        "en": "bill; legislative act",
+        "zh": "法案 / 法案"
+    },
+    {
+        "trad": "債務",
+        "simp": "债务",
+        "jyutping": "zaai3 mou6",
+        "pinyin": "zhai4 wu4",
+        "en": "debt",
+        "zh": "債務 / 债务"
+    },
+    {
+        "trad": "滙豐",
+        "simp": "汇丰",
+        "jyutping": "wui6 fung1",
+        "pinyin": "hui4 feng1",
+        "en": "HSBC",
+        "zh": "滙豐 / 汇丰"
+    },
+    {
+        "trad": "港交所",
+        "simp": "港交所",
+        "jyutping": "gong2 gaau1 so2",
+        "pinyin": "gang3 jiao1 suo3",
+        "en": "Hong Kong Stock Exchange (HKEX)",
+        "zh": "港交所 / 港交所"
+    }
+]
