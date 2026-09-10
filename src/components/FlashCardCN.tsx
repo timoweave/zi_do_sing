@@ -50,7 +50,8 @@ export function useVisualViewport() {
             // On iOS, when keyboard opens, visualViewport.height shrinks.
             // Scroll the page back to top so nothing gets clipped.
             if (vv.height < window.innerHeight * 0.75) {
-                window.scrollTo(500, 0);
+                const keyboardHeight = window.innerHeight - vv.height;
+                window.scrollBy(0, -keyboardHeight);
             }
         };
 
@@ -130,8 +131,25 @@ function FlashCardCN() {
         speak({ text: currentCard.en, lang: 'en-US', rate: 0.9 });
     }, [currentCard]);
 
-    const handlePopupKeyboardFocus = () => {
-        inputRef.current?.focus();
+    const isPopupKeyboardOpenProbably = () => {
+        const viewport = window.visualViewport;
+        const viewportShrunk =
+            !!viewport && viewport.height < window.innerHeight * 0.75;
+        const textInputHasFocus = document.activeElement === inputRef.current;
+
+        return viewportShrunk || textInputHasFocus;
+    };
+
+    const handlePopupKeyboardBlur = () => {
+        if (!isPopupKeyboardOpenProbably()) {
+            inputRef.current?.blur();
+        }
+    };
+
+    const preventDefault = (
+        e: React.MouseEvent<HTMLButtonElement | HTMLDivElement> | KeyboardEvent
+    ): void => {
+        e.preventDefault();
     };
 
     const handlePopupKeyboardPreventScroll = (
@@ -412,6 +430,8 @@ function FlashCardCN() {
             style={{
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
             }}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
         >
             {/* Card */}
             <div
@@ -432,8 +452,9 @@ function FlashCardCN() {
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
                                 handleUploadFileIcon();
-                                handlePopupKeyboardFocus();
+                                handlePopupKeyboardBlur();
                             }}
+                            onMouseDown={preventDefault}
                         >
                             <UploadFileIcon />
                             {/* Hidden File Input */}
@@ -449,8 +470,9 @@ function FlashCardCN() {
                             data-testid="words-is-theme-dark-button"
                             onClick={() => {
                                 toggleIsThemeDark();
-                                handlePopupKeyboardFocus();
+                                handlePopupKeyboardBlur();
                             }}
+                            onMouseDown={preventDefault}
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                         >
                             {isThemeDark ? <MoonIcon /> : <SunIcon />}
@@ -475,8 +497,9 @@ function FlashCardCN() {
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
                                 toggleRevealDescription();
-                                handlePopupKeyboardFocus();
+                                handlePopupKeyboardBlur();
                             }}
+                            onMouseDown={preventDefault}
                         >
                             {descriptionVisible ? (
                                 <OpenDocumentIcon />
@@ -488,9 +511,10 @@ function FlashCardCN() {
                         <button
                             data-testid="reveal-phonetic-button"
                             onClick={() => {
-                                handlePopupKeyboardFocus();
                                 toggleRevealPhonetic();
+                                handlePopupKeyboardBlur();
                             }}
+                            onMouseDown={preventDefault}
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             aria-label="Toggle pronunciation"
                         >
@@ -510,15 +534,16 @@ function FlashCardCN() {
                         className="flex w-full flex-col items-center"
                         onClick={() => {
                             speakJyutping();
-                            handlePopupKeyboardFocus();
+                            handlePopupKeyboardBlur();
                         }}
+                        onMouseDown={preventDefault}
                     >
                         <div className="flex gap-1">
                             {currentCardTrads.map((word, i) => {
                                 return (
                                     <div
                                         key={i}
-                                        className="flex flex-col gap-1"
+                                        className="flex flex-col gap-4"
                                     >
                                         <div
                                             data-testid={`words-trad-text-${i}`}
@@ -528,7 +553,7 @@ function FlashCardCN() {
                                         </div>
                                         <div
                                             data-testid={`words-trad-phonetic-${i}`}
-                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
+                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
                                             {currentCardJyutpings[i]}
                                         </div>
@@ -544,15 +569,16 @@ function FlashCardCN() {
                         className="flex w-full flex-col items-center"
                         onClick={() => {
                             speakPinyin();
-                            handlePopupKeyboardFocus();
+                            handlePopupKeyboardBlur();
                         }}
+                        onMouseDown={preventDefault}
                     >
                         <div className="flex gap-1">
                             {currentCardSimps.map((word, i) => {
                                 return (
                                     <div
                                         key={i}
-                                        className="flex flex-col gap-1"
+                                        className="flex flex-col gap-4"
                                     >
                                         <div
                                             data-testid={`words-simp-text-${i}`}
@@ -562,7 +588,7 @@ function FlashCardCN() {
                                         </div>
                                         <div
                                             data-testid={`words-simp-phonetic-${i}`}
-                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-500 text-white' : 'text-gray-800'}`}
+                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-400 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
                                             {currentCardPinyins[i]}
                                         </div>
@@ -579,8 +605,9 @@ function FlashCardCN() {
                     className={`text-center text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
                     onClick={() => {
                         speakEnglish();
-                        handlePopupKeyboardFocus();
+                        handlePopupKeyboardBlur();
                     }}
+                    onMouseDown={preventDefault}
                 >
                     {currentCard.en}
                 </div>
@@ -591,8 +618,9 @@ function FlashCardCN() {
                         data-testid="prev-words-card-button"
                         onClick={() => {
                             goToPrevCard();
-                            handlePopupKeyboardFocus();
+                            handlePopupKeyboardBlur();
                         }}
+                        onMouseDown={preventDefault}
                         className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                         aria-label="Previous"
                     >
@@ -616,27 +644,34 @@ function FlashCardCN() {
                             autoComplete="off"
                             spellCheck="false"
                         />
-                        <CheckMarkIcon
-                            data-testid="words-check-mark-icon"
-                            matched={
-                                (inputMatchedJyutpings.length > 0 &&
-                                    inputMatchedJyutpings.every(
-                                        (a) => a === true
-                                    )) ||
-                                (inputMatchedPinyins.length > 0 &&
-                                    inputMatchedPinyins.every(
-                                        (a) => a === true
-                                    ))
-                            }
-                        />
+                        <div
+                            onClick={() => {
+                                handlePopupKeyboardBlur();
+                            }}
+                        >
+                            <CheckMarkIcon
+                                data-testid="words-check-mark-icon"
+                                matched={
+                                    (inputMatchedJyutpings.length > 0 &&
+                                        inputMatchedJyutpings.every(
+                                            (a) => a === true
+                                        )) ||
+                                    (inputMatchedPinyins.length > 0 &&
+                                        inputMatchedPinyins.every(
+                                            (a) => a === true
+                                        ))
+                                }
+                            />
+                        </div>
                     </div>
 
                     <button
                         data-testid="next-words-card-button"
                         onClick={() => {
                             goToNextCard();
-                            handlePopupKeyboardFocus();
+                            handlePopupKeyboardBlur();
                         }}
+                        onMouseDown={preventDefault}
                         className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                         aria-label="Next"
                     >
