@@ -154,12 +154,12 @@ function FlashCardCN() {
                 .toLowerCase()
                 .split(/ +/);
 
-            const inputMatchedList =
-                inputList?.map(
-                    (given, i) =>
-                        given == answerList[i] ||
-                        given == answerWithoutToneList[i]
-                ) ?? [];
+            // const inputMatchedList =
+            //     inputList?.map(
+            //         (given, i) =>
+            //             given == answerList[i] ||
+            //             given == answerWithoutToneList[i]
+            //     ) ?? [];
             const answerMatchedList =
                 answerList
                     ?.map(
