@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
     CheckMarkIcon,
     ChevronLeftIcon,
@@ -12,7 +12,7 @@ import {
     SunIcon,
     UploadFileIcon,
 } from './Icons';
-import defaultWords from '../words/demo_035.json';
+import defaultWords from '../words/chats_100.json';
 
 export interface CardItem {
     trad: string;
@@ -41,6 +41,7 @@ export const shuffleCardItems = (words: CardItem[]): CardItem[] => {
 
 export function useVisualViewport() {
     const [height, setHeight] = useState<number | null>(null);
+    const [width, setWidth] = useState<number | null>(null);
 
     useEffect(() => {
         const vv = window.visualViewport;
@@ -48,6 +49,7 @@ export function useVisualViewport() {
 
         const handler = () => {
             setHeight(vv.height);
+            setWidth(vv.width);
             // On iOS, when keyboard opens, visualViewport.height shrinks.
             // Scroll the page back to top so nothing gets clipped.
             if (vv.height < window.innerHeight * 0.75) {
@@ -64,13 +66,29 @@ export function useVisualViewport() {
         };
     }, []);
 
-    return height;
+    return [width, height];
 }
+
+const speak = ({
+    text,
+    lang,
+    rate,
+}: {
+    text: string;
+    lang?: string;
+    rate?: number;
+}): void => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = lang ?? 'en-US';
+    utterance.rate = rate ?? 0.9;
+    speechSynthesis.speak(utterance);
+};
 
 function FlashCardCN() {
     const [cards, setCards] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [revealed, setRevealed] = useState(true);
+    const [tradIndex, setTradIndex] = useState(0);
+    const [revealed, setRevealed] = useState(false);
     const [inputMatched, setInputMatched] = useState(false);
     const [inputMatchedPinyins, setInputMatchedPinyins] = useState<boolean[]>(
         []
@@ -94,32 +112,17 @@ function FlashCardCN() {
     const touchStartX = useRef(0);
     const touchStartY = useRef(0);
     const [isThemeDark, setIsThemeDark] = useState(true);
-    const vvHeight = useVisualViewport();
+    const [_vvWidth, vvHeight] = useVisualViewport();
 
-    const currentCard = cards[currentIndex] || null;
+    const currentCard = useMemo(
+        () => cards[currentIndex] || null,
+        [cards, currentIndex]
+    );
     const totalCards = cards.length;
     const currentCardTrads = currentCard?.trad.split('');
     const currentCardJyutpings = currentCard?.jyutping.split(/ +/);
     const currentCardSimps = currentCard?.simp.split('');
     const currentCardPinyins = currentCard?.pinyin.split(/ +/);
-
-    const speak = useCallback(
-        ({
-            text,
-            lang,
-            rate,
-        }: {
-            text: string;
-            lang: string;
-            rate?: number;
-        }): void => {
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = lang;
-            utterance.rate = rate ?? 0.9;
-            speechSynthesis.speak(utterance);
-        },
-        []
-    );
 
     const speakJyutping = useCallback(() => {
         if (!currentCard) return;
@@ -129,11 +132,6 @@ function FlashCardCN() {
     const speakPinyin = useCallback(() => {
         if (!currentCard) return;
         speak({ text: currentCard.simp, lang: 'zh-CN', rate: 0.6 });
-    }, [currentCard]);
-
-    const speakEnglish = useCallback(() => {
-        if (!currentCard) return;
-        speak({ text: currentCard.en, lang: 'en-US', rate: 0.9 });
     }, [currentCard]);
 
     const isPopupKeyboardOpenProbably = () => {
@@ -217,14 +215,15 @@ function FlashCardCN() {
         setRevealed,
     ]);
 
-    const verifyInput = useCallback(
+    const verifyInputPhonetic = useCallback(
         (
+            previousInputMatched: boolean,
             input: string,
             answer: string,
             setAnswerMatchedListCallback: React.Dispatch<
                 React.SetStateAction<boolean[]>
             >
-        ): void => {
+        ): boolean => {
             const inputList = input.toLowerCase().match(/[a-zA-Z]+\d*/g);
             const answerList = answer.toLowerCase().split(/ +/);
             const answerWithoutToneList = answer
@@ -245,13 +244,16 @@ function FlashCardCN() {
                 setInputMatched(true);
                 if (!revealed) {
                     setRevealed(true);
+                    return true;
                 }
             } else {
                 setInputMatched(false);
                 if (revealed) {
                     setRevealed(false);
+                    return false;
                 }
             }
+            return previousInputMatched;
         },
         [currentCard, revealed, setInputMatched]
     );
@@ -260,13 +262,24 @@ function FlashCardCN() {
         (e: React.ChangeEvent<HTMLInputElement>) => {
             const value = String(e.target.value ?? '');
             setInputValue(value);
-            verifyInput(value, currentCard.jyutping, setInputMatchedJyutpings);
-            verifyInput(value, currentCard.pinyin, setInputMatchedPinyins);
+            const isJyutpingVerified = verifyInputPhonetic(
+                inputMatched,
+                value,
+                currentCard.jyutping,
+                setInputMatchedJyutpings
+            );
+            verifyInputPhonetic(
+                isJyutpingVerified,
+                value,
+                currentCard.pinyin,
+                setInputMatchedPinyins
+            );
         },
         [
             currentCard,
+            inputMatched,
             setInputValue,
-            verifyInput,
+            verifyInputPhonetic,
             setInputMatchedJyutpings,
             setInputMatchedPinyins,
         ]
@@ -274,6 +287,7 @@ function FlashCardCN() {
 
     const handleKeyDown = useCallback(
         (e: KeyboardEvent) => {
+            const isInputEmpty = inputValue.length == 0;
             if (e.key === 'ArrowUp') {
                 e.preventDefault();
                 speakJyutping();
@@ -294,38 +308,23 @@ function FlashCardCN() {
                 toggleRevealDescription();
                 return;
             }
-            if (
-                e.key === 'ArrowLeft' &&
-                (inputValue.length == 0 ||
-                    inputMatchedJyutpings ||
-                    inputMatchedPinyins)
-            ) {
+            if (e.key === 'ArrowLeft' && isInputEmpty) {
                 e.preventDefault();
+                if (inputMatched) {
+                    setRevealed(false);
+                }
                 goToPrevCard();
                 return;
             }
-            if (
-                e.key === 'ArrowRight' &&
-                (inputValue.length == 0 ||
-                    (inputValue.length > 0 && inputMatchedJyutpings) ||
-                    (inputValue.length > 0 && inputMatchedPinyins))
-            ) {
+            if (e.key === 'ArrowRight' && isInputEmpty) {
                 e.preventDefault();
-                if (
-                    (inputValue.length > 0 && inputMatchedJyutpings) ||
-                    (inputValue.length > 0 && inputMatchedPinyins)
-                ) {
+                if (inputMatched) {
                     setRevealed(false);
                 }
                 goToNextCard();
                 return;
             }
-            if (
-                e.key === 'Enter' &&
-                (inputValue.length == 0 ||
-                    inputMatchedJyutpings ||
-                    inputMatchedPinyins)
-            ) {
+            if (e.key === 'Enter' && inputMatched && !isInputEmpty) {
                 e.preventDefault();
                 setRevealed(false);
                 goToNextCard();
@@ -338,6 +337,7 @@ function FlashCardCN() {
             toggleRevealDescription,
             goToPrevCard,
             goToNextCard,
+            inputMatched,
             inputMatchedJyutpings,
             inputMatchedPinyins,
             inputValue,
@@ -399,6 +399,56 @@ function FlashCardCN() {
         touchStartX.current = 0;
     };
 
+    const scroll = () => {
+        if (
+            scrollableChineseWordsRef.current == null ||
+            currentCard.trad == null
+        ) {
+            return;
+        }
+        const el = scrollableChineseWordsRef.current;
+        const tradLength = currentCard.trad.trim().split('').length ?? 1;
+        const tradIndexSize = (el.scrollWidth - el.clientWidth) / tradLength;
+
+        const left = tradIndex * tradIndexSize;
+        console.log(
+            'left ',
+            Math.round(left),
+            'trad index',
+            tradIndex,
+            'trad index width',
+            Math.round(tradIndexSize),
+            'scroll width',
+            Math.round(el.scrollWidth),
+            'client width',
+            Math.round(el.clientWidth)
+        );
+
+        el.scrollTo({ left, behavior: 'smooth' });
+    };
+
+    const scrollToStart = () => {
+        scrollableChineseWordsRef.current?.scrollTo({
+            left: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    const scrollToMiddle = () => {
+        const el = scrollableChineseWordsRef.current;
+        if (el) {
+            const middleLeft = (el.scrollWidth - el.clientWidth) / 2;
+            el.scrollTo({ left: middleLeft, behavior: 'smooth' });
+        }
+    };
+
+    const scrollToEnd = () => {
+        const el = scrollableChineseWordsRef.current;
+        if (el) {
+            el.scrollTo({ left: el.scrollWidth, behavior: 'smooth' });
+        }
+    };
+
     // Initialize cards
     useEffect(() => {
         const initialCards = shuffleCardItems(defaultWords);
@@ -424,9 +474,36 @@ function FlashCardCN() {
 
     useEffect(() => {
         if (scrollableChineseWordsRef.current) {
-            scrollableChineseWordsRef.current.scrollLeft = 0;
+            console.log(
+                'restart',
+                scrollableChineseWordsRef.current.scrollLeft
+            );
+            scrollableChineseWordsRef.current?.scrollTo({
+                left: 0,
+                behavior: 'auto',
+            });
         }
-    }, [scrollableChineseWordsRef.current]);
+    }, [currentCard?.trad]);
+
+    useEffect(() => {
+        setTradIndex(
+            (inputRef.current?.value.trim().split(/ +/).length ?? 1) - 1
+        );
+    }, [inputRef.current?.value]);
+
+    useEffect(() => {
+        const inputMatchedJyutpingsAll =
+            inputValue.length > 0 &&
+            inputMatchedJyutpings.every((a) => a === true);
+        const inputMatchedPinyinsAll =
+            inputValue.length > 0 &&
+            inputMatchedPinyins.every((a) => a === true);
+        const inputMatchedPhonetic =
+            inputMatchedJyutpingsAll || inputMatchedPinyinsAll;
+        setInputMatched(inputMatchedPhonetic);
+    }, [inputValue]);
+
+    console.log('input character index ', tradIndex);
 
     if (!currentCard) {
         return (
@@ -441,27 +518,72 @@ function FlashCardCN() {
     return (
         <div
             data-testid="words-flash-card-deck-container"
-            className="flex min-h-dvh items-center justify-center bg-gray-50 p-3 transition-colors dark:bg-gray-900"
+            className="m-v-4 flex min-h-dvh w-full flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
             style={{
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
             }}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
+            {/* top buttons experiment */}
+            <div
+                data-testid="top-buttons"
+                className="flex flex-wrap items-center justify-around gap-1"
+                style={{ display: 'none' }}
+            >
+                <button
+                    data-testid="upload-file-button-4"
+                    title="select chinese word file"
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    onClick={() => {
+                        handleUploadFileIcon();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                >
+                    <UploadFileIcon />
+                    {/* Hidden File Input */}
+                    <input
+                        id="upload-file-button-4-hidden-input"
+                        data-testid="upload-file-button-4-hidden-input"
+                        ref={fileInputRef}
+                        type="file"
+                        accept=".json,.csv"
+                        className="hidden"
+                        onChange={handleUploadFile}
+                    />
+                </button>
+                <button
+                    data-testid="words-is-theme-dark-button"
+                    title="toggle between light and dark mode"
+                    onClick={() => {
+                        toggleIsThemeDark();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                >
+                    {isThemeDark ? <MoonIcon /> : <SunIcon />}
+                </button>
+            </div>
+
             {/* Card */}
             <div
                 data-testid="words-flash-card-container"
                 ref={cardRef}
-                className="relative w-full max-w-2xl touch-pan-y rounded-3xl bg-white p-6 shadow-lg transition-colors sm:p-8 dark:bg-gray-800"
+                className="relative w-full touch-pan-y rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
             >
-                {/* float left buttons */}
+                {/* float left edge buttons */}
                 <div
-                    data-testid="floating-left-buttons"
+                    data-testid="floating-left-edge-buttons"
                     className="left-３ absolute top-1 hidden text-gray-700 dark:text-gray-400"
+                    style={{
+                        display: 'none',
+                    }}
                 >
                     <div className="full-width flex flex-col content-around items-stretch gap-2">
                         <button
-                            data-testid="upload-file-button"
+                            data-testid="upload-file-button-3"
                             title="select chinese word file"
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
@@ -473,10 +595,15 @@ function FlashCardCN() {
                             <UploadFileIcon />
                             {/* Hidden File Input */}
                             <input
+                                id="upload-file-button-3-hidden-input"
+                                data-testid="upload-file-button-3-hidden-input"
                                 ref={fileInputRef}
                                 type="file"
                                 accept=".json,.csv"
-                                className="hidden"
+                                className=""
+                                style={{
+                                    visibility: 'hidden',
+                                }}
                                 onChange={handleUploadFile}
                             />
                         </button>
@@ -501,14 +628,17 @@ function FlashCardCN() {
                     </div>
                 </div>
 
-                {/* float right buttons */}
+                {/* float right edge buttons */}
                 <div
-                    data-testid="floating-right-buttons"
+                    data-testid="floating-right-edge-buttons"
                     className="absolute top-1 right-2 text-gray-700 dark:text-gray-400"
+                    style={{
+                        display: 'none',
+                    }}
                 >
                     <div className="full-width flex flex-col content-around items-stretch gap-2">
                         <button
-                            data-testid="upload-file-button"
+                            data-testid="upload-file-button-2"
                             title="select chinese word file"
                             className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                             onClick={() => {
@@ -516,13 +646,15 @@ function FlashCardCN() {
                                 handlePopupKeyboardBlur();
                             }}
                             style={{
-                                visibility: 'hidden',
+                                visibility: 'hidden', // testing
                             }}
                             onMouseDown={preventDefault}
                         >
                             <DotDotDotIcon />
                             {/* Hidden File Input */}
                             <input
+                                id="upload-file-button-2-hidden-input"
+                                data-testid="upload-file-button-2-hidden-input"
                                 ref={fileInputRef}
                                 type="file"
                                 accept=".json,.csv"
@@ -530,7 +662,12 @@ function FlashCardCN() {
                                 onChange={handleUploadFile}
                             />
                         </button>
-                        <div className="hidden">
+                        <div
+                            className=""
+                            style={{
+                                visibility: 'hidden',
+                            }}
+                        >
                             <button
                                 data-testid="reveal-description-button"
                                 title="reveal description"
@@ -548,7 +685,12 @@ function FlashCardCN() {
                                 )}
                             </button>
                         </div>
-                        <div className="hidden">
+                        <div
+                            className=""
+                            style={{
+                                visibility: 'hidden',
+                            }}
+                        >
                             <button
                                 data-testid="reveal-phonetic-button"
                                 title="reveal phonetic"
@@ -566,22 +708,86 @@ function FlashCardCN() {
                     </div>
                 </div>
 
+                {/* float bottom middle buttons */}
+                <div
+                    data-testid="floating-bottom-middle-buttons"
+                    className="absolute right-0 bottom-0 left-0 py-0 text-gray-700 dark:text-gray-600"
+                >
+                    <div
+                        data-testid="words-progress-status-label"
+                        className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
+                    >
+                        {currentIndex + 1} / {totalCards}
+                    </div>
+                </div>
+
+                {/* float bottom left buttons */}
+                <div
+                    data-testid="floating-bottom-left-buttons"
+                    className="absolute bottom-2 left-4 py-0 text-gray-700 dark:text-gray-400"
+                    style={{ display: 'none' }}
+                >
+                    <button
+                        data-testid="upload-file-button-5"
+                        title="select chinese word file"
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        onClick={() => {
+                            handleUploadFileIcon();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                    >
+                        <UploadFileIcon />
+                        {/* Hidden File Input */}
+                        <input
+                            id="upload-file-button-5-hidden-input"
+                            data-testid="upload-file-button-5-hidden-input"
+                            ref={fileInputRef}
+                            type="file"
+                            accept=".json,.csv"
+                            className="hidden"
+                            onChange={handleUploadFile}
+                        />
+                    </button>
+                </div>
+
+                {/* float bottom right buttons */}
+                <div
+                    data-testid="floating-bottom-right-buttons"
+                    className="absolute right-4 bottom-2 py-0 text-gray-700 dark:text-gray-400"
+                    style={{ display: 'none' }}
+                >
+                    <button
+                        data-testid="reveal-phonetic-button"
+                        title="reveal phonetic"
+                        onClick={() => {
+                            toggleRevealPhonetic();
+                            handlePopupKeyboardBlur();
+                        }}
+                        onMouseDown={preventDefault}
+                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                        aria-label="Toggle pronunciation"
+                    >
+                        {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+                    </button>
+                </div>
+
                 {/* Chinese characters */}
                 <div
                     ref={scrollableChineseWordsRef}
                     data-testid="words-chinese-scrollable-container"
-                    className="flex max-w-full flex-row justify-center items-center gap-2 overflow-x-auto px-4 py-2 pb-5 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:h-10 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-slate-700"
+                    className="[&::-webkit-scrollbar] flex flex-row items-center gap-2 overflow-x-auto px-0 py-2 pb-2 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-slate-700"
                     onTouchStart={stopPropagation}
                     onTouchEnd={stopPropagation}
                 >
                     <div
                         data-testid="words-chinese-container"
-                        className="flex flex-col items-center gap-3 py-2 justify-center"
+                        className="mx-auto flex flex-col items-center justify-center gap-3"
                     >
                         {/* Traditional */}
                         <div
                             data-testid="words-traditional-label"
-                            className="flex w-full flex-col items-center"
+                            className="flex flex-col items-center"
                             onClick={() => {
                                 speakJyutping();
                                 handlePopupKeyboardBlur();
@@ -590,20 +796,21 @@ function FlashCardCN() {
                         >
                             <div className="flex gap-1">
                                 {currentCardTrads.map((tradWord, i) => {
+                                    const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
                                     return (
                                         <div
-                                            key={i}
+                                            key={key}
                                             className="flex flex-col gap-4"
                                         >
                                             <div
                                                 data-testid={`words-trad-text-${i}`}
-                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                             >
                                                 {tradWord}
                                             </div>
                                             <div
                                                 data-testid={`words-trad-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                             >
                                                 {currentCardJyutpings[i]}
                                             </div>
@@ -616,7 +823,7 @@ function FlashCardCN() {
                         {/* Simplified */}
                         <div
                             data-testid="words-simplified-label"
-                            className="flex w-full flex-col items-center"
+                            className="flex flex-col items-center"
                             onClick={() => {
                                 speakPinyin();
                                 handlePopupKeyboardBlur();
@@ -625,20 +832,21 @@ function FlashCardCN() {
                         >
                             <div className="flex gap-1">
                                 {currentCardSimps.map((simplWord, i) => {
+                                    const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
                                     return (
                                         <div
-                                            key={i}
+                                            key={key}
                                             className="flex flex-col gap-4"
                                         >
                                             <div
                                                 data-testid={`words-simp-text-${i}`}
-                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                             >
                                                 {simplWord}
                                             </div>
                                             <div
                                                 data-testid={`words-simp-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                             >
                                                 {currentCardPinyins[i]}
                                             </div>
@@ -653,159 +861,256 @@ function FlashCardCN() {
                 {/* Description */}
                 <div
                     data-testid="words-description-label"
-                    className={`text-center text-gray-500 dark:border-gray-700 dark:text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap overflow-x-auto ${descriptionVisible ? 'visible' : 'invisible'}`}
-                    onClick={() => {
-                        speakEnglish();
-                        handlePopupKeyboardBlur();
-                    }}
+                    // className={`w-[calc(100% - 2rem)] mx-12 overflow-x-auto text-center whitespace-nowrap text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
+                    className={`overflow-x-auto text-center whitespace-nowrap text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
                     onMouseDown={preventDefault}
                     onTouchStart={stopPropagation}
                     onTouchEnd={stopPropagation}
                 >
                     {currentCard.en}
                 </div>
+            </div>
 
-                {/* Input row */}
-                <div className="mt-4 flex flex-wrap items-center justify-center gap-1 sm:gap-2">
-                    <div className="flex min-w-35 flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500">
-                        <input
-                            data-testid="words-input-box"
-                            ref={inputRef}
-                            type="text"
-                            value={inputValue}
-                            onChange={(e) => {
-                                handleInputChange(e);
-                            }}
-                            onFocus={handlePopupKeyboardPreventScroll}
-                            placeholder="Jyutping / Pinyin"
-                            className="min-w-15 flex-1 bg-transparent py-3 text-base text-gray-800 outline-none dark:text-gray-200"
-                            autoCapitalize="none"
-                            autoCorrect="off"
-                            autoComplete="off"
-                            spellCheck="false"
-                        />
-                        <div
-                            onClick={() => {
-                                handlePopupKeyboardBlur();
-                            }}
-                        >
-                            <CheckMarkIcon
-                                data-testid="words-check-mark-icon"
-                                matched={
-                                    (inputMatchedJyutpings.length > 0 &&
-                                        inputMatchedJyutpings.every(
-                                            (a) => a === true
-                                        )) ||
-                                    (inputMatchedPinyins.length > 0 &&
-                                        inputMatchedPinyins.every(
-                                            (a) => a === true
-                                        ))
-                                }
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                {/* buttons */}
-                <div
-                    data-testid="bottom-buttons"
-                    className="mt-4 flex flex-wrap items-center justify-around gap-1 sm:gap-2"
+            {/* Input row */}
+            <div className="flex w-full flex-wrap items-center justify-center gap-1">
+                {/* left chevron */}
+                <button
+                    data-testid="previous-words-card-button"
+                    title="go to previous card"
+                    onClick={() => {
+                        goToPrevCard();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    aria-label="Previous"
                 >
-                    <button
-                        data-testid="prev-words-card-button"
-                        title="go to previous card"
-                        onClick={() => {
-                            goToPrevCard();
-                            handlePopupKeyboardBlur();
+                    <ChevronLeftIcon />
+                </button>
+                <button
+                    data-testid="upload-file-button-5"
+                    title="select chinese word file"
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    onClick={() => {
+                        handleUploadFileIcon();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                >
+                    <UploadFileIcon />
+                    {/* Hidden File Input */}
+                    <input
+                        id="upload-file-button-5-hidden-input"
+                        data-testid="upload-file-button-5-hidden-input"
+                        ref={fileInputRef}
+                        type="file"
+                        accept=".json,.csv"
+                        className="hidden"
+                        onChange={handleUploadFile}
+                    />
+                </button>
+                {/* input box */}
+                <div
+                    data-testid="words-input-box-container"
+                    className="flex flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500"
+                >
+                    <input
+                        title="type in jyutping, pinyin, or chinese"
+                        id="words-input-box"
+                        data-testid="words-input-box"
+                        ref={inputRef}
+                        type="text"
+                        value={inputValue}
+                        onChange={(e) => {
+                            handleInputChange(e);
                         }}
-                        onMouseDown={preventDefault}
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        aria-label="Previous"
-                    >
-                        <ChevronLeftIcon />
-                    </button>
-                    <button
-                        data-testid="upload-file-button"
-                        title="select a chinese word file"
-                        className="hidden h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        onClick={() => {
-                            handleUploadFileIcon();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                    >
-                        <UploadFileIcon />
-                        {/* Hidden File Input */}
-                        <input
-                            ref={fileInputRef}
-                            type="file"
-                            accept=".json,.csv"
-                            className="hidden"
-                            onChange={handleUploadFile}
-                        />
-                    </button>
-                    <button
-                        data-testid="words-is-theme-dark-button"
-                        title="toggle between light and dark theme"
-                        onClick={() => {
-                            toggleIsThemeDark();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    >
-                        {isThemeDark ? <MoonIcon /> : <SunIcon />}
-                    </button>
+                        onFocus={handlePopupKeyboardPreventScroll}
+                        placeholder={`Jyutping / Pinyin`}
+                        className="flex w-full flex-1 bg-transparent py-3 text-base text-gray-800 outline-none dark:text-gray-200"
+                        autoCapitalize="none"
+                        autoCorrect="off"
+                        autoComplete="off"
+                        spellCheck="false"
+                    />
                     <div
-                        data-testid="words-progress-status-label"
-                        className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
+                        onClick={() => {
+                            handlePopupKeyboardBlur();
+                        }}
                     >
-                        {currentIndex + 1} / {totalCards}
+                        <CheckMarkIcon
+                            data-testid="words-check-mark-icon"
+                            matched={inputMatched}
+                        />
                     </div>
-                    <button
-                        data-testid="reveal-description-button"
-                        title="reveal description"
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        onClick={() => {
-                            toggleRevealDescription();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                    >
-                        {descriptionVisible ? (
-                            <OpenDocumentIcon />
-                        ) : (
-                            <ClosedDocumentIcon />
-                        )}
-                    </button>
-
-                    <button
-                        data-testid="reveal-phonetic-button"
-                        title="reveal phonetic"
-                        onClick={() => {
-                            toggleRevealPhonetic();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        aria-label="Toggle pronunciation"
-                    >
-                        {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                    </button>
-                    <button
-                        data-testid="next-words-card-button"
-                        title="go to next card"
-                        onClick={() => {
-                            goToNextCard();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        aria-label="Next"
-                    >
-                        <ChevronRightIcon />
-                    </button>
                 </div>
+                {/* reveal phonetic */}
+                <button
+                    data-testid="reveal-phonetic-button"
+                    title="reveal phonetic"
+                    onClick={() => {
+                        toggleRevealPhonetic();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    aria-label="Toggle pronunciation"
+                >
+                    {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+                </button>
+                {/* right chevron */}
+                <button
+                    data-testid="next-words-card-button"
+                    title="go to next card"
+                    onClick={() => {
+                        goToNextCard();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    aria-label="Next"
+                >
+                    <ChevronRightIcon />
+                </button>
+            </div>
+
+            {/* bottom buttons experiment */}
+            <div
+                data-testid="bottom-buttons"
+                className="flex flex-wrap items-center justify-around gap-1"
+                style={{ display: 'none' }}
+            >
+                <button
+                    data-testid="previous-words-card-button"
+                    title="go to previous card"
+                    onClick={() => {
+                        goToPrevCard();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    aria-label="Previous"
+                >
+                    <ChevronLeftIcon />
+                </button>
+                <button
+                    data-testid="upload-file-button-1"
+                    title="select a chinese word file"
+                    className="h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    style={{
+                        display: 'none',
+                    }}
+                    onClick={() => {
+                        handleUploadFileIcon();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                >
+                    <UploadFileIcon />
+                    {/* Hidden File Input */}
+                    <input
+                        id="upload-file-button-1-hidden-input"
+                        data-testid="upload-file-button-1-hidden-input"
+                        ref={fileInputRef}
+                        type="file"
+                        accept=".json,.csv"
+                        className=""
+                        style={{
+                            visibility: 'hidden',
+                        }}
+                        onChange={handleUploadFile}
+                    />
+                </button>
+                <button
+                    data-testid="words-is-theme-dark-button"
+                    title="toggle between light and dark theme"
+                    onClick={() => {
+                        toggleIsThemeDark();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    style={{ display: 'none' }}
+                >
+                    {isThemeDark ? <MoonIcon /> : <SunIcon />}
+                </button>
+
+                <button
+                    data-testid="reveal-description-button"
+                    title="reveal description"
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    onClick={() => {
+                        toggleRevealDescription();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                >
+                    {descriptionVisible ? (
+                        <OpenDocumentIcon />
+                    ) : (
+                        <ClosedDocumentIcon />
+                    )}
+                </button>
+                <div
+                    data-testid="words-progress-status-label"
+                    className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
+                >
+                    {currentIndex + 1} / {totalCards}
+                </div>
+
+                <button
+                    data-testid="reveal-phonetic-button"
+                    title="reveal phonetic"
+                    onClick={() => {
+                        toggleRevealPhonetic();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    aria-label="Toggle pronunciation"
+                >
+                    {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+                </button>
+                <button
+                    data-testid="next-words-card-button"
+                    title="go to next card"
+                    onClick={() => {
+                        goToNextCard();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={preventDefault}
+                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    aria-label="Next"
+                >
+                    <ChevronRightIcon />
+                </button>
+            </div>
+
+            {/* scroll experiment */}
+            <div className="mb-4 flex gap-2" style={{ display: 'none' }}>
+                <button
+                    onClick={scroll}
+                    className="rounded bg-gray-200 px-3 py-1"
+                >
+                    scroll
+                </button>
+                <button
+                    onClick={scrollToStart}
+                    className="rounded bg-gray-200 px-3 py-1"
+                >
+                    Beginning
+                </button>
+                <button
+                    onClick={scrollToMiddle}
+                    className="rounded bg-gray-200 px-3 py-1"
+                >
+                    Middle
+                </button>
+                <button
+                    onClick={scrollToEnd}
+                    className="rounded bg-gray-200 px-3 py-1"
+                >
+                    End
+                </button>
             </div>
         </div>
     );
