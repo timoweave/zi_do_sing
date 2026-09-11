@@ -12,7 +12,7 @@ import {
     SunIcon,
     UploadFileIcon,
 } from './Icons';
-import defaultWords from '../words/chats_100.json';
+import defaultWords from '../words/demo_035.json';
 
 export interface CardItem {
     trad: string;
@@ -70,7 +70,7 @@ export function useVisualViewport() {
 function FlashCardCN() {
     const [cards, setCards] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [revealed, setRevealed] = useState(false);
+    const [revealed, setRevealed] = useState(true);
     const [inputMatched, setInputMatched] = useState(false);
     const [inputMatchedPinyins, setInputMatchedPinyins] = useState<boolean[]>(
         []
@@ -85,17 +85,15 @@ function FlashCardCN() {
         boolean[]
     >([]);
     const [inputValue, setInputValue] = useState<string>('');
-    const [descriptionVisible, setDescriptionVisible] = useState(false);
+    const [descriptionVisible, setDescriptionVisible] = useState(true);
 
     const inputRef = useRef<HTMLInputElement>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const cardRef = useRef(null);
+    const scrollableChineseWordsRef = useRef<HTMLDivElement>(null);
     const touchStartX = useRef(0);
     const touchStartY = useRef(0);
-    const [isThemeDark, setIsThemeDark] = useState(() => {
-        const hours = new Date().getHours();
-        return hours >= 18 || hours < 6;
-    });
+    const [isThemeDark, setIsThemeDark] = useState(true);
     const vvHeight = useVisualViewport();
 
     const currentCard = cards[currentIndex] || null;
@@ -151,6 +149,10 @@ function FlashCardCN() {
         if (!isPopupKeyboardOpenProbably()) {
             inputRef.current?.blur();
         }
+    };
+
+    const stopPropagation = (e: React.TouchEvent<HTMLDivElement>) => {
+        e.stopPropagation();
     };
 
     const preventDefault = (
@@ -420,6 +422,12 @@ function FlashCardCN() {
         }
     }, [isThemeDark]);
 
+    useEffect(() => {
+        if (scrollableChineseWordsRef.current) {
+            scrollableChineseWordsRef.current.scrollLeft = 0;
+        }
+    }, [scrollableChineseWordsRef.current]);
+
     if (!currentCard) {
         return (
             <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900">
@@ -432,7 +440,7 @@ function FlashCardCN() {
 
     return (
         <div
-            data-testid="words-fash-card-container"
+            data-testid="words-flash-card-deck-container"
             className="flex min-h-dvh items-center justify-center bg-gray-50 p-3 transition-colors dark:bg-gray-900"
             style={{
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
@@ -442,11 +450,9 @@ function FlashCardCN() {
         >
             {/* Card */}
             <div
-                data-testid="words-card-container"
+                data-testid="words-flash-card-container"
                 ref={cardRef}
                 className="relative w-full max-w-2xl touch-pan-y rounded-3xl bg-white p-6 shadow-lg transition-colors sm:p-8 dark:bg-gray-800"
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
             >
                 {/* float left buttons */}
                 <div
@@ -509,6 +515,9 @@ function FlashCardCN() {
                                 handleUploadFileIcon();
                                 handlePopupKeyboardBlur();
                             }}
+                            style={{
+                                visibility: 'hidden',
+                            }}
                             onMouseDown={preventDefault}
                         >
                             <DotDotDotIcon />
@@ -559,76 +568,84 @@ function FlashCardCN() {
 
                 {/* Chinese characters */}
                 <div
-                    data-testid="words-chinese-container"
-                    className="flex flex-col items-center gap-3 py-2"
+                    ref={scrollableChineseWordsRef}
+                    data-testid="words-chinese-scrollable-container"
+                    className="flex max-w-full flex-row justify-center items-center gap-2 overflow-x-auto px-4 py-2 pb-5 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:h-10 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-slate-700"
+                    onTouchStart={stopPropagation}
+                    onTouchEnd={stopPropagation}
                 >
-                    {/* Traditional */}
                     <div
-                        data-testid="words-traditional-label"
-                        className="flex w-full flex-col items-center"
-                        onClick={() => {
-                            speakJyutping();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
+                        data-testid="words-chinese-container"
+                        className="flex flex-col items-center gap-3 py-2 justify-center"
                     >
-                        <div className="flex gap-1">
-                            {currentCardTrads.map((tradWord, i) => {
-                                return (
-                                    <div
-                                        key={i}
-                                        className="flex flex-col gap-4"
-                                    >
+                        {/* Traditional */}
+                        <div
+                            data-testid="words-traditional-label"
+                            className="flex w-full flex-col items-center"
+                            onClick={() => {
+                                speakJyutping();
+                                handlePopupKeyboardBlur();
+                            }}
+                            onMouseDown={preventDefault}
+                        >
+                            <div className="flex gap-1">
+                                {currentCardTrads.map((tradWord, i) => {
+                                    return (
                                         <div
-                                            data-testid={`words-trad-text-${i}`}
-                                            className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            key={i}
+                                            className="flex flex-col gap-4"
                                         >
-                                            {tradWord}
+                                            <div
+                                                data-testid={`words-trad-text-${i}`}
+                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            >
+                                                {tradWord}
+                                            </div>
+                                            <div
+                                                data-testid={`words-trad-phonetic-${i}`}
+                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            >
+                                                {currentCardJyutpings[i]}
+                                            </div>
                                         </div>
-                                        <div
-                                            data-testid={`words-trad-phonetic-${i}`}
-                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
-                                        >
-                                            {currentCardJyutpings[i]}
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Simplified */}
-                    <div
-                        data-testid="words-simplified-label"
-                        className="flex w-full flex-col items-center"
-                        onClick={() => {
-                            speakPinyin();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                    >
-                        <div className="flex gap-1">
-                            {currentCardSimps.map((simplWord, i) => {
-                                return (
-                                    <div
-                                        key={i}
-                                        className="flex flex-col gap-4"
-                                    >
+                        {/* Simplified */}
+                        <div
+                            data-testid="words-simplified-label"
+                            className="flex w-full flex-col items-center"
+                            onClick={() => {
+                                speakPinyin();
+                                handlePopupKeyboardBlur();
+                            }}
+                            onMouseDown={preventDefault}
+                        >
+                            <div className="flex gap-1">
+                                {currentCardSimps.map((simplWord, i) => {
+                                    return (
                                         <div
-                                            data-testid={`words-simp-text-${i}`}
-                                            className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            key={i}
+                                            className="flex flex-col gap-4"
                                         >
-                                            {simplWord}
+                                            <div
+                                                data-testid={`words-simp-text-${i}`}
+                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 sm:text-6xl dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            >
+                                                {simplWord}
+                                            </div>
+                                            <div
+                                                data-testid={`words-simp-phonetic-${i}`}
+                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            >
+                                                {currentCardPinyins[i]}
+                                            </div>
                                         </div>
-                                        <div
-                                            data-testid={`words-simp-phonetic-${i}`}
-                                            className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity sm:text-lg dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
-                                        >
-                                            {currentCardPinyins[i]}
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -636,12 +653,14 @@ function FlashCardCN() {
                 {/* Description */}
                 <div
                     data-testid="words-description-label"
-                    className={`text-center text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
+                    className={`text-center text-gray-500 dark:border-gray-700 dark:text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap overflow-x-auto ${descriptionVisible ? 'visible' : 'invisible'}`}
                     onClick={() => {
                         speakEnglish();
                         handlePopupKeyboardBlur();
                     }}
                     onMouseDown={preventDefault}
+                    onTouchStart={stopPropagation}
+                    onTouchEnd={stopPropagation}
                 >
                     {currentCard.en}
                 </div>
