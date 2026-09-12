@@ -217,7 +217,6 @@ function FlashCardCN() {
 
     const verifyInputPhonetic = useCallback(
         (
-            previousInputMatched: boolean,
             input: string,
             answer: string,
             setAnswerMatchedListCallback: React.Dispatch<
@@ -253,7 +252,7 @@ function FlashCardCN() {
                     return false;
                 }
             }
-            return previousInputMatched;
+            return false;
         },
         [currentCard, revealed, setInputMatched]
     );
@@ -262,18 +261,34 @@ function FlashCardCN() {
         (e: React.ChangeEvent<HTMLInputElement>) => {
             const value = String(e.target.value ?? '');
             setInputValue(value);
-            const isJyutpingVerified = verifyInputPhonetic(
-                inputMatched,
-                value,
-                currentCard.jyutping,
-                setInputMatchedJyutpings
-            );
-            verifyInputPhonetic(
-                isJyutpingVerified,
-                value,
-                currentCard.pinyin,
-                setInputMatchedPinyins
-            );
+            interface ExpectedPhoneticAndSetMatchedPhonetic {
+                expectedPhonetic: string;
+                setMatchedPhonetic: React.Dispatch<
+                    React.SetStateAction<boolean[]>
+                >;
+            }
+
+            const checkList: ExpectedPhoneticAndSetMatchedPhonetic[] = [
+                {
+                    expectedPhonetic: currentCard.jyutping,
+                    setMatchedPhonetic: setInputMatchedJyutpings,
+                },
+                {
+                    expectedPhonetic: currentCard.pinyin,
+                    setMatchedPhonetic: setInputMatchedPinyins,
+                },
+            ];
+            checkList.some((check) => {
+                const {
+                    expectedPhonetic: answerPhonetic,
+                    setMatchedPhonetic: setInputMatchedPhonetic,
+                } = check;
+                return verifyInputPhonetic(
+                    value,
+                    answerPhonetic,
+                    setInputMatchedPhonetic
+                );
+            });
         },
         [
             currentCard,
@@ -474,10 +489,6 @@ function FlashCardCN() {
 
     useEffect(() => {
         if (scrollableChineseWordsRef.current) {
-            console.log(
-                'restart',
-                scrollableChineseWordsRef.current.scrollLeft
-            );
             scrollableChineseWordsRef.current?.scrollTo({
                 left: 0,
                 behavior: 'auto',
@@ -502,8 +513,6 @@ function FlashCardCN() {
             inputMatchedJyutpingsAll || inputMatchedPinyinsAll;
         setInputMatched(inputMatchedPhonetic);
     }, [inputValue]);
-
-    console.log('input character index ', tradIndex);
 
     if (!currentCard) {
         return (
