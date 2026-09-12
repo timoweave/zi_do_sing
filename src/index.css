@@ -3,9 +3,9 @@
 /* Add this line to enable class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
-@supports not (height: 100dvh) {
-  .min-h-dvh { min-height: 100vh; }
-}
+/* @supports not (height: 100dvh) {
+  .min-h-dvh { min-height: 100dvh; }
+} */
 
 :root {
   --text: #6b6375;
@@ -68,6 +68,12 @@
 body {
   margin: 0;
 }
+
+/* html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0
+} */
 
 p {
   margin: 0;

@@ -58,8 +58,18 @@ export function useVisualViewport() {
             }
         };
 
+        // const _updateHeight = () => {
+        //     // Get the root element or fallback to document element
+        //     const rootElement =
+        //         document.getElementById('root') || document.documentElement;
+        //     // Set the height explicitly to match the visible virtual viewport height in pixels
+        //     rootElement.style.height = `${vv.height}px`;
+        // };
+
         vv.addEventListener('resize', handler);
         vv.addEventListener('scroll', handler);
+        handler();
+
         return () => {
             vv.removeEventListener('resize', handler);
             vv.removeEventListener('scroll', handler);
@@ -515,7 +525,7 @@ function FlashCardCN() {
 
     if (!currentCard) {
         return (
-            <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900">
+            <div className="flex min-h-dvh items-center justify-center bg-gray-50 dark:bg-gray-900">
                 <div className="text-gray-600 dark:text-gray-400">
                     Loading...
                 </div>
@@ -579,7 +589,7 @@ function FlashCardCN() {
             <div
                 data-testid="words-flash-card-container"
                 ref={cardRef}
-                className="relative w-full touch-pan-y rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
+                className="relative flex w-full max-w-120 touch-pan-y flex-col place-content-around gap-2 rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
             >
                 {/* float left edge buttons */}
                 <div
@@ -720,6 +730,7 @@ function FlashCardCN() {
                 <div
                     data-testid="floating-bottom-middle-buttons"
                     className="absolute right-0 bottom-0 left-0 py-0 text-gray-700 dark:text-gray-600"
+                    style={{ display: 'none' }}
                 >
                     <div
                         data-testid="words-progress-status-label"
@@ -879,8 +890,16 @@ function FlashCardCN() {
                 </div>
             </div>
 
+            {/* page */}
+            <div
+                data-testid="words-progress-status-label"
+                className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
+            >
+                {currentIndex + 1} / {totalCards}
+            </div>
+
             {/* Input row */}
-            <div className="flex w-full flex-wrap items-center justify-center gap-1">
+            <div className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1">
                 {/* left chevron */}
                 <button
                     data-testid="previous-words-card-button"
