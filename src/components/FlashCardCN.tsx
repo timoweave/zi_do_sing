@@ -12,7 +12,7 @@ import {
     SunIcon,
     UploadFileIcon,
 } from './Icons';
-import defaultWords from '../words/chats_100.json';
+import defaultWords from '../words/news_100b.json';
 
 export interface CardItem {
     trad: string;
@@ -343,6 +343,7 @@ function FlashCardCN() {
                 e.preventDefault();
                 setRevealed(false);
                 goToNextCard();
+                scrollToStart();
             }
         },
         [
@@ -421,25 +422,23 @@ function FlashCardCN() {
         ) {
             return;
         }
+
         const el = scrollableChineseWordsRef.current;
-        const tradLength = currentCard.trad.trim().split('').length ?? 1;
-        const tradIndexSize = (el.scrollWidth - el.clientWidth) / tradLength;
-
-        const left = tradIndex * tradIndexSize;
-        console.log(
-            'left ',
-            Math.round(left),
-            'trad index',
-            tradIndex,
-            'trad index width',
-            Math.round(tradIndexSize),
-            'scroll width',
-            Math.round(el.scrollWidth),
-            'client width',
-            Math.round(el.clientWidth)
+        const tradLength = currentCard.trad.trim().split('').length;
+        const tradIndexCharacterSize = el.scrollWidth / tradLength;
+        const tradIndexLength = Math.floor(
+            el.clientWidth / tradIndexCharacterSize
         );
+        const movePosition = (tradIndex + 1) * tradIndexCharacterSize;
 
-        el.scrollTo({ left, behavior: 'smooth' });
+        if (
+            tradIndex !==
+            tradIndexLength * (Math.floor(tradIndex / tradIndexLength) + 1) - 1
+        ) {
+            return;
+        }
+
+        el.scrollTo({ left: movePosition, behavior: 'smooth' });
     };
 
     const scrollToStart = () => {
@@ -932,6 +931,9 @@ function FlashCardCN() {
                         value={inputValue}
                         onChange={(e) => {
                             handleInputChange(e);
+                            if (e.target.value.at(-1) == ' ') {
+                                scroll();
+                            }
                         }}
                         onFocus={handlePopupKeyboardPreventScroll}
                         placeholder={`Jyutping / Pinyin`}
@@ -1095,7 +1097,7 @@ function FlashCardCN() {
             </div>
 
             {/* scroll experiment */}
-            <div className="mb-4 flex gap-2" style={{ display: 'none' }}>
+            <div className="mb-4 flex gap-4" style={{ display: 'none' }}>
                 <button
                     onClick={scroll}
                     className="rounded bg-gray-200 px-3 py-1"
