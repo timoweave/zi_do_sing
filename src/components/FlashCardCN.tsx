@@ -3,13 +3,8 @@ import {
     CheckMarkIcon,
     ChevronLeftIcon,
     ChevronRightIcon,
-    ClosedDocumentIcon,
     ClosedEyeIcon,
-    DotDotDotIcon,
-    MoonIcon,
-    OpenDocumentIcon,
     OpenEyeIcon,
-    SunIcon,
     UploadFileIcon,
 } from './Icons';
 import defaultWords from '../words/news_100b.json';
@@ -94,6 +89,56 @@ const speak = ({
     speechSynthesis.speak(utterance);
 };
 
+export interface WordAndSound {
+    char: string;
+    sound: string;
+    ith: number;
+    isAllMatched: boolean;
+    isCharMatched: boolean;
+    isSoundMatched: boolean;
+    isAllSoundRevealed: boolean;
+}
+
+function WordAndSound({
+    char,
+    sound,
+    ith,
+    isAllSoundRevealed,
+    isAllMatched, // either all text or all sound
+    isSoundMatched,
+    isCharMatched,
+}: WordAndSound) {
+    return (
+        <div
+            data-testid={`traditional-jyuting-${ith}`}
+            className={`flex flex-col pt-1 ${(isSoundMatched || isCharMatched) && !isAllMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
+        >
+            {/* char */}
+            <div
+                data-testid={`words-trad-text-${ith}`}
+                className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200`}
+            >
+                {char}
+            </div>
+            {/* sound */}
+            <div
+                data-testid={`words-trad-phonetic-${ith}`}
+                className={`wrap-break-words text-center text-[0.6rem] text-gray-600 transition-opacity dark:text-gray-200 ${isSoundMatched || isAllSoundRevealed ? 'opacity-100' : 'opacity-0'} `}
+            >
+                {sound}
+            </div>
+        </div>
+    );
+}
+
+interface WordsAndSounds {
+    words: string[];
+    sounds: string[];
+    isWordsMatched: boolean[];
+    isSoundMatched: boolean[];
+    speakSound: () => void;
+}
+
 function FlashCardCN() {
     const [cards, setCards] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -122,7 +167,7 @@ function FlashCardCN() {
     const scrollableChineseWordsRef = useRef<HTMLDivElement>(null);
     const touchStartX = useRef(0);
     const touchStartY = useRef(0);
-    const [isThemeDark, setIsThemeDark] = useState(true);
+    const [isThemeDark, _setIsThemeDark] = useState(true);
     const [_vvWidth, vvHeight] = useVisualViewport();
 
     const currentCard = useMemo(
@@ -182,10 +227,6 @@ function FlashCardCN() {
 
     const toggleRevealDescription = useCallback(() => {
         setDescriptionVisible((prev) => !prev);
-    }, []);
-
-    const toggleIsThemeDark = useCallback(() => {
-        setIsThemeDark((prev) => !prev);
     }, []);
 
     const goToPrevCard = useCallback(() => {
@@ -459,21 +500,6 @@ function FlashCardCN() {
         });
     };
 
-    const scrollToMiddle = () => {
-        const el = scrollableChineseWordsRef.current;
-        if (el) {
-            const middleLeft = (el.scrollWidth - el.clientWidth) / 2;
-            el.scrollTo({ left: middleLeft, behavior: 'smooth' });
-        }
-    };
-
-    const scrollToEnd = () => {
-        const el = scrollableChineseWordsRef.current;
-        if (el) {
-            el.scrollTo({ left: el.scrollWidth, behavior: 'smooth' });
-        }
-    };
-
     // Initialize cards
     useEffect(() => {
         const initialCards = shuffleCardItems(defaultWords);
@@ -534,7 +560,25 @@ function FlashCardCN() {
         );
     }
 
+    const wordsAndSounds: WordsAndSounds[] = [
+        {
+            words: currentCardTrads,
+            sounds: currentCardJyutpings,
+            isWordsMatched: inputMatchedTrads,
+            isSoundMatched: inputMatchedJyutpings,
+            speakSound: speakJyutping,
+        },
+        {
+            words: currentCardSimps,
+            sounds: currentCardPinyins,
+            isWordsMatched: inputMatchedSimpls,
+            isSoundMatched: inputMatchedPinyins,
+            speakSound: speakPinyin,
+        },
+    ];
+
     return (
+        /* Card Deck */
         <div
             data-testid="words-flash-card-deck-container"
             className="font-cn-fontsource-975-maru-sc m-v-4 flex min-h-dvh w-full flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
@@ -544,255 +588,13 @@ function FlashCardCN() {
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
-            {/* top buttons experiment */}
-            <div
-                data-testid="top-buttons"
-                className="flex flex-wrap items-center justify-around gap-1"
-                style={{ display: 'none' }}
-            >
-                <button
-                    data-testid="upload-file-button-4"
-                    title="select chinese word file"
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    onClick={() => {
-                        handleUploadFileIcon();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                >
-                    <UploadFileIcon />
-                    {/* Hidden File Input */}
-                    <input
-                        id="upload-file-button-4-hidden-input"
-                        data-testid="upload-file-button-4-hidden-input"
-                        ref={fileInputRef}
-                        type="file"
-                        accept=".json,.csv"
-                        className="hidden"
-                        onChange={handleUploadFile}
-                    />
-                </button>
-                <button
-                    data-testid="words-is-theme-dark-button"
-                    title="toggle between light and dark mode"
-                    onClick={() => {
-                        toggleIsThemeDark();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                >
-                    {isThemeDark ? <MoonIcon /> : <SunIcon />}
-                </button>
-            </div>
-
             {/* Card */}
             <div
                 data-testid="words-flash-card-container"
                 ref={cardRef}
                 className="relative flex w-full max-w-120 touch-pan-y flex-col place-content-around rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
             >
-                {/* float left edge buttons */}
-                <div
-                    data-testid="floating-left-edge-buttons"
-                    className="left-３ absolute top-1 hidden text-gray-700 dark:text-gray-400"
-                    style={{
-                        display: 'none',
-                    }}
-                >
-                    <div className="full-width flex flex-col content-around items-stretch gap-2">
-                        <button
-                            data-testid="upload-file-button-3"
-                            title="select chinese word file"
-                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                            onClick={() => {
-                                handleUploadFileIcon();
-                                handlePopupKeyboardBlur();
-                            }}
-                            onMouseDown={preventDefault}
-                        >
-                            <UploadFileIcon />
-                            {/* Hidden File Input */}
-                            <input
-                                id="upload-file-button-3-hidden-input"
-                                data-testid="upload-file-button-3-hidden-input"
-                                ref={fileInputRef}
-                                type="file"
-                                accept=".json,.csv"
-                                className=""
-                                style={{
-                                    visibility: 'hidden',
-                                }}
-                                onChange={handleUploadFile}
-                            />
-                        </button>
-                        <button
-                            data-testid="words-is-theme-dark-button"
-                            title="toggle between light and dark mode"
-                            onClick={() => {
-                                toggleIsThemeDark();
-                                handlePopupKeyboardBlur();
-                            }}
-                            onMouseDown={preventDefault}
-                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        >
-                            {isThemeDark ? <MoonIcon /> : <SunIcon />}
-                        </button>
-                        <div
-                            data-testid="words-progress-status-label"
-                            className="flex self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
-                        >
-                            {currentIndex + 1} / {totalCards}
-                        </div>
-                    </div>
-                </div>
-
-                {/* float right edge buttons */}
-                <div
-                    data-testid="floating-right-edge-buttons"
-                    className="absolute top-1 right-2 text-gray-700 dark:text-gray-400"
-                    style={{
-                        display: 'none',
-                    }}
-                >
-                    <div className="full-width flex flex-col content-around items-stretch gap-2">
-                        <button
-                            data-testid="upload-file-button-2"
-                            title="select chinese word file"
-                            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                            onClick={() => {
-                                handleUploadFileIcon();
-                                handlePopupKeyboardBlur();
-                            }}
-                            style={{
-                                visibility: 'hidden', // testing
-                            }}
-                            onMouseDown={preventDefault}
-                        >
-                            <DotDotDotIcon />
-                            {/* Hidden File Input */}
-                            <input
-                                id="upload-file-button-2-hidden-input"
-                                data-testid="upload-file-button-2-hidden-input"
-                                ref={fileInputRef}
-                                type="file"
-                                accept=".json,.csv"
-                                className="hidden"
-                                onChange={handleUploadFile}
-                            />
-                        </button>
-                        <div
-                            className=""
-                            style={{
-                                visibility: 'hidden',
-                            }}
-                        >
-                            <button
-                                data-testid="reveal-description-button"
-                                title="reveal description"
-                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                                onClick={() => {
-                                    toggleRevealDescription();
-                                    handlePopupKeyboardBlur();
-                                }}
-                                onMouseDown={preventDefault}
-                            >
-                                {descriptionVisible ? (
-                                    <OpenDocumentIcon />
-                                ) : (
-                                    <ClosedDocumentIcon />
-                                )}
-                            </button>
-                        </div>
-                        <div
-                            className=""
-                            style={{
-                                visibility: 'hidden',
-                            }}
-                        >
-                            <button
-                                data-testid="reveal-phonetic-button"
-                                title="reveal phonetic"
-                                onClick={() => {
-                                    toggleRevealPhonetic();
-                                    handlePopupKeyboardBlur();
-                                }}
-                                onMouseDown={preventDefault}
-                                className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                                aria-label="Toggle pronunciation"
-                            >
-                                {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* float bottom middle buttons */}
-                <div
-                    data-testid="floating-bottom-middle-buttons"
-                    className="absolute right-0 bottom-0 left-0 py-0 text-gray-700 dark:text-gray-600"
-                    style={{ display: 'none' }}
-                >
-                    <div
-                        data-testid="words-progress-status-label"
-                        className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
-                    >
-                        {currentIndex + 1} / {totalCards}
-                    </div>
-                </div>
-
-                {/* float bottom left buttons */}
-                <div
-                    data-testid="floating-bottom-left-buttons"
-                    className="absolute bottom-2 left-4 py-0 text-gray-700 dark:text-gray-400"
-                    style={{ display: 'none' }}
-                >
-                    <button
-                        data-testid="upload-file-button-5"
-                        title="select chinese word file"
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        onClick={() => {
-                            handleUploadFileIcon();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                    >
-                        <UploadFileIcon />
-                        {/* Hidden File Input */}
-                        <input
-                            id="upload-file-button-5-hidden-input"
-                            data-testid="upload-file-button-5-hidden-input"
-                            ref={fileInputRef}
-                            type="file"
-                            accept=".json,.csv"
-                            className="hidden"
-                            onChange={handleUploadFile}
-                        />
-                    </button>
-                </div>
-
-                {/* float bottom right buttons */}
-                <div
-                    data-testid="floating-bottom-right-buttons"
-                    className="absolute right-4 bottom-2 py-0 text-gray-700 dark:text-gray-400"
-                    style={{ display: 'none' }}
-                >
-                    <button
-                        data-testid="reveal-phonetic-button"
-                        title="reveal phonetic"
-                        onClick={() => {
-                            toggleRevealPhonetic();
-                            handlePopupKeyboardBlur();
-                        }}
-                        onMouseDown={preventDefault}
-                        className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                        aria-label="Toggle pronunciation"
-                    >
-                        {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                    </button>
-                </div>
-
-                {/* Chinese characters */}
+                {/* Chinese characters rows container */}
                 <div
                     ref={scrollableChineseWordsRef}
                     data-testid="words-chinese-scrollable-container"
@@ -804,8 +606,51 @@ function FlashCardCN() {
                         data-testid="words-chinese-container"
                         className="mx-auto flex flex-col items-center justify-center gap-1"
                     >
-                        {/* Traditional */}
+                        {wordsAndSounds.map((wordAndSound, row) => (
+                            <div
+                                key={row}
+                                data-testid="words-traditional-label"
+                                className="flex flex-col items-center gap-1"
+                                onClick={() => {
+                                    wordAndSound.speakSound();
+                                    handlePopupKeyboardBlur();
+                                }}
+                                onMouseDown={preventDefault}
+                            >
+                                {/* Chinese characters row i-th */}
+                                <div
+                                    className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
+                                >
+                                    {wordAndSound.words.map((char, i) => {
+                                        const sound = wordAndSound.sounds[i];
+                                        const isCharMatched =
+                                            wordAndSound.isWordsMatched[i];
+                                        const isSoundMatched =
+                                            wordAndSound.isSoundMatched[i];
+
+                                        return (
+                                            <WordAndSound
+                                                key={
+                                                    /* TBD: react need help to redraw when revealed is changed */
+                                                    100 * Number(revealed) + i
+                                                }
+                                                ith={i}
+                                                char={char}
+                                                sound={sound}
+                                                isAllMatched={inputMatched}
+                                                isCharMatched={isCharMatched}
+                                                isSoundMatched={isSoundMatched}
+                                                isAllSoundRevealed={revealed}
+                                            />
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        ))}
+
+                        {/* Traditional line */}
                         <div
+                            style={{ display: 'none' }}
                             data-testid="words-traditional-label"
                             className="flex flex-col items-center gap-1"
                             onClick={() => {
@@ -814,36 +659,33 @@ function FlashCardCN() {
                             }}
                             onMouseDown={preventDefault}
                         >
+                            {/* traditional words */}
                             <div
                                 className={`${inputMatched && inputMatchedJyutpings.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
                             >
                                 {currentCardTrads.map((tradWord, i) => {
                                     const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
                                     return (
-                                        <div
+                                        <WordAndSound
                                             key={key}
-                                            className={`flex flex-col pt-1 ${inputMatchedJyutpings[i] && !inputMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
-                                        >
-                                            <div
-                                                data-testid={`words-trad-text-${i}`}
-                                                className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
-                                            >
-                                                {tradWord}
-                                            </div>
-                                            <div
-                                                data-testid={`words-trad-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.6rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} `}
-                                            >
-                                                {currentCardJyutpings[i]}
-                                            </div>
-                                        </div>
+                                            char={tradWord}
+                                            sound={currentCardJyutpings[i]}
+                                            ith={i}
+                                            isAllMatched={inputMatched}
+                                            isCharMatched={inputMatchedTrads[i]}
+                                            isSoundMatched={
+                                                inputMatchedJyutpings[i]
+                                            }
+                                            isAllSoundRevealed={revealed}
+                                        />
                                     );
                                 })}
                             </div>
                         </div>
 
-                        {/* Simplified */}
+                        {/* Simplified line */}
                         <div
+                            style={{ display: 'none' }}
                             data-testid="words-simplified-label"
                             className="flex flex-col items-center"
                             onClick={() => {
@@ -852,29 +694,27 @@ function FlashCardCN() {
                             }}
                             onMouseDown={preventDefault}
                         >
+                            {/* Simplified words */}
                             <div
                                 className={`${inputMatched && inputMatchedPinyins.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1 pt-1`}
                             >
                                 {currentCardSimps.map((simplWord, i) => {
                                     const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
                                     return (
-                                        <div
+                                        <WordAndSound
                                             key={key}
-                                            className={`${inputMatchedPinyins[i] ? 'rounded-md bg-gray-600' : 'text-gray-800'} flex flex-col`}
-                                        >
-                                            <div
-                                                data-testid={`words-simp-text-${i}`}
-                                                className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
-                                            >
-                                                {simplWord}
-                                            </div>
-                                            <div
-                                                data-testid={`words-simp-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.6rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'}`}
-                                            >
-                                                {currentCardPinyins[i]}
-                                            </div>
-                                        </div>
+                                            char={simplWord}
+                                            sound={currentCardPinyins[i]}
+                                            ith={i}
+                                            isAllMatched={inputMatched}
+                                            isCharMatched={
+                                                inputMatchedSimpls[i]
+                                            }
+                                            isSoundMatched={
+                                                inputMatchedPinyins[i]
+                                            }
+                                            isAllSoundRevealed={revealed}
+                                        />
                                     );
                                 })}
                             </div>
@@ -894,7 +734,7 @@ function FlashCardCN() {
                 </div>
             </div>
 
-            {/* page */}
+            {/* Pagination */}
             <div
                 data-testid="words-progress-status-label"
                 className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
@@ -922,6 +762,7 @@ function FlashCardCN() {
                 >
                     <ChevronLeftIcon />
                 </button>
+                {/* upload file button */}
                 <button
                     data-testid="upload-file-button-5"
                     title="select chinese word file"
@@ -939,7 +780,7 @@ function FlashCardCN() {
                         data-testid="upload-file-button-5-hidden-input"
                         ref={fileInputRef}
                         type="file"
-                        accept=".json,.csv"
+                        accept=".json"
                         className="hidden"
                         onChange={handleUploadFile}
                     />
@@ -1008,146 +849,6 @@ function FlashCardCN() {
                     aria-label="Next"
                 >
                     <ChevronRightIcon />
-                </button>
-            </div>
-
-            {/* bottom buttons experiment */}
-            <div
-                data-testid="bottom-buttons"
-                className="flex flex-wrap items-center justify-around gap-1"
-                style={{ display: 'none' }}
-            >
-                <button
-                    data-testid="previous-words-card-button"
-                    title="go to previous card"
-                    onClick={() => {
-                        goToPrevCard();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    aria-label="Previous"
-                >
-                    <ChevronLeftIcon />
-                </button>
-                <button
-                    data-testid="upload-file-button-1"
-                    title="select a chinese word file"
-                    className="h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    style={{
-                        display: 'none',
-                    }}
-                    onClick={() => {
-                        handleUploadFileIcon();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                >
-                    <UploadFileIcon />
-                    {/* Hidden File Input */}
-                    <input
-                        id="upload-file-button-1-hidden-input"
-                        data-testid="upload-file-button-1-hidden-input"
-                        ref={fileInputRef}
-                        type="file"
-                        accept=".json,.csv"
-                        className=""
-                        style={{
-                            visibility: 'hidden',
-                        }}
-                        onChange={handleUploadFile}
-                    />
-                </button>
-                <button
-                    data-testid="words-is-theme-dark-button"
-                    title="toggle between light and dark theme"
-                    onClick={() => {
-                        toggleIsThemeDark();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    style={{ display: 'none' }}
-                >
-                    {isThemeDark ? <MoonIcon /> : <SunIcon />}
-                </button>
-
-                <button
-                    data-testid="reveal-description-button"
-                    title="reveal description"
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    onClick={() => {
-                        toggleRevealDescription();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                >
-                    {descriptionVisible ? (
-                        <OpenDocumentIcon />
-                    ) : (
-                        <ClosedDocumentIcon />
-                    )}
-                </button>
-                <div
-                    data-testid="words-progress-status-label"
-                    className="self-center py-2 text-center text-sm font-medium text-gray-300 dark:border-gray-700 dark:text-gray-300"
-                >
-                    {currentIndex + 1} / {totalCards}
-                </div>
-
-                <button
-                    data-testid="reveal-phonetic-button"
-                    title="reveal phonetic"
-                    onClick={() => {
-                        toggleRevealPhonetic();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    aria-label="Toggle pronunciation"
-                >
-                    {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                </button>
-                <button
-                    data-testid="next-words-card-button"
-                    title="go to next card"
-                    onClick={() => {
-                        goToNextCard();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    aria-label="Next"
-                >
-                    <ChevronRightIcon />
-                </button>
-            </div>
-
-            {/* scroll experiment */}
-            <div className="mb-4 flex gap-4" style={{ display: 'none' }}>
-                <button
-                    onClick={scroll}
-                    className="rounded bg-gray-200 px-3 py-1"
-                >
-                    scroll
-                </button>
-                <button
-                    onClick={scrollToStart}
-                    className="rounded bg-gray-200 px-3 py-1"
-                >
-                    Beginning
-                </button>
-                <button
-                    onClick={scrollToMiddle}
-                    className="rounded bg-gray-200 px-3 py-1"
-                >
-                    Middle
-                </button>
-                <button
-                    onClick={scrollToEnd}
-                    className="rounded bg-gray-200 px-3 py-1"
-                >
-                    End
                 </button>
             </div>
         </div>
