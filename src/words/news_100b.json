@@ -11,7 +11,7 @@
         "trad": "港鐵加強繁忙時段列車班次",
         "simp": "港铁加强繁忙时段列车班次",
         "jyutping": "gong2 tit3 gaa1 koeng4 faan1 mong4 si4 dyun6 lit6 ce1 baan1 ci3",
-        "pinyin": "gang2 tie3 jia1 qiang2 fan2 mang2 shi2段 lie4 che1 ban1 ci4",
+        "pinyin": "gang3 tie3 jia1 qiang2 fan2 mang2 shi2 duan4 lie4 che1 ban1 ci4",
         "en": "MTR boosted peak-hour train frequency.",
         "zh": "港鐵加強繁忙時段列車班次 / 港铁加强繁忙时段列车班次"
     },
@@ -88,18 +88,18 @@
         "zh": "教育局更新初中課程指引 / 教育局更新初中课程指引"
     },
     {
-        "trad": "香港海關破獲走私走私案件",
-        "simp": "香港海关破获走私走私案件",
-        "jyutping": "hoeng1 gong2 hoi2 gwaan1 po3 wok6 zau2 si1 zau2 si1 on3 gin3",
-        "pinyin": "xiang1 gang1 hai3 guan1 po3 huo4 zou3 si1 zou3 si1 an4 jian4",
+        "trad": "香港海關破獲走私案件",
+        "simp": "香港海关破获走私案件",
+        "jyutping": "hoeng1 gong2 hoi2 gwaan1 po3 wok6 zau2 si1 on3 gin2",
+        "pinyin": "xiang1 gang1 hai3 guan1 po4 huo4 zou3 si1 an4 jian4",
         "en": "Hong Kong Customs uncovered a smuggling case.",
-        "zh": "香港海關破獲走私走私案件 / 香港海关破获走私走私案件"
+        "zh": "香港海關破獲走私案件 / 香港海关破获走私案件"
     },
     {
         "trad": "金管局維持基準利率不變",
         "simp": "金管局维持基准利率不变",
-        "jyutping": "gam1 gun2 guk6 wai4 ci4 gei1 zeun1 lei6 leot6 bat1 bin3",
-        "pinyin": "jin1 guan3 ju2 wei2 chi2 ji1 zhun1 li4 lv4 bu4 bian4",
+        "jyutping": "gam1 gun2 guk6 wai4 ci4 gei1 zeon2 lei6 leot6 bat1 bin3",
+        "pinyin": "jin1 guan3 ju2 wei2 chi2 ji1 zhun3 li4 lv4 bu4 bian4",
         "en": "HKMA maintained the base rate unchanged.",
         "zh": "金管局維持基準利率不變 / 金管局维持基准利率不变"
     },
@@ -123,7 +123,7 @@
         "trad": "香港通脹率升至百分之二",
         "simp": "香港通胀率升至百分之二",
         "jyutping": "hoeng1 gong2 tung1 zoeng3 leot6 sing1 zi3 baak3 fan1 zi1 ji6",
-        "pinyin": "xiang1 gang1 tong1 zhang3 lv4 sheng1 zhi4 bai3 fan1 zhi1 er4",
+        "pinyin": "xiang1 gang1 tong1 zhang3 lv4 sheng1 zhi4 bai3 fen1 zhi1 er4",
         "en": "Hong Kong inflation rate rose to two percent.",
         "zh": "香港通脹率升至百分之二 / 香港通胀率升至百分之二"
     },
@@ -138,7 +138,7 @@
     {
         "trad": "香港中大舉辦國際學術會議",
         "simp": "香港中大举办国际学术会议",
-        "jyutping": "hoeng1 gong2 zung1 daai6 geoi2 baan6 gwok3 zai3 hok6 seut6 wui6 ji5",
+        "jyutping": "hoeng1 gong2 zung1 daai6 geoi2 baan6 gwok3 zai3 hok6 seot6 wui6 ji5",
         "pinyin": "xiang1 gang1 zhong1 da4 ju3 ban4 guo2 ji4 xue2 shu4 hui4 yi4",
         "en": "CUHK hosted an international academic conference.",
         "zh": "香港中大舉辦國際學術會議 / 香港中大举办国际学术会议"
@@ -155,14 +155,14 @@
         "trad": "港隊羽毛球手奪得銀牌",
         "simp": "港队羽毛球手夺得银牌",
         "jyutping": "gong2 deoi6 jyu5 mou4 kau4 sau2 dyut6 dak1 ngan4 paai4",
-        "pinyin": "gang2 dui4 yu3 mao2 qiu2 shou3 duo2 de5 yin2 pai2",
+        "pinyin": "gang2 dui4 yu3 mao2 qiu2 shou3 duo2 de2 yin2 pai2",
         "en": "HK badminton player won silver medal.",
         "zh": "港隊羽毛球手奪得銀牌 / 港队羽毛球手夺得银牌"
     },
     {
         "trad": "入境處擴展自助過關通道",
         "simp": "入境处扩展自助过关通道",
-        "jyutping": "jap6 ging2 cyu5 kwok3 zin2 zi6 zzo6 gwo3 gwaan1 tung1 dou6",
+        "jyutping": "jap6 ging2 cyu5 kwok3 zin2 zi6 zo6 gwo3 gwaan1 tung1 dou6",
         "pinyin": "ru4 jing4 chu3 kuo4 zhan3 zi4 zhu4 guo4 guan1 tong1 dao4",
         "en": "Immigration Department expanded automated clearance channels.",
         "zh": "入境處擴展自助過關通道 / 入境处扩展自助过关通道"
@@ -171,7 +171,7 @@
         "trad": "九巴優化過海路線服務",
         "simp": "九巴优化过海路线服务",
         "jyutping": "gau2 baa1 jau1 faa3 gwo3 hoi2 lou6 sin3 fuk6 mou6",
-        "pinyin": "jiu3 baa1 you1 hua4 guo4 hai3 lu4 xian4 fu2 wu4",
+        "pinyin": "jiu3 ba1 you1 hua4 guo4 hai3 lu4 xian4 fu2 wu4",
         "en": "KMB enhanced cross-harbour route services.",
         "zh": "九巴優化過海路線服務 / 九巴优化过海路线服务"
     },
@@ -243,7 +243,7 @@
         "trad": "新鴻基地產投得商業地皮",
         "simp": "新鸿基地产投得商业地皮",
         "jyutping": "san1 hung4 gei1 dei6 caan2 tau4 dak1 seung1 jip6 dei6 pei4",
-        "pinyin": "xin1 hong2 ji1 di4 chan3 tou2 de5 shang1 ye4 di4 pi2",
+        "pinyin": "xin1 hong2 ji1 di4 chan3 tou2 de2 shang1 ye4 di4 pi2",
         "en": "SHKP secured a commercial land parcel.",
         "zh": "新鴻基地產投得商業地皮 / 新鸿基地产投得商业地皮"
     },
@@ -283,7 +283,7 @@
         "trad": "理大研發智能醫療裝備",
         "simp": "理大研发智能医疗装备",
         "jyutping": "lei5 daai6 jin4 faat3 zi3 nang4 ji1 liu4 zong1 bei6",
-        "pinyin": "li3 da4 yan2 fa1 zhi3 neng4 yi1 liao2 zhuang1 bei4",
+        "pinyin": "li3 da4 yan2 fa1 zhi3 neng2 yi1 liao2 zhuang1 bei4",
         "en": "PolyU developed smart medical equipment.",
         "zh": "理大研發智能醫療裝備 / 理大研发智能医疗装备"
     },
@@ -306,15 +306,15 @@
     {
         "trad": "二手樓盤成交量略為放緩",
         "simp": "二手楼盘成交量略为放缓",
-        "jyutping": "ji6 sau2 lau4 pun4 sing1 gaau1 loeng6 loek6 wai4 fong3 wun6",
-        "pinyin": "er4 shou3 lou2 pan2 cheng1 jiao1 liang4 lue4 wei2 fang4 huan3",
+        "jyutping": "ji6 sau2 lau4 pun4 sing4 gaau1 loeng6 loek6 wai4 fong3 wun6",
+        "pinyin": "er4 shou3 lou2 pan2 cheng2 jiao1 liang4 lue4 wei2 fang4 huan3",
         "en": "Second-hand property sales slowed down slightly.",
         "zh": "二手樓盤成交量略為放緩 / 二手楼盘成交量略为放缓"
     },
     {
         "trad": "水務署更換舊式水管",
         "simp": "水务署更换旧式水管",
-        "jyutping": "seui2 mou6 cyu5 gang1 wun6 gau6 sik1 seui2 gun2",
+        "jyutping": "seoi2 mou6 cyu5 gang1 wun6 gau6 sik1 seoi2 gun2",
         "pinyin": "shui3 wu4 shu3 geng1 huan4 jiu4 shi4 shui3 guan3",
         "en": "WSD replaced aging water mains.",
         "zh": "水務署更換舊式水管 / 水务署更换旧式水管"
@@ -322,8 +322,8 @@
     {
         "trad": "馬會捐款支持社區項目",
         "simp": "马会捐款支持社区项目",
-        "jyutping": "maa5 wui6 gyun1 fun2 zi1 ci4 se5 keoi1 hoim6 muk6",
-        "pinyin": "ma3 hui4 juan1 kuan3 zhi1 chi2 she4 qu1 xiang3 mu4",
+        "jyutping": "maa5 wui6 gyun1 fun2 zi1 ci4 se5 keoi1 hong6 muk6",
+        "pinyin": "ma3 hui4 juan1 kuan3 zhi1 chi2 she4 qu1 xiang4 mu4",
         "en": "HKJC donated to support community projects.",
         "zh": "馬會捐款支持社區項目 / 马会捐款支持社区项目"
     },
@@ -338,7 +338,7 @@
     {
         "trad": "城大研發清潔能源技術",
         "simp": "城大研发清洁能源技术",
-        "jyutping": "sing4 daai6 jin4 faat3 cing1 zit3 nang4 jyun4 gei1 seut6",
+        "jyutping": "sing4 daai6 jin4 faat3 cing1 zit3 nang4 jyun4 gei1 seot6",
         "pinyin": "cheng2 da4 yan2 fa1 qing1 jie2 neng2 yuan2 ji4 shu4",
         "en": "CityU developed clean energy technology.",
         "zh": "城大研發清潔能源技術 / 城大研发清洁能源技术"
@@ -371,7 +371,7 @@
         "trad": "港隊游泳代表破香港紀錄",
         "simp": "港队游泳代表破香港纪录",
         "jyutping": "gong2 deoi6 jau4 wing6 doi6 biu2 po3 hoeng1 gong2 gei3 luk6",
-        "pinyin": "gang2 dui4 you2 yong3 dai4 biao3 po3 xiang1 gang1 ji4 lu4",
+        "pinyin": "gang2 dui4 you2 yong3 dai4 biao3 po4 xiang1 gang1 ji4 lu4",
         "en": "Hong Kong swimmer broke local record.",
         "zh": "港隊游泳代表破香港紀錄 / 港队游泳代表破香港纪录"
     },
@@ -379,7 +379,7 @@
         "trad": "城巴拓展過海新路線",
         "simp": "城巴拓展过海新路线",
         "jyutping": "sing4 baa1 tok3 zin2 gwo3 hoi2 san1 lou6 sin3",
-        "pinyin": "cheng2 ba1 tuo3 zhan3 guo4 hai3 xin1 lu4 xian4",
+        "pinyin": "cheng2 ba1 tuo4 zhan3 guo4 hai3 xin1 lu4 xian4",
         "en": "Citybus expanded new cross-harbour routes.",
         "zh": "城巴拓展過海新路線 / 城巴拓展过海新路线"
     },
@@ -387,7 +387,7 @@
         "trad": "濕地公園錄得罕見候鳥",
         "simp": "湿地公园录得罕见候鸟",
         "jyutping": "sap1 dei6 gung1 jyun4 luk6 dak1 hon2 gin3 hau6 niu5",
-        "pinyin": "shi1 di4 gong1 yuan2 lu4 de5 han3 jian3 hou4 niao3",
+        "pinyin": "shi1 di4 gong1 yuan2 lu4 de2 han3 jian4 hou4 niao3",
         "en": "Wetland Park recorded rare migratory birds.",
         "zh": "濕地公園錄得罕見候鳥 / 湿地公园录得罕见候鸟"
     },
@@ -434,8 +434,8 @@
     {
         "trad": "香港藝術節售票反應熱烈",
         "simp": "香港艺术节售票反应热烈",
-        "jyutping": "hoeng1 gong2 ngai6 seut6 zit3 sau6 piu3 faan2 jing3 jit6 lit6",
-        "pinyin": "xiang1 gang1 yi4 shu4 jie2 shou4 piao3 fan3 ying3 re4 lie4",
+        "jyutping": "hoeng1 gong2 ngai6 seot6 zit3 sau6 piu3 faan2 jing3 jit6 lit6",
+        "pinyin": "xiang1 gang1 yi4 shu4 jie2 shou4 piao3 fan3 ying4 re4 lie4",
         "en": "Hong Kong Arts Festival ticket sales were enthusiastic.",
         "zh": "香港藝術節售票反應熱烈 / 香港艺术节售票反应热烈"
     },
@@ -451,15 +451,15 @@
         "trad": "港隊乒乓球員取得佳績",
         "simp": "港队乒乓球员取得佳绩",
         "jyutping": "gong2 deoi6 bing1 bam1 kau4 jyun4 ceoi2 dak1 gaa1 zik1",
-        "pinyin": "gang2 dui4 ping1 pang1 qiu2 yuan2 qu3 de5 jia1 ji1",
+        "pinyin": "gang2 dui4 ping1 pang1 qiu2 yuan2 qu3 de2 jia1 ji4",
         "en": "HK table tennis players achieved good results.",
         "zh": "港隊乒乓球員取得佳績 / 港队乒乓球员取得佳绩"
     },
     {
         "trad": "按揭證券公司放寬貸款條件",
         "simp": "按揭证券公司放宽贷款条件",
-        "jyutping": "on3 git3 zing3 hyun3 gung1 si1 fong3 fun1 taai3 fun2 tiu4 gin6",
-        "pinyin": "an3 jie1 zheng4 quan1 gong1 si1 fang4 kuan1 dai4 kuan3 tiao2 jian4",
+        "jyutping": "on3 git3 zing3 hyun3 gung1 si1 fong3 fun1 taai3 fun2 tiu4 gin2",
+        "pinyin": "an4 jie1 zheng4 quan4 gong1 si1 fang4 kuan1 dai4 kuan3 tiao2 jian4",
         "en": "HKMC relaxed mortgage loan terms.",
         "zh": "按揭證券公司放寬貸款條件 / 按揭证券公司放宽贷款条件"
     },
@@ -474,8 +474,8 @@
     {
         "trad": "香港機場增加智能自助行李櫃",
         "simp": "香港机场增加智能自助行李柜",
-        "jyutping": "hoeng1 gong2 gei1 coeng4 zang1 gaa1 zi3 nang4 zi6 zo6 hang5 lei5 gwai6",
-        "pinyin": "xiang1 gang1 ji1 chang3 zeng1 jia1 zhi3 neng4 zi4 zhu4 xing2 li3 gui4",
+        "jyutping": "hoeng1 gong2 gei1 coeng4 zang1 gaa1 zi3 nang4 zi6 zo6 hang4 lei5 gwai6",
+        "pinyin": "xiang1 gang1 ji1 chang3 zeng1 jia1 zhi4 neng2 zi4 zhu4 xing2 li3 gui4",
         "en": "HK Airport added self-service luggage lockers.",
         "zh": "香港機場增加智能自助行李櫃 / 香港机场增加智能自助行李柜"
     },
@@ -491,7 +491,7 @@
         "trad": "數碼港增設創科基金",
         "simp": "数码港增设创科基金",
         "jyutping": "sou3 maa5 gong2 zang1 cit3 cong1 fo1 gei1 gam1",
-        "pinyin": "shu3 ma3 gang2 zeng1 she4 chuang1 ke1 ji1 jin1",
+        "pinyin": "shu4 ma3 gang3 zeng1 she4 chuang4 ke1 ji1 jin1",
         "en": "Cyberport set up new tech fund.",
         "zh": "數碼港增設創科基金 / 数码港增设创科基金"
     },
@@ -499,7 +499,7 @@
         "trad": "科學園舉行科技創業展",
         "simp": "科学园举行科技创业展",
         "jyutping": "fo1 hok6 jyun4 geoi2 hang4 fo1 gei1 cong1 jip6 zin2",
-        "pinyin": "ke1 xue2 yuan2 ju3 xing2 ke1 ji4 chuang1 ye4 zhan3",
+        "pinyin": "ke1 xue2 yuan2 ju3 xing2 ke1 ji4 chuang4 ye4 zhan3",
         "en": "Science Park hosted a tech startup expo.",
         "zh": "科學園舉行科技創業展 / 科学园举行科技创业展"
     },
@@ -523,7 +523,7 @@
         "trad": "香港羽毛球代表隊獲佳績",
         "simp": "香港羽毛球代表队获佳绩",
         "jyutping": "hoeng1 gong2 jyu5 mou4 kau4 doi6 biu2 deoi6 wok6 gaa1 zik1",
-        "pinyin": "xiang1 gang1 yu3 mao2 qiu2 dai4 biao3 dui4 huo4 jia1 ji1",
+        "pinyin": "xiang1 gang1 yu3 mao2 qiu2 dai4 biao3 dui4 huo4 jia1 ji4",
         "en": "Hong Kong badminton team earned great results.",
         "zh": "香港羽毛球代表隊獲佳績 / 香港羽毛球代表队获佳绩"
     },
@@ -531,7 +531,7 @@
         "trad": "港府推廣數碼支付普及化",
         "simp": "港府推广数码支付普及化",
         "jyutping": "gong2 fu2 teoi1 gwong2 sou3 maa5 zi1 fu6 pou2 kap6 faa3",
-        "pinyin": "gang2 fu3 tui1 guang3 shu3 ma3 zhi1 fu4 pu3 ji2 hua4",
+        "pinyin": "gang2 fu3 tui1 guang3 shu4 ma3 zhi1 fu4 pu3 ji2 hua4",
         "en": "HK Government promoted digital payment adoption.",
         "zh": "港府推廣數碼支付普及化 / 港府推广数码支付普及化"
     },
@@ -539,7 +539,7 @@
         "trad": "紅十字會呼籲市民踴躍捐血",
         "simp": "红十字会呼吁市民踊跃捐血",
         "jyutping": "hung4 sap1 zi6 wui6 fu1 jyu1 si5 man4 jung2 joek6 gyun1 hyut3",
-        "pinyin": "hong2 shi2 zi4 hui4 hu1 yu4 shi4 min2 yong3 yue4 juan1 xue3",
+        "pinyin": "hong2 shi2 zi4 hui4 hu1 yu4 shi4 min2 yong3 yue4 juan1 xue4",
         "en": "Red Cross appealed for enthusiastic blood donations.",
         "zh": "紅十字會呼籲市民踴躍捐血 / 红十字会呼吁市民踊跃捐血"
     },
@@ -562,7 +562,7 @@
     {
         "trad": "香港迪士尼舉行夜間巡遊",
         "simp": "香港迪士尼举行夜间巡游",
-        "jyutping": "hoeng1 gong2 dik6 si6 nei4 geoi2 hang4 je6 gaan1 ceun4 jau4",
+        "jyutping": "hoeng1 gong2 dik6 si6 nei4 geoi2 hang4 je6 gaan1 ceon4 jau4",
         "pinyin": "xiang1 gang1 di2 shi4 ni2 ju3 xing2 ye4 jian1 xun2 you2",
         "en": "Hong Kong Disneyland held a night parade.",
         "zh": "香港迪士尼舉行夜間巡遊 / 香港迪士尼举行夜间巡游"
@@ -571,7 +571,7 @@
         "trad": "亞運港隊運動員順利返港",
         "simp": "亚运港队运动员顺利返港",
         "jyutping": "aa3 wan6 gong2 deoi6 wan6 dung6 jyun4 seun6 lei6 faan2 gong2",
-        "pinyin": "ya3 yun4 gang2 dui4 yun4 dong4 yuan2 shun4 li4 fan3 gang2",
+        "pinyin": "ya4 yun4 gang2 dui4 yun4 dong4 yuan2 shun4 li4 fan3 gang2",
         "en": "Asian Games HK athletes returned safely.",
         "zh": "亞運港隊運動員順利返港 / 亚运港队运动员顺利返港"
     },
@@ -594,8 +594,8 @@
     {
         "trad": "維港舉行水上運動嘉年華",
         "simp": "维港举行水上运动嘉年华",
-        "jyutping": "wai4 gong2 geoi2 hang4 seui2 seung5 wan6 dung6 gaa1 nin4 waa4",
-        "pinyin": "wei2 gang2 ju3 xing2 shui3 shang4 yun4 dong4 jia1 nian2 hua2",
+        "jyutping": "wai4 gong2 geoi2 hang4 seoi2 soeng6 wan6 dung6 gaa1 nin4 waa4",
+        "pinyin": "wei2 gang3 ju3 xing2 shui3 shang4 yun4 dong4 jia1 nian2 hua2",
         "en": "Victoria Harbour held a water sports carnival.",
         "zh": "維港舉行水上運動嘉年華 / 维港举行水上运动嘉年华"
     },
@@ -627,7 +627,7 @@
         "trad": "天文台預測未來數日降溫",
         "simp": "天文台预测未来数日降温",
         "jyutping": "tin1 man4 toi4 jyu6 caak3 mei6 loi4 sou3 jat6 gong3 wan1",
-        "pinyin": "tian1 wen2 tai2 yu4 ce4 wei2 lai4 shu3 ri4 jiang4 wen1",
+        "pinyin": "tian1 wen2 tai2 yu4 ce4 wei4 lai2 shu4 ri4 jiang4 wen1",
         "en": "Observatory forecasted cooler weather ahead.",
         "zh": "天文台預測未來數日降溫 / 天文台预测未来数日降温"
     },
@@ -651,9 +651,9 @@
         "trad": "公共圖書館舉辦兒童故事會",
         "simp": "公共图书馆举办儿童故事会",
         "jyutping": "gung1 gung6 tou4 syu1 gun2 geoi2 baan6 ji4 tung4 gu3 si6 wui6",
-        "pinyin": "gong1 gong4 tu2 shu1 guan3 ju3 ban4 er2 tong2 gu3 shi4 hui4",
+        "pinyin": "gong1 gong4 tu2 shu1 guan3 ju3 ban4 er2 tong2 gu4 shi4 hui4",
         "en": "Public Libraries held children's storytelling sessions.",
-        "zh": "公共圖書館舉辦兒童故事會 / 公共图书馆举办儿童故事회"
+        "zh": "公共圖書館舉辦兒童故事會 / 公共图书馆举办儿童故事会"
     },
     {
         "trad": "房委會優化公屋申請流程",
@@ -683,7 +683,7 @@
         "trad": "故宮文化博物館推出新特展",
         "simp": "故宫文化博物馆推出新特展",
         "jyutping": "gu3 gung1 man4 faa3 bok3 wat6 gun2 teoi1 ceot1 san1 dak6 zin2",
-        "pinyin": "gu3 gong1 wen2 hua4 bo2 wu4 guan3 tui1 chu1 xin1 te4 zhan3",
+        "pinyin": "gu4 gong1 wen2 hua4 bo2 wu4 guan3 tui1 chu1 xin1 te4 zhan3",
         "en": "Palace Museum unveiled a new special exhibition.",
         "zh": "故宮文化博物館推出新特展 / 故宫文化博物馆推出新特展"
     },
@@ -699,7 +699,7 @@
         "trad": "立法會通過撥款支持創新",
         "simp": "立法会通过拨款支持创新",
         "jyutping": "laap6 faat3 wui6 tung1 gwo3 bat3 fun2 zi1 ci4 cong1 san1",
-        "pinyin": "li4 fa3 hui4 tong1 guo4 bo1 kuan3 zhi1 chi2 chuang1 xin1",
+        "pinyin": "li4 fa4 hui4 tong1 guo4 bo1 kuan3 zhi1 chi2 chuang4 xin1",
         "en": "LegCo approved funding to support innovation.",
         "zh": "立法會通過撥款支持創新 / 立法会通过拨款支持创新"
     },
@@ -707,7 +707,7 @@
         "trad": "紅十字會啟動捐血獎勵計劃",
         "simp": "红十字会启动捐血奖励计划",
         "jyutping": "hung4 sap1 zi6 wui6 kai2 dung6 gyun1 hyut3 zoeng2 lai6 gai3 waak6",
-        "pinyin": "hong2 shi2 zi4 hui4 qi3 dong4 juan1 xue3 jiang3 li4 ji4 hua4",
+        "pinyin": "hong2 shi2 zi4 hui4 qi3 dong4 juan1 xue4 jiang3 li4 ji4 hua4",
         "en": "Red Cross launched blood donation reward scheme.",
         "zh": "紅十字會啟動捐血獎勵計劃 / 红十字会启动捐血奖励计划"
     },
@@ -715,7 +715,7 @@
         "trad": "科技園擴建人工智能中心",
         "simp": "科技园扩建人工智能中心",
         "jyutping": "fo1 gei1 jyun4 kwok3 zin2 jan4 gung1 zi3 nang4 zung1 sam1",
-        "pinyin": "ke1 ji4 yuan2 kuo4 zhan3 ren2 gong1 zhi3 neng4 zhong1 xin1",
+        "pinyin": "ke1 ji4 yuan2 kuo4 zhan3 ren2 gong1 zhi4 neng2 zhong1 xin1",
         "en": "Science Park expanded its AI center.",
         "zh": "科技園擴建人工智能中心 / 科技园扩建人工智能中心"
     },
@@ -723,7 +723,7 @@
         "trad": "警務處更新流動應用程式",
         "simp": "警务处更新流动应用程式",
         "jyutping": "ging2 mou6 cyu5 gang1 san1 lau4 dung6 jing3 jung6 cing4 sik1",
-        "pinyin": "jing3 wu4 chu3 geng1 xin1 liu2 dong4 ying3 yong4 cheng2 shi4",
+        "pinyin": "jing3 wu4 chu3 geng1 xin1 liu2 dong4 ying4 yong4 cheng2 shi4",
         "en": "Police Force updated mobile application.",
         "zh": "警務處更新流動應用程式 / 警务处更新流动应用程式"
     },
@@ -763,14 +763,14 @@
         "trad": "體育學院培訓青年運動員",
         "simp": "体育学院培训青年运动员",
         "jyutping": "tai2 juk6 hok6 jyun2 pui4 fan3 cing1 nin4 wan6 dung6 jyun4",
-        "pinyin": "ti3 yu4 xue2 yuan2 pei2 xun3 qing1 nian2 yun4 dong4 yuan2",
+        "pinyin": "ti3 yu4 xue2 yuan2 pei2 xun4 qing1 nian2 yun4 dong4 yuan2",
         "en": "Sports Institute trained young athletes.",
         "zh": "體育學院培訓青年運動員 / 体育学院培训青年运动员"
     },
     {
         "trad": "文化博物館展出當代藝術",
         "simp": "文化博物馆展出当代艺术",
-        "jyutping": "man4 faa3 bok3 wat6 gun2 zin2 ceot1 dong1 dai6 ngai6 seut6",
+        "jyutping": "man4 faa3 bok3 wat6 gun2 zin2 ceot1 dong1 doi6 ngai6 seot6",
         "pinyin": "wen2 hua4 bo2 wu4 guan3 zhan3 chu1 dang1 dai4 yi4 shu4",
         "en": "Heritage Museum showcased contemporary art.",
         "zh": "文化博物館展出當代藝術 / 文化博物馆展出当代艺术"
@@ -778,7 +778,7 @@
     {
         "trad": "特區政府促進大灣區融合",
         "simp": "特区政府促进大湾区融合",
-        "jyutping": "dak6 keoi1 zing3 fu2 cuk1 zeun3 daai6 waan1 keoi1 jung4 hap6",
+        "jyutping": "dak6 keoi1 zing3 fu2 cuk1 zeon3 daai6 waan1 keoi1 jung4 hap6",
         "pinyin": "te4 qu1 zheng4 fu3 cu4 jin4 da4 wan1 qu1 rong2 he2",
         "en": "HKSAR government fostered Greater Bay Area integration.",
         "zh": "特區政府促進大灣區融合 / 特区政府促进大湾区融合"
@@ -787,15 +787,15 @@
         "trad": "港鐵公司更新列車信號系統",
         "simp": "港铁公司更新列车信号系统",
         "jyutping": "gong2 tit3 gung1 si1 gang1 san1 lit6 ce1 seon3 hou4 hai6 tung3",
-        "pinyin": "gang2 tie3 gong1 si1 geng1 xin1 lie4 che1 xìn4 hao4 xi4 tong3",
+        "pinyin": "gang3 tie3 gong1 si1 geng1 xin1 lie4 che1 xìn4 hao4 xi4 tong3",
         "en": "MTR Corporation upgraded train signaling system.",
         "zh": "港鐵公司更新列車信號系統 / 港铁公司更新列车信号系统"
     },
     {
         "trad": "消委會提醒慎防消費陷阱",
         "simp": "消委会提醒慎防消费陷阱",
-        "jyutping": "siu1 wai2 wui6 tai4 seng1 san6 fong4 siu1 fai3 haam6 zing2",
-        "pinyin": "xiao1 wei2 hui4 ti2 xing3 shen3 fang2 xiao1 fei1 xian4 jing3",
+        "jyutping": "siu1 wai2 wui6 tai4 sing1 san6 fong4 siu1 fai3 haam6 zing2",
+        "pinyin": "xiao1 wei2 hui4 ti2 xing3 shen4 fang2 xiao1 fei4 xian4 jing3",
         "en": "Consumer Council warned against consumer traps.",
         "zh": "消委會提醒慎防消費陷阱 / 消委会提醒慎防消费陷阱"
     },
@@ -803,7 +803,7 @@
         "trad": "香港國際金融中心地位鞏固",
         "simp": "香港国际金融中心地位巩固",
         "jyutping": "hoeng1 gong2 gwok3 zai3 gam1 jung4 zung1 sam1 dei6 wai6 gung2 gu3",
-        "pinyin": "xiang1 gang1 guo2 ji4 jin1 rong2 zhong1 xin1 di4 wai4 gong3 gu3",
+        "pinyin": "xiang1 gang1 guo2 ji4 jin1 rong2 zhong1 xin1 di4 wei4 gong3 gu4",
         "en": "Hong Kong's financial center status strengthened.",
         "zh": "香港國際金融中心地位鞏固 / 香港国际金融中心地位巩固"
     }

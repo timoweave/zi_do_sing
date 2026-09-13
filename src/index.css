@@ -3,6 +3,19 @@
 /* Add this line to enable class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-noto-sans: "Noto Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-noto-serif: "Noto Serif Variable", ui-serif, Georgia, serif;
+  --font-huninn: "Huninn", sans-serif;
+  --font-source-han-serif-sc-vf: "Source Han Serif SC VF", system-ui, sans-serif;
+  --font-yozai: "Yozai", system-ui, sans-serif;
+  --font-lxgw-wenkai-screen-r: "LXGW WenKai Screen R", system-ui, sans-serif;
+  --font-cn-fontsource-975-maru-sc: "975Maru SC", sans-serif;
+
+  /* --font-cn-fontsource: "", ui-sans-serif, system-ui, sans-serif; */
+  /* --font-huninn: "Huninn", ui-sans-serif, system-ui, sans-serif; */
+}
+
 /* @supports not (height: 100dvh) {
   .min-h-dvh { min-height: 100dvh; }
 } */
