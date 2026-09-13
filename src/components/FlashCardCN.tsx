@@ -115,6 +115,7 @@ function FlashCardCN() {
     const [inputValue, setInputValue] = useState<string>('');
     const [descriptionVisible, setDescriptionVisible] = useState(true);
 
+    const inputRowRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const cardRef = useRef(null);
@@ -806,20 +807,22 @@ function FlashCardCN() {
                         {/* Traditional */}
                         <div
                             data-testid="words-traditional-label"
-                            className="flex flex-col items-center"
+                            className="flex flex-col items-center gap-1"
                             onClick={() => {
                                 speakJyutping();
                                 handlePopupKeyboardBlur();
                             }}
                             onMouseDown={preventDefault}
                         >
-                            <div className="flex gap-1">
+                            <div
+                                className={`${inputMatched && inputMatchedJyutpings.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
+                            >
                                 {currentCardTrads.map((tradWord, i) => {
                                     const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
                                     return (
                                         <div
                                             key={key}
-                                            className={`flex flex-col ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                            className={`flex flex-col pt-1 ${inputMatchedJyutpings[i] && !inputMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
                                         >
                                             <div
                                                 data-testid={`words-trad-text-${i}`}
@@ -849,13 +852,15 @@ function FlashCardCN() {
                             }}
                             onMouseDown={preventDefault}
                         >
-                            <div className="flex gap-1">
+                            <div
+                                className={`${inputMatched && inputMatchedPinyins.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1 pt-1`}
+                            >
                                 {currentCardSimps.map((simplWord, i) => {
                                     const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
                                     return (
                                         <div
                                             key={key}
-                                            className={`${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'} flex flex-col`}
+                                            className={`${inputMatchedPinyins[i] ? 'rounded-md bg-gray-600' : 'text-gray-800'} flex flex-col`}
                                         >
                                             <div
                                                 data-testid={`words-simp-text-${i}`}
@@ -898,7 +903,11 @@ function FlashCardCN() {
             </div>
 
             {/* Input row */}
-            <div className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1">
+            <div
+                ref={inputRowRef}
+                data-testid="words-input-row"
+                className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1"
+            >
                 {/* left chevron */}
                 <button
                     data-testid="previous-words-card-button"
