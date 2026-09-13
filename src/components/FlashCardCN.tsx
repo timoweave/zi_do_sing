@@ -589,7 +589,7 @@ function FlashCardCN() {
             <div
                 data-testid="words-flash-card-container"
                 ref={cardRef}
-                className="relative flex w-full max-w-120 touch-pan-y flex-col place-content-around gap-2 rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
+                className="relative flex w-full max-w-120 touch-pan-y flex-col place-content-around rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
             >
                 {/* float left edge buttons */}
                 <div
@@ -801,7 +801,7 @@ function FlashCardCN() {
                 >
                     <div
                         data-testid="words-chinese-container"
-                        className="mx-auto flex flex-col items-center justify-center gap-3"
+                        className="mx-auto flex flex-col items-center justify-center gap-1"
                     >
                         {/* Traditional */}
                         <div
@@ -819,17 +819,17 @@ function FlashCardCN() {
                                     return (
                                         <div
                                             key={key}
-                                            className="flex flex-col gap-4"
+                                            className={`flex flex-col ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                         >
                                             <div
                                                 data-testid={`words-trad-text-${i}`}
-                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200 ${inputMatchedTrads[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                             >
                                                 {tradWord}
                                             </div>
                                             <div
                                                 data-testid={`words-trad-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedJyutpings[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`wrap-break-words text-center text-[0.6rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedJyutpings[i] || revealed ? 'opacity-100' : 'opacity-0'} `}
                                             >
                                                 {currentCardJyutpings[i]}
                                             </div>
@@ -855,17 +855,17 @@ function FlashCardCN() {
                                     return (
                                         <div
                                             key={key}
-                                            className="flex flex-col gap-4"
+                                            className={`${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'} flex flex-col`}
                                         >
                                             <div
                                                 data-testid={`words-simp-text-${i}`}
-                                                className={`cursor-pointer text-center text-[2.5rem] font-medium text-gray-800 dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200 ${inputMatchedSimpls[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
                                             >
                                                 {simplWord}
                                             </div>
                                             <div
                                                 data-testid={`words-simp-phonetic-${i}`}
-                                                className={`wrap-break-words text-center text-[0.7rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'} ${inputMatchedPinyins[i] ? 'rounded-md bg-green-600 text-white' : 'text-gray-800'}`}
+                                                className={`wrap-break-words text-center text-[0.6rem] text-gray-600 transition-opacity dark:text-gray-200 ${inputMatchedPinyins[i] || revealed ? 'opacity-100' : 'opacity-0'}`}
                                             >
                                                 {currentCardPinyins[i]}
                                             </div>
@@ -880,7 +880,6 @@ function FlashCardCN() {
                 {/* Description */}
                 <div
                     data-testid="words-description-label"
-                    // className={`w-[calc(100% - 2rem)] mx-12 overflow-x-auto text-center whitespace-nowrap text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
                     className={`overflow-x-auto text-center whitespace-nowrap text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
                     onMouseDown={preventDefault}
                     onTouchStart={stopPropagation}
