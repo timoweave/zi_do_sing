@@ -10,9 +10,10 @@
   --font-yozai: "Yozai", system-ui, sans-serif;
   --font-lxgw-wenkai-screen: "LXGW WenKai Screen R", system-ui, sans-serif;
   --font-huninn: "Huninn", system-ui, sans-serif;
-  --font-cn-fontsource-975-maru-sc-medium: "975Maru SC Medium", sans-serif;
-  --font-cn-fontsource-975-maru-sc: "975Maru SC", sans-serif;
+  --font-cn-fontsource-975-maru-sc-medium: "975Maru SC Medium", system-ui, sans-serif;
+  --font-cn-fontsource-975-maru-sc: "975Maru SC", "Huninn", ui-sans-serif, system-ui, sans-serif;
 }
+
 @media (max-width: 500px), (max-height: 500px) {
   [id="words-flash-card-deck-container"] {
     gap: 0rem;

@@ -7,7 +7,7 @@ import {
     OpenEyeIcon,
     UploadFileIcon,
 } from './Icons';
-import defaultWords from '../words/news_100b.json';
+import defaultWords from '../words/sentences_002.json';
 
 export interface CardItem {
     trad: string;
