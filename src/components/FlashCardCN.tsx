@@ -90,35 +90,35 @@ const speak = ({
 };
 
 export interface WordAndSound {
-    char: string;
+    word: string;
     sound: string;
     ith: number;
     isAllMatched: boolean;
-    isCharMatched: boolean;
+    isWordMatched: boolean;
     isSoundMatched: boolean;
     isAllSoundRevealed: boolean;
 }
 
 function WordAndSound({
-    char,
+    word,
     sound,
     ith,
     isAllSoundRevealed,
     isAllMatched, // either all text or all sound
     isSoundMatched,
-    isCharMatched,
+    isWordMatched,
 }: WordAndSound) {
     return (
         <div
             data-testid={`traditional-jyuting-${ith}`}
-            className={`flex flex-col pt-1 ${(isSoundMatched || isCharMatched) && !isAllMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
+            className={`flex flex-col pt-1 ${(isSoundMatched || isWordMatched) && !isAllMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
         >
             {/* char */}
             <div
                 data-testid={`words-trad-text-${ith}`}
                 className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200`}
             >
-                {char}
+                {word}
             </div>
             {/* sound */}
             <div
@@ -158,6 +158,7 @@ function FlashCardCN() {
         boolean[]
     >([]);
     const [inputValue, setInputValue] = useState<string>('');
+    const [isInputFocused, setIsInputFocused] = useState(false);
     const [descriptionVisible, setDescriptionVisible] = useState(true);
 
     const inputRowRef = useRef<HTMLDivElement>(null);
@@ -170,6 +171,7 @@ function FlashCardCN() {
     const [isThemeDark, _setIsThemeDark] = useState(true);
     const [_vvWidth, vvHeight] = useVisualViewport();
 
+    console.log(navigator.userAgent);
     const currentCard = useMemo(
         () => cards[currentIndex] || null,
         [cards, currentIndex]
@@ -179,16 +181,6 @@ function FlashCardCN() {
     const currentCardJyutpings = currentCard?.jyutping.split(/ +/);
     const currentCardSimps = currentCard?.simp.split('');
     const currentCardPinyins = currentCard?.pinyin.split(/ +/);
-
-    const speakJyutping = useCallback(() => {
-        if (!currentCard) return;
-        speak({ text: currentCard.trad, lang: 'zh-HK' });
-    }, [currentCard]);
-
-    const speakPinyin = useCallback(() => {
-        if (!currentCard) return;
-        speak({ text: currentCard.simp, lang: 'zh-CN', rate: 0.6 });
-    }, [currentCard]);
 
     const isPopupKeyboardOpenProbably = () => {
         const viewport = window.visualViewport;
@@ -355,14 +347,14 @@ function FlashCardCN() {
     const handleKeyDown = useCallback(
         (e: KeyboardEvent) => {
             const isInputEmpty = inputValue.length == 0;
-            if (e.key === 'ArrowUp') {
+            if (e.key === 'ArrowUp' && e.shiftKey && !isInputFocused) {
                 e.preventDefault();
-                speakJyutping();
+                speak({ text: currentCard.trad, lang: 'zh-HK' });
                 return;
             }
-            if (e.key === 'ArrowDown') {
+            if (e.key === 'ArrowDown' && e.shiftKey && !isInputFocused) {
                 e.preventDefault();
-                speakPinyin();
+                speak({ text: currentCard.simp, lang: 'zh-CN' });
                 return;
             }
             if (e.key === '/') {
@@ -399,8 +391,8 @@ function FlashCardCN() {
             }
         },
         [
-            speakJyutping,
-            speakPinyin,
+            currentCard,
+            speak,
             toggleRevealPhonetic,
             toggleRevealDescription,
             goToPrevCard,
@@ -409,6 +401,7 @@ function FlashCardCN() {
             inputMatchedJyutpings,
             inputMatchedPinyins,
             inputValue,
+            isInputFocused,
         ]
     );
 
@@ -552,7 +545,10 @@ function FlashCardCN() {
 
     if (!currentCard) {
         return (
-            <div className="flex min-h-dvh items-center justify-center bg-gray-50 dark:bg-gray-900">
+            <div
+                className="flex min-h-dvh items-center justify-center bg-gray-50 dark:bg-gray-900"
+                // className="flex h-dvh w-screen items-center justify-center bg-gray-50 dark:bg-gray-900"
+            >
                 <div className="text-gray-600 dark:text-gray-400">
                     Loading...
                 </div>
@@ -566,30 +562,33 @@ function FlashCardCN() {
             sounds: currentCardJyutpings,
             isWordsMatched: inputMatchedTrads,
             isSoundMatched: inputMatchedJyutpings,
-            speakSound: speakJyutping,
+            speakSound: () => speak({ text: currentCard.trad, lang: 'zh-HK' }),
         },
         {
             words: currentCardSimps,
             sounds: currentCardPinyins,
             isWordsMatched: inputMatchedSimpls,
             isSoundMatched: inputMatchedPinyins,
-            speakSound: speakPinyin,
+            speakSound: () => speak({ text: currentCard.simp, lang: 'zh-CN' }),
         },
     ];
 
     return (
         /* Card Deck */
         <div
+            id="words-flash-card-deck-container"
             data-testid="words-flash-card-deck-container"
             className="font-cn-fontsource-975-maru-sc m-v-4 flex min-h-dvh w-full flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
             style={{
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
             }}
+            // className="font-cn-fontsource-975-maru-sc m-v-4 flex h-dvh w-screen flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
             {/* Card */}
             <div
+                id="words-flash-card-container"
                 data-testid="words-flash-card-container"
                 ref={cardRef}
                 className="relative flex w-full max-w-120 touch-pan-y flex-col place-content-around rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
@@ -609,11 +608,11 @@ function FlashCardCN() {
                         {wordsAndSounds.map((wordAndSound, row) => (
                             <div
                                 key={row}
-                                data-testid="words-traditional-label"
+                                data-testid={`words-traditional-label-${row}`}
                                 className="flex flex-col items-center gap-1"
-                                onClick={() => {
+                                onDoubleClick={() => {
                                     wordAndSound.speakSound();
-                                    handlePopupKeyboardBlur();
+                                    // handlePopupKeyboardBlur();
                                 }}
                                 onMouseDown={preventDefault}
                             >
@@ -621,7 +620,12 @@ function FlashCardCN() {
                                 <div
                                     className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
                                 >
-                                    {wordAndSound.words.map((char, i) => {
+                                    {wordAndSound.words.map((word, i) => {
+                                        const key =
+                                            /* TBD: react need help to redraw when revealed is changed */
+                                            100 * Number(revealed) +
+                                            10 * row +
+                                            i;
                                         const sound = wordAndSound.sounds[i];
                                         const isCharMatched =
                                             wordAndSound.isWordsMatched[i];
@@ -630,15 +634,12 @@ function FlashCardCN() {
 
                                         return (
                                             <WordAndSound
-                                                key={
-                                                    /* TBD: react need help to redraw when revealed is changed */
-                                                    100 * Number(revealed) + i
-                                                }
+                                                key={key}
                                                 ith={i}
-                                                char={char}
+                                                word={word}
                                                 sound={sound}
                                                 isAllMatched={inputMatched}
-                                                isCharMatched={isCharMatched}
+                                                isWordMatched={isCharMatched}
                                                 isSoundMatched={isSoundMatched}
                                                 isAllSoundRevealed={revealed}
                                             />
@@ -647,78 +648,6 @@ function FlashCardCN() {
                                 </div>
                             </div>
                         ))}
-
-                        {/* Traditional line */}
-                        <div
-                            style={{ display: 'none' }}
-                            data-testid="words-traditional-label"
-                            className="flex flex-col items-center gap-1"
-                            onClick={() => {
-                                speakJyutping();
-                                handlePopupKeyboardBlur();
-                            }}
-                            onMouseDown={preventDefault}
-                        >
-                            {/* traditional words */}
-                            <div
-                                className={`${inputMatched && inputMatchedJyutpings.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
-                            >
-                                {currentCardTrads.map((tradWord, i) => {
-                                    const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
-                                    return (
-                                        <WordAndSound
-                                            key={key}
-                                            char={tradWord}
-                                            sound={currentCardJyutpings[i]}
-                                            ith={i}
-                                            isAllMatched={inputMatched}
-                                            isCharMatched={inputMatchedTrads[i]}
-                                            isSoundMatched={
-                                                inputMatchedJyutpings[i]
-                                            }
-                                            isAllSoundRevealed={revealed}
-                                        />
-                                    );
-                                })}
-                            </div>
-                        </div>
-
-                        {/* Simplified line */}
-                        <div
-                            style={{ display: 'none' }}
-                            data-testid="words-simplified-label"
-                            className="flex flex-col items-center"
-                            onClick={() => {
-                                speakPinyin();
-                                handlePopupKeyboardBlur();
-                            }}
-                            onMouseDown={preventDefault}
-                        >
-                            {/* Simplified words */}
-                            <div
-                                className={`${inputMatched && inputMatchedPinyins.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1 pt-1`}
-                            >
-                                {currentCardSimps.map((simplWord, i) => {
-                                    const key = i + (revealed ? 1 : 0) * 100; // TBD: react need help to redraw when revealed is changed
-                                    return (
-                                        <WordAndSound
-                                            key={key}
-                                            char={simplWord}
-                                            sound={currentCardPinyins[i]}
-                                            ith={i}
-                                            isAllMatched={inputMatched}
-                                            isCharMatched={
-                                                inputMatchedSimpls[i]
-                                            }
-                                            isSoundMatched={
-                                                inputMatchedPinyins[i]
-                                            }
-                                            isAllSoundRevealed={revealed}
-                                        />
-                                    );
-                                })}
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -736,6 +665,7 @@ function FlashCardCN() {
 
             {/* Pagination */}
             <div
+                id="words-progress-status-label"
                 data-testid="words-progress-status-label"
                 className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
             >
@@ -747,6 +677,7 @@ function FlashCardCN() {
                 ref={inputRowRef}
                 data-testid="words-input-row"
                 className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1"
+                // className="pb-safe flex w-full max-w-120 shrink-0 flex-wrap items-center justify-center gap-1"
             >
                 {/* left chevron */}
                 <button
@@ -785,11 +716,12 @@ function FlashCardCN() {
                         onChange={handleUploadFile}
                     />
                 </button>
-                {/* input box */}
+                {/* input combo line */}
                 <div
                     data-testid="words-input-box-container"
                     className="flex flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500"
                 >
+                    {/* input element */}
                     <input
                         title="type in jyutping, pinyin, or chinese"
                         id="words-input-box"
@@ -803,9 +735,23 @@ function FlashCardCN() {
                                 scroll();
                             }
                         }}
-                        onFocus={handlePopupKeyboardPreventScroll}
-                        placeholder={`Jyutping / Pinyin`}
-                        className="flex w-full flex-1 bg-transparent py-3 text-base text-gray-800 outline-none dark:text-gray-200"
+                        onFocus={(e) => {
+                            handlePopupKeyboardPreventScroll(e);
+                            setIsInputFocused(true);
+                            console.log('focus');
+                            if (inputRowRef.current && isInputFocused) {
+                                inputRowRef.current.style.opacity = '0%';
+                            }
+                        }}
+                        onBlur={() => {
+                            setIsInputFocused(false);
+                            console.log('blur');
+                            if (inputRowRef.current && isInputFocused) {
+                                inputRowRef.current.style.opacity = '100%';
+                            }
+                        }}
+                        placeholder="Jyutping / Pinyin"
+                        className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none dark:text-gray-200"
                         autoCapitalize="none"
                         autoCorrect="off"
                         autoComplete="off"

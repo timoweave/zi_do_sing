@@ -6,20 +6,26 @@
 @theme {
   --font-noto-sans: "Noto Sans Variable", ui-sans-serif, system-ui, sans-serif;
   --font-noto-serif: "Noto Serif Variable", ui-serif, Georgia, serif;
-  --font-huninn: "Huninn", sans-serif;
-  --font-source-han-serif-sc-vf: "Source Han Serif SC VF", system-ui, sans-serif;
+  --font-source-han-serif-sc: "Source Han Serif SC VF", system-ui, sans-serif;
   --font-yozai: "Yozai", system-ui, sans-serif;
-  --font-lxgw-wenkai-screen-r: "LXGW WenKai Screen R", system-ui, sans-serif;
+  --font-lxgw-wenkai-screen: "LXGW WenKai Screen R", system-ui, sans-serif;
+  --font-huninn: "Huninn", system-ui, sans-serif;
+  --font-cn-fontsource-975-maru-sc-medium: "975Maru SC Medium", sans-serif;
   --font-cn-fontsource-975-maru-sc: "975Maru SC", sans-serif;
-
-  /* --font-cn-fontsource: "", ui-sans-serif, system-ui, sans-serif; */
-  /* --font-huninn: "Huninn", ui-sans-serif, system-ui, sans-serif; */
 }
-
-/* @supports not (height: 100dvh) {
-  .min-h-dvh { min-height: 100dvh; }
-} */
-
+@media (max-width: 500px), (max-height: 500px) {
+  [id="words-flash-card-deck-container"] {
+    gap: 0rem;
+  }
+  [id="words-flash-card-container"] {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  [id="words-progress-status-label"] {
+    padding-top: 0.5rem;
+    font-size: 0.5rem
+  }
+}
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -81,12 +87,6 @@
 body {
   margin: 0;
 }
-
-/* html, body {
-  height: 100%;
-  overflow: hidden;
-  margin: 0
-} */
 
 p {
   margin: 0;

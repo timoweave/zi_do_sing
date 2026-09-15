@@ -12,8 +12,6 @@ import 'cn-fontsource-975-maru-sc-bold/font.css';
 import 'cn-fontsource-975-maru-sc-regular/font.css';
 import 'cn-fontsource-975-maru-sc-medium-regular/font.css';
 
-// import '@wcex/cn-fontsource';
-
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <App />

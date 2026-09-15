@@ -19,6 +19,7 @@
     "cn-fontsource-975-maru-sc-bold": "^1.0.1",
     "cn-fontsource-975-maru-sc-medium-regular": "^1.0.1",
     "cn-fontsource-975-maru-sc-regular": "^1.0.1",
+    "cn-fontsource-fz-hei-b-01-regular": "^1.0.1",
     "cn-fontsource-lxgw-wen-kai-screen-r": "^1.0.6",
     "cn-fontsource-source-han-serif-sc-vf": "^1.0.9",
     "cn-fontsource-xiaolai-sc-regular": "^1.0.2",
@@ -49,6 +50,9 @@
     "vitest": "^5.0.0"
   },
   "allowScripts": {
-    "fsevents@2.3.3": true
+    "fsevents@2.3.3": true,
+    "cn-fontsource-975-maru-sc-medium-regular@1.0.1": true,
+    "cn-fontsource-975-maru-sc-regular@1.0.1": true,
+    "cn-fontsource-fz-hei-b-01-regular@1.0.1": true
   }
 }
