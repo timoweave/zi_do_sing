@@ -7,6 +7,7 @@ import {
     OpenEyeIcon,
     UploadFileIcon,
 } from './Icons';
+
 import defaultWords from '../words/sentences_002.json';
 
 export interface CardItem {
@@ -53,14 +54,6 @@ export function useVisualViewport() {
             }
         };
 
-        // const _updateHeight = () => {
-        //     // Get the root element or fallback to document element
-        //     const rootElement =
-        //         document.getElementById('root') || document.documentElement;
-        //     // Set the height explicitly to match the visible virtual viewport height in pixels
-        //     rootElement.style.height = `${vv.height}px`;
-        // };
-
         vv.addEventListener('resize', handler);
         vv.addEventListener('scroll', handler);
         handler();
@@ -90,9 +83,10 @@ const speak = ({
 };
 
 export interface WordAndSound {
-    word: string;
-    sound: string;
-    ith: number;
+    word: string; // single word
+    sound: string; // written sound in jyutping, pinyin, ipa, ...
+    lang: string; // speech lang, like zh-HK, zh-CN, en-US
+    ith: number; // ith word in a sentence
     isAllMatched: boolean;
     isWordMatched: boolean;
     isSoundMatched: boolean;
@@ -102,16 +96,43 @@ export interface WordAndSound {
 function WordAndSound({
     word,
     sound,
+    lang,
     ith,
     isAllSoundRevealed,
     isAllMatched, // either all text or all sound
     isSoundMatched,
     isWordMatched,
 }: WordAndSound) {
+    const clickTimeoutRef = useRef<number | null>(null);
+    const clickCountRef = useRef(0);
+
+    const speakWord = () => {
+        clickCountRef.current += 1;
+
+        if (clickCountRef.current === 1) {
+            clickTimeoutRef.current = setTimeout(() => {
+                if (clickCountRef.current === 1) {
+                    speak({ text: word, lang });
+                }
+
+                clickCountRef.current = 0;
+                clickTimeoutRef.current = null;
+            }, 250);
+        } else if (clickCountRef.current === 2) {
+            if (clickTimeoutRef.current != null) {
+                clearTimeout(clickTimeoutRef.current);
+            }
+
+            clickCountRef.current = 0;
+            clickTimeoutRef.current = null;
+        }
+    };
+
     return (
         <div
             data-testid={`traditional-jyuting-${ith}`}
             className={`flex flex-col pt-1 ${(isSoundMatched || isWordMatched) && !isAllMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
+            onClick={speakWord}
         >
             {/* char */}
             <div
@@ -134,9 +155,9 @@ function WordAndSound({
 interface WordsAndSounds {
     words: string[];
     sounds: string[];
+    lang: string;
     isWordsMatched: boolean[];
     isSoundMatched: boolean[];
-    speakSound: () => void;
 }
 
 function FlashCardCN() {
@@ -171,7 +192,6 @@ function FlashCardCN() {
     const [isThemeDark, _setIsThemeDark] = useState(true);
     const [_vvWidth, vvHeight] = useVisualViewport();
 
-    console.log(navigator.userAgent);
     const currentCard = useMemo(
         () => cards[currentIndex] || null,
         [cards, currentIndex]
@@ -357,6 +377,16 @@ function FlashCardCN() {
                 speak({ text: currentCard.simp, lang: 'zh-CN' });
                 return;
             }
+            if (e.key === '1') {
+                e.preventDefault();
+                speak({ text: currentCard.trad, lang: 'zh-HK' });
+                return;
+            }
+            if (e.key === '2') {
+                e.preventDefault();
+                speak({ text: currentCard.simp, lang: 'zh-CN' });
+                return;
+            }
             if (e.key === '/') {
                 e.preventDefault();
                 toggleRevealPhonetic();
@@ -392,6 +422,7 @@ function FlashCardCN() {
         },
         [
             currentCard,
+            currentIndex,
             speak,
             toggleRevealPhonetic,
             toggleRevealDescription,
@@ -493,6 +524,16 @@ function FlashCardCN() {
         });
     };
 
+    const speakSentence = (
+        e: React.MouseEvent<HTMLDivElement>,
+        text: string,
+        lang: string
+    ): void => {
+        speak({ text, lang });
+        e.preventDefault();
+        e.stopPropagation();
+    };
+
     // Initialize cards
     useEffect(() => {
         const initialCards = shuffleCardItems(defaultWords);
@@ -545,10 +586,7 @@ function FlashCardCN() {
 
     if (!currentCard) {
         return (
-            <div
-                className="flex min-h-dvh items-center justify-center bg-gray-50 dark:bg-gray-900"
-                // className="flex h-dvh w-screen items-center justify-center bg-gray-50 dark:bg-gray-900"
-            >
+            <div className="flex min-h-dvh items-center justify-center bg-gray-50 dark:bg-gray-900">
                 <div className="text-gray-600 dark:text-gray-400">
                     Loading...
                 </div>
@@ -560,16 +598,16 @@ function FlashCardCN() {
         {
             words: currentCardTrads,
             sounds: currentCardJyutpings,
+            lang: 'zh-HK',
             isWordsMatched: inputMatchedTrads,
             isSoundMatched: inputMatchedJyutpings,
-            speakSound: () => speak({ text: currentCard.trad, lang: 'zh-HK' }),
         },
         {
             words: currentCardSimps,
             sounds: currentCardPinyins,
+            lang: 'zh-CN',
             isWordsMatched: inputMatchedSimpls,
             isSoundMatched: inputMatchedPinyins,
-            speakSound: () => speak({ text: currentCard.simp, lang: 'zh-CN' }),
         },
     ];
 
@@ -582,7 +620,6 @@ function FlashCardCN() {
             style={{
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
             }}
-            // className="font-cn-fontsource-975-maru-sc m-v-4 flex h-dvh w-screen flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
@@ -610,10 +647,13 @@ function FlashCardCN() {
                                 key={row}
                                 data-testid={`words-traditional-label-${row}`}
                                 className="flex flex-col items-center gap-1"
-                                onDoubleClick={() => {
-                                    wordAndSound.speakSound();
-                                    // handlePopupKeyboardBlur();
-                                }}
+                                onDoubleClick={(e) =>
+                                    speakSentence(
+                                        e,
+                                        wordAndSound.words.join(''),
+                                        wordAndSound.lang
+                                    )
+                                }
                                 onMouseDown={preventDefault}
                             >
                                 {/* Chinese characters row i-th */}
@@ -638,6 +678,7 @@ function FlashCardCN() {
                                                 ith={i}
                                                 word={word}
                                                 sound={sound}
+                                                lang={wordAndSound.lang}
                                                 isAllMatched={inputMatched}
                                                 isWordMatched={isCharMatched}
                                                 isSoundMatched={isSoundMatched}
@@ -677,7 +718,6 @@ function FlashCardCN() {
                 ref={inputRowRef}
                 data-testid="words-input-row"
                 className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1"
-                // className="pb-safe flex w-full max-w-120 shrink-0 flex-wrap items-center justify-center gap-1"
             >
                 {/* left chevron */}
                 <button
@@ -738,19 +778,17 @@ function FlashCardCN() {
                         onFocus={(e) => {
                             handlePopupKeyboardPreventScroll(e);
                             setIsInputFocused(true);
-                            console.log('focus');
                             if (inputRowRef.current && isInputFocused) {
                                 inputRowRef.current.style.opacity = '0%';
                             }
                         }}
                         onBlur={() => {
                             setIsInputFocused(false);
-                            console.log('blur');
                             if (inputRowRef.current && isInputFocused) {
                                 inputRowRef.current.style.opacity = '100%';
                             }
                         }}
-                        placeholder="Jyutping / Pinyin"
+                        placeholder="粵／普"
                         className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none dark:text-gray-200"
                         autoCapitalize="none"
                         autoCorrect="off"
