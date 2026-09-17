@@ -160,6 +160,242 @@ interface WordsAndSounds {
     isSoundMatched: boolean[];
 }
 
+function ShowSoundButton({
+    isSoundShown,
+    onClick,
+    onMouseDown,
+}: {
+    isSoundShown: boolean;
+} & Pick<React.ComponentPropsWithoutRef<'button'>, 'onClick' | 'onMouseDown'>) {
+    return (
+        <button
+            data-testid="reveal-phonetic-button"
+            title="reveal phonetic"
+            onClick={onClick}
+            onMouseDown={onMouseDown}
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            aria-label="Toggle pronunciation"
+        >
+            {isSoundShown ? <OpenEyeIcon /> : <ClosedEyeIcon />}
+        </button>
+    );
+}
+
+function MoveForwardButton({
+    onClick,
+    onMouseDown,
+}: {} & Pick<
+    React.ComponentPropsWithoutRef<'button'>,
+    'onClick' | 'onMouseDown'
+>) {
+    return (
+        <button
+            data-testid="next-words-card-button"
+            title="go to next card"
+            onClick={onClick}
+            onMouseDown={onMouseDown}
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            aria-label="Next"
+        >
+            <ChevronRightIcon />
+        </button>
+    );
+}
+
+function MoveBackwardButton({
+    onClick,
+    onMouseDown,
+}: {} & Pick<
+    React.ComponentPropsWithoutRef<'button'>,
+    'onClick' | 'onMouseDown'
+>) {
+    return (
+        <button
+            data-testid="previous-words-card-button"
+            title="go to previous card"
+            onClick={onClick}
+            onMouseDown={onMouseDown}
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            aria-label="Previous"
+        >
+            <ChevronLeftIcon />
+        </button>
+    );
+}
+
+function UploadFileButton({
+    handleUploadFile,
+    handlePopupKeyboardBlur,
+}: {
+    handlePopupKeyboardBlur: () => void;
+    handleUploadFile: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
+    const fileInputRef = useRef<HTMLInputElement>(null);
+
+    return (
+        <button
+            data-testid="upload-file-button-5"
+            title="select chinese word file"
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            onClick={() => {
+                fileInputRef.current?.click();
+                handlePopupKeyboardBlur();
+            }}
+            onMouseDown={(e) => e.preventDefault()}
+        >
+            <UploadFileIcon />
+            {/* Hidden File Input */}
+            <input
+                id="upload-file-button-5-hidden-input"
+                data-testid="upload-file-button-5-hidden-input"
+                ref={fileInputRef}
+                type="file"
+                accept=".json"
+                className="hidden"
+                onChange={handleUploadFile}
+            />
+        </button>
+    );
+}
+
+function Pagination({
+    currentIndex,
+    totalCards,
+}: {
+    currentIndex: number;
+    totalCards: number;
+}) {
+    return (
+        <div
+            id="words-progress-status-label"
+            data-testid="words-progress-status-label"
+            className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
+        >
+            {currentIndex + 1} / {totalCards}
+        </div>
+    );
+}
+
+function InputWithCheckMark({
+    inputValue,
+    inputRef,
+    inputMatched,
+    handlePopupKeyboardBlur,
+    onBlur,
+    onChange,
+    onFocus,
+}: {
+    inputRef: React.ForwardedRef<HTMLInputElement>;
+    inputValue: string;
+    inputMatched: boolean;
+    handlePopupKeyboardBlur: () => void;
+    setIsInputFocused: React.Dispatch<React.SetStateAction<boolean>>;
+} & Pick<
+    React.ComponentPropsWithoutRef<'input'>,
+    'onChange' | 'onFocus' | 'onBlur'
+>) {
+    return (
+        <div
+            data-testid="words-input-box-container"
+            className="flex flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500"
+        >
+            {/* input element */}
+            <input
+                title="type in jyutping, pinyin, or chinese"
+                id="words-input-box"
+                data-testid="words-input-box"
+                ref={inputRef}
+                type="text"
+                value={inputValue}
+                onChange={onChange}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                placeholder="粵／普"
+                className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none dark:text-gray-200"
+                autoCapitalize="none"
+                autoCorrect="off"
+                autoComplete="off"
+                spellCheck="false"
+            />
+            <div
+                onClick={() => {
+                    handlePopupKeyboardBlur();
+                }}
+            >
+                <CheckMarkIcon
+                    data-testid="words-check-mark-icon"
+                    matched={inputMatched}
+                />
+            </div>
+        </div>
+    );
+}
+
+function SentenceAndSounds({
+    wordsAndSounds,
+    onMouseDown,
+    inputMatched,
+    isSoundShown,
+}: {
+    wordsAndSounds: WordsAndSounds[];
+    inputMatched: boolean;
+    isSoundShown: boolean;
+} & Pick<React.ComponentPropsWithoutRef<'div'>, 'onMouseDown'>) {
+    return (
+        <div
+            data-testid="words-chinese-container"
+            className="mx-auto flex flex-col items-center justify-center gap-1"
+        >
+            {wordsAndSounds.map((wordAndSound, row) => (
+                <div
+                    key={row}
+                    data-testid={`words-traditional-label-${row}`}
+                    className="flex flex-col items-center gap-1"
+                    onDoubleClick={(e) => {
+                        speak({
+                            text: wordAndSound.words.join(''),
+                            lang: wordAndSound.lang,
+                        });
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }}
+                    onMouseDown={onMouseDown}
+                >
+                    {/* Chinese characters row i-th */}
+                    <div
+                        className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
+                    >
+                        {wordAndSound.words.map((word, i) => {
+                            const key =
+                                /* TBD: react need help to redraw when revealed is changed */
+                                100 * Number(isSoundShown) + 10 * row + i;
+                            const sound = wordAndSound.sounds[i];
+                            const isCharMatched =
+                                wordAndSound.isWordsMatched[i];
+                            const isSoundMatched =
+                                wordAndSound.isSoundMatched[i];
+
+                            return (
+                                <WordAndSound
+                                    key={key}
+                                    ith={i}
+                                    word={word}
+                                    sound={sound}
+                                    lang={wordAndSound.lang}
+                                    isAllMatched={inputMatched}
+                                    isWordMatched={isCharMatched}
+                                    isSoundMatched={isSoundMatched}
+                                    isAllSoundRevealed={isSoundShown}
+                                />
+                            );
+                        })}
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
 function FlashCardCN() {
     const [cards, setCards] = useState<CardItem[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -184,7 +420,6 @@ function FlashCardCN() {
 
     const inputRowRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
-    const fileInputRef = useRef<HTMLInputElement>(null);
     const cardRef = useRef(null);
     const scrollableChineseWordsRef = useRef<HTMLDivElement>(null);
     const touchStartX = useRef(0);
@@ -436,10 +671,6 @@ function FlashCardCN() {
         ]
     );
 
-    const handleUploadFileIcon = () => {
-        fileInputRef.current?.click();
-    };
-
     const handleUploadFile = useCallback(
         (e: React.ChangeEvent<HTMLInputElement>) => {
             const file = e.target.files?.[0];
@@ -522,16 +753,6 @@ function FlashCardCN() {
             left: 0,
             behavior: 'smooth',
         });
-    };
-
-    const speakSentence = (
-        e: React.MouseEvent<HTMLDivElement>,
-        text: string,
-        lang: string
-    ): void => {
-        speak({ text, lang });
-        e.preventDefault();
-        e.stopPropagation();
     };
 
     // Initialize cards
@@ -638,58 +859,12 @@ function FlashCardCN() {
                     onTouchStart={stopPropagation}
                     onTouchEnd={stopPropagation}
                 >
-                    <div
-                        data-testid="words-chinese-container"
-                        className="mx-auto flex flex-col items-center justify-center gap-1"
-                    >
-                        {wordsAndSounds.map((wordAndSound, row) => (
-                            <div
-                                key={row}
-                                data-testid={`words-traditional-label-${row}`}
-                                className="flex flex-col items-center gap-1"
-                                onDoubleClick={(e) =>
-                                    speakSentence(
-                                        e,
-                                        wordAndSound.words.join(''),
-                                        wordAndSound.lang
-                                    )
-                                }
-                                onMouseDown={preventDefault}
-                            >
-                                {/* Chinese characters row i-th */}
-                                <div
-                                    className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
-                                >
-                                    {wordAndSound.words.map((word, i) => {
-                                        const key =
-                                            /* TBD: react need help to redraw when revealed is changed */
-                                            100 * Number(revealed) +
-                                            10 * row +
-                                            i;
-                                        const sound = wordAndSound.sounds[i];
-                                        const isCharMatched =
-                                            wordAndSound.isWordsMatched[i];
-                                        const isSoundMatched =
-                                            wordAndSound.isSoundMatched[i];
-
-                                        return (
-                                            <WordAndSound
-                                                key={key}
-                                                ith={i}
-                                                word={word}
-                                                sound={sound}
-                                                lang={wordAndSound.lang}
-                                                isAllMatched={inputMatched}
-                                                isWordMatched={isCharMatched}
-                                                isSoundMatched={isSoundMatched}
-                                                isAllSoundRevealed={revealed}
-                                            />
-                                        );
-                                    })}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <SentenceAndSounds
+                        wordsAndSounds={wordsAndSounds}
+                        onMouseDown={preventDefault}
+                        inputMatched={inputMatched}
+                        isSoundShown={revealed}
+                    />
                 </div>
 
                 {/* Description */}
@@ -704,14 +879,7 @@ function FlashCardCN() {
                 </div>
             </div>
 
-            {/* Pagination */}
-            <div
-                id="words-progress-status-label"
-                data-testid="words-progress-status-label"
-                className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
-            >
-                {currentIndex + 1} / {totalCards}
-            </div>
+            <Pagination currentIndex={currentIndex} totalCards={totalCards} />
 
             {/* Input row */}
             <div
@@ -719,121 +887,58 @@ function FlashCardCN() {
                 data-testid="words-input-row"
                 className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1"
             >
-                {/* left chevron */}
-                <button
-                    data-testid="previous-words-card-button"
-                    title="go to previous card"
+                <MoveBackwardButton
                     onClick={() => {
                         goToPrevCard();
                         handlePopupKeyboardBlur();
                     }}
                     onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    aria-label="Previous"
-                >
-                    <ChevronLeftIcon />
-                </button>
-                {/* upload file button */}
-                <button
-                    data-testid="upload-file-button-5"
-                    title="select chinese word file"
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    onClick={() => {
-                        handleUploadFileIcon();
-                        handlePopupKeyboardBlur();
+                />
+                <UploadFileButton
+                    handleUploadFile={handleUploadFile}
+                    handlePopupKeyboardBlur={handlePopupKeyboardBlur}
+                />
+                <InputWithCheckMark
+                    inputRef={inputRef}
+                    inputValue={inputValue}
+                    inputMatched={inputMatched}
+                    setIsInputFocused={setIsInputFocused}
+                    handlePopupKeyboardBlur={handlePopupKeyboardBlur}
+                    onChange={(e) => {
+                        handleInputChange(e);
+                        if (e.target.value.at(-1) == ' ') {
+                            scroll();
+                        }
                     }}
-                    onMouseDown={preventDefault}
-                >
-                    <UploadFileIcon />
-                    {/* Hidden File Input */}
-                    <input
-                        id="upload-file-button-5-hidden-input"
-                        data-testid="upload-file-button-5-hidden-input"
-                        ref={fileInputRef}
-                        type="file"
-                        accept=".json"
-                        className="hidden"
-                        onChange={handleUploadFile}
-                    />
-                </button>
-                {/* input combo line */}
-                <div
-                    data-testid="words-input-box-container"
-                    className="flex flex-1 items-center rounded-full border border-gray-300 bg-gray-100 px-4 transition-colors focus-within:border-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500"
-                >
-                    {/* input element */}
-                    <input
-                        title="type in jyutping, pinyin, or chinese"
-                        id="words-input-box"
-                        data-testid="words-input-box"
-                        ref={inputRef}
-                        type="text"
-                        value={inputValue}
-                        onChange={(e) => {
-                            handleInputChange(e);
-                            if (e.target.value.at(-1) == ' ') {
-                                scroll();
-                            }
-                        }}
-                        onFocus={(e) => {
-                            handlePopupKeyboardPreventScroll(e);
-                            setIsInputFocused(true);
-                            if (inputRowRef.current && isInputFocused) {
-                                inputRowRef.current.style.opacity = '0%';
-                            }
-                        }}
-                        onBlur={() => {
-                            setIsInputFocused(false);
-                            if (inputRowRef.current && isInputFocused) {
-                                inputRowRef.current.style.opacity = '100%';
-                            }
-                        }}
-                        placeholder="粵／普"
-                        className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none dark:text-gray-200"
-                        autoCapitalize="none"
-                        autoCorrect="off"
-                        autoComplete="off"
-                        spellCheck="false"
-                    />
-                    <div
-                        onClick={() => {
-                            handlePopupKeyboardBlur();
-                        }}
-                    >
-                        <CheckMarkIcon
-                            data-testid="words-check-mark-icon"
-                            matched={inputMatched}
-                        />
-                    </div>
-                </div>
-                {/* reveal phonetic */}
-                <button
-                    data-testid="reveal-phonetic-button"
-                    title="reveal phonetic"
+                    onFocus={(e) => {
+                        handlePopupKeyboardPreventScroll(e);
+                        setIsInputFocused(true);
+                        if (inputRowRef.current && isInputFocused) {
+                            inputRowRef.current.style.opacity = '0%';
+                        }
+                    }}
+                    onBlur={() => {
+                        setIsInputFocused(false);
+                        if (inputRowRef.current && isInputFocused) {
+                            inputRowRef.current.style.opacity = '100%';
+                        }
+                    }}
+                />
+                <ShowSoundButton
+                    isSoundShown={revealed}
                     onClick={() => {
                         toggleRevealPhonetic();
                         handlePopupKeyboardBlur();
                     }}
                     onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    aria-label="Toggle pronunciation"
-                >
-                    {revealed ? <OpenEyeIcon /> : <ClosedEyeIcon />}
-                </button>
-                {/* right chevron */}
-                <button
-                    data-testid="next-words-card-button"
-                    title="go to next card"
+                />
+                <MoveForwardButton
                     onClick={() => {
                         goToNextCard();
                         handlePopupKeyboardBlur();
                     }}
                     onMouseDown={preventDefault}
-                    className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                    aria-label="Next"
-                >
-                    <ChevronRightIcon />
-                </button>
+                />
             </div>
         </div>
     );
