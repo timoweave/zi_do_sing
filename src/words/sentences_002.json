@@ -3,7 +3,7 @@
         "trad": "佢哋尋日去咗旺角買嘢",
         "simp": "他们昨天去了旺角买东西",
         "jyutping": "keoi5 dei6 cam4 jat6 heoi3 zo2 wong6 gok3 maai5 je5",
-        "pinyin": "ta1 men5 zuo2 tian1 qu4 le5 wang4 jiao3 mai3 dong1 xi5",
+        "pinyin": "ta1 men0 zuo2 tian1 qu4 le0 wang4 jiao3 mai3 dong1 xi1",
         "en": "They went to Mong Kok yesterday to buy things",
         "zh": "佢哋尋日去咗旺角買嘢 / 他们昨天去了旺角买东西"
     },
@@ -11,7 +11,7 @@
         "trad": "呢啲嘢食好貴唔抵食",
         "simp": "这些东西很贵不值得吃",
         "jyutping": "ni1 di1 je5 sik6 hou2 gwai3 m4 dai2 sik6",
-        "pinyin": "zhe4 xie1 dong1 xi5 hen3 gui4 bu4 zhi2 de5 chi1",
+        "pinyin": "zhe4 xie1 dong1 xi1 hen3 gui4 bu4 zhi2 de2 chi1",
         "en": "These food items are too expensive not worth eating",
         "zh": "呢啲嘢食好貴唔抵食 / 这些东西很贵不值得吃"
     },
@@ -19,7 +19,7 @@
         "trad": "你係咪癲咗點會噉做",
         "simp": "你是不是疯了怎么会这样做",
         "jyutping": "nei5 hai6 mai6 din1 zo2 dim2 wui5 gam2 zou6",
-        "pinyin": "ni3 shi4 bu4 shi4 feng1 le5 zen3 me5 hui4 zhe4 yang4 zuo4",
+        "pinyin": "ni3 shi4 bu0 shi4 feng1 le0 zen3 me0 hui4 zhe4 yang4 zuo4",
         "en": "Are you crazy why would you do that",
         "zh": "你係咪癲咗點會噉做 / 你是不是疯了怎么会这样做"
     },
@@ -27,7 +27,7 @@
         "trad": "我哋今晚去睇戲好唔好",
         "simp": "我们今晚去看电影好不好",
         "jyutping": "ngo5 dei6 gam1 maan5 heoi3 tai2 hei3 hou2 m4 hou2",
-        "pinyin": "wo3 men5 jin1 wan3 qu4 kan4 dian4 ying3 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 jin1 wan3 qu4 kan4 dian4 ying3 hao3 bu0 hao3",
         "en": "Shall we go watch a movie tonight",
         "zh": "我哋今晚去睇戲好唔好 / 我们今晚去看电影好不好"
     },
@@ -43,7 +43,7 @@
         "trad": "呢個價錢真係離譜",
         "simp": "这个价格真是离谱",
         "jyutping": "ni1 go3 gaa3 cin4 zan1 hai6 lei4 pou2",
-        "pinyin": "zhe4 ge5 jia4 ge2 zhen1 shi4 li2 pu3",
+        "pinyin": "zhe4 ge0 jia4 ge2 zhen1 shi4 li2 pu3",
         "en": "This price is truly outrageous",
         "zh": "呢個價錢真係離譜 / 这个价格真是离谱"
     },
@@ -51,7 +51,7 @@
         "trad": "唔該借借畀我行過",
         "simp": "麻烦借过让我过去",
         "jyutping": "m4 goi1 ze3 ze3 bei2 ngo5 haang4 gwo3",
-        "pinyin": "ma2 fan5 jie4 guo4 rang4 wo3 guo4 qu5",
+        "pinyin": "ma2 fan2 jie4 guo4 rang4 wo3 guo4 qu4",
         "en": "Excuse me let me pass through",
         "zh": "唔該借借畀我行過 / 麻烦借过让我过去"
     },
@@ -59,7 +59,7 @@
         "trad": "佢隻腳受傷所以要休息",
         "simp": "他的脚受伤所以要休息",
         "jyutping": "keoi5 zek3 goek3 sau6 soeng1 so2 ji5 jiu3 jau1 sik1",
-        "pinyin": "ta1 de5 jiao3 shou4 shang1 suo3 yi3 yao4 xiu1 xi5",
+        "pinyin": "ta1 de0 jiao3 shou4 shang1 suo3 yi3 yao4 xiu1 xi0",
         "en": "His leg is injured so he needs to rest",
         "zh": "佢隻腳受傷所以要休息 / 他的脚受伤所以要休息"
     },
@@ -67,7 +67,7 @@
         "trad": "呢度啲嘢食好正",
         "simp": "这里的东西很好吃",
         "jyutping": "nei1 dou6 di1 je5 sik6 hou2 zeng3",
-        "pinyin": "zhe4 li3 de5 dong1 xi5 hen3 hao3 chi1",
+        "pinyin": "zhe4 li3 de0 dong1 xi1 hen3 hao3 chi1",
         "en": "The food here is really great",
         "zh": "呢度啲嘢食好正 / 这里的东西很好吃"
     },
@@ -75,7 +75,7 @@
         "trad": "你唔好成日喺度發夢啦",
         "simp": "你不要整天在那里发梦吧",
         "jyutping": "nei5 m4 hou2 seng4 jat6 hai2 dou6 faat3 mung6 laa1",
-        "pinyin": "ni3 bu4 yao4 zheng3 tian1 zai4 na4 li3 fa1 meng4 ba5",
+        "pinyin": "ni3 bu2 yao4 zheng3 tian1 zai4 na4 li3 fa1 meng4 ba0",
         "en": "Do not daydream all the time",
         "zh": "你唔好成日喺度發夢啦 / 你不要整天在那里发梦吧"
     },
@@ -91,7 +91,7 @@
         "trad": "我想食碗雲吞麵",
         "simp": "我想吃一碗云吞面",
         "jyutping": "ngo5 soeng2 sik6 wun2 wan4 tan1 min6",
-        "pinyin": "wo3 xiang3 chi1 yi1 wan3 yun2 tun1 mian4",
+        "pinyin": "wo3 xiang3 chi1 yi4 wan3 yun2 tun1 mian4",
         "en": "I want to eat a bowl of wonton noodles",
         "zh": "我想食碗雲吞麵 / 我想吃一碗云吞面"
     },
@@ -99,7 +99,7 @@
         "trad": "佢哋成日喺街度撩事鬥非",
         "simp": "他们整天在街上惹是生非",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 gaai1 dou6 liu4 si6 dau3 fei1",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 jie1 shang4 re3 shi4 sheng1 fei1",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 jie1 shang4 re3 shi4 sheng1 fei1",
         "en": "They stir up trouble on the streets all day",
         "zh": "佢哋成日喺街度撩事鬥非 / 他们整天在街上惹是生非"
     },
@@ -115,7 +115,7 @@
         "trad": "你估佢會唔會嚟",
         "simp": "你猜他会不会来",
         "jyutping": "nei5 gu2 keoi5 wui5 m4 wui5 lai4",
-        "pinyin": "ni3 cai1 ta1 hui4 bu4 hui4 lai2",
+        "pinyin": "ni3 cai1 ta1 hui4 bu0 hui4 lai2",
         "en": "Do you guess he will come or not",
         "zh": "你估佢會唔會嚟 / 你猜他会不会来"
     },
@@ -131,7 +131,7 @@
         "trad": "我哋去行街睇下有咩買",
         "simp": "我们去逛街看看有什么买",
         "jyutping": "ngo5 dei6 heoi3 haang4 gaai1 tai2 haa6 jau5 me1 maai5",
-        "pinyin": "wo3 men5 qu4 guang4 jie1 kan4 kan5 you3 shen2 me5 mai3",
+        "pinyin": "wo3 men0 qu4 guang4 jie1 kan4 kan4 you3 shen2 me0 mai3",
         "en": "Let us go shopping and see what there is to buy",
         "zh": "我哋去行街睇下有咩買 / 我们去逛街看看有什么买"
     },
@@ -139,7 +139,7 @@
         "trad": "佢隻手好凍要戴手套",
         "simp": "他的手很冷要戴手套",
         "jyutping": "keoi5 zek3 sau2 hou2 dung3 jiu3 daai3 sau2 tou3",
-        "pinyin": "ta1 de5 shou3 hen3 leng3 yao4 dai4 shou3 tao4",
+        "pinyin": "ta1 de0 shou3 hen3 leng3 yao4 dai4 shou3 tao4",
         "en": "His hands are cold he needs to wear gloves",
         "zh": "佢隻手好凍要戴手套 / 他的手很冷要戴手套"
     },
@@ -147,7 +147,7 @@
         "trad": "呢啲嘢唔係噉做嘅",
         "simp": "这些东西不是这样做的",
         "jyutping": "ni1 di1 je5 m4 hai6 gam2 zou6 ge3",
-        "pinyin": "zhe4 xie1 dong1 xi5 bu4 shi4 zhe4 yang4 zuo4 de5",
+        "pinyin": "zhe4 xie1 dong1 xi1 bu2 shi4 zhe4 yang4 zuo4 de0",
         "en": "These things are not done this way",
         "zh": "呢啲嘢唔係噉做嘅 / 这些东西不是这样做的"
     },
@@ -155,7 +155,7 @@
         "trad": "佢哋喺公園度傾偈",
         "simp": "他们在公园里聊天",
         "jyutping": "keoi5 dei6 hai2 gung1 jyun2 dou6 king1 gai2",
-        "pinyin": "ta1 men5 zai4 gong1 yuan2 li3 liao2 tian1",
+        "pinyin": "ta1 men0 zai4 gong1 yuan2 li3 liao2 tian1",
         "en": "They chat in the park",
         "zh": "佢哋喺公園度傾偈 / 他们在公园里聊天"
     },
@@ -163,7 +163,7 @@
         "trad": "我想買杯凍奶茶",
         "simp": "我想买一杯冰奶茶",
         "jyutping": "ngo5 soeng2 maai5 bui1 dung3 naai5 caa4",
-        "pinyin": "wo3 xiang3 mai3 yi1 bei1 bing1 nai3 cha2",
+        "pinyin": "wo3 xiang3 mai3 yi4 bei1 bing1 nai3 cha2",
         "en": "I want to buy a cup of iced milk tea",
         "zh": "我想買杯凍奶茶 / 我想买一杯冰奶茶"
     },
@@ -179,7 +179,7 @@
         "trad": "呢個問題好難答",
         "simp": "这个问题很难回答",
         "jyutping": "ni1 go3 man6 tai4 hou2 naan4 daap3",
-        "pinyin": "zhe4 ge5 wen4 ti2 hen3 nan2 hui2 da2",
+        "pinyin": "zhe4 ge0 wen4 ti2 hen3 nan2 hui2 da2",
         "en": "This question is hard to answer",
         "zh": "呢個問題好難答 / 这个问题很难回答"
     },
@@ -195,7 +195,7 @@
         "trad": "我哋一齊去唱K好唔好",
         "simp": "我们一起去唱卡拉OK好不好",
         "jyutping": "ngo5 dei6 jat1 cai4 heoi3 coeng3 […] hou2 m4 hou2",
-        "pinyin": "wo3 men5 yi1 qi3 qu4 chang4 ka3 la1 OK hao3 bu4 hao3",
+        "pinyin": "wo3 men0 yi4 qi3 qu4 chang4 ka3 la1 O K hao3 bu0 hao3",
         "en": "Shall we go sing karaoke together",
         "zh": "我哋一齊去唱K好唔好 / 我们一起去唱卡拉OK好不好"
     },
@@ -203,7 +203,7 @@
         "trad": "佢隻狗好得意",
         "simp": "他的狗很可爱",
         "jyutping": "keoi5 zek3 gau2 hou2 dak1 ji3",
-        "pinyin": "ta1 de5 gou3 hen3 ke3 ai4",
+        "pinyin": "ta1 de0 gou3 hen3 ke3 ai4",
         "en": "His dog is very cute",
         "zh": "佢隻狗好得意 / 他的狗很可爱"
     },
@@ -211,7 +211,7 @@
         "trad": "呢度啲人好友善",
         "simp": "这里的人很友善",
         "jyutping": "nei1 dou6 di1 jan4 hou2 jau5 sin6",
-        "pinyin": "zhe4 li3 de5 ren2 hen3 you3 shan4",
+        "pinyin": "zhe4 li3 de0 ren2 hen3 you3 shan4",
         "en": "The people here are very friendly",
         "zh": "呢度啲人好友善 / 这里的人很友善"
     },
@@ -219,7 +219,7 @@
         "trad": "佢話佢會遲到少少",
         "simp": "他说他会迟到一点点",
         "jyutping": "keoi5 waa6 keoi5 wui5 ci4 dou3 siu2 siu2",
-        "pinyin": "ta1 shuo1 ta1 hui4 chi2 dao4 yi1 dian3 dian3",
+        "pinyin": "ta1 shuo1 ta1 hui4 chi2 dao4 yi4 dian3 dian3",
         "en": "He said he will be a little late",
         "zh": "佢話佢會遲到少少 / 他说他会迟到一点点"
     },
@@ -227,7 +227,7 @@
         "trad": "佢哋喺度打麻雀",
         "simp": "他们在那里打麻将",
         "jyutping": "keoi5 dei6 hai2 dou6 daa2 maa4 zoek2",
-        "pinyin": "ta1 men5 zai4 na4 li3 da3 ma2 jiang4",
+        "pinyin": "ta1 men0 zai4 na4 li3 da3 ma2 jiang1",
         "en": "They are playing mahjong there",
         "zh": "佢哋喺度打麻雀 / 他们在那里打麻将"
     },
@@ -235,7 +235,7 @@
         "trad": "呢啲衫好靚喎",
         "simp": "这些衣服很漂亮啊",
         "jyutping": "ni1 di1 saam1 hou2 leng3 wo3",
-        "pinyin": "zhe4 xie1 yi1 fu5 hen3 piao4 liang5 a5",
+        "pinyin": "zhe4 xie1 yi1 fu0 hen3 piao4 liang0 a0",
         "en": "These clothes are very pretty",
         "zh": "呢啲衫好靚喎 / 这些衣服很漂亮啊"
     },
@@ -259,7 +259,7 @@
         "trad": "佢話佢唔舒服要請假",
         "simp": "他说他不舒服要请假",
         "jyutping": "keoi5 waa6 keoi5 m4 syu1 fuk6 jiu3 ceng2 gaa3",
-        "pinyin": "ta1 shuo1 ta1 bu4 shu1 fu5 yao4 qing3 jia4",
+        "pinyin": "ta1 shuo1 ta1 bu4 shu1 fu2 yao4 qing3 jia4",
         "en": "He said he feels unwell and needs to take leave",
         "zh": "佢話佢唔舒服要請假 / 他说他不舒服要请假"
     },
@@ -267,7 +267,7 @@
         "trad": "呢間餐廳啲嘢好好食",
         "simp": "这家餐厅的东西很好吃",
         "jyutping": "ni1 gaan1 caan1 teng1 di1 je5 hou2 hou2 sik6",
-        "pinyin": "zhe4 jia1 can1 ting1 de5 dong1 xi5 hen3 hao3 chi1",
+        "pinyin": "zhe4 jia1 can1 ting1 de0 dong1 xi1 hen3 hao3 chi1",
         "en": "The food at this restaurant is very good",
         "zh": "呢間餐廳啲嘢好好食 / 这家餐厅的东西很好吃"
     },
@@ -275,7 +275,7 @@
         "trad": "佢哋成日喺度嘈喧巴閉",
         "simp": "他们整天在那里吵吵闹闹",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 cou4 hyun1 baa1 bai3",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 chao3 chao3 nao4 nao4",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 chao1 chao0 nao4 nao4",
         "en": "They are noisy all the time",
         "zh": "佢哋成日喺度嘈喧巴閉 / 他们整天在那里吵吵闹闹"
     },
@@ -283,7 +283,7 @@
         "trad": "我哋去游水好唔好",
         "simp": "我们去游泳好不好",
         "jyutping": "ngo5 dei6 heoi3 jau4 seoi2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 you2 yong3 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 you2 yong3 hao3 bu0 hao3",
         "en": "Shall we go swimming",
         "zh": "我哋去游水好唔好 / 我们去游泳好不好"
     },
@@ -291,7 +291,7 @@
         "trad": "佢隻手錶好貴",
         "simp": "他的手表很贵",
         "jyutping": "keoi5 zek3 sau2 biu1 hou2 gwai3",
-        "pinyin": "ta1 de5 shou3 biao3 hen3 gui4",
+        "pinyin": "ta1 de0 shou3 biao3 hen3 gui4",
         "en": "His watch is very expensive",
         "zh": "佢隻手錶好貴 / 他的手表很贵"
     },
@@ -299,7 +299,7 @@
         "trad": "呢度啲空氣好清新",
         "simp": "这里的空气很清新",
         "jyutping": "nei1 dou6 di1 hung1 hei3 hou2 cing1 san1",
-        "pinyin": "zhe4 li3 de5 kong1 qi4 hen3 qing1 xin1",
+        "pinyin": "zhe4 li3 de0 kong1 qi4 hen3 qing1 xin1",
         "en": "The air here is very fresh",
         "zh": "呢度啲空氣好清新 / 这里的空气很清新"
     },
@@ -307,7 +307,7 @@
         "trad": "佢話佢會考慮下",
         "simp": "他说他会考虑一下",
         "jyutping": "keoi5 waa6 keoi5 wui6 haau2 leoi6 haa6",
-        "pinyin": "ta1 shuo1 ta1 hui4 kao3 lv4 yi1 xia4",
+        "pinyin": "ta1 shuo1 ta1 hui4 kao3 lv4 yi2 xia4",
         "en": "He said he will think about it",
         "zh": "佢話佢會考慮下 / 他说他会考虑一下"
     },
@@ -315,7 +315,7 @@
         "trad": "我唔鍾意食苦瓜",
         "simp": "我不喜欢吃苦瓜",
         "jyutping": "ngo5 m4 zung1 ji3 sik6 fu2 gwaa1",
-        "pinyin": "wo3 bu4 xi3 huan5 chi1 ku3 gua1",
+        "pinyin": "wo3 bu4 xi3 huan0 chi1 ku3 gua1",
         "en": "I do not like eating bitter melon",
         "zh": "我唔鍾意食苦瓜 / 我不喜欢吃苦瓜"
     },
@@ -323,7 +323,7 @@
         "trad": "佢哋喺度睇電視",
         "simp": "他们在那里看电视",
         "jyutping": "keoi5 dei6 hai2 dou6 tai2 din6 si6",
-        "pinyin": "ta1 men5 zai4 na4 li3 kan4 dian4 shi4",
+        "pinyin": "ta1 men0 zai4 na4 li3 kan4 dian4 shi4",
         "en": "They are watching TV there",
         "zh": "佢哋喺度睇電視 / 他们在那里看电视"
     },
@@ -339,7 +339,7 @@
         "trad": "佢成日喺度發脾氣",
         "simp": "他整天在那里发脾气",
         "jyutping": "keoi5 seng4 jat6 hai2 dou6 faat3 pei4 hei3",
-        "pinyin": "ta1 zheng3 tian1 zai4 na4 li3 fa1 pi2 qi5",
+        "pinyin": "ta1 zheng3 tian1 zai4 na4 li3 fa1 pi2 qi0",
         "en": "He loses his temper all the time",
         "zh": "佢成日喺度發脾氣 / 他整天在那里发脾气"
     },
@@ -347,7 +347,7 @@
         "trad": "我想買對新鞋",
         "simp": "我想买一双新鞋",
         "jyutping": "ngo5 soeng2 maai5 deoi3 san1 haai4",
-        "pinyin": "wo3 xiang3 mai3 yi1 shuang1 xin1 xie2",
+        "pinyin": "wo3 xiang3 mai3 yi4 shuang1 xin1 xie2",
         "en": "I want to buy a pair of new shoes",
         "zh": "我想買對新鞋 / 我想买一双新鞋"
     },
@@ -355,7 +355,7 @@
         "trad": "佢話佢唔記得咗",
         "simp": "他说他忘记了",
         "jyutping": "keoi5 waa6 keoi5 m4 gei3 dak1 zo2",
-        "pinyin": "ta1 shuo1 ta1 wang4 ji4 le5",
+        "pinyin": "ta1 shuo1 ta1 wang4 ji4 le0",
         "en": "He said he forgot",
         "zh": "佢話佢唔記得咗 / 他说他忘记了"
     },
@@ -363,7 +363,7 @@
         "trad": "呢個蛋糕好甜",
         "simp": "这个蛋糕很甜",
         "jyutping": "ni1 go3 daan6 gou1 hou2 tim4",
-        "pinyin": "zhe4 ge5 dan4 gao1 hen3 tian2",
+        "pinyin": "zhe4 ge0 dan4 gao1 hen3 tian2",
         "en": "This cake is very sweet",
         "zh": "呢個蛋糕好甜 / 这个蛋糕很甜"
     },
@@ -371,7 +371,7 @@
         "trad": "佢哋成日喺度講是非",
         "simp": "他们整天在那里说是非",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 gong2 si6 fei1",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 shuo1 shi4 fei1",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 shuo1 shi4 fei1",
         "en": "They gossip all the time",
         "zh": "佢哋成日喺度講是非 / 他们整天在那里说是非"
     },
@@ -379,7 +379,7 @@
         "trad": "我哋去睇演唱會好唔好",
         "simp": "我们去看演唱会好不好",
         "jyutping": "ngo5 dei6 heoi3 tai2 jin2 coeng3 wui2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 kan4 yan3 chang4 hui4 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 kan4 yan3 chang4 hui4 hao3 bu0 hao3",
         "en": "Shall we go to a concert",
         "zh": "我哋去睇演唱會好唔好 / 我们去看演唱会好不好"
     },
@@ -387,7 +387,7 @@
         "trad": "佢隻貓好肥",
         "simp": "他的猫很胖",
         "jyutping": "keoi5 zek3 maau1 hou2 fei4",
-        "pinyin": "ta1 de5 mao1 hen3 pang4",
+        "pinyin": "ta1 de0 mao1 hen3 pang4",
         "en": "His cat is very fat",
         "zh": "佢隻貓好肥 / 他的猫很胖"
     },
@@ -395,7 +395,7 @@
         "trad": "呢度啲嘢好平",
         "simp": "这里的东西很便宜",
         "jyutping": "nei1 dou6 di1 je5 hou2 peng4",
-        "pinyin": "zhe4 li3 de5 dong1 xi5 hen3 pian2 yi5",
+        "pinyin": "zhe4 li3 de0 dong1 xi1 hen3 pian2 yi0",
         "en": "Things here are very cheap",
         "zh": "呢度啲嘢好平 / 这里的东西很便宜"
     },
@@ -411,7 +411,7 @@
         "trad": "佢哋喺度唱歌",
         "simp": "他们在那里唱歌",
         "jyutping": "keoi5 dei6 hai2 dou6 coeng3 go1",
-        "pinyin": "ta1 men5 zai4 na4 li3 chang4 ge1",
+        "pinyin": "ta1 men0 zai4 na4 li3 chang4 ge1",
         "en": "They are singing there",
         "zh": "佢哋喺度唱歌 / 他们在那里唱歌"
     },
@@ -443,7 +443,7 @@
         "trad": "佢話佢唔知點算",
         "simp": "他说他不知道怎么办",
         "jyutping": "keoi5 waa6 keoi5 m4 zi1 dim2 syun3",
-        "pinyin": "ta1 shuo1 ta1 bu4 zhi1 dao4 zen3 me5 ban4",
+        "pinyin": "ta1 shuo1 ta1 bu4 zhi1 dao4 zen3 me0 ban4",
         "en": "He said he does not know what to do",
         "zh": "佢話佢唔知點算 / 他说他不知道怎么办"
     },
@@ -459,7 +459,7 @@
         "trad": "佢哋成日喺度打架",
         "simp": "他们整天在那里打架",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 daa2 gaa3",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 da3 jia4",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 da3 jia4",
         "en": "They fight all the time",
         "zh": "佢哋成日喺度打架 / 他们整天在那里打架"
     },
@@ -467,7 +467,7 @@
         "trad": "我哋去露營好唔好",
         "simp": "我们去露营好不好",
         "jyutping": "ngo5 dei6 heoi3 lou6 jing4 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 lu4 ying2 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 lu4 ying2 hao3 bu0 hao3",
         "en": "Shall we go camping",
         "zh": "我哋去露營好唔好 / 我们去露营好不好"
     },
@@ -475,7 +475,7 @@
         "trad": "佢隻錶壞咗",
         "simp": "他的表坏了",
         "jyutping": "keoi5 zek3 biu1 waai6 zo2",
-        "pinyin": "ta1 de5 biao3 huai4 le5",
+        "pinyin": "ta1 de0 biao3 huai4 le0",
         "en": "His watch is broken",
         "zh": "佢隻錶壞咗 / 他的表坏了"
     },
@@ -483,7 +483,7 @@
         "trad": "呢度啲服務好好",
         "simp": "这里的服务很好",
         "jyutping": "nei1 dou6 di1 fuk6 mou6 hou2 hou2",
-        "pinyin": "zhe4 li3 de5 fu2 wu4 hen3 hao3",
+        "pinyin": "zhe4 li3 de0 fu2 wu4 hen3 hao3",
         "en": "The service here is very good",
         "zh": "呢度啲服務好好 / 这里的服务很好"
     },
@@ -499,7 +499,7 @@
         "trad": "我唔鍾意食榴槤",
         "simp": "我不喜欢吃榴莲",
         "jyutping": "ngo5 m4 zung1 ji3 sik6 lau4 lin4",
-        "pinyin": "wo3 bu4 xi3 huan5 chi1 liu2 lian2",
+        "pinyin": "wo3 bu4 xi3 huan0 chi1 liu2 lian2",
         "en": "I do not like eating durian",
         "zh": "我唔鍾意食榴槤 / 我不喜欢吃榴莲"
     },
@@ -507,7 +507,7 @@
         "trad": "佢哋喺度跳舞",
         "simp": "他们在那里跳舞",
         "jyutping": "keoi5 dei6 hai2 dou6 tiu3 mou5",
-        "pinyin": "ta1 men5 zai4 na4 li3 tiao4 wu3",
+        "pinyin": "ta1 men0 zai4 na4 li3 tiao4 wu3",
         "en": "They are dancing there",
         "zh": "佢哋喺度跳舞 / 他们在那里跳舞"
     },
@@ -531,7 +531,7 @@
         "trad": "我想買本書睇",
         "simp": "我想买一本书看",
         "jyutping": "ngo5 soeng2 maai5 bun2 syu1 tai2",
-        "pinyin": "wo3 xiang3 mai3 yi1 ben3 shu1 kan4",
+        "pinyin": "wo3 xiang3 mai3 yi4 ben3 shu1 kan4",
         "en": "I want to buy a book to read",
         "zh": "我想買本書睇 / 我想买一本书看"
     },
@@ -539,7 +539,7 @@
         "trad": "佢話佢唔舒服",
         "simp": "他说他不舒服",
         "jyutping": "keoi5 waa6 keoi5 m4 syu1 fuk6",
-        "pinyin": "ta1 shuo1 ta1 bu4 shu1 fu5",
+        "pinyin": "ta1 shuo1 ta1 bu4 shu1 fu2",
         "en": "He said he feels unwell",
         "zh": "佢話佢唔舒服 / 他说他不舒服"
     },
@@ -547,7 +547,7 @@
         "trad": "呢個公園好大",
         "simp": "这个公园很大",
         "jyutping": "ni1 go3 gung1 jyun2 hou2 daai6",
-        "pinyin": "zhe4 ge5 gong1 yuan2 hen3 da4",
+        "pinyin": "zhe4 ge0 gong1 yuan2 hen3 da4",
         "en": "This park is very big",
         "zh": "呢個公園好大 / 这个公园很大"
     },
@@ -555,7 +555,7 @@
         "trad": "佢哋成日喺度飲酒",
         "simp": "他们整天在那里喝酒",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 jam2 zau2",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 he1 jiu3",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 he1 jiu3",
         "en": "They drink alcohol all the time",
         "zh": "佢哋成日喺度飲酒 / 他们整天在那里喝酒"
     },
@@ -563,7 +563,7 @@
         "trad": "我哋去釣魚好唔好",
         "simp": "我们去钓鱼好不好",
         "jyutping": "ngo5 dei6 heoi3 diu3 jyu2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 diao4 yu2 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 diao4 yu2 hao3 bu0 hao3",
         "en": "Shall we go fishing",
         "zh": "我哋去釣魚好唔好 / 我们去钓鱼好不好"
     },
@@ -571,7 +571,7 @@
         "trad": "佢隻鞋爛咗",
         "simp": "他的鞋坏了",
         "jyutping": "keoi5 zek3 haai4 laan6 zo2",
-        "pinyin": "ta1 de5 xie2 huai4 le5",
+        "pinyin": "ta1 de0 xie2 huai4 le0",
         "en": "His shoe is broken",
         "zh": "佢隻鞋爛咗 / 他的鞋坏了"
     },
@@ -579,7 +579,7 @@
         "trad": "呢度啲嘢好亂",
         "simp": "这里的东西很乱",
         "jyutping": "nei1 dou6 di1 je5 hou2 lyun6",
-        "pinyin": "zhe4 li3 de5 dong1 xi5 hen3 luan4",
+        "pinyin": "zhe4 li3 de0 dong1 xi1 hen3 luan4",
         "en": "Things here are very messy",
         "zh": "呢度啲嘢好亂 / 这里的东西很乱"
     },
@@ -587,7 +587,7 @@
         "trad": "佢話佢會早啲到",
         "simp": "他说他会早一点到",
         "jyutping": "keoi5 waa6 keoi5 wui5 zou2 di1 dou3",
-        "pinyin": "ta1 shuo1 ta1 hui4 zao3 yi1 dian3 dao4",
+        "pinyin": "ta1 shuo1 ta1 hui4 zao3 yi4 dian3 dao4",
         "en": "He said he will arrive earlier",
         "zh": "佢話佢會早啲到 / 他说他会早一点到"
     },
@@ -595,7 +595,7 @@
         "trad": "佢哋喺度捉棋",
         "simp": "他们在那里下棋",
         "jyutping": "keoi5 dei6 hai2 dou6 zuk1 kei2",
-        "pinyin": "ta1 men5 zai4 na4 li3 xia4 qi2",
+        "pinyin": "ta1 men0 zai4 na4 li3 xia4 qi2",
         "en": "They are playing chess there",
         "zh": "佢哋喺度捉棋 / 他们在那里下棋"
     },
@@ -619,7 +619,7 @@
         "trad": "我想買件新衫",
         "simp": "我想买一件新衣服",
         "jyutping": "ngo5 soeng2 maai5 gin6 san1 saam1",
-        "pinyin": "wo3 xiang3 mai3 yi1 jian4 xin1 yi1 fu5",
+        "pinyin": "wo3 xiang3 mai3 yi2 jian4 xin1 yi1 fu0",
         "en": "I want to buy a new shirt",
         "zh": "我想買件新衫 / 我想买一件新衣服"
     },
@@ -643,7 +643,7 @@
         "trad": "佢哋成日喺度踢波",
         "simp": "他们整天在那里踢球",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 tek3 bo1",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 ti1 qiu2",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 ti1 qiu2",
         "en": "They play football all the time",
         "zh": "佢哋成日喺度踢波 / 他们整天在那里踢球"
     },
@@ -651,7 +651,7 @@
         "trad": "我哋去溜冰好唔好",
         "simp": "我们去溜冰好不好",
         "jyutping": "ngo5 dei6 heoi3 leu5 bing1 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 liu1 bing1 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 liu1 bing1 hao3 bu0 hao3",
         "en": "Shall we go ice skating",
         "zh": "我哋去溜冰好唔好 / 我们去溜冰好不好"
     },
@@ -659,7 +659,7 @@
         "trad": "佢隻戒指好靚",
         "simp": "他的戒指很漂亮",
         "jyutping": "keoi5 zek3 gaai3 zi2 hou2 leng3",
-        "pinyin": "ta1 de5 jie4 zhi5 hen3 piao4 liang5",
+        "pinyin": "ta1 de0 jie4 zhi3 hen3 piao4 liang0",
         "en": "His ring is very pretty",
         "zh": "佢隻戒指好靚 / 他的戒指很漂亮"
     },
@@ -667,7 +667,7 @@
         "trad": "呢度啲燈光好暗",
         "simp": "这里的灯光很暗",
         "jyutping": "nei1 dou6 di1 dang1 gwong1 hou2 am3",
-        "pinyin": "zhe4 li3 de5 deng1 guang1 hen3 an4",
+        "pinyin": "zhe4 li3 de0 deng1 guang1 hen3 an4",
         "en": "The lighting here is very dim",
         "zh": "呢度啲燈光好暗 / 这里的灯光很暗"
     },
@@ -675,7 +675,7 @@
         "trad": "佢話佢會遲啲覆我",
         "simp": "他说他会迟一点回复我",
         "jyutping": "keoi5 waa6 keoi5 wui5 ci4 di1 fuk1 ngo5",
-        "pinyin": "ta1 shuo1 ta1 hui4 chi2 yi1 dian3 hui2 fu4 wo3",
+        "pinyin": "ta1 shuo1 ta1 hui4 chi2 yi4 dian3 hui2 fu4 wo3",
         "en": "He said he will reply to me later",
         "zh": "佢話佢會遲啲覆我 / 他说他会迟一点回复我"
     },
@@ -683,7 +683,7 @@
         "trad": "我唔鍾意食芫茜",
         "simp": "我不喜欢吃香菜",
         "jyutping": "ngo5 m4 zung1 ji3 sik6 jin4 sai1",
-        "pinyin": "wo3 bu4 xi3 huan5 chi1 xiang1 cai4",
+        "pinyin": "wo3 bu4 xi3 huan0 chi1 xiang1 cai4",
         "en": "I do not like eating coriander",
         "zh": "我唔鍾意食芫茜 / 我不喜欢吃香菜"
     },
@@ -691,7 +691,7 @@
         "trad": "佢哋喺度畫畫",
         "simp": "他们在那里画画",
         "jyutping": "keoi5 dei6 hai2 dou6 waak6 waa2",
-        "pinyin": "ta1 men5 zai4 na4 li3 hua4 hua4",
+        "pinyin": "ta1 men0 zai4 na4 li3 hua4 hua4",
         "en": "They are painting there",
         "zh": "佢哋喺度畫畫 / 他们在那里画画"
     },
@@ -715,7 +715,7 @@
         "trad": "我想買支新筆",
         "simp": "我想买一支新笔",
         "jyutping": "ngo5 soeng2 maai5 zi1 san1 bat1",
-        "pinyin": "wo3 xiang3 mai3 yi1 zhi1 xin1 bi3",
+        "pinyin": "wo3 xiang3 mai3 yi4 zhi1 xin1 bi3",
         "en": "I want to buy a new pen",
         "zh": "我想買支新筆 / 我想买一支新笔"
     },
@@ -723,7 +723,7 @@
         "trad": "佢話佢唔知點做",
         "simp": "他说他不知道怎么做",
         "jyutping": "keoi5 waa6 keoi5 m4 zi1 dim2 zou6",
-        "pinyin": "ta1 shuo1 ta1 bu4 zhi1 dao4 zen3 me5 zuo4",
+        "pinyin": "ta1 shuo1 ta1 bu4 zhi1 dao4 zen3 me0 zuo4",
         "en": "He said he does not know how to do it",
         "zh": "佢話佢唔知點做 / 他说他不知道怎么做"
     },
@@ -739,7 +739,7 @@
         "trad": "佢哋成日喺度打牌",
         "simp": "他们整天在那里打牌",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 daa2 paai2",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 da3 pai2",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 da3 pai2",
         "en": "They play cards all the time",
         "zh": "佢哋成日喺度打牌 / 他们整天在那里打牌"
     },
@@ -747,7 +747,7 @@
         "trad": "我哋去爬山好唔好",
         "simp": "我们去爬山好不好",
         "jyutping": "ngo5 dei6 heoi3 paa4 saan1 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 pa2 shan1 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 pa2 shan1 hao3 bu0 hao3",
         "en": "Shall we go hiking",
         "zh": "我哋去爬山好唔好 / 我们去爬山好不好"
     },
@@ -755,7 +755,7 @@
         "trad": "佢隻耳環好閃",
         "simp": "他的耳环很闪",
         "jyutping": "keoi5 zek3 ji5 waan2 hou2 sim2",
-        "pinyin": "ta1 de5 er3 huan2 hen3 shan3",
+        "pinyin": "ta1 de0 er3 huan2 hen3 shan3",
         "en": "His earrings are very sparkly",
         "zh": "佢隻耳環好閃 / 他的耳环很闪"
     },
@@ -763,7 +763,7 @@
         "trad": "呢度啲音樂好大聲",
         "simp": "这里的音乐很大声",
         "jyutping": "nei1 dou6 di1 jam1 ngok6 hou2 daai6 seng1",
-        "pinyin": "zhe4 li3 de5 yin1 yue4 hen3 da4 sheng1",
+        "pinyin": "zhe4 li3 de0 yin1 yue4 hen3 da4 sheng1",
         "en": "The music here is very loud",
         "zh": "呢度啲音樂好大聲 / 这里的音乐很大声"
     },
@@ -779,7 +779,7 @@
         "trad": "佢哋喺度彈琴",
         "simp": "他们在那里弹琴",
         "jyutping": "keoi5 dei6 hai2 dou6 taan4 kam4",
-        "pinyin": "ta1 men5 zai4 na4 li3 tan2 qin2",
+        "pinyin": "ta1 men0 zai4 na4 li3 tan2 qin2",
         "en": "They are playing piano there",
         "zh": "佢哋喺度彈琴 / 他们在那里弹琴"
     },
@@ -803,7 +803,7 @@
         "trad": "我想買個新袋",
         "simp": "我想买一个新包",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 doi6",
-        "pinyin": "wo3 xiang3 mai3 yi1 ge5 xin1 bao1",
+        "pinyin": "wo3 xiang3 mai3 yi2 ge4 xin1 bao1",
         "en": "I want to buy a new bag",
         "zh": "我想買個新袋 / 我想买一个新包"
     },
@@ -811,7 +811,7 @@
         "trad": "佢話佢唔會嚟",
         "simp": "他说他不会来",
         "jyutping": "keoi5 waa6 keoi5 m4 wui5 lai4",
-        "pinyin": "ta1 shuo1 ta1 bu4 hui4 lai2",
+        "pinyin": "ta1 shuo1 ta1 bu2 hui4 lai2",
         "en": "He said he will not come",
         "zh": "佢話佢唔會嚟 / 他说他不会来"
     },
@@ -827,7 +827,7 @@
         "trad": "佢哋成日喺度睇戲",
         "simp": "他们整天在那里看电影",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 tai2 hei3",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 kan4 dian4 ying3",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 kan4 dian4 ying3",
         "en": "They watch movies all the time",
         "zh": "佢哋成日喺度睇戲 / 他们整天在那里看电影"
     },
@@ -835,7 +835,7 @@
         "trad": "我哋去野餐好唔好",
         "simp": "我们去野餐好不好",
         "jyutping": "ngo5 dei6 heoi3 je5 caan1 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 ye3 can1 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 ye3 can1 hao3 bu0 hao3",
         "en": "Shall we go picnicking",
         "zh": "我哋去野餐好唔好 / 我们去野餐好不好"
     },
@@ -843,7 +843,7 @@
         "trad": "佢隻手鏈好幼",
         "simp": "他的手链很细",
         "jyutping": "keoi5 zek3 sau2 lin2 hou2 jau3",
-        "pinyin": "ta1 de5 shou3 lian4 hen3 xi4",
+        "pinyin": "ta1 de0 shou3 lian4 hen3 xi4",
         "en": "His bracelet is very thin",
         "zh": "佢隻手鏈好幼 / 他的手链很细"
     },
@@ -851,7 +851,7 @@
         "trad": "呢度啲咖啡好香",
         "simp": "这里的咖啡很香",
         "jyutping": "nei1 dou6 di1 gaa3 fe1 hou2 hoeng1",
-        "pinyin": "zhe4 li3 de5 ka1 fei1 hen3 xiang1",
+        "pinyin": "zhe4 li3 de0 ka1 fei1 hen3 xiang1",
         "en": "The coffee here smells very good",
         "zh": "呢度啲咖啡好香 / 这里的咖啡很香"
     },
@@ -867,7 +867,7 @@
         "trad": "佢哋喺度玩遊戲",
         "simp": "他们在那里玩游戏",
         "jyutping": "keoi5 dei6 hai2 dou6 waan2 jau4 hei3",
-        "pinyin": "ta1 men5 zai4 na4 li3 wan2 you2 xi4",
+        "pinyin": "ta1 men0 zai4 na4 li3 wan2 you2 xi4",
         "en": "They are playing games there",
         "zh": "佢哋喺度玩遊戲 / 他们在那里玩游戏"
     },
@@ -891,7 +891,7 @@
         "trad": "我想買對新襪",
         "simp": "我想买一双新袜子",
         "jyutping": "ngo5 soeng2 maai5 deoi3 san1 mat6",
-        "pinyin": "wo3 xiang3 mai3 yi1 shuang1 xin1 wa4 zi5",
+        "pinyin": "wo3 xiang3 mai3 yi4 shuang1 xin1 wa4 zi0",
         "en": "I want to buy a pair of new socks",
         "zh": "我想買對新襪 / 我想买一双新袜子"
     },
@@ -899,7 +899,7 @@
         "trad": "佢話佢唔舒服要睇醫生",
         "simp": "他说他不舒服要看医生",
         "jyutping": "keoi5 waa6 keoi5 m4 syu1 fuk6 jiu3 tai2 ji1 sang1",
-        "pinyin": "ta1 shuo1 ta1 bu4 shu1 fu5 yao4 kan4 yi1 sheng1",
+        "pinyin": "ta1 shuo1 ta1 bu4 shu1 fu2 yao4 kan4 yi1 sheng1",
         "en": "He said he feels unwell and needs to see a doctor",
         "zh": "佢話佢唔舒服要睇醫生 / 他说他不舒服要看医生"
     },
@@ -915,7 +915,7 @@
         "trad": "佢哋成日喺度聽歌",
         "simp": "他们整天在那里听歌",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 teng1 go1",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 ting1 ge1",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 ting1 ge1",
         "en": "They listen to music all the time",
         "zh": "佢哋成日喺度聽歌 / 他们整天在那里听歌"
     },
@@ -923,7 +923,7 @@
         "trad": "我哋去海灘好唔好",
         "simp": "我们去海滩好不好",
         "jyutping": "ngo5 dei6 heoi3 hoi2 taan1 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 hai3 tan1 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 hai3 tan1 hao3 bu0 hao3",
         "en": "Shall we go to the beach",
         "zh": "我哋去海灘好唔好 / 我们去海滩好不好"
     },
@@ -931,7 +931,7 @@
         "trad": "佢隻風箏飛得好高",
         "simp": "他的风筝飞得很高",
         "jyutping": "keoi5 zek3 fung1 zang1 fei1 dak1 hou2 gou1",
-        "pinyin": "ta1 de5 feng1 zheng5 fei1 de5 hen3 gao1",
+        "pinyin": "ta1 de0 feng1 zheng0 fei1 de2 hen3 gao1",
         "en": "His kite flies very high",
         "zh": "佢隻風箏飛得好高 / 他的风筝飞得很高"
     },
@@ -939,7 +939,7 @@
         "trad": "呢度啲雪好厚",
         "simp": "这里的雪很厚",
         "jyutping": "nei1 dou6 di1 syut3 hou2 hau5",
-        "pinyin": "zhe4 li3 de5 xue3 hen3 hou4",
+        "pinyin": "zhe4 li3 de0 xue3 hen3 hou4",
         "en": "The snow here is very thick",
         "zh": "呢度啲雪好厚 / 这里的雪很厚"
     },
@@ -955,7 +955,7 @@
         "trad": "佢哋喺度露營",
         "simp": "他们在那里露营",
         "jyutping": "keoi5 dei6 hai2 dou6 lou6 jing4",
-        "pinyin": "ta1 men5 zai4 na4 li3 lu4 ying2",
+        "pinyin": "ta1 men0 zai4 na4 li3 lu4 ying2",
         "en": "They are camping there",
         "zh": "佢哋喺度露營 / 他们在那里露营"
     },
@@ -979,7 +979,7 @@
         "trad": "我想買個新銀包",
         "simp": "我想买一个新钱包",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 ngan4 baau1",
-        "pinyin": "wo3 xiang3 mai3 yi1 ge5 xin1 qian2 bao1",
+        "pinyin": "wo3 xiang3 mai3 yi2 ge4 xin1 qian2 bao1",
         "en": "I want to buy a new wallet",
         "zh": "我想買個新銀包 / 我想买一个新钱包"
     },
@@ -1003,7 +1003,7 @@
         "trad": "佢哋成日喺度影相",
         "simp": "他们整天在那里拍照",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 jing2 soeng2",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 pai1 zhao4",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 pai1 zhao4",
         "en": "They take photos all the time",
         "zh": "佢哋成日喺度影相 / 他们整天在那里拍照"
     },
@@ -1011,7 +1011,7 @@
         "trad": "我哋去動物園好唔好",
         "simp": "我们去动物园好不好",
         "jyutping": "ngo5 dei6 heoi3 dung6 mat6 jyun4 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 dong4 wu4 yuan2 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 dong4 wu4 yuan2 hao3 bu0 hao3",
         "en": "Shall we go to the zoo",
         "zh": "我哋去動物園好唔好 / 我们去动物园好不好"
     },
@@ -1019,7 +1019,7 @@
         "trad": "佢隻船好快",
         "simp": "他的船很快",
         "jyutping": "keoi5 zek3 syun4 hou2 faai3",
-        "pinyin": "ta1 de5 chuan2 hen3 kuai4",
+        "pinyin": "ta1 de0 chuan2 hen3 kuai4",
         "en": "His boat is very fast",
         "zh": "佢隻船好快 / 他的船很快"
     },
@@ -1027,7 +1027,7 @@
         "trad": "呢度啲風好大",
         "simp": "这里的风很大",
         "jyutping": "nei1 dou6 di1 fung1 hou2 daai6",
-        "pinyin": "zhe4 li3 de5 feng1 hen3 da4",
+        "pinyin": "zhe4 li3 de0 feng1 hen3 da4",
         "en": "The wind here is very strong",
         "zh": "呢度啲風好大 / 这里的风很大"
     },
@@ -1043,7 +1043,7 @@
         "trad": "佢哋喺度釣魚",
         "simp": "他们在那里钓鱼",
         "jyutping": "keoi5 dei6 hai2 dou6 diu3 jyu2",
-        "pinyin": "ta1 men5 zai4 na4 li3 diao4 yu2",
+        "pinyin": "ta1 men0 zai4 na4 li3 diao4 yu2",
         "en": "They are fishing there",
         "zh": "佢哋喺度釣魚 / 他们在那里钓鱼"
     },
@@ -1067,7 +1067,7 @@
         "trad": "我想買個新檯",
         "simp": "我想买一张新桌子",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 toi2",
-        "pinyin": "wo3 xiang3 mai3 yi1 zhang1 xin1 zhuo1 zi5",
+        "pinyin": "wo3 xiang3 mai3 yi4 zhang1 xin1 zhuo1 zi0",
         "en": "I want to buy a new table",
         "zh": "我想買個新檯 / 我想买一张新桌子"
     },
@@ -1091,7 +1091,7 @@
         "trad": "佢哋成日喺度做手工",
         "simp": "他们整天在那里做手工",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 zou6 sau2 gung1",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 zuo4 shou3 gong1",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 zuo4 shou3 gong1",
         "en": "They do handicrafts all the time",
         "zh": "佢哋成日喺度做手工 / 他们整天在那里做手工"
     },
@@ -1099,7 +1099,7 @@
         "trad": "我哋去博物館好唔好",
         "simp": "我们去博物馆好不好",
         "jyutping": "ngo5 dei6 heoi3 bok3 mat6 gun2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 bo2 wu4 guan3 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 bo2 wu4 guan3 hao3 bu0 hao3",
         "en": "Shall we go to the museum",
         "zh": "我哋去博物館好唔好 / 我们去博物馆好不好"
     },
@@ -1107,7 +1107,7 @@
         "trad": "佢隻飛機模型好精緻",
         "simp": "他的飞机模型很精致",
         "jyutping": "keoi5 zek3 fei1 gei1 mou4 jing4 hou2 zing1 zi3",
-        "pinyin": "ta1 de5 fei1 ji1 mo2 xing2 hen3 jing1 zhi4",
+        "pinyin": "ta1 de0 fei1 ji1 mo2 xing2 hen3 jing1 zhi4",
         "en": "His airplane model is very exquisite",
         "zh": "佢隻飛機模型好精緻 / 他的飞机模型很精致"
     },
@@ -1115,7 +1115,7 @@
         "trad": "呢度啲花好香",
         "simp": "这里的花很香",
         "jyutping": "nei1 dou6 di1 faa1 hou2 hoeng1",
-        "pinyin": "zhe4 li3 de5 hua1 hen3 xiang1",
+        "pinyin": "zhe4 li3 de0 hua1 hen3 xiang1",
         "en": "The flowers here smell very fragrant",
         "zh": "呢度啲花好香 / 这里的花很香"
     },
@@ -1131,7 +1131,7 @@
         "trad": "佢哋喺度打乒乓球",
         "simp": "他们在那里打乒乓球",
         "jyutping": "keoi5 dei6 hai2 dou6 daa2 bing1 bam1 kau4",
-        "pinyin": "ta1 men5 zai4 na4 li3 da3 ping1 pang1 qiu2",
+        "pinyin": "ta1 men0 zai4 na4 li3 da3 ping1 pang1 qiu2",
         "en": "They are playing table tennis there",
         "zh": "佢哋喺度打乒乓球 / 他们在那里打乒乓球"
     },
@@ -1155,7 +1155,7 @@
         "trad": "我想買個新鐘",
         "simp": "我想买一个新钟",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 zung1",
-        "pinyin": "wo3 xiang3 mai3 yi1 ge5 xin1 zhong1",
+        "pinyin": "wo3 xiang3 mai3 yi2 ge4 xin1 zhong1",
         "en": "I want to buy a new clock",
         "zh": "我想買個新鐘 / 我想买一个新钟"
     },
@@ -1171,7 +1171,7 @@
         "trad": "呢間花店好靚",
         "simp": "这家花店很漂亮",
         "jyutping": "ni1 gaan1 faa1 dim3 hou2 leng3",
-        "pinyin": "zhe4 jia1 hua1 dian4 hen3 piao4 liang5",
+        "pinyin": "zhe4 jia1 hua1 dian4 hen3 piao4 liang0",
         "en": "This flower shop is very pretty",
         "zh": "呢間花店好靚 / 这家花店很漂亮"
     },
@@ -1179,7 +1179,7 @@
         "trad": "佢哋成日喺度畫畫",
         "simp": "他们整天在那里画画",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 waak6 waa2",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 hua4 hua4",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 hua4 hua4",
         "en": "They paint all the time",
         "zh": "佢哋成日喺度畫畫 / 他们整天在那里画画"
     },
@@ -1187,7 +1187,7 @@
         "trad": "我哋去圖書館好唔好",
         "simp": "我们去图书馆好不好",
         "jyutping": "ngo5 dei6 heoi3 tou4 syu1 gun2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 tu2 shu1 guan3 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 tu2 shu1 guan3 hao3 bu0 hao3",
         "en": "Shall we go to the library",
         "zh": "我哋去圖書館好唔好 / 我们去图书馆好不好"
     },
@@ -1195,7 +1195,7 @@
         "trad": "佢隻船沉咗",
         "simp": "他的船沉了",
         "jyutping": "keoi5 zek3 syun4 cam4 zo2",
-        "pinyin": "ta1 de5 chuan2 chen2 le5",
+        "pinyin": "ta1 de0 chuan2 chen2 le0",
         "en": "His boat sank",
         "zh": "佢隻船沉咗 / 他的船沉了"
     },
@@ -1203,7 +1203,7 @@
         "trad": "呢度啲水好清",
         "simp": "这里的水很清",
         "jyutping": "nei1 dou6 di1 seoi2 hou2 cing1",
-        "pinyin": "zhe4 li3 de5 shui3 hen3 qing1",
+        "pinyin": "zhe4 li3 de0 shui3 hen3 qing1",
         "en": "The water here is very clear",
         "zh": "呢度啲水好清 / 这里的水很清"
     },
@@ -1219,7 +1219,7 @@
         "trad": "佢哋喺度打羽毛球",
         "simp": "他们在那里打羽毛球",
         "jyutping": "keoi5 dei6 hai2 dou6 daa2 jyu5 mou4 kau4",
-        "pinyin": "ta1 men5 zai4 na4 li3 da3 yu3 mao2 qiu2",
+        "pinyin": "ta1 men0 zai4 na4 li3 da3 yu3 mao2 qiu2",
         "en": "They are playing badminton there",
         "zh": "佢哋喺度打羽毛球 / 他们在那里打羽毛球"
     },
@@ -1243,7 +1243,7 @@
         "trad": "我想買個新鍋",
         "simp": "我想买一个新锅",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 wo1",
-        "pinyin": "wo3 xiang3 mai3 yi1 ge5 xin1 guo1",
+        "pinyin": "wo3 xiang3 mai3 yi2 ge4 xin1 guo1",
         "en": "I want to buy a new pot",
         "zh": "我想買個新鍋 / 我想买一个新锅"
     },
@@ -1267,7 +1267,7 @@
         "trad": "佢哋成日喺度唱歌",
         "simp": "他们整天在那里唱歌",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 coeng3 go1",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 chang4 ge1",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 chang4 ge1",
         "en": "They sing all the time",
         "zh": "佢哋成日喺度唱歌 / 他们整天在那里唱歌"
     },
@@ -1275,7 +1275,7 @@
         "trad": "我哋去公園好唔好",
         "simp": "我们去公园好不好",
         "jyutping": "ngo5 dei6 heoi3 gung1 jyun2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 gong1 yuan2 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 gong1 yuan2 hao3 bu0 hao3",
         "en": "Shall we go to the park",
         "zh": "我哋去公園好唔好 / 我们去公园好不好"
     },
@@ -1283,7 +1283,7 @@
         "trad": "佢隻風扇壞咗",
         "simp": "他的风扇坏了",
         "jyutping": "keoi5 zek3 fung1 sin3 waai6 zo2",
-        "pinyin": "ta1 de5 feng1 shan4 huai4 le5",
+        "pinyin": "ta1 de0 feng1 shan4 huai4 le0",
         "en": "His fan is broken",
         "zh": "佢隻風扇壞咗 / 他的风扇坏了"
     },
@@ -1291,7 +1291,7 @@
         "trad": "呢度啲燈好光",
         "simp": "这里的灯很亮",
         "jyutping": "nei1 dou6 di1 dang1 hou2 gwong1",
-        "pinyin": "zhe4 li3 de5 deng1 hen3 liang4",
+        "pinyin": "zhe4 li3 de0 deng1 hen3 liang4",
         "en": "The lights here are very bright",
         "zh": "呢度啲燈好光 / 这里的灯很亮"
     },
@@ -1299,7 +1299,7 @@
         "trad": "佢話佢會教我游水",
         "simp": "他说他会教我游泳",
         "jyutping": "keoi5 waa6 keoi5 wui5 gaau3 ngo5 jau4 seoi2",
-        "pinyin": "ta1 shuo1 ta1 hui4 jiao1 wo3 you2 yong3",
+        "pinyin": "ta1 shuo1 ta1 hui4 jiao4 wo3 you2 yong3",
         "en": "He said he will teach me to swim",
         "zh": "佢話佢會教我游水 / 他说他会教我游泳"
     },
@@ -1307,7 +1307,7 @@
         "trad": "佢哋喺度打籃球",
         "simp": "他们在那里打篮球",
         "jyutping": "keoi5 dei6 hai2 dou6 daa2 laam4 kau4",
-        "pinyin": "ta1 men5 zai4 na4 li3 da3 lan2 qiu2",
+        "pinyin": "ta1 men0 zai4 na4 li3 da3 lan2 qiu2",
         "en": "They are playing basketball there",
         "zh": "佢哋喺度打籃球 / 他们在那里打篮球"
     },
@@ -1331,7 +1331,7 @@
         "trad": "我想買個新風扇",
         "simp": "我想买一个新风扇",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 fung1 sin3",
-        "pinyin": "wo3 xiang3 mai3 yi1 ge5 xin1 feng1 shan4",
+        "pinyin": "wo3 xiang3 mai3 yi2 ge4 xin1 feng1 shan4",
         "en": "I want to buy a new fan",
         "zh": "我想買個新風扇 / 我想买一个新风扇"
     },
@@ -1355,7 +1355,7 @@
         "trad": "佢哋成日喺度跳舞",
         "simp": "他们整天在那里跳舞",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 tiu3 mou5",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 tiao4 wu3",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 tiao4 wu3",
         "en": "They dance all the time",
         "zh": "佢哋成日喺度跳舞 / 他们整天在那里跳舞"
     },
@@ -1363,7 +1363,7 @@
         "trad": "我哋去戲院好唔好",
         "simp": "我们去电影院好不好",
         "jyutping": "ngo5 dei6 heoi3 hei3 jyun2 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 dian4 ying3 yuan4 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 dian4 ying3 yuan4 hao3 bu0 hao3",
         "en": "Shall we go to the cinema",
         "zh": "我哋去戲院好唔好 / 我们去电影院好不好"
     },
@@ -1371,7 +1371,7 @@
         "trad": "佢隻錶帶爛咗",
         "simp": "他的表带坏了",
         "jyutping": "keoi5 zek3 biu1 daai2 laan6 zo2",
-        "pinyin": "ta1 de5 biao3 dai4 huai4 le5",
+        "pinyin": "ta1 de0 biao3 dai4 huai4 le0",
         "en": "His watch strap is broken",
         "zh": "佢隻錶帶爛咗 / 他的表带坏了"
     },
@@ -1379,7 +1379,7 @@
         "trad": "呢度啲空氣好差",
         "simp": "这里的空气很差",
         "jyutping": "nei1 dou6 di1 hung1 hei3 hou2 caa1",
-        "pinyin": "zhe4 li3 de5 kong1 qi4 hen3 cha4",
+        "pinyin": "zhe4 li3 de0 kong1 qi4 hen3 cha4",
         "en": "The air quality here is very bad",
         "zh": "呢度啲空氣好差 / 这里的空气很差"
     },
@@ -1395,7 +1395,7 @@
         "trad": "佢哋喺度打網球",
         "simp": "他们在那里打网球",
         "jyutping": "keoi5 dei6 hai2 dou6 daa2 mong5 kau4",
-        "pinyin": "ta1 men5 zai4 na4 li3 da3 wang3 qiu2",
+        "pinyin": "ta1 men0 zai4 na4 li3 da3 wang3 qiu2",
         "en": "They are playing tennis there",
         "zh": "佢哋喺度打網球 / 他们在那里打网球"
     },
@@ -1419,7 +1419,7 @@
         "trad": "我想買個新枕頭",
         "simp": "我想买一个新枕头",
         "jyutping": "ngo5 soeng2 maai5 go3 san1 zam2 tau4",
-        "pinyin": "wo3 xiang3 mai3 yi1 ge5 xin1 zhen3 tou5",
+        "pinyin": "wo3 xiang3 mai3 yi2 ge4 xin1 zhen3 tou0",
         "en": "I want to buy a new pillow",
         "zh": "我想買個新枕頭 / 我想买一个新枕头"
     },
@@ -1443,7 +1443,7 @@
         "trad": "佢哋成日喺度捉棋",
         "simp": "他们整天在那里下棋",
         "jyutping": "keoi5 dei6 seng4 jat6 hai2 dou6 zuk1 kei2",
-        "pinyin": "ta1 men5 zheng3 tian1 zai4 na4 li3 xia4 qi2",
+        "pinyin": "ta1 men0 zheng3 tian1 zai4 na4 li3 xia4 qi2",
         "en": "They play chess all the time",
         "zh": "佢哋成日喺度捉棋 / 他们整天在那里下棋"
     },
@@ -1451,7 +1451,7 @@
         "trad": "我哋去沙灘好唔好",
         "simp": "我们去沙滩好不好",
         "jyutping": "ngo5 dei6 heoi3 saa1 taan1 hou2 m4 hou2",
-        "pinyin": "wo3 men5 qu4 sha1 tan1 hao3 bu4 hao3",
+        "pinyin": "wo3 men0 qu4 sha1 tan1 hao3 bu0 hao3",
         "en": "Shall we go to the beach",
         "zh": "我哋去沙灘好唔好 / 我们去沙滩好不好"
     },
@@ -1459,7 +1459,7 @@
         "trad": "佢隻手袋好靚",
         "simp": "她的手袋很漂亮",
         "jyutping": "keoi5 zek3 sau2 doi2 hou2 leng3",
-        "pinyin": "ta1 de5 shou3 dai4 hen3 piao4 liang5",
+        "pinyin": "ta1 de0 shou3 dai4 hen3 piao4 liang0",
         "en": "Her handbag is very pretty",
         "zh": "佢隻手袋好靚 / 她的手袋很漂亮"
     },
@@ -1467,7 +1467,7 @@
         "trad": "呢度啲草地好綠",
         "simp": "这里的草地很绿",
         "jyutping": "nei1 dou6 di1 cou2 dei6 hou2 luk6",
-        "pinyin": "zhe4 li3 de5 cao3 di4 hen3 lv4",
+        "pinyin": "zhe4 li3 de0 cao3 di4 hen3 lv4",
         "en": "The grass here is very green",
         "zh": "呢度啲草地好綠 / 这里的草地很绿"
     },
@@ -1483,7 +1483,7 @@
         "trad": "佢哋喺度打排球",
         "simp": "他们在那里打排球",
         "jyutping": "keoi5 dei6 hai2 dou6 daa2 paai4 kau4",
-        "pinyin": "ta1 men5 zai4 na4 li3 da3 pai2 qiu2",
+        "pinyin": "ta1 men0 zai4 na4 li3 da3 pai2 qiu2",
         "en": "They are playing volleyball there",
         "zh": "佢哋喺度打排球 / 他们在那里打排球"
     }

@@ -51,7 +51,7 @@
         "trad": "桑尼維爾",
         "simp": "桑尼维尔",
         "jyutping": "song1 nei4 wai4 ji5",
-        "pinyin": "sang1 ni1 wei2 er3",
+        "pinyin": "sang1 ni2 wei2 er3",
         "en": "Sunnyvale, California",
         "zh": "加利福尼亞州桑尼維爾"
     },
@@ -131,7 +131,7 @@
         "trad": "聖拉菲爾",
         "simp": "圣拉菲尔",
         "jyutping": "sing3 laai1 fei2 ji5",
-        "pinyin": "sheng4 la1 fei4 er3",
+        "pinyin": "sheng4 la1 fei1 er3",
         "en": "San Rafael, California",
         "zh": "加利福尼亞州聖拉菲爾"
     },
@@ -155,7 +155,7 @@
         "trad": "費爾菲爾德",
         "simp": "费尔菲尔德",
         "jyutping": "fai3 ji5 fei2 ji5 dak1",
-        "pinyin": "fei4 er3 fei4 er3 de2",
+        "pinyin": "fei4 er3 fei1 er3 de2",
         "en": "Fairfield, California",
         "zh": "加利福尼亞州費爾菲爾德"
     },
@@ -187,7 +187,7 @@
         "trad": "利物摩爾",
         "simp": "利物摩尔",
         "jyutping": "lei6 mat6 mo1 ji5",
-        "pinyin": "li4 wu4 mo1 er3",
+        "pinyin": "li4 wu4 mo2 er3",
         "en": "Livermore, California",
         "zh": "加利福尼亞州利物摩爾"
     },
@@ -195,7 +195,7 @@
         "trad": "普萊森頓",
         "simp": "普莱森顿",
         "jyutping": "pou2 loi4 sam1 deon6",
-        "pinyin": "pu3 lai2 sen1 dun2",
+        "pinyin": "pu3 lai2 sen1 dun4",
         "en": "Pleasanton, California",
         "zh": "加利福尼亞州普萊森頓"
     },
@@ -203,7 +203,7 @@
         "trad": "都柏林",
         "simp": "都柏林",
         "jyutping": "dou1 paak3 lam4",
-        "pinyin": "dou1 bai3 lin2",
+        "pinyin": "dou1 bo2 lin2",
         "en": "Dublin, California",
         "zh": "加利福尼亞州都柏林"
     },
@@ -243,7 +243,7 @@
         "trad": "摩根山丘",
         "simp": "摩根山丘",
         "jyutping": "mo1 gan1 saan1 jau1",
-        "pinyin": "mo1 gen1 shan1 qiu1",
+        "pinyin": "mo2 gen1 shan1 qiu1",
         "en": "Morgan Hill, California",
         "zh": "加利福尼亞州摩根山丘"
     },
@@ -251,7 +251,7 @@
         "trad": "薩拉托加",
         "simp": "萨拉托加",
         "jyutping": "saat3 laai1 tok3 gaa1",
-        "pinyin": "sa4 la1 tuo2 jia1",
+        "pinyin": "sa4 la1 tuo1 jia1",
         "en": "Saratoga, California",
         "zh": "加利福尼亞州薩拉托加"
     },
@@ -267,7 +267,7 @@
         "trad": "坎貝爾",
         "simp": "坎贝尔",
         "jyutping": "ham2 bui3 ji5",
-        "pinyin": "kan3 bei3 er3",
+        "pinyin": "kan3 bei4 er3",
         "en": "Campbell, California",
         "zh": "加利福尼亞州坎貝爾"
     },
@@ -275,7 +275,7 @@
         "trad": "洛斯加托斯",
         "simp": "洛斯加托斯",
         "jyutping": "lok3 si1 gaa1 tok3 si1",
-        "pinyin": "luo4 si1 jia1 tuo2 si1",
+        "pinyin": "luo4 si1 jia1 tuo1 si1",
         "en": "Los Gatos, California",
         "zh": "加利福尼亞州洛斯加托斯"
     },
@@ -283,7 +283,7 @@
         "trad": "柏林甘",
         "simp": "柏林甘",
         "jyutping": "paak3 lam4 gam1",
-        "pinyin": "bai3 lin2 gan1",
+        "pinyin": "bo2 lin2 gan1",
         "en": "Burlingame, California",
         "zh": "加利福尼亞州柏林甘"
     },
@@ -291,7 +291,7 @@
         "trad": "聖布魯諾",
         "simp": "圣布鲁诺",
         "jyutping": "sing3 bou3 lou5 nok6",
-        "pinyin": "sheng4 bu4 luo2 nuo4",
+        "pinyin": "sheng4 bu4 lu3 nuo4",
         "en": "San Bruno, California",
         "zh": "加利福尼亞州聖布魯諾"
     },
@@ -299,7 +299,7 @@
         "trad": "密爾布瑞",
         "simp": "密尔布瑞",
         "jyutping": "mat6 ji5 bou3 seoi6",
-        "pinyin": "mi4 er3 bu4 rui1",
+        "pinyin": "mi4 er3 bu4 rui4",
         "en": "Millbrae, California",
         "zh": "加利福尼亞州密爾布瑞"
     },
@@ -307,7 +307,7 @@
         "trad": "太平洋城",
         "simp": "太平洋城",
         "jyutping": "taai3 ping4 joeng4 sing4",
-        "pinyin": "tai3 ping2 yang2 cheng2",
+        "pinyin": "tai4 ping2 yang2 cheng2",
         "en": "Pacifica, California",
         "zh": "加利福尼亞州太平洋城"
     },
@@ -331,7 +331,7 @@
         "trad": "貝爾蒙特",
         "simp": "贝尔蒙特",
         "jyutping": "bui3 ji5 mung4 dak6",
-        "pinyin": "bei3 er3 meng2 te4",
+        "pinyin": "bei4 er3 meng2 te4",
         "en": "Belmont, California",
         "zh": "加利福尼亞州貝爾蒙特"
     },
@@ -339,7 +339,7 @@
         "trad": "聖卡洛斯",
         "simp": "圣卡洛斯",
         "jyutping": "sing3 kaa1 lok3 si1",
-        "pinyin": "sheng4 ka3 luo2 si1",
+        "pinyin": "sheng4 ka3 luo4 si1",
         "en": "San Carlos, California",
         "zh": "加利福尼亞州聖卡洛斯"
     },
@@ -347,7 +347,7 @@
         "trad": "阿瑟頓",
         "simp": "阿瑟顿",
         "jyutping": "aa3 sat1 deon6",
-        "pinyin": "a1 se4 dun2",
+        "pinyin": "a1 se4 dun4",
         "en": "Atherton, California",
         "zh": "加利福尼亞州阿瑟頓"
     },
@@ -371,7 +371,7 @@
         "trad": "波托拉谷",
         "simp": "波托拉谷",
         "jyutping": "bo1 tok3 laai1 guk1",
-        "pinyin": "bo1 tuo2 la1 gu3",
+        "pinyin": "bo1 tuo1 la1 gu3",
         "en": "Portola Valley, California",
         "zh": "加利福尼亞州波托拉谷"
     },
@@ -427,7 +427,7 @@
         "trad": "聖利安卓",
         "simp": "圣利安卓",
         "jyutping": "sing3 lei6 on1 coek3",
-        "pinyin": "sheng4 li4 an1 zhao3",
+        "pinyin": "sheng4 li4 an1 zhuo2",
         "en": "San Leandro, California",
         "zh": "加利福尼亞州聖利安卓"
     },
@@ -459,7 +459,7 @@
         "trad": "匹茲堡",
         "simp": "匹兹堡",
         "jyutping": "pat1 zi1 bou2",
-        "pinyin": "pi1 zi1 bao3",
+        "pinyin": "pi3 zi1 bao3",
         "en": "Pittsburg, California",
         "zh": "加利福尼亞州匹茲堡"
     },
@@ -491,7 +491,7 @@
         "trad": "拉法耶特",
         "simp": "拉法耶特",
         "jyutping": "laai1 faat3 je4 dak6",
-        "pinyin": "la1 fa3 ye2 te4",
+        "pinyin": "la1 fa3 ye1 te4",
         "en": "Lafayette, California",
         "zh": "加利福尼亞州拉法耶特"
     },
@@ -523,7 +523,7 @@
         "trad": "赫拉克勒斯",
         "simp": "赫拉克勒斯",
         "jyutping": "haak1 laai1 hak1 lak6 si1",
-        "pinyin": "he4 la1 ke4 le1 si1",
+        "pinyin": "he4 la1 ke4 le4 si1",
         "en": "Hercules, California",
         "zh": "加利福尼亞州赫拉克勒斯"
     },
@@ -539,7 +539,7 @@
         "trad": "埃爾塞里托",
         "simp": "埃尔塞里托",
         "jyutping": "aai1 ji5 sak1 lei5 tok3",
-        "pinyin": "ai1 er3 sai1 li2 tuo2",
+        "pinyin": "ai1 er3 sai1 li3 tuo1",
         "en": "El Cerrito, California",
         "zh": "加利福尼亞州埃爾塞里托"
     },
@@ -587,7 +587,7 @@
         "trad": "克羅弗代爾",
         "simp": "克罗弗代尔",
         "jyutping": "hak1 lo4 fat1 doi6 ji5",
-        "pinyin": "ke4 luo2 fu1 dai4 er3",
+        "pinyin": "ke4 luo2 fu2 dai4 er3",
         "en": "Cloverdale, California",
         "zh": "加利福尼亞州克羅弗代爾"
     },
@@ -603,7 +603,7 @@
         "trad": "塞瓦斯托波爾",
         "simp": "塞瓦斯托波尔",
         "jyutping": "sak1 ngaa5 si1 tok3 bo1 ji5",
-        "pinyin": "sai1 wa3 si1 tuo2 bo1 er3",
+        "pinyin": "sai1 wa3 si1 tuo1 bo1 er3",
         "en": "Sebastopol, California",
         "zh": "加利福尼亞州塞瓦斯托波爾"
     },
@@ -619,7 +619,7 @@
         "trad": "諾瓦托",
         "simp": "诺瓦托",
         "jyutping": "nok6 ngaa5 tok3",
-        "pinyin": "nuo4 wa3 tuo2",
+        "pinyin": "nuo4 wa3 tuo1",
         "en": "Novato, California",
         "zh": "加利福尼亞州諾瓦托"
     },
@@ -635,7 +635,7 @@
         "trad": "索薩利托",
         "simp": "索萨利托",
         "jyutping": "sok3 saat3 lei6 tok3",
-        "pinyin": "suo3 sa4 li4 tuo2",
+        "pinyin": "suo3 sa4 li4 tuo1",
         "en": "Sausalito, California",
         "zh": "加利福尼亞州索薩利托"
     },
@@ -659,7 +659,7 @@
         "trad": "拉克斯珀",
         "simp": "拉克斯珀",
         "jyutping": "laai1 hak1 si1 paak3",
-        "pinyin": "la1 ke4 si1 po1",
+        "pinyin": "la1 ke4 si1 po4",
         "en": "Larkspur, California",
         "zh": "加利福尼亞州拉克斯珀"
     },
@@ -691,7 +691,7 @@
         "trad": "貝利埃薩",
         "simp": "贝利埃萨",
         "jyutping": "bui3 lei6 aai1 saat3",
-        "pinyin": "bei3 li4 ai1 sa4",
+        "pinyin": "bei4 li4 ai1 sa4",
         "en": "Berryessa, California",
         "zh": "加利福尼亞州貝利埃薩"
     },
@@ -699,7 +699,7 @@
         "trad": "卡利斯托加",
         "simp": "卡利斯托加",
         "jyutping": "kaa1 lei6 si1 tok3 gaa1",
-        "pinyin": "ka3 li4 si1 tuo2 jia1",
+        "pinyin": "ka3 li4 si1 tuo1 jia1",
         "en": "Calistoga, California",
         "zh": "加利福尼亞州卡利斯托加"
     },
@@ -747,7 +747,7 @@
         "trad": "貝尼西亞",
         "simp": "贝尼西亚",
         "jyutping": "bui3 nei4 sai1 aa3",
-        "pinyin": "bei3 ni2 xi1 ya1",
+        "pinyin": "bei4 ni2 xi1 ya4",
         "en": "Benicia, California",
         "zh": "加利福尼亞州貝尼西亞"
     },
@@ -755,7 +755,7 @@
         "trad": "克萊頓",
         "simp": "克莱顿",
         "jyutping": "hak1 loi4 deon6",
-        "pinyin": "ke4 lai2 dun2",
+        "pinyin": "ke4 lai2 dun4",
         "en": "Clayton, California",
         "zh": "加利福尼亞州克萊頓"
     },

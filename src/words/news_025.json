@@ -3,7 +3,7 @@
         "trad": "股市今天下跌",
         "simp": "股市今天下跌",
         "jyutping": "gu2 si5 gam1 tin1 haa6 dit3",
-        "pinyin": "gu3 shi4 jin1 tian1 xia4 xie2",
+        "pinyin": "gu3 shi4 jin1 tian1 xia4 die1",
         "en": "The stock market fell today",
         "zh": "股市今天下跌 / 股市今天下跌"
     },
@@ -11,7 +11,7 @@
         "trad": "天文台發出警報",
         "simp": "天文台发出警报",
         "jyutping": "tin1 man4 toi4 faat3 ceot1 ging2 bou3",
-        "pinyin": "tian1 wen1 tai2 fa1 chu1 jing3 bao4",
+        "pinyin": "tian1 wen2 tai2 fa1 chu1 jing3 bao4",
         "en": "The observatory issued a warning",
         "zh": "天文台發出警報 / 天文台发出警报"
     },
@@ -99,7 +99,7 @@
         "trad": "兩國簽署協議",
         "simp": "两国签署协议",
         "jyutping": "loeng5 gwok3 cim1 cyu5 hip3 ji5",
-        "pinyin": "liang3 guo2 qian1 shu3 xie2 yi2",
+        "pinyin": "liang3 guo2 qian1 shu3 xie2 yi4",
         "en": "The two countries signed an agreement",
         "zh": "兩國簽署協議 / 两国签署协议"
     },
@@ -139,7 +139,7 @@
         "trad": "市場需求增加",
         "simp": "市场需求增加",
         "jyutping": "si5 coeng4 seoi1 kau4 zang1 gaa1",
-        "pinyin": "shi4 chang2 xu1 qiu2 zeng1 jia1",
+        "pinyin": "shi4 chang3 xu1 qiu2 zeng1 jia1",
         "en": "Market demand increased",
         "zh": "市場需求增加 / 市场需求增加"
     },
@@ -171,7 +171,7 @@
         "trad": "央行決定減息",
         "simp": "央行决定减息",
         "jyutping": "joeng1 hong2 kyut3 ding6 gaam2 sik1",
-        "pinyin": "yang1 hang2 jue2 ding4 jian3 xi1",
+        "pinyin": "yang1 xing2 jue2 ding4 jian3 xi1",
         "en": "The central bank decided to cut interest rates",
         "zh": "央行決定減息 / 央行决定减息"
     },
