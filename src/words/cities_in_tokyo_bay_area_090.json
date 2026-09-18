@@ -114,7 +114,7 @@
     {
         "trad": "木更津",
         "simp": "木更津",
-        "jyutping": "muk6 gang1 zeon1",
+        "jyutping": "muk6 gang3 zeon1",
         "pinyin": "mu4 geng1 jin1",
         "en": "Kisarazu City, Chiba Prefecture",
         "zh": "千葉縣木更津市"
@@ -138,7 +138,7 @@
     {
         "trad": "武藏野",
         "simp": "武藏野",
-        "jyutping": "mou5 zong6 je5",
+        "jyutping": "mou5 cong4 je5",
         "pinyin": "wu3 cang2 ye3",
         "en": "Musashino City, Tokyo Metropolis",
         "zh": "東京都武藏野市"
@@ -178,7 +178,7 @@
     {
         "trad": "春日部",
         "simp": "春日部",
-        "jyutping": "ceon1 jat6 bou3",
+        "jyutping": "ceon1 jat6 bou6",
         "pinyin": "chun1 ri4 bu4",
         "en": "Kasukabe City, Saitama Prefecture",
         "zh": "埼玉縣春日部市"
@@ -186,7 +186,7 @@
     {
         "trad": "國分寺",
         "simp": "国分寺",
-        "jyutping": "gwok3 fan1 zi6",
+        "jyutping": "gwok3 fan1 zi2",
         "pinyin": "guo2 fen1 si4",
         "en": "Kokubunji City, Tokyo Metropolis",
         "zh": "東京都國分寺市"
@@ -202,7 +202,7 @@
     {
         "trad": "富士見",
         "simp": "富士见",
-        "jyutping": "fu3 si2 gin3",
+        "jyutping": "fu3 si6 gin3",
         "pinyin": "fu4 shi4 jian4",
         "en": "Fujimi City, Saitama Prefecture",
         "zh": "埼玉縣富士見市"
@@ -210,7 +210,7 @@
     {
         "trad": "南足柄",
         "simp": "南足柄",
-        "jyutping": "naam4 zuk1 bing3",
+        "jyutping": "naam4 zuk1 beng3",
         "pinyin": "nan2 zu3 bing3",
         "en": "Minamiashigara City, Kanagawa Prefecture",
         "zh": "神奈川縣南足柄市"
@@ -242,7 +242,7 @@
     {
         "trad": "毛呂山",
         "simp": "毛吕山",
-        "jyutping": "mou4 leoi1 saan1",
+        "jyutping": "mou4 leoi5 saan1",
         "pinyin": "mao2 luo3 shan1",
         "en": "Moroyama Town, Saitama Prefecture",
         "zh": "埼玉縣入間郡毛呂山町"
@@ -266,7 +266,7 @@
     {
         "trad": "酒々井",
         "simp": "酒々井",
-        "jyutping": "zau2 zeng2",
+        "jyutping": "zau2 […] zeng2",
         "pinyin": "jiu3 jing3",
         "en": "Shisui Town, Chiba Prefecture",
         "zh": "千葉縣印旛郡酒々井町"
@@ -298,7 +298,7 @@
     {
         "trad": "武藏村山",
         "simp": "武藏村山",
-        "jyutping": "mou5 zong6 cyun1 saan1",
+        "jyutping": "mou5 cong4 cyun1 saan1",
         "pinyin": "wu3 cang2 cun1 shan1",
         "en": "Musashimurayama City, Tokyo Metropolis",
         "zh": "東京都武藏村山市"
@@ -410,7 +410,7 @@
     {
         "trad": "瑞穗町",
         "simp": "瑞穗町",
-        "jyutping": "seoi6 wai6 ding1",
+        "jyutping": "seoi6 seoi6 ding1",
         "pinyin": "rui4 sui4 ding1",
         "en": "Mizuho Town, Tokyo Metropolis",
         "zh": "東京都西多摩郡瑞穗町"
@@ -418,7 +418,7 @@
     {
         "trad": "日出町",
         "simp": "日出町",
-        "jyutping": "jat6 ceoi1 ding1",
+        "jyutping": "jat6 ceot1 ding1",
         "pinyin": "ri4 chu1 ding1",
         "en": "Hinode Town, Tokyo Metropolis",
         "zh": "東京都西多摩郡日出町"
@@ -474,7 +474,7 @@
     {
         "trad": "白子町",
         "simp": "白子町",
-        "jyutping": "baak3 zi2 ding1",
+        "jyutping": "baak6 zi2 ding1",
         "pinyin": "bai2 zi3 ding1",
         "en": "Shirako Town, Chiba Prefecture",
         "zh": "千葉縣長生郡白子町"
@@ -482,7 +482,7 @@
     {
         "trad": "長柄町",
         "simp": "长柄町",
-        "jyutping": "coeng4 bing3 ding1",
+        "jyutping": "coeng4 beng3 ding1",
         "pinyin": "chang2 bing3 ding1",
         "en": "Nagara Town, Chiba Prefecture",
         "zh": "千葉縣長生郡長柄町"
@@ -506,7 +506,7 @@
     {
         "trad": "鋸南町",
         "simp": "锯南町",
-        "jyutping": "geoi3 naam4 ding1",
+        "jyutping": "goe3 naam4 ding1",
         "pinyin": "ju4 nan2 ding1",
         "en": "Kyonan Town, Chiba Prefecture",
         "zh": "千葉縣安房郡鋸南町"
@@ -522,7 +522,7 @@
     {
         "trad": "越生町",
         "simp": "越生町",
-        "jyutping": "jyut6 sang1 ding1",
+        "jyutping": "jyut6 saang1 ding1",
         "pinyin": "yue4 sheng1 ding1",
         "en": "Ogose Town, Saitama Prefecture",
         "zh": "埼玉縣入間郡越生町"
@@ -586,7 +586,7 @@
     {
         "trad": "皆野町",
         "simp": "皆野町",
-        "jyutping": "kaai1 je5 ding1",
+        "jyutping": "gaai1 je5 ding1",
         "pinyin": "jie1 ye3 ding1",
         "en": "Minano Town, Saitama Prefecture",
         "zh": "埼玉縣秩父郡皆野町"
@@ -594,7 +594,7 @@
     {
         "trad": "長瀞町",
         "simp": "长瀞町",
-        "jyutping": "coeng4 zeng6 ding1",
+        "jyutping": "coeng4 zing6 ding1",
         "pinyin": "chang2 jing4 ding1",
         "en": "Nagatoro Town, Saitama Prefecture",
         "zh": "埼玉縣秩父郡長瀞町"
@@ -642,7 +642,7 @@
     {
         "trad": "杉戶町",
         "simp": "杉户町",
-        "jyutping": "caam3 wut6 ding1",
+        "jyutping": "caam3 wu6 ding1",
         "pinyin": "shan1 hu4 ding1",
         "en": "Sugito Town, Saitama Prefecture",
         "zh": "埼玉縣北葛飾郡杉戶町"
@@ -682,7 +682,7 @@
     {
         "trad": "五霞町",
         "simp": "五霞町",
-        "jyutping": "ng5 haa2 ding1",
+        "jyutping": "ng5 haa4 ding1",
         "pinyin": "wu3 xia2 ding1",
         "en": "Goka Town, Ibaraki Prefecture",
         "zh": "茨城縣猿島郡五霞町"
@@ -722,7 +722,7 @@
     {
         "trad": "酒々井町",
         "simp": "酒々井町",
-        "jyutping": "zau2 zeng2 ding1",
+        "jyutping": "zau2 […] zeng2 ding1",
         "pinyin": "jiu3 jing3 ding1",
         "en": "Shisui Town, Chiba Prefecture",
         "zh": "千葉縣印旛郡酒々井町"
@@ -746,7 +746,7 @@
     {
         "trad": "毛呂山町",
         "simp": "毛吕山町",
-        "jyutping": "mou4 leoi1 saan1 ding1",
+        "jyutping": "mou4 leoi5 saan1 ding1",
         "pinyin": "mao2 luo3 shan1 ding1",
         "en": "Moroyama Town, Saitama Prefecture",
         "zh": "埼玉縣入間郡毛呂山町"

@@ -1,91 +1,714 @@
 [
-  { "trad": "學習", "simp": "学习", "jyutping": "hok6 zaap6", "pinyin": "xue2 xi2", "en": "to learn; study", "zh": "學習 / 学习" },
-  { "trad": "廣東話", "simp": "广东话", "jyutping": "gwong2 dung1 waa2", "pinyin": "guang3 dong1 hua4", "en": "Cantonese language", "zh": "廣東話 / 广东话" },
-  { "trad": "電腦", "simp": "电脑", "jyutping": "din6 nou5", "pinyin": "dian4 nao3", "en": "computer", "zh": "電腦 / 电脑" },
-  { "trad": "咖啡", "simp": "咖啡", "jyutping": "gaa3 fe1", "pinyin": "ka1 fei1", "en": "coffee", "zh": "咖啡 / 咖啡" },
-  { "trad": "學校", "simp": "学校", "jyutping": "hok6 haau6", "pinyin": "xue2 xiao4", "en": "school", "zh": "學校 / 学校" },
-  { "trad": "天氣", "simp": "天气", "jyutping": "tin1 hei3", "pinyin": "tian1 qi4", "en": "weather", "zh": "天氣 / 天气" },
-  { "trad": "多謝", "simp": "多谢", "jyutping": "do1 ze6", "pinyin": "duo1 xie4", "en": "thank you", "zh": "多謝 / 多谢" },
-  { "trad": "汽車", "simp": "汽车", "jyutping": "hei3 ce1", "pinyin": "qi4 che1", "en": "car", "zh": "汽車 / 汽车" },
-  { "trad": "船", "simp": "船", "jyutping": "syun4", "pinyin": "chuan2", "en": "ship; boat", "zh": "船 / 船" },
-  { "trad": "飛機", "simp": "飞机", "jyutping": "fei1 gei1", "pinyin": "fei1 ji1", "en": "airplane", "zh": "飛機 / 飞机" },
-  { "trad": "火車", "simp": "火车", "jyutping": "fo2 ce1", "pinyin": "huo3 che1", "en": "train", "zh": "火車 / 火车" },
-  { "trad": "地鐵", "simp": "地铁", "jyutping": "dei6 tit3", "pinyin": "di4 tie3", "en": "subway", "zh": "地鐵 / 地铁" },
-  { "trad": "巴士", "simp": "巴士", "jyutping": "baa1 si6", "pinyin": "ba1 shi4", "en": "bus", "zh": "巴士 / 巴士" },
-  { "trad": "的士", "simp": "的士", "jyutping": "dik1 si6", "pinyin": "di2 shi4", "en": "taxi", "zh": "的士 / 的士" },
-  { "trad": "單車", "simp": "单车", "jyutping": "daan1 ce1", "pinyin": "dan1 che1", "en": "bicycle", "zh": "單車 / 单车" },
-  { "trad": "電單車", "simp": "电单车", "jyutping": "din6 daan1 ce1", "pinyin": "dian4 dan1 che1", "en": "motorcycle", "zh": "電單車 / 电单车" },
-  { "trad": "餐廳", "simp": "餐厅", "jyutping": "caan1 teng1", "pinyin": "can1 ting1", "en": "restaurant", "zh": "餐廳 / 餐厅" },
-  { "trad": "酒店", "simp": "酒店", "jyutping": "zau2 dim3", "pinyin": "jiu3 dian4", "en": "hotel", "zh": "酒店 / 酒店" },
-  { "trad": "超市", "simp": "超市", "jyutping": "ciu1 si5", "pinyin": "chao1 shi4", "en": "supermarket", "zh": "超市 / 超市" },
-  { "trad": "銀行", "simp": "银行", "jyutping": "ngan4 hong4", "pinyin": "yin2 hang2", "en": "bank", "zh": "銀行 / 银行" },
-  { "trad": "醫院", "simp": "医院", "jyutping": "ji1 jyun6", "pinyin": "yi1 yuan4", "en": "hospital", "zh": "醫院 / 医院" },
-  { "trad": "警察", "simp": "警察", "jyutping": "ging2 caat3", "pinyin": "jing3 cha2", "en": "police", "zh": "警察 / 警察" },
-  { "trad": "消防員", "simp": "消防员", "jyutping": "siu1 fong4 jyun4", "pinyin": "xiao1 fang2 yuan2", "en": "firefighter", "zh": "消防員 / 消防员" },
-  { "trad": "老師", "simp": "老师", "jyutping": "lou5 si1", "pinyin": "lao3 shi1", "en": "teacher", "zh": "老師 / 老师" },
-  { "trad": "學生", "simp": "学生", "jyutping": "hok6 saang1", "pinyin": "xue2 sheng1", "en": "student", "zh": "學生 / 学生" },
-  { "trad": "朋友", "simp": "朋友", "jyutping": "pang4 jau5", "pinyin": "peng2 you3", "en": "friend", "zh": "朋友 / 朋友" },
-  { "trad": "家人", "simp": "家人", "jyutping": "gaa1 jan4", "pinyin": "jia1 ren2", "en": "family", "zh": "家人 / 家人" },
-  { "trad": "爸爸", "simp": "爸爸", "jyutping": "baa1 baa1", "pinyin": "ba4 ba5", "en": "father", "zh": "爸爸 / 爸爸" },
-  { "trad": "媽媽", "simp": "妈妈", "jyutping": "maa1 maa1", "pinyin": "ma1 ma5", "en": "mother", "zh": "媽媽 / 妈妈" },
-  { "trad": "兄弟", "simp": "兄弟", "jyutping": "hing1 dai6", "pinyin": "xiong1 di4", "en": "brothers", "zh": "兄弟 / 兄弟" },
-  { "trad": "姊妹", "simp": "姊妹", "jyutping": "zi2 mui6", "pinyin": "zi3 mei4", "en": "sisters", "zh": "姊妹 / 姊妹" },
-  { "trad": "愛情", "simp": "爱情", "jyutping": "oi3 cing4", "pinyin": "ai4 qing2", "en": "love", "zh": "愛情 / 爱情" },
-  { "trad": "幸福", "simp": "幸福", "jyutping": "hang6 fuk1", "pinyin": "xing4 fu2", "en": "happiness", "zh": "幸福 / 幸福" },
-  { "trad": "快樂", "simp": "快乐", "jyutping": "faai3 lok6", "pinyin": "kuai4 le4", "en": "happy", "zh": "快樂 / 快乐" },
-  { "trad": "悲傷", "simp": "悲伤", "jyutping": "bei1 soeng1", "pinyin": "bei1 shang1", "en": "sad", "zh": "悲傷 / 悲伤" },
-  { "trad": "憤怒", "simp": "愤怒", "jyutping": "fan5 nou6", "pinyin": "fen4 nu4", "en": "angry", "zh": "憤怒 / 愤怒" },
-  { "trad": "恐懼", "simp": "恐惧", "jyutping": "hung2 geoi6", "pinyin": "kong3 ju4", "en": "fear", "zh": "恐懼 / 恐惧" },
-  { "trad": "勇氣", "simp": "勇气", "jyutping": "jung5 hei3", "pinyin": "yong3 qi4", "en": "courage", "zh": "勇氣 / 勇气" },
-  { "trad": "希望", "simp": "希望", "jyutping": "hei1 mong6", "pinyin": "xi1 wang4", "en": "hope", "zh": "希望 / 希望" },
-  { "trad": "夢想", "simp": "梦想", "jyutping": "mung6 soeng2", "pinyin": "meng4 xiang3", "en": "dream", "zh": "夢想 / 梦想" },
-  { "trad": "未來", "simp": "未来", "jyutping": "mei6 loi4", "pinyin": "wei4 lai2", "en": "future", "zh": "未來 / 未来" },
-  { "trad": "過去", "simp": "过去", "jyutping": "gwo3 heoi3", "pinyin": "guo4 qu4", "en": "past", "zh": "過去 / 过去" },
-  { "trad": "現在", "simp": "现在", "jyutping": "jin6 zoi6", "pinyin": "xian4 zai4", "en": "present; now", "zh": "現在 / 现在" },
-  { "trad": "時間", "simp": "时间", "jyutping": "si4 gaan3", "pinyin": "shi2 jian1", "en": "time", "zh": "時間 / 时间" },
-  { "trad": "空間", "simp": "空间", "jyutping": "hung1 gaan1", "pinyin": "kong1 jian1", "en": "space", "zh": "空間 / 空间" },
-  { "trad": "世界", "simp": "世界", "jyutping": "sai3 gaai3", "pinyin": "shi4 jie4", "en": "world", "zh": "世界 / 世界" },
-  { "trad": "國家", "simp": "国家", "jyutping": "gwok3 gaa1", "pinyin": "guo2 jia1", "en": "country", "zh": "國家 / 国家" },
-  { "trad": "城市", "simp": "城市", "jyutping": "sing4 si5", "pinyin": "cheng2 shi4", "en": "city", "zh": "城市 / 城市" },
-  { "trad": "鄉村", "simp": "乡村", "jyutping": "hoeng1 cyun1", "pinyin": "xiang1 cun1", "en": "village", "zh": "鄉村 / 乡村" },
-  { "trad": "自然", "simp": "自然", "jyutping": "zi6 jin4", "pinyin": "zi4 ran2", "en": "nature", "zh": "自然 / 自然" },
-  { "trad": "環境", "simp": "环境", "jyutping": "waan4 ging2", "pinyin": "huan2 jing4", "en": "environment", "zh": "環境 / 环境" },
-  { "trad": "空氣", "simp": "空气", "jyutping": "hung1 hei3", "pinyin": "kong1 qi4", "en": "air", "zh": "空氣 / 空气" },
-  { "trad": "水", "simp": "水", "jyutping": "seoi2", "pinyin": "shui3", "en": "water", "zh": "水 / 水" },
-  { "trad": "火", "simp": "火", "jyutping": "fo2", "pinyin": "huo3", "en": "fire", "zh": "火 / 火" },
-  { "trad": "山", "simp": "山", "jyutping": "saan1", "pinyin": "shan1", "en": "mountain", "zh": "山 / 山" },
-  { "trad": "海", "simp": "海", "jyutping": "hoi2", "pinyin": "hai3", "en": "sea", "zh": "海 / 海" },
-  { "trad": "太陽", "simp": "太阳", "jyutping": "taai3 joeng4", "pinyin": "tai4 yang2", "en": "sun", "zh": "太陽 / 太阳" },
-  { "trad": "月亮", "simp": "月亮", "jyutping": "jyut6 loeng6", "pinyin": "yue4 liang4", "en": "moon", "zh": "月亮 / 月亮" },
-  { "trad": "星星", "simp": "星星", "jyutping": "sing1 sing1", "pinyin": "xing1 xing5", "en": "star", "zh": "星星 / 星星" },
-  { "trad": "花", "simp": "花", "jyutping": "faa1", "pinyin": "hua1", "en": "flower", "zh": "花 / 花" },
-  { "trad": "草", "simp": "草", "jyutping": "cou2", "pinyin": "cao3", "en": "grass", "zh": "草 / 草" },
-  { "trad": "樹", "simp": "树", "jyutping": "syu6", "pinyin": "shu4", "en": "tree", "zh": "樹 / 树" },
-  { "trad": "動物", "simp": "动物", "jyutping": "dung6 mat6", "pinyin": "dong4 wu4", "en": "animal", "zh": "動物 / 动物" },
-  { "trad": "貓", "simp": "猫", "jyutping": "maau1", "pinyin": "mao1", "en": "cat", "zh": "貓 / 猫" },
-  { "trad": "狗", "simp": "狗", "jyutping": "gau2", "pinyin": "gou3", "en": "dog", "zh": "狗 / 狗" },
-  { "trad": "魚", "simp": "鱼", "jyutping": "jyu4", "pinyin": "yu2", "en": "fish", "zh": "魚 / 鱼" },
-  { "trad": "鳥", "simp": "鸟", "jyutping": "niu5", "pinyin": "niao3", "en": "bird", "zh": "鳥 / 鸟" },
-  { "trad": "食物", "simp": "食物", "jyutping": "sik6 mat6", "pinyin": "shi2 wu4", "en": "food", "zh": "食物 / 食物" },
-  { "trad": "米飯", "simp": "米饭", "jyutping": "mai5 faan6", "pinyin": "mi3 fan4", "en": "rice", "zh": "米飯 / 米饭" },
-  { "trad": "麵包", "simp": "面包", "jyutping": "min6 baau1", "pinyin": "mian4 bao1", "en": "bread", "zh": "麵包 / 面包" },
-  { "trad": "牛奶", "simp": "牛奶", "jyutping": "ngau4 naai5", "pinyin": "niu2 nai3", "en": "milk", "zh": "牛奶 / 牛奶" },
-  { "trad": "雞蛋", "simp": "鸡蛋", "jyutping": "gai1 daan6", "pinyin": "ji1 dan4", "en": "egg", "zh": "雞蛋 / 鸡蛋" },
-  { "trad": "水果", "simp": "水果", "jyutping": "seoi2 gwo2", "pinyin": "shui3 guo3", "en": "fruit", "zh": "水果 / 水果" },
-  { "trad": "蔬菜", "simp": "蔬菜", "jyutping": "so1 coi3", "pinyin": "shu1 cai4", "en": "vegetable", "zh": "蔬菜 / 蔬菜" },
-  { "trad": "肉", "simp": "肉", "jyutping": "juk6", "pinyin": "rou4", "en": "meat", "zh": "肉 / 肉" },
-  { "trad": "糖", "simp": "糖", "jyutping": "tong4", "pinyin": "tang2", "en": "sugar", "zh": "糖 / 糖" },
-  { "trad": "鹽", "simp": "盐", "jyutping": "jim4", "pinyin": "yan2", "en": "salt", "zh": "鹽 / 盐" },
-  { "trad": "味道", "simp": "味道", "jyutping": "mei6 dou6", "pinyin": "wei4 dao4", "en": "taste; flavor", "zh": "味道 / 味道" },
-  { "trad": "你好嗎", "simp": "你好吗", "jyutping": "nei5 hou2 maa1", "pinyin": "ni3 hao3 ma5", "en": "How are you?", "zh": "你好嗎 / 你好吗" },
-  { "trad": "我愛你", "simp": "我爱你", "jyutping": "ngo5 oi3 nei5", "pinyin": "wo3 ai4 ni3", "en": "I love you", "zh": "我愛你 / 我爱你" },
-  { "trad": "謝謝", "simp": "谢谢", "jyutping": "ze6 ze6", "pinyin": "xie4 xie5", "en": "Thank you", "zh": "謝謝 / 谢谢" },
-  { "trad": "對不起", "simp": "对不起", "jyutping": "deoi3 bat1 hei2", "pinyin": "dui4 bu4 qi3", "en": "Sorry", "zh": "對不起 / 对不起" },
-  { "trad": "請", "simp": "请", "jyutping": "ceng2", "pinyin": "qing3", "en": "Please", "zh": "請 / 请" },
-  { "trad": "再見", "simp": "再见", "jyutping": "zoi3 gin3", "pinyin": "zai4 jian4", "en": "Goodbye", "zh": "再見 / 再见" },
-  { "trad": "今天天氣很好", "simp": "今天天气很好", "jyutping": "gam1 tin1 tin1 hei3 han2 hou2", "pinyin": "jin1 tian1 tian1 qi4 hen3 hao3", "en": "The weather is very nice today", "zh": "今天天氣很好 / 今天天气很好" },
-  { "trad": "我喜歡學習中文", "simp": "我喜欢学习中文", "jyutping": "ngo5 hei2 fun1 hok6 zaap6 zung1 man2", "pinyin": "wo3 xi3 huan1 xue2 xi2 zhong1 wen2", "en": "I like learning Chinese", "zh": "我喜歡學習中文 / 我喜欢学习中文" },
-  { "trad": "你覺得這本書怎麼樣", "simp": "你觉得这本书怎么样", "jyutping": "nei5 gok3 dak1 ze2 bun2 syu1 zam2 mo1 joeng6", "pinyin": "ni3 jue2 de5 zhe4 ben3 shu1 zen3 me5 yang4", "en": "What do you think of this book?", "zh": "你覺得這本書怎麼樣 / 你觉得这本书怎么样" },
-  { "trad": "明天我們一起去公園", "simp": "明天我们一起去公园", "jyutping": "ming4 tin1 ngo5 mun4 jat1 heoi3 gung1 jyun2", "pinyin": "ming2 tian1 wo3 men5 yi1 qi3 qu4 ceot1 gong1 yuan2", "en": "Tomorrow we go to the park together", "zh": "明天我們一起去公園 / 明天我们一起去公园" },
-  { "trad": "這是一個很好的機會", "simp": "这是一个很好的机会", "jyutping": "ze2 si6 jat1 go3 han2 hou2 dik1 gei1 wui6", "pinyin": "zhe4 shi4 yi1 ge4 hen3 hao3 de5 ji1 hui4", "en": "This is a great opportunity", "zh": "這是一個很好的機會 / 这是一个很好的机会" }
+    {
+        "trad": "學習",
+        "simp": "学习",
+        "jyutping": "hok6 zaap6",
+        "pinyin": "xue2 xi2",
+        "en": "to learn; study",
+        "zh": "學習 / 学习"
+    },
+    {
+        "trad": "廣東話",
+        "simp": "广东话",
+        "jyutping": "gwong2 dung1 waa2",
+        "pinyin": "guang3 dong1 hua4",
+        "en": "Cantonese language",
+        "zh": "廣東話 / 广东话"
+    },
+    {
+        "trad": "電腦",
+        "simp": "电脑",
+        "jyutping": "din6 nou5",
+        "pinyin": "dian4 nao3",
+        "en": "computer",
+        "zh": "電腦 / 电脑"
+    },
+    {
+        "trad": "咖啡",
+        "simp": "咖啡",
+        "jyutping": "gaa3 fe1",
+        "pinyin": "ka1 fei1",
+        "en": "coffee",
+        "zh": "咖啡 / 咖啡"
+    },
+    {
+        "trad": "學校",
+        "simp": "学校",
+        "jyutping": "hok6 haau6",
+        "pinyin": "xue2 xiao4",
+        "en": "school",
+        "zh": "學校 / 学校"
+    },
+    {
+        "trad": "天氣",
+        "simp": "天气",
+        "jyutping": "tin1 hei3",
+        "pinyin": "tian1 qi4",
+        "en": "weather",
+        "zh": "天氣 / 天气"
+    },
+    {
+        "trad": "多謝",
+        "simp": "多谢",
+        "jyutping": "do1 ze6",
+        "pinyin": "duo1 xie4",
+        "en": "thank you",
+        "zh": "多謝 / 多谢"
+    },
+    {
+        "trad": "汽車",
+        "simp": "汽车",
+        "jyutping": "hei3 ce1",
+        "pinyin": "qi4 che1",
+        "en": "car",
+        "zh": "汽車 / 汽车"
+    },
+    {
+        "trad": "船",
+        "simp": "船",
+        "jyutping": "syun4",
+        "pinyin": "chuan2",
+        "en": "ship; boat",
+        "zh": "船 / 船"
+    },
+    {
+        "trad": "飛機",
+        "simp": "飞机",
+        "jyutping": "fei1 gei1",
+        "pinyin": "fei1 ji1",
+        "en": "airplane",
+        "zh": "飛機 / 飞机"
+    },
+    {
+        "trad": "火車",
+        "simp": "火车",
+        "jyutping": "fo2 ce1",
+        "pinyin": "huo3 che1",
+        "en": "train",
+        "zh": "火車 / 火车"
+    },
+    {
+        "trad": "地鐵",
+        "simp": "地铁",
+        "jyutping": "dei6 tit3",
+        "pinyin": "di4 tie3",
+        "en": "subway",
+        "zh": "地鐵 / 地铁"
+    },
+    {
+        "trad": "巴士",
+        "simp": "巴士",
+        "jyutping": "baa1 si2",
+        "pinyin": "ba1 shi4",
+        "en": "bus",
+        "zh": "巴士 / 巴士"
+    },
+    {
+        "trad": "的士",
+        "simp": "的士",
+        "jyutping": "dik1 si2",
+        "pinyin": "di2 shi4",
+        "en": "taxi",
+        "zh": "的士 / 的士"
+    },
+    {
+        "trad": "單車",
+        "simp": "单车",
+        "jyutping": "daan1 ce1",
+        "pinyin": "dan1 che1",
+        "en": "bicycle",
+        "zh": "單車 / 单车"
+    },
+    {
+        "trad": "電單車",
+        "simp": "电单车",
+        "jyutping": "din6 daan1 ce1",
+        "pinyin": "dian4 dan1 che1",
+        "en": "motorcycle",
+        "zh": "電單車 / 电单车"
+    },
+    {
+        "trad": "餐廳",
+        "simp": "餐厅",
+        "jyutping": "caan1 teng1",
+        "pinyin": "can1 ting1",
+        "en": "restaurant",
+        "zh": "餐廳 / 餐厅"
+    },
+    {
+        "trad": "酒店",
+        "simp": "酒店",
+        "jyutping": "zau2 dim3",
+        "pinyin": "jiu3 dian4",
+        "en": "hotel",
+        "zh": "酒店 / 酒店"
+    },
+    {
+        "trad": "超市",
+        "simp": "超市",
+        "jyutping": "ciu1 si5",
+        "pinyin": "chao1 shi4",
+        "en": "supermarket",
+        "zh": "超市 / 超市"
+    },
+    {
+        "trad": "銀行",
+        "simp": "银行",
+        "jyutping": "ngan4 hong4",
+        "pinyin": "yin2 hang2",
+        "en": "bank",
+        "zh": "銀行 / 银行"
+    },
+    {
+        "trad": "醫院",
+        "simp": "医院",
+        "jyutping": "ji1 jyun2",
+        "pinyin": "yi1 yuan4",
+        "en": "hospital",
+        "zh": "醫院 / 医院"
+    },
+    {
+        "trad": "警察",
+        "simp": "警察",
+        "jyutping": "ging2 caat3",
+        "pinyin": "jing3 cha2",
+        "en": "police",
+        "zh": "警察 / 警察"
+    },
+    {
+        "trad": "消防員",
+        "simp": "消防员",
+        "jyutping": "siu1 fong4 jyun4",
+        "pinyin": "xiao1 fang2 yuan2",
+        "en": "firefighter",
+        "zh": "消防員 / 消防员"
+    },
+    {
+        "trad": "老師",
+        "simp": "老师",
+        "jyutping": "lou5 si1",
+        "pinyin": "lao3 shi1",
+        "en": "teacher",
+        "zh": "老師 / 老师"
+    },
+    {
+        "trad": "學生",
+        "simp": "学生",
+        "jyutping": "hok6 saang1",
+        "pinyin": "xue2 sheng1",
+        "en": "student",
+        "zh": "學生 / 学生"
+    },
+    {
+        "trad": "朋友",
+        "simp": "朋友",
+        "jyutping": "pang4 jau5",
+        "pinyin": "peng2 you3",
+        "en": "friend",
+        "zh": "朋友 / 朋友"
+    },
+    {
+        "trad": "家人",
+        "simp": "家人",
+        "jyutping": "gaa1 jan4",
+        "pinyin": "jia1 ren2",
+        "en": "family",
+        "zh": "家人 / 家人"
+    },
+    {
+        "trad": "爸爸",
+        "simp": "爸爸",
+        "jyutping": "baa4 baa1",
+        "pinyin": "ba4 ba5",
+        "en": "father",
+        "zh": "爸爸 / 爸爸"
+    },
+    {
+        "trad": "媽媽",
+        "simp": "妈妈",
+        "jyutping": "maa4 maa1",
+        "pinyin": "ma1 ma5",
+        "en": "mother",
+        "zh": "媽媽 / 妈妈"
+    },
+    {
+        "trad": "兄弟",
+        "simp": "兄弟",
+        "jyutping": "hing1 dai6",
+        "pinyin": "xiong1 di4",
+        "en": "brothers",
+        "zh": "兄弟 / 兄弟"
+    },
+    {
+        "trad": "姊妹",
+        "simp": "姊妹",
+        "jyutping": "zi2 mui2",
+        "pinyin": "zi3 mei4",
+        "en": "sisters",
+        "zh": "姊妹 / 姊妹"
+    },
+    {
+        "trad": "愛情",
+        "simp": "爱情",
+        "jyutping": "oi3 cing4",
+        "pinyin": "ai4 qing2",
+        "en": "love",
+        "zh": "愛情 / 爱情"
+    },
+    {
+        "trad": "幸福",
+        "simp": "幸福",
+        "jyutping": "hang6 fuk1",
+        "pinyin": "xing4 fu2",
+        "en": "happiness",
+        "zh": "幸福 / 幸福"
+    },
+    {
+        "trad": "快樂",
+        "simp": "快乐",
+        "jyutping": "faai3 lok6",
+        "pinyin": "kuai4 le4",
+        "en": "happy",
+        "zh": "快樂 / 快乐"
+    },
+    {
+        "trad": "悲傷",
+        "simp": "悲伤",
+        "jyutping": "bei1 soeng1",
+        "pinyin": "bei1 shang1",
+        "en": "sad",
+        "zh": "悲傷 / 悲伤"
+    },
+    {
+        "trad": "憤怒",
+        "simp": "愤怒",
+        "jyutping": "fan5 nou6",
+        "pinyin": "fen4 nu4",
+        "en": "angry",
+        "zh": "憤怒 / 愤怒"
+    },
+    {
+        "trad": "恐懼",
+        "simp": "恐惧",
+        "jyutping": "hung2 geoi6",
+        "pinyin": "kong3 ju4",
+        "en": "fear",
+        "zh": "恐懼 / 恐惧"
+    },
+    {
+        "trad": "勇氣",
+        "simp": "勇气",
+        "jyutping": "jung5 hei3",
+        "pinyin": "yong3 qi4",
+        "en": "courage",
+        "zh": "勇氣 / 勇气"
+    },
+    {
+        "trad": "希望",
+        "simp": "希望",
+        "jyutping": "hei1 mong6",
+        "pinyin": "xi1 wang4",
+        "en": "hope",
+        "zh": "希望 / 希望"
+    },
+    {
+        "trad": "夢想",
+        "simp": "梦想",
+        "jyutping": "mung6 soeng2",
+        "pinyin": "meng4 xiang3",
+        "en": "dream",
+        "zh": "夢想 / 梦想"
+    },
+    {
+        "trad": "未來",
+        "simp": "未来",
+        "jyutping": "mei6 loi4",
+        "pinyin": "wei4 lai2",
+        "en": "future",
+        "zh": "未來 / 未来"
+    },
+    {
+        "trad": "過去",
+        "simp": "过去",
+        "jyutping": "gwo3 heoi3",
+        "pinyin": "guo4 qu4",
+        "en": "past",
+        "zh": "過去 / 过去"
+    },
+    {
+        "trad": "現在",
+        "simp": "现在",
+        "jyutping": "jin6 zoi6",
+        "pinyin": "xian4 zai4",
+        "en": "present; now",
+        "zh": "現在 / 现在"
+    },
+    {
+        "trad": "時間",
+        "simp": "时间",
+        "jyutping": "si4 gaan3",
+        "pinyin": "shi2 jian1",
+        "en": "time",
+        "zh": "時間 / 时间"
+    },
+    {
+        "trad": "空間",
+        "simp": "空间",
+        "jyutping": "hung1 gaan1",
+        "pinyin": "kong1 jian1",
+        "en": "space",
+        "zh": "空間 / 空间"
+    },
+    {
+        "trad": "世界",
+        "simp": "世界",
+        "jyutping": "sai3 gaai3",
+        "pinyin": "shi4 jie4",
+        "en": "world",
+        "zh": "世界 / 世界"
+    },
+    {
+        "trad": "國家",
+        "simp": "国家",
+        "jyutping": "gwok3 gaa1",
+        "pinyin": "guo2 jia1",
+        "en": "country",
+        "zh": "國家 / 国家"
+    },
+    {
+        "trad": "城市",
+        "simp": "城市",
+        "jyutping": "sing4 si5",
+        "pinyin": "cheng2 shi4",
+        "en": "city",
+        "zh": "城市 / 城市"
+    },
+    {
+        "trad": "鄉村",
+        "simp": "乡村",
+        "jyutping": "hoeng1 cyun1",
+        "pinyin": "xiang1 cun1",
+        "en": "village",
+        "zh": "鄉村 / 乡村"
+    },
+    {
+        "trad": "自然",
+        "simp": "自然",
+        "jyutping": "zi6 jin4",
+        "pinyin": "zi4 ran2",
+        "en": "nature",
+        "zh": "自然 / 自然"
+    },
+    {
+        "trad": "環境",
+        "simp": "环境",
+        "jyutping": "waan4 ging2",
+        "pinyin": "huan2 jing4",
+        "en": "environment",
+        "zh": "環境 / 环境"
+    },
+    {
+        "trad": "空氣",
+        "simp": "空气",
+        "jyutping": "hung1 hei3",
+        "pinyin": "kong1 qi4",
+        "en": "air",
+        "zh": "空氣 / 空气"
+    },
+    {
+        "trad": "水",
+        "simp": "水",
+        "jyutping": "seoi2",
+        "pinyin": "shui3",
+        "en": "water",
+        "zh": "水 / 水"
+    },
+    {
+        "trad": "火",
+        "simp": "火",
+        "jyutping": "fo2",
+        "pinyin": "huo3",
+        "en": "fire",
+        "zh": "火 / 火"
+    },
+    {
+        "trad": "山",
+        "simp": "山",
+        "jyutping": "saan1",
+        "pinyin": "shan1",
+        "en": "mountain",
+        "zh": "山 / 山"
+    },
+    {
+        "trad": "海",
+        "simp": "海",
+        "jyutping": "hoi2",
+        "pinyin": "hai3",
+        "en": "sea",
+        "zh": "海 / 海"
+    },
+    {
+        "trad": "太陽",
+        "simp": "太阳",
+        "jyutping": "taai3 joeng4",
+        "pinyin": "tai4 yang2",
+        "en": "sun",
+        "zh": "太陽 / 太阳"
+    },
+    {
+        "trad": "月亮",
+        "simp": "月亮",
+        "jyutping": "jyut6 loeng6",
+        "pinyin": "yue4 liang4",
+        "en": "moon",
+        "zh": "月亮 / 月亮"
+    },
+    {
+        "trad": "星星",
+        "simp": "星星",
+        "jyutping": "sing1 sing1",
+        "pinyin": "xing1 xing5",
+        "en": "star",
+        "zh": "星星 / 星星"
+    },
+    {
+        "trad": "花",
+        "simp": "花",
+        "jyutping": "faa1",
+        "pinyin": "hua1",
+        "en": "flower",
+        "zh": "花 / 花"
+    },
+    {
+        "trad": "草",
+        "simp": "草",
+        "jyutping": "cou2",
+        "pinyin": "cao3",
+        "en": "grass",
+        "zh": "草 / 草"
+    },
+    {
+        "trad": "樹",
+        "simp": "树",
+        "jyutping": "syu6",
+        "pinyin": "shu4",
+        "en": "tree",
+        "zh": "樹 / 树"
+    },
+    {
+        "trad": "動物",
+        "simp": "动物",
+        "jyutping": "dung6 mat6",
+        "pinyin": "dong4 wu4",
+        "en": "animal",
+        "zh": "動物 / 动物"
+    },
+    {
+        "trad": "貓",
+        "simp": "猫",
+        "jyutping": "maau1",
+        "pinyin": "mao1",
+        "en": "cat",
+        "zh": "貓 / 猫"
+    },
+    {
+        "trad": "狗",
+        "simp": "狗",
+        "jyutping": "gau2",
+        "pinyin": "gou3",
+        "en": "dog",
+        "zh": "狗 / 狗"
+    },
+    {
+        "trad": "魚",
+        "simp": "鱼",
+        "jyutping": "jyu4",
+        "pinyin": "yu2",
+        "en": "fish",
+        "zh": "魚 / 鱼"
+    },
+    {
+        "trad": "鳥",
+        "simp": "鸟",
+        "jyutping": "niu5",
+        "pinyin": "niao3",
+        "en": "bird",
+        "zh": "鳥 / 鸟"
+    },
+    {
+        "trad": "食物",
+        "simp": "食物",
+        "jyutping": "sik6 mat6",
+        "pinyin": "shi2 wu4",
+        "en": "food",
+        "zh": "食物 / 食物"
+    },
+    {
+        "trad": "米飯",
+        "simp": "米饭",
+        "jyutping": "mai5 faan6",
+        "pinyin": "mi3 fan4",
+        "en": "rice",
+        "zh": "米飯 / 米饭"
+    },
+    {
+        "trad": "麵包",
+        "simp": "面包",
+        "jyutping": "min6 baau1",
+        "pinyin": "mian4 bao1",
+        "en": "bread",
+        "zh": "麵包 / 面包"
+    },
+    {
+        "trad": "牛奶",
+        "simp": "牛奶",
+        "jyutping": "ngau4 naai5",
+        "pinyin": "niu2 nai3",
+        "en": "milk",
+        "zh": "牛奶 / 牛奶"
+    },
+    {
+        "trad": "雞蛋",
+        "simp": "鸡蛋",
+        "jyutping": "gai1 daan2",
+        "pinyin": "ji1 dan4",
+        "en": "egg",
+        "zh": "雞蛋 / 鸡蛋"
+    },
+    {
+        "trad": "水果",
+        "simp": "水果",
+        "jyutping": "seoi2 gwo2",
+        "pinyin": "shui3 guo3",
+        "en": "fruit",
+        "zh": "水果 / 水果"
+    },
+    {
+        "trad": "蔬菜",
+        "simp": "蔬菜",
+        "jyutping": "so1 coi3",
+        "pinyin": "shu1 cai4",
+        "en": "vegetable",
+        "zh": "蔬菜 / 蔬菜"
+    },
+    {
+        "trad": "肉",
+        "simp": "肉",
+        "jyutping": "juk6",
+        "pinyin": "rou4",
+        "en": "meat",
+        "zh": "肉 / 肉"
+    },
+    {
+        "trad": "糖",
+        "simp": "糖",
+        "jyutping": "tong4",
+        "pinyin": "tang2",
+        "en": "sugar",
+        "zh": "糖 / 糖"
+    },
+    {
+        "trad": "鹽",
+        "simp": "盐",
+        "jyutping": "jim4",
+        "pinyin": "yan2",
+        "en": "salt",
+        "zh": "鹽 / 盐"
+    },
+    {
+        "trad": "味道",
+        "simp": "味道",
+        "jyutping": "mei6 dou6",
+        "pinyin": "wei4 dao4",
+        "en": "taste; flavor",
+        "zh": "味道 / 味道"
+    },
+    {
+        "trad": "你好嗎",
+        "simp": "你好吗",
+        "jyutping": "nei5 hou2 maa1",
+        "pinyin": "ni3 hao3 ma5",
+        "en": "How are you?",
+        "zh": "你好嗎 / 你好吗"
+    },
+    {
+        "trad": "我愛你",
+        "simp": "我爱你",
+        "jyutping": "ngo5 oi3 nei5",
+        "pinyin": "wo3 ai4 ni3",
+        "en": "I love you",
+        "zh": "我愛你 / 我爱你"
+    },
+    {
+        "trad": "謝謝",
+        "simp": "谢谢",
+        "jyutping": "ze6 ze6",
+        "pinyin": "xie4 xie5",
+        "en": "Thank you",
+        "zh": "謝謝 / 谢谢"
+    },
+    {
+        "trad": "對不起",
+        "simp": "对不起",
+        "jyutping": "deoi3 bat1 hei2",
+        "pinyin": "dui4 bu4 qi3",
+        "en": "Sorry",
+        "zh": "對不起 / 对不起"
+    },
+    {
+        "trad": "請",
+        "simp": "请",
+        "jyutping": "ceng2",
+        "pinyin": "qing3",
+        "en": "Please",
+        "zh": "請 / 请"
+    },
+    {
+        "trad": "再見",
+        "simp": "再见",
+        "jyutping": "zoi3 gin3",
+        "pinyin": "zai4 jian4",
+        "en": "Goodbye",
+        "zh": "再見 / 再见"
+    },
+    {
+        "trad": "今天天氣很好",
+        "simp": "今天天气很好",
+        "jyutping": "gam1 tin1 tin1 hei3 han2 hou2",
+        "pinyin": "jin1 tian1 tian1 qi4 hen3 hao3",
+        "en": "The weather is very nice today",
+        "zh": "今天天氣很好 / 今天天气很好"
+    },
+    {
+        "trad": "我喜歡學習中文",
+        "simp": "我喜欢学习中文",
+        "jyutping": "ngo5 hei2 fun1 hok6 zaap6 zung1 man2",
+        "pinyin": "wo3 xi3 huan1 xue2 xi2 zhong1 wen2",
+        "en": "I like learning Chinese",
+        "zh": "我喜歡學習中文 / 我喜欢学习中文"
+    },
+    {
+        "trad": "你覺得這本書怎麼樣",
+        "simp": "你觉得这本书怎么样",
+        "jyutping": "nei5 gok3 dak1 ze5 bun2 syu1 zam2 mo1 joeng6",
+        "pinyin": "ni3 jue2 de5 zhe4 ben3 shu1 zen3 me5 yang4",
+        "en": "What do you think of this book?",
+        "zh": "你覺得這本書怎麼樣 / 你觉得这本书怎么样"
+    },
+    {
+        "trad": "明天我們一起去公園",
+        "simp": "明天我们一起去公园",
+        "jyutping": "ming4 tin1 ngo5 mun4 jat1 hei2 heoi3 gung1 jyun2",
+        "pinyin": "ming2 tian1 wo3 men5 yi1 qi3 qu4 ceot1 gong1 yuan2",
+        "en": "Tomorrow we go to the park together",
+        "zh": "明天我們一起去公園 / 明天我们一起去公园"
+    },
+    {
+        "trad": "這是一個很好的機會",
+        "simp": "这是一个很好的机会",
+        "jyutping": "ze5 si6 jat1 go3 han2 hou2 dik1 gei1 wui6",
+        "pinyin": "zhe4 shi4 yi1 ge4 hen3 hao3 de5 ji1 hui4",
+        "en": "This is a great opportunity",
+        "zh": "這是一個很好的機會 / 这是一个很好的机会"
+    }
 ]

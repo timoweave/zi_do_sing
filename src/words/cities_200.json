@@ -2,7 +2,7 @@
     {
         "trad": "肇慶",
         "simp": "肇庆",
-        "jyutping": "ziu6 hing3",
+        "jyutping": "siu6 hing3",
         "pinyin": "zhao4 qing4",
         "en": "Zhaoqing",
         "zh": "肇慶 / 肇庆"
@@ -50,7 +50,7 @@
     {
         "trad": "湛江",
         "simp": "湛江",
-        "jyutping": "zim3 gong1",
+        "jyutping": "zaam3 gong1",
         "pinyin": "zhan4 jiang1",
         "en": "Zhanjiang",
         "zh": "湛江 / 湛江"
@@ -154,7 +154,7 @@
     {
         "trad": "柳州",
         "simp": "柳州",
-        "jyutping": "lau4 zau1",
+        "jyutping": "lau5 zau1",
         "pinyin": "liu3 zhou1",
         "en": "Liuzhou",
         "zh": "柳州 / 柳州"
@@ -266,7 +266,7 @@
     {
         "trad": "桂平",
         "simp": "桂平",
-        "jyutping": "gwai3 ping4",
+        "jyutping": "gwai3 peng4",
         "pinyin": "gui4 ping2",
         "en": "Guiping",
         "zh": "桂平 / 桂平"
@@ -298,7 +298,7 @@
     {
         "trad": "南平",
         "simp": "南平",
-        "jyutping": "naam4 ping4",
+        "jyutping": "naam4 peng4",
         "pinyin": "nan2 ping2",
         "en": "Nanping",
         "zh": "南平 / 南平"
@@ -330,7 +330,7 @@
     {
         "trad": "武夷山",
         "simp": "武夷山",
-        "jyutping": "mou4 jat6 saan1",
+        "jyutping": "mou5 ji4 saan1",
         "pinyin": "wu3 yi2 shan1",
         "en": "Wuyishan",
         "zh": "武夷山 / 武夷山"
@@ -346,7 +346,7 @@
     {
         "trad": "漳平",
         "simp": "漳平",
-        "jyutping": "zoeng1 ping4",
+        "jyutping": "zoeng1 peng4",
         "pinyin": "zhang1 ping2",
         "en": "Zhangping",
         "zh": "漳平 / 漳平"
@@ -394,7 +394,7 @@
     {
         "trad": "儋州",
         "simp": "儋州",
-        "jyutping": "daam6 zau1",
+        "jyutping": "daam1 zau1",
         "pinyin": "dan1 zhou1",
         "en": "Danzhou",
         "zh": "儋州 / 儋州"
@@ -434,7 +434,7 @@
     {
         "trad": "曲靖",
         "simp": "曲靖",
-        "jyutping": "kuk3 ging1",
+        "jyutping": "kuk1 zing6",
         "pinyin": "qu1 jing4",
         "en": "Qujing",
         "zh": "曲靖 / 曲靖"
@@ -442,7 +442,7 @@
     {
         "trad": "玉溪",
         "simp": "玉溪",
-        "jyutping": "juk6 sai1",
+        "jyutping": "juk6 kai1",
         "pinyin": "yu4 xi1",
         "en": "Yuxi",
         "zh": "玉溪 / 玉溪"
@@ -474,7 +474,7 @@
     {
         "trad": "普洱",
         "simp": "普洱",
-        "jyutping": "pou2 lai5",
+        "jyutping": "pou2 lei2",
         "pinyin": "pu3 er3",
         "en": "Pu'er",
         "zh": "普洱 / 普洱"
@@ -498,7 +498,7 @@
     {
         "trad": "楚雄",
         "simp": "楚雄",
-        "jyutping": "coi3 hung4",
+        "jyutping": "co2 hung4",
         "pinyin": "chu3 xiong2",
         "en": "Chuxiong",
         "zh": "楚雄 / 楚雄"
@@ -578,7 +578,7 @@
     {
         "trad": "六盤水",
         "simp": "六盘水",
-        "jyutping": "luk6 bun4 seoi2",
+        "jyutping": "luk6 pun4 seoi2",
         "pinyin": "liu4 pan2 shui3",
         "en": "Liupanshui",
         "zh": "六盤水 / 六盘水"
@@ -698,7 +698,7 @@
     {
         "trad": "株洲",
         "simp": "株洲",
-        "jyutping": "zau1 zau1",
+        "jyutping": "zyu1 zau1",
         "pinyin": "zhu1 zhou1",
         "en": "Zhuzhou",
         "zh": "株洲 / 株洲"
@@ -706,7 +706,7 @@
     {
         "trad": "湘潭",
         "simp": "湘潭",
-        "jyutping": "siu4 tong4",
+        "jyutping": "soeng1 taam4",
         "pinyin": "xiang1 tan2",
         "en": "Xiangtan",
         "zh": "湘潭 / 湘潭"
@@ -778,7 +778,7 @@
     {
         "trad": "懷化",
         "simp": "怀化",
-        "jyutping": "waai4 faa1",
+        "jyutping": "waai4 faa3",
         "pinyin": "huai4 hua1",
         "en": "Huaihua",
         "zh": "懷化 / 怀化"
@@ -794,7 +794,7 @@
     {
         "trad": "湘西",
         "simp": "湘西",
-        "jyutping": "sai1 fun1",
+        "jyutping": "soeng1 sai1",
         "pinyin": "xiang1 xi1",
         "en": "Xiangxi",
         "zh": "湘西 / 湘西"
@@ -810,7 +810,7 @@
     {
         "trad": "湘鄉",
         "simp": "湘乡",
-        "jyutping": "siu1 hoeng1",
+        "jyutping": "soeng1 hoeng1",
         "pinyin": "xiang1 xiang1",
         "en": "Xiangxiang",
         "zh": "湘鄉 / 湘乡"
@@ -826,7 +826,7 @@
     {
         "trad": "十堰",
         "simp": "十堰",
-        "jyutping": "sap6 gin3",
+        "jyutping": "sap6 jin2",
         "pinyin": "shi2 yan4",
         "en": "Shiyan",
         "zh": "十堰 / 十堰"
@@ -866,7 +866,7 @@
     {
         "trad": "孝感",
         "simp": "孝感",
-        "jyutping": "haau3 dou6",
+        "jyutping": "haau3 gam2",
         "pinyin": "xiao4 gan3",
         "en": "Xiaogan",
         "zh": "孝感 / 孝感"
@@ -970,7 +970,7 @@
     {
         "trad": "景德鎮",
         "simp": "景德镇",
-        "jyutping": "ging1 dak1 zan3",
+        "jyutping": "ging2 dak1 zan3",
         "pinyin": "jing3 de2 zhen4",
         "en": "Jingdezhen",
         "zh": "景德鎮 / 景德镇"
@@ -1034,7 +1034,7 @@
     {
         "trad": "樂平",
         "simp": "乐平",
-        "jyutping": "lok6 ping4",
+        "jyutping": "lok6 peng4",
         "pinyin": "le4 ping2",
         "en": "Leping",
         "zh": "樂平 / 乐平"
@@ -1202,7 +1202,7 @@
     {
         "trad": "巢湖",
         "simp": "巢湖",
-        "jyutping": "ciu4 wu4",
+        "jyutping": "caau4 wu4",
         "pinyin": "chao2 hu2",
         "en": "Chaohu",
         "zh": "巢湖 / 巢湖"
@@ -1258,7 +1258,7 @@
     {
         "trad": "紹興",
         "simp": "绍兴",
-        "jyutping": "siu6 hing1",
+        "jyutping": "siu6 hing3",
         "pinyin": "shao4 xing1",
         "en": "Shaoxing",
         "zh": "紹興 / 绍兴"
@@ -1314,7 +1314,7 @@
     {
         "trad": "諸暨",
         "simp": "诸暨",
-        "jyutping": "zyu1 lai6",
+        "jyutping": "zyu1 kei3",
         "pinyin": "zhu1 ji4",
         "en": "Zhuji",
         "zh": "諸暨 / 诸暨"
@@ -1330,7 +1330,7 @@
     {
         "trad": "平湖",
         "simp": "平湖",
-        "jyutping": "ping4 wu4",
+        "jyutping": "peng4 wu4",
         "pinyin": "ping2 hu2",
         "en": "Pinghu",
         "zh": "平湖 / 平湖"
@@ -1378,7 +1378,7 @@
     {
         "trad": "溫嶺",
         "simp": "温岭",
-        "jyutping": "wan1 ling5",
+        "jyutping": "wan1 leng5",
         "pinyin": "wen1 ling3",
         "en": "Wenling",
         "zh": "溫嶺 / 温岭"
@@ -1466,7 +1466,7 @@
     {
         "trad": "常熟",
         "simp": "常熟",
-        "jyutping": "soeng6 suk6",
+        "jyutping": "soeng4 suk6",
         "pinyin": "chang2 shu2",
         "en": "Changshu",
         "zh": "常熟 / 常熟"
@@ -1482,7 +1482,7 @@
     {
         "trad": "崑山",
         "simp": "昆山",
-        "jyutping": "gwan1 saan1",
+        "jyutping": "kwan1 saan1",
         "pinyin": "kun1 shan1",
         "en": "Kunshan",
         "zh": "崑山 / 昆山"
@@ -1530,7 +1530,7 @@
     {
         "trad": "句容",
         "simp": "句容",
-        "jyutping": "gau3 jung4",
+        "jyutping": "geoi3 jung4",
         "pinyin": "ju4 rong2",
         "en": "Jurong",
         "zh": "句容 / 句容"
@@ -1546,7 +1546,7 @@
     {
         "trad": "興化",
         "simp": "兴化",
-        "jyutping": "hing1 faa1",
+        "jyutping": "hing1 faa3",
         "pinyin": "xing1 hua4",
         "en": "Xinghua",
         "zh": "興化 / 兴化"
@@ -1554,7 +1554,7 @@
     {
         "trad": "靖江",
         "simp": "靖江",
-        "jyutping": "zing3 gong1",
+        "jyutping": "zing6 gong1",
         "pinyin": "jing4 jiang1",
         "en": "Jingjiang",
         "zh": "靖江 / 靖江"

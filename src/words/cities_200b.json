@@ -18,7 +18,7 @@
     {
         "trad": "布魯塞爾",
         "simp": "布鲁塞尔",
-        "jyutping": "bou3 lou1 coi3 ji5",
+        "jyutping": "bou3 lou5 coi3 ji5",
         "pinyin": "bu4 luo3 sai1 er3",
         "en": "Brussels",
         "zh": "布魯塞爾 / 布鲁塞尔"
@@ -26,7 +26,7 @@
     {
         "trad": "阿姆斯特丹",
         "simp": "阿姆斯特丹",
-        "jyutping": "aa3 mou5 si1 dak1 daan1",
+        "jyutping": "aa3 mou5 si1 dak6 daan1",
         "pinyin": "a1 mu3 si1 te4 dan1",
         "en": "Amsterdam",
         "zh": "阿姆斯特丹 / 阿姆斯特丹"
@@ -50,7 +50,7 @@
     {
         "trad": "赫爾辛基",
         "simp": "赫尔辛基",
-        "jyutping": "haak3 ji5 san1 gei1",
+        "jyutping": "haak1 ji5 san1 gei1",
         "pinyin": "he4 er3 xin1 ji1",
         "en": "Helsinki",
         "zh": "赫爾辛基 / 赫尔辛基"
@@ -66,7 +66,7 @@
     {
         "trad": "布加勒斯特",
         "simp": "布加勒斯特",
-        "jyutping": "bou3 gaa1 lak6 si1 dak1",
+        "jyutping": "bou3 gaa1 laak6 si1 dak6",
         "pinyin": "bu4 jia1 lei1 si1 te4",
         "en": "Bucharest",
         "zh": "布加勒斯特 / 布加勒斯特"
@@ -90,7 +90,7 @@
     {
         "trad": "斯科普里",
         "simp": "斯科普里",
-        "jyutping": "si1 fo1 pou3 lei5",
+        "jyutping": "si1 fo1 pou2 lei5",
         "pinyin": "si1 ke1 pu3 li3",
         "en": "Skopje",
         "zh": "斯科普里 / 斯科普里"
@@ -106,7 +106,7 @@
     {
         "trad": "法蘭克福",
         "simp": "法兰克福",
-        "jyutping": "faat3 laan4 hak1 fuk1",
+        "jyutping": "faat3 laan4 haak1 fuk1",
         "pinyin": "fa3 lan2 ke4 fu2",
         "en": "Frankfurt",
         "zh": "法蘭克福 / 法兰克福"
@@ -114,7 +114,7 @@
     {
         "trad": "斯圖加特",
         "simp": "斯图加特",
-        "jyutping": "si1 tou4 gaa1 dak1",
+        "jyutping": "si1 tou4 gaa1 dak6",
         "pinyin": "si1 tu2 jia1 te4",
         "en": "Stuttgart",
         "zh": "斯圖加特 / 斯图加特"
@@ -122,7 +122,7 @@
     {
         "trad": "巴塞隆拿",
         "simp": "巴塞罗那",
-        "jyutping": "baa1 coi3 lung4 naa1",
+        "jyutping": "baa1 coi3 lung4 naa4",
         "pinyin": "ba1 sai1 luo2 na4",
         "en": "Barcelona",
         "zh": "巴塞隆拿 / 巴塞罗那"
@@ -130,7 +130,7 @@
     {
         "trad": "塞維利亞",
         "simp": "塞维利亚",
-        "jyutping": "coi3 wai4 lei6 aa3",
+        "jyutping": "sak1 wai4 lei6 aa3",
         "pinyin": "sai1 wei2 li4 ya3",
         "en": "Seville",
         "zh": "塞維利亞 / 塞维利亚"
@@ -146,7 +146,7 @@
     {
         "trad": "曼徹斯特",
         "simp": "曼彻斯特",
-        "jyutping": "maan6 cit3 si1 dak1",
+        "jyutping": "maan6 cit3 si1 dak6",
         "pinyin": "man4 che4 si1 te4",
         "en": "Manchester",
         "zh": "曼徹斯特 / 曼彻斯特"
@@ -162,7 +162,7 @@
     {
         "trad": "貝爾法斯特",
         "simp": "贝尔法斯特",
-        "jyutping": "bui3 ji5 faat3 faat3 si1 dak1",
+        "jyutping": "bui3 ji5 faat3 si1 dak6",
         "pinyin": "bei3 er3 fa3 fa3 si1 te4",
         "en": "Belfast",
         "zh": "貝爾法斯特 / 贝尔法斯特"
@@ -170,7 +170,7 @@
     {
         "trad": "洛杉磯",
         "simp": "洛杉矶",
-        "jyutping": "lok3 caam3 gei1",
+        "jyutping": "lok6 caam3 gei1",
         "pinyin": "luo4 shan1 ji1",
         "en": "Los Angeles",
         "zh": "洛杉磯 / 洛杉矶"
@@ -226,7 +226,7 @@
     {
         "trad": "華盛頓",
         "simp": "华盛顿",
-        "jyutping": "waa4 sing6 deon1",
+        "jyutping": "waa4 sing6 deon6",
         "pinyin": "hua2 sheng4 dun1",
         "en": "Washington",
         "zh": "華盛頓 / 华盛顿"
@@ -266,7 +266,7 @@
     {
         "trad": "密爾沃基",
         "simp": "密尔沃基",
-        "jyutping": "mat6 ji5 ak1 gei1",
+        "jyutping": "mat6 ji5 juk1 gei1",
         "pinyin": "mi4 er3 wo4 ji1",
         "en": "Milwaukee",
         "zh": "密爾沃基 / 密尔沃基"
@@ -298,7 +298,7 @@
     {
         "trad": "亞特蘭大",
         "simp": "亚特兰大",
-        "jyutping": "aa3 dak1 laan4 daai6",
+        "jyutping": "aa3 dak6 laan4 daai6",
         "pinyin": "ya4 te4 lan2 da4",
         "en": "Atlanta",
         "zh": "亞特蘭大 / 亚特兰大"
@@ -306,7 +306,7 @@
     {
         "trad": "科羅拉多斯普林斯",
         "simp": "科罗拉多斯普林斯",
-        "jyutping": "fo1 lo4 laai1 do1 si1 pou3 lam4 si1",
+        "jyutping": "fo1 lo4 laai1 do1 si1 pou2 lam4 si1",
         "pinyin": "ke1 luo2 la1 duo1 si1 pu3 lin2 si1",
         "en": "Colorado Springs",
         "zh": "科羅拉多斯普林斯 / 科罗拉多斯普林斯"
@@ -330,7 +330,7 @@
     {
         "trad": "火奴魯魯",
         "simp": "火奴鲁鲁",
-        "jyutping": "fo2 nou4 lou4 lou4",
+        "jyutping": "fo2 nou4 lou5 lou5",
         "pinyin": "huo3 nu2 lu3 lu3",
         "en": "Honolulu",
         "zh": "火奴魯魯 / 火奴鲁鲁"
@@ -338,7 +338,7 @@
     {
         "trad": "蒙特利爾",
         "simp": "蒙特利尔",
-        "jyutping": "mung4 dak1 lei6 ji5",
+        "jyutping": "mung4 dak6 lei6 ji5",
         "pinyin": "meng2 te4 li4 er3",
         "en": "Montreal",
         "zh": "蒙特利爾 / 蒙特利尔"
@@ -354,7 +354,7 @@
     {
         "trad": "埃德蒙頓",
         "simp": "埃德蒙顿",
-        "jyutping": "oi1 dak1 mung4 deon1",
+        "jyutping": "oi1 dak1 mung4 deon6",
         "pinyin": "ai1 de2 meng2 dun1",
         "en": "Edmonton",
         "zh": "埃德蒙頓 / 埃德蒙顿"
@@ -362,7 +362,7 @@
     {
         "trad": "魁北克市",
         "simp": "魁北克市",
-        "jyutping": "fui1 bak1 hak1 si5",
+        "jyutping": "fui1 bak1 haak1 si5",
         "pinyin": "kui2 bei3 ke4 shi4",
         "en": "Quebec City",
         "zh": "魁北克市 / 魁北克市"
@@ -386,7 +386,7 @@
     {
         "trad": "新加坡",
         "simp": "新加坡",
-        "jyutping": "san1 gaa1 po1",
+        "jyutping": "san1 gaa3 bo1",
         "pinyin": "xin1 jia1 po1",
         "en": "Singapore",
         "zh": "新加坡 / 新加坡"
@@ -394,7 +394,7 @@
     {
         "trad": "吉隆坡",
         "simp": "吉隆坡",
-        "jyutping": "gat1 lung4 po1",
+        "jyutping": "gat1 lung4 bo1",
         "pinyin": "ji2 long2 po1",
         "en": "Kuala Lumpur",
         "zh": "吉隆坡 / 吉隆坡"
@@ -458,7 +458,7 @@
     {
         "trad": "伊斯蘭堡",
         "simp": "伊斯兰堡",
-        "jyutping": "yi1 si1 laan4 bou2",
+        "jyutping": "ji1 si1 laan4 bou2",
         "pinyin": "yi1 si1 lan2 bao3",
         "en": "Islamabad",
         "zh": "伊斯蘭堡 / 伊斯兰堡"
@@ -498,7 +498,7 @@
     {
         "trad": "阿布扎比",
         "simp": "阿布扎比",
-        "jyutping": "aa3 bou3 zaat3 bei3",
+        "jyutping": "aa3 bou3 zaat3 bei2",
         "pinyin": "a1 bu4 zha1 bi3",
         "en": "Abu Dhabi",
         "zh": "阿布扎比 / 阿布扎比"
@@ -506,7 +506,7 @@
     {
         "trad": "科威特城",
         "simp": "科威特城",
-        "jyutping": "fo1 wai1 dak1 sing4",
+        "jyutping": "fo1 wai1 dak6 sing4",
         "pinyin": "ke1 wei1 te4 cheng2",
         "en": "Kuwait City",
         "zh": "科威特城 / 科威特城"
@@ -514,7 +514,7 @@
     {
         "trad": "馬斯喀特",
         "simp": "马斯喀特",
-        "jyutping": "maa5 si1 haak3 dak1",
+        "jyutping": "maa5 si1 kaak3 dak6",
         "pinyin": "ma3 si1 ka1 te4",
         "en": "Muscat",
         "zh": "馬斯喀特 / 马斯喀特"
@@ -530,7 +530,7 @@
     {
         "trad": "耶路撒冷",
         "simp": "耶路撒冷",
-        "jyutping": "je4 lou4 saat3 laang5",
+        "jyutping": "je4 lou6 saat3 laang5",
         "pinyin": "ye1 luo2 sa1 leng3",
         "en": "Jerusalem",
         "zh": "耶路撒冷 / 耶路撒冷"
@@ -538,7 +538,7 @@
     {
         "trad": "特拉維夫",
         "simp": "特拉维夫",
-        "jyutping": "dak1 laai1 wai4 fu1",
+        "jyutping": "dak6 laai1 wai4 fu1",
         "pinyin": "te4 la1 wei2 fu1",
         "en": "Tel Aviv",
         "zh": "特拉維夫 / 特拉维夫"
@@ -546,7 +546,7 @@
     {
         "trad": "伊斯坦堡",
         "simp": "伊斯坦布尔",
-        "jyutping": "yi1 si1 taan2 bou2",
+        "jyutping": "ji1 si1 taan2 bou2",
         "pinyin": "yi1 si1 tan3 bu4 er3",
         "en": "Istanbul",
         "zh": "伊斯坦堡 / 伊斯坦布尔"
@@ -578,7 +578,7 @@
     {
         "trad": "阿爾及爾",
         "simp": "阿尔及尔",
-        "jyutping": "aa3 ji5 kap1 ji5",
+        "jyutping": "aa3 ji5 kap6 ji5",
         "pinyin": "a1 er3 ji2 er3",
         "en": "Algiers",
         "zh": "阿爾及爾 / 阿尔及尔"
@@ -602,7 +602,7 @@
     {
         "trad": "約翰尼斯堡",
         "simp": "约翰尼斯堡",
-        "jyutping": "joek3 hon3 nei4 si1 bou2",
+        "jyutping": "joek3 hon6 nei4 si1 bou2",
         "pinyin": "yue1 han4 ni2 si1 bao3",
         "en": "Johannesburg",
         "zh": "約翰尼斯堡 / 约翰尼斯堡"
@@ -658,7 +658,7 @@
     {
         "trad": "布宜諾斯艾利斯",
         "simp": "布宜诺斯艾利斯",
-        "jyutping": "bou3 ji4 lok6 si1 ngaai6 lei6 si1",
+        "jyutping": "bou3 ji4 nok6 si1 ngaai6 lei6 si1",
         "pinyin": "bu4 yi2 nuo4 si1 ai4 li4 si1",
         "en": "Buenos Aires",
         "zh": "布宜諾斯艾利斯 / 布宜诺斯艾利斯"
@@ -674,7 +674,7 @@
     {
         "trad": "蒙特維多",
         "simp": "蒙得维的亚",
-        "jyutping": "mung4 dak1 wai4 do1",
+        "jyutping": "mung4 dak6 wai4 do1",
         "pinyin": "meng2 de2 wei2 de5 ya3",
         "en": "Montevideo",
         "zh": "蒙特維多 / 蒙得维的亚"
@@ -722,7 +722,7 @@
     {
         "trad": "呼和浩特",
         "simp": "呼和浩特",
-        "jyutping": "fu1 wo4 hou6 dak1",
+        "jyutping": "fu1 wo4 hou6 dak6",
         "pinyin": "hu1 he2 hao4 te4",
         "en": "Hohhot",
         "zh": "呼和浩特 / 呼和浩特"
@@ -746,7 +746,7 @@
     {
         "trad": "鹿特丹",
         "simp": "鹿特丹",
-        "jyutping": "luk6 dak1 daan1",
+        "jyutping": "luk6 dak6 daan1",
         "pinyin": "lu4 te4 dan1",
         "en": "Rotterdam",
         "zh": "鹿特丹 / 鹿特丹"
@@ -754,7 +754,7 @@
     {
         "trad": "安特衛普",
         "simp": "安特卫普",
-        "jyutping": "on1 dak1 wai6 pou2",
+        "jyutping": "on1 dak6 wai6 pou2",
         "pinyin": "an1 te4 wei4 pu3",
         "en": "Antwerp",
         "zh": "安特衛普 / 安特卫普"
@@ -786,7 +786,7 @@
     {
         "trad": "薩爾茨堡",
         "simp": "萨尔茨堡",
-        "jyutping": "saat3 ji5 ci1 bou2",
+        "jyutping": "saat3 ji5 ci4 bou2",
         "pinyin": "sa4 er3 ci2 bao3",
         "en": "Salzburg",
         "zh": "薩爾茨堡 / 萨尔茨堡"
@@ -794,7 +794,7 @@
     {
         "trad": "因斯布魯克",
         "simp": "因斯布鲁克",
-        "jyutping": "jan1 si1 bou3 lou1 hak1",
+        "jyutping": "jan1 si1 bou3 lou5 hak1",
         "pinyin": "yin1 si1 bu4 luo3 ke4",
         "en": "Innsbruck",
         "zh": "因斯布魯克 / 因斯布鲁克"
@@ -802,7 +802,7 @@
     {
         "trad": "格拉茨",
         "simp": "格拉茨",
-        "jyutping": "gaak3 laai1 ci1",
+        "jyutping": "gaak3 laai1 ci4",
         "pinyin": "ge2 la1 ci2",
         "en": "Graz",
         "zh": "格拉茨 / 格拉茨"
@@ -826,7 +826,7 @@
     {
         "trad": "弗羅茨瓦夫",
         "simp": "弗罗茨瓦夫",
-        "jyutping": "fat1 lo4 ci1 ngaa5 fu1",
+        "jyutping": "fat1 lo4 ci4 ngaa5 fu1",
         "pinyin": "fu2 luo2 ci2 wa3 fu1",
         "en": "Wroclaw",
         "zh": "弗羅茨瓦夫 / 弗罗茨瓦夫"
@@ -850,7 +850,7 @@
     {
         "trad": "盧布爾雅那",
         "simp": "卢布尔雅那",
-        "jyutping": "lou4 bou3 ji5 ngaa5 naa1",
+        "jyutping": "lou4 bou3 ji5 ngaa5 naa5",
         "pinyin": "lu2 bu4 er3 ya3 na4",
         "en": "Ljubljana",
         "zh": "盧布爾雅那 / 卢布尔雅那"
@@ -866,7 +866,7 @@
     {
         "trad": "斯普利特",
         "simp": "斯普利特",
-        "jyutping": "si1 pou3 lei6 dak1",
+        "jyutping": "si1 pou2 lei6 dak6",
         "pinyin": "si1 pu3 li4 te4",
         "en": "Split",
         "zh": "斯普利特 / 斯普利特"
@@ -882,7 +882,7 @@
     {
         "trad": "波德戈里察",
         "simp": "波德戈里察",
-        "jyutping": "bo1 dak1 go1 lei5 caat3",
+        "jyutping": "bo1 dak1 gwo1 lei5 caat3",
         "pinyin": "bo1 de2 ge1 li3 cha2",
         "en": "Podgorica",
         "zh": "波德戈里察 / 波德戈里察"
@@ -890,7 +890,7 @@
     {
         "trad": "普里什蒂納",
         "simp": "普里什蒂纳",
-        "jyutping": "pou3 lei5 sap6 dai3 naa1",
+        "jyutping": "pou2 lei5 sap6 dai3 naap6",
         "pinyin": "pu3 li3 shi2 di4 na4",
         "en": "Pristina",
         "zh": "普里什蒂納 / 普里什蒂纳"
@@ -898,7 +898,7 @@
     {
         "trad": "基希訥烏",
         "simp": "基希讷乌",
-        "jyutping": "gei1 hei1 naap6 wu1",
+        "jyutping": "gei1 hei1 neot6 wu1",
         "pinyin": "ji1 xi1 ne4 wu1",
         "en": "Chisinau",
         "zh": "基希訥烏 / 基希讷乌"
@@ -962,7 +962,7 @@
     {
         "trad": "喀山",
         "simp": "喀山",
-        "jyutping": "haak3 saan1",
+        "jyutping": "kaak3 saan1",
         "pinyin": "ka1 shan1",
         "en": "Kazan",
         "zh": "喀山 / 喀山"
@@ -970,7 +970,7 @@
     {
         "trad": "下諾夫哥羅德",
         "simp": "下诺夫哥罗德",
-        "jyutping": "haa6 lok6 fu1 go1 lo4 dak1",
+        "jyutping": "haa6 nok6 fu1 go1 lo4 dak1",
         "pinyin": "xia4 nuo4 fu1 ge1 luo2 de2",
         "en": "Nizhny Novgorod",
         "zh": "下諾夫哥羅德 / 下诺夫哥罗德"
@@ -978,7 +978,7 @@
     {
         "trad": "車里雅賓斯克",
         "simp": "车里雅宾斯克",
-        "jyutping": "gei1 lei5 ngaa5 ban1 si1 hak1",
+        "jyutping": "ce1 lei5 ngaa5 ban1 si1 hak1",
         "pinyin": "che1 li3 ya3 bin1 si1 ke4",
         "en": "Chelyabinsk",
         "zh": "車里雅賓斯克 / 车里雅宾斯克"
@@ -1002,7 +1002,7 @@
     {
         "trad": "頓河畔羅斯托夫",
         "simp": "顿河畔罗斯托夫",
-        "jyutping": "deon1 ho4 bun6 lo4 si1 tok3 fu1",
+        "jyutping": "deon6 ho4 bun6 lo4 si1 tok3 fu1",
         "pinyin": "dun4 he2 pan4 luo2 si1 tuo1 fu1",
         "en": "Rostov-on-Don",
         "zh": "頓河畔羅斯托夫 / 顿河畔罗斯托夫"
@@ -1018,7 +1018,7 @@
     {
         "trad": "克拉斯諾亞爾斯克",
         "simp": "克拉斯诺亚尔斯克",
-        "jyutping": "hak1 laai1 si1 lok6 aa3 ji5 si1 hak1",
+        "jyutping": "hak1 laai1 si1 nok6 aa3 ji5 si1 hak1",
         "pinyin": "ke4 la1 si1 nuo4 ya3 er3 si1 ke4",
         "en": "Krasnoyarsk",
         "zh": "克拉斯諾亞爾斯克 / 克拉斯诺亚尔斯克"
@@ -1026,7 +1026,7 @@
     {
         "trad": "沃羅涅日",
         "simp": "沃罗涅日",
-        "jyutping": "ak1 lo4 nip6 jat6",
+        "jyutping": "juk1 lo4 nip6 jat6",
         "pinyin": "wo4 luo2 nie4 ri4",
         "en": "Voronezh",
         "zh": "沃羅涅日 / 沃罗涅日"
@@ -1034,7 +1034,7 @@
     {
         "trad": "彼爾姆",
         "simp": "彼尔姆",
-        "jyutping": "bei2 ji5 moi4",
+        "jyutping": "bei2 ji5 mou5",
         "pinyin": "bi3 er3 mu3",
         "en": "Perm",
         "zh": "彼爾姆 / 彼尔姆"
@@ -1050,7 +1050,7 @@
     {
         "trad": "薩拉托夫",
         "simp": "萨拉托夫",
-        "jyutping": "saat3 maa5 tok3 fu1",
+        "jyutping": "saat3 laai1 tok3 fu1",
         "pinyin": "sa4 la1 tuo1 fu1",
         "en": "Saratov",
         "zh": "薩拉托夫 / 萨拉托夫"
@@ -1058,7 +1058,7 @@
     {
         "trad": "海參崴",
         "simp": "符拉迪沃斯托克",
-        "jyutping": "hoi2 sam1 waai2",
+        "jyutping": "hoi2 sam1 wai1",
         "pinyin": "fu2 la1 di2 wo4 si1 tuo1 ke4",
         "en": "Vladivostok",
         "zh": "海參崴 / 符拉迪沃斯托克"
@@ -1066,7 +1066,7 @@
     {
         "trad": "伊爾庫茨克",
         "simp": "伊尔库茨克",
-        "jyutping": "yi1 ji5 fu3 ci1 hak1",
+        "jyutping": "ji1 ji5 fu3 ci4 hak1",
         "pinyin": "yi1 er3 ku4 ci2 ke4",
         "en": "Irkutsk",
         "zh": "伊爾庫茨克 / 伊尔库茨克"
@@ -1090,7 +1090,7 @@
     {
         "trad": "利沃夫",
         "simp": "利沃夫",
-        "jyutping": "lei6 ak1 fu1",
+        "jyutping": "lei6 juk1 fu1",
         "pinyin": "li4 wo4 fu1",
         "en": "Lviv",
         "zh": "利沃夫 / 利沃夫"
@@ -1106,7 +1106,7 @@
     {
         "trad": "第比利斯",
         "simp": "第比利斯",
-        "jyutping": "dai6 bei2 lei5 si1",
+        "jyutping": "dai6 bei2 lei6 si1",
         "pinyin": "di4 bi3 li3 si1",
         "en": "Tbilisi",
         "zh": "第比利斯 / 第比利斯"
@@ -1114,7 +1114,7 @@
     {
         "trad": "埃里溫",
         "simp": "埃里温",
-        "jyutping": "oi1 lei5 wan1",
+        "jyutping": "aai1 lei5 wan1",
         "pinyin": "ai1 li3 wen1",
         "en": "Yerevan",
         "zh": "埃里溫 / 埃里温"
@@ -1130,7 +1130,7 @@
     {
         "trad": "阿斯塔納",
         "simp": "阿斯塔纳",
-        "jyutping": "aa3 si1 taap3 naa1",
+        "jyutping": "aa3 si1 taap3 naap6",
         "pinyin": "a1 si1 ta3 na4",
         "en": "Astana",
         "zh": "阿斯塔納 / 阿斯塔纳"
@@ -1210,7 +1210,7 @@
     {
         "trad": "馬爾代夫馬累",
         "simp": "马累",
-        "jyutping": "maa5 leoi4",
+        "jyutping": "maa5 ji5 doi6 fu1 maa5 leoi6",
         "pinyin": "ma3 lei2",
         "en": "Male",
         "zh": "馬累 / 马累"
@@ -1226,7 +1226,7 @@
     {
         "trad": "瑯勃拉邦",
         "simp": "琅勃拉邦",
-        "jyutping": "long4 buk6 laai1 bong1",
+        "jyutping": "long4 but6 laai1 bong1",
         "pinyin": "lang2 bo2 la1 bang1",
         "en": "Luang Prabang",
         "zh": "瑯勃拉邦 / 琅勃拉邦"
@@ -1258,7 +1258,7 @@
     {
         "trad": "會安",
         "simp": "会安",
-        "jyutping": "wui6 on1",
+        "jyutping": "wui5 on1",
         "pinyin": "hui4 an1",
         "en": "Hoi An",
         "zh": "會安 / 会安"
@@ -1298,7 +1298,7 @@
     {
         "trad": "亞庇",
         "simp": "亚庇",
-        "jyutping": "aa3 bai3",
+        "jyutping": "aa3 bei3",
         "pinyin": "ya4 bi4",
         "en": "Kota Kinabalu",
         "zh": "亞庇 / 亚庇"
@@ -1330,7 +1330,7 @@
     {
         "trad": "望加錫",
         "simp": "望加锡",
-        "jyutping": "mong6 gaa1 sik1",
+        "jyutping": "mong6 gaa1 sek3",
         "pinyin": "wang4 jia1 xi1",
         "en": "Makassar",
         "zh": "望加錫 / 望加锡"
@@ -1338,7 +1338,7 @@
     {
         "trad": "達沃",
         "simp": "达沃",
-        "jyutping": "daat6 ak1",
+        "jyutping": "daat6 juk1",
         "pinyin": "da2 wo4",
         "en": "Davao",
         "zh": "達沃 / 达沃"
@@ -1346,7 +1346,7 @@
     {
         "trad": "奎松市",
         "simp": "奎松市",
-        "jyutping": "fui1 zung1 si5",
+        "jyutping": "fui1 cung4 si5",
         "pinyin": "kui1 song1 shi4",
         "en": "Quezon City",
         "zh": "奎松市 / 奎松市"
@@ -1386,7 +1386,7 @@
     {
         "trad": "威靈頓",
         "simp": "惠灵顿",
-        "jyutping": "wai1 ling4 deon1",
+        "jyutping": "wai1 ling4 deon6",
         "pinyin": "hui4 ling2 dun1",
         "en": "Wellington",
         "zh": "威靈頓 / 惠灵顿"
@@ -1434,7 +1434,7 @@
     {
         "trad": "努庫阿洛法",
         "simp": "努库阿洛法",
-        "jyutping": "nou4 fu3 aa3 lo3 faat3",
+        "jyutping": "nou5 fu3 aa3 lok3 faat3",
         "pinyin": "nu3 ku4 a1 luo2 fa3",
         "en": "Nuku'alofa",
         "zh": "努庫阿洛法 / 努库阿洛法"
@@ -1450,7 +1450,7 @@
     {
         "trad": "溫尼伯",
         "simp": "温尼伯",
-        "jyutping": "wan1 nei4 paak3",
+        "jyutping": "wan1 nei4 baak3",
         "pinyin": "wen1 ni2 bo2",
         "en": "Winnipeg",
         "zh": "溫尼伯 / 温尼伯"
@@ -1474,7 +1474,7 @@
     {
         "trad": "基隆拿",
         "simp": "基洛纳",
-        "jyutping": "gei1 lung4 naa1",
+        "jyutping": "gei1 lung4 naa4",
         "pinyin": "ji1 luo2 na4",
         "en": "Kelowna",
         "zh": "基隆拿 / 基洛纳"
@@ -1490,7 +1490,7 @@
     {
         "trad": "里賈納",
         "simp": "里贾纳",
-        "jyutping": "lei5 gaa2 naa1",
+        "jyutping": "lei5 gaa2 naap6",
         "pinyin": "li3 jia3 na4",
         "en": "Regina",
         "zh": "里賈納 / 里贾纳"
@@ -1498,7 +1498,7 @@
     {
         "trad": "哈密爾頓",
         "simp": "哈密尔顿",
-        "jyutping": "haa1 mat6 ji5 deon1",
+        "jyutping": "haa1 mat6 ji5 deon6",
         "pinyin": "ha1 mi4 er3 dun1",
         "en": "Hamilton",
         "zh": "哈密爾頓 / 哈密尔顿"
@@ -1522,7 +1522,7 @@
     {
         "trad": "溫莎",
         "simp": "温莎",
-        "jyutping": "wan1 so1",
+        "jyutping": "wan1 saa1",
         "pinyin": "wen1 sha1",
         "en": "Windsor",
         "zh": "溫莎 / 温莎"
@@ -1530,7 +1530,7 @@
     {
         "trad": "金斯頓",
         "simp": "金斯敦",
-        "jyutping": "gam1 si1 deon1",
+        "jyutping": "gam1 si1 deon6",
         "pinyin": "jin1 si1 dun1",
         "en": "Kingston",
         "zh": "金斯頓 / 金斯敦"
@@ -1538,7 +1538,7 @@
     {
         "trad": "查洛城",
         "simp": "夏洛特敦",
-        "jyutping": "caa4 lok6 sing4",
+        "jyutping": "caa4 lok3 sing4",
         "pinyin": "xia4 luo4 te4 dun1",
         "en": "Charlottetown",
         "zh": "查洛城 / 夏洛特敦"
@@ -1546,7 +1546,7 @@
     {
         "trad": "聖約翰斯",
         "simp": "圣约翰斯",
-        "jyutping": "sing3 joek3 hon3 si1",
+        "jyutping": "sing3 joek3 hon6 si1",
         "pinyin": "sheng4 yue1 han4 si1",
         "en": "St. John's",
         "zh": "聖約翰斯 / 圣约翰斯"
@@ -1562,7 +1562,7 @@
     {
         "trad": "白馬市",
         "simp": "白马市",
-        "jyutping": "baak3 maa5 si5",
+        "jyutping": "baak6 maa5 si5",
         "pinyin": "bai2 ma3 shi4",
         "en": "Whitehorse",
         "zh": "白馬市 / 白马市"
@@ -1594,7 +1594,7 @@
     {
         "trad": "斯波坎",
         "simp": "斯波坎",
-        "jyutping": "si1 bo1 hon1",
+        "jyutping": "si1 bo1 ham2",
         "pinyin": "si1 bo1 kan3",
         "en": "Spokane",
         "zh": "斯波坎 / 斯波坎"
@@ -1634,7 +1634,7 @@
     {
         "trad": "阿靈頓",
         "simp": "阿灵顿",
-        "jyutping": "aa3 ling4 deon1",
+        "jyutping": "aa3 ling4 deon6",
         "pinyin": "a1 ling2 dun1",
         "en": "Arlington",
         "zh": "阿靈頓 / 阿灵顿"
@@ -1666,7 +1666,7 @@
     {
         "trad": "利特爾洛克",
         "simp": "小石城",
-        "jyutping": "lei6 dak1 ji5 lok3",
+        "jyutping": "lei6 dak6 ji5 lok3 hak1",
         "pinyin": "xiao3 shi2 cheng2",
         "en": "Little Rock",
         "zh": "利特爾洛克 / 小石城"
@@ -1674,7 +1674,7 @@
     {
         "trad": "巴吞魯日",
         "simp": "巴吞鲁日",
-        "jyutping": "baa1 tan1 lou1 jat6",
+        "jyutping": "baa1 tan1 lou5 jat6",
         "pinyin": "ba1 tun1 lu3 ri4",
         "en": "Baton Rouge",
         "zh": "巴吞魯日 / 巴吞鲁日"
@@ -1690,7 +1690,7 @@
     {
         "trad": "伯明翰",
         "simp": "伯明翰",
-        "jyutping": "baak3 ming4 hoi3",
+        "jyutping": "baak3 ming4 hon6",
         "pinyin": "bo2 ming2 han4",
         "en": "Birmingham (Alabama)",
         "zh": "伯明翰 / 伯明翰"
@@ -1706,7 +1706,7 @@
     {
         "trad": "查爾斯頓",
         "simp": "查尔斯顿",
-        "jyutping": "caa4 ji5 si1 deon1",
+        "jyutping": "caa4 ji5 si1 deon6",
         "pinyin": "cha2 er3 si1 dun1",
         "en": "Charleston",
         "zh": "查爾斯頓 / 查尔斯顿"
@@ -1722,7 +1722,7 @@
     {
         "trad": "夏洛特",
         "simp": "夏洛特",
-        "jyutping": "haa6 lok6 dak1",
+        "jyutping": "haa6 lok3 dak6",
         "pinyin": "xia4 luo4 te4",
         "en": "Charlotte",
         "zh": "夏洛特 / 夏洛特"
@@ -1738,7 +1738,7 @@
     {
         "trad": "諾福克",
         "simp": "诺福克",
-        "jyutping": "lok6 fuk1 hak1",
+        "jyutping": "nok6 fuk1 hak1",
         "pinyin": "nuo4 fu2 ke4",
         "en": "Norfolk",
         "zh": "諾福克 / 诺福克"
@@ -1754,7 +1754,7 @@
     {
         "trad": "哈里斯堡",
         "simp": "哈里斯堡",
-        "jyutping": "haa1 lei6 si1 bou2",
+        "jyutping": "haa1 lei5 si1 bou2",
         "pinyin": "ha1 li4 si1 bao3",
         "en": "Harrisburg",
         "zh": "哈里斯堡 / 哈里斯堡"
@@ -1770,7 +1770,7 @@
     {
         "trad": "羅徹斯特",
         "simp": "罗彻斯特",
-        "jyutping": "lo4 cit3 si1 dak1",
+        "jyutping": "lo4 cit3 si1 dak6",
         "pinyin": "luo2 che4 si1 te4",
         "en": "Rochester",
         "zh": "羅徹斯特 / 罗彻斯特"
@@ -1794,7 +1794,7 @@
     {
         "trad": "哈特福德",
         "simp": "哈特福德",
-        "jyutping": "haa1 dak1 fuk1 dak1",
+        "jyutping": "haa1 dak6 fuk1 dak1",
         "pinyin": "ha1 te4 fu2 de2",
         "en": "Hartford",
         "zh": "哈特福德 / 哈特福德"
@@ -1810,7 +1810,7 @@
     {
         "trad": "普羅維登斯",
         "simp": "普罗维登斯",
-        "jyutping": "pou3 lo4 wai4 dang1 si1",
+        "jyutping": "pou2 lo4 wai4 dang1 si1",
         "pinyin": "pu3 luo2 wei2 deng1 si1",
         "en": "Providence",
         "zh": "普羅維登斯 / 普罗维登斯"
@@ -1818,7 +1818,7 @@
     {
         "trad": "曼徹斯特",
         "simp": "曼彻斯特",
-        "jyutping": "maan6 cit3 si1 dak1",
+        "jyutping": "maan6 cit3 si1 dak6",
         "pinyin": "man4 che4 si1 te4",
         "en": "Manchester (NH)",
         "zh": "曼徹斯特 / 曼彻斯特"
@@ -1826,7 +1826,7 @@
     {
         "trad": "伯靈頓",
         "simp": "伯灵顿",
-        "jyutping": "baak3 ling4 deon1",
+        "jyutping": "baak3 ling4 deon6",
         "pinyin": "bo2 ling2 dun1",
         "en": "Burlington",
         "zh": "伯靈頓 / 伯灵顿"
@@ -1834,7 +1834,7 @@
     {
         "trad": "波特蘭",
         "simp": "波特兰",
-        "jyutping": "bo1 dak1 laan4",
+        "jyutping": "bo1 dak6 laan4",
         "pinyin": "bo1 te4 lan2",
         "en": "Portland (Maine)",
         "zh": "波特蘭 / 波特兰"

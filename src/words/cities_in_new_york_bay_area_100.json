@@ -26,7 +26,7 @@
     {
         "trad": "派特森",
         "simp": "派特森",
-        "jyutping": "paai3 dak1 sam1",
+        "jyutping": "paai3 dak6 sam1",
         "pinyin": "pai4 te4 sen1",
         "en": "Paterson, New Jersey",
         "zh": "新澤西州派特森"
@@ -74,7 +74,7 @@
     {
         "trad": "諾沃克",
         "simp": "诺沃克",
-        "jyutping": "nok6 ak1 hak1",
+        "jyutping": "nok6 juk1 hak1",
         "pinyin": "nuo4 wo4 ke4",
         "en": "Norwalk, Connecticut",
         "zh": "康涅狄格州諾沃克"
@@ -106,7 +106,7 @@
     {
         "trad": "新羅謝爾",
         "simp": "新罗谢尔",
-        "jyutping": "san1 lo4 ze6 ji3",
+        "jyutping": "san1 lo4 ze6 ji5",
         "pinyin": "xin1 luo2 xie4 er3",
         "en": "New Rochelle, New York",
         "zh": "紐約州新羅謝爾"
@@ -122,7 +122,7 @@
     {
         "trad": "亨廷頓",
         "simp": "亨廷顿",
-        "jyutping": "hang1 ting4 deon1",
+        "jyutping": "hang1 ting4 deon6",
         "pinyin": "heng1 ting2 dun2",
         "en": "Huntington, New York",
         "zh": "紐約州亨廷頓"
@@ -138,7 +138,7 @@
     {
         "trad": "艾斯利普",
         "simp": "艾斯利普",
-        "jyutping": "ngaai6 si1 lei6 pou1",
+        "jyutping": "ngaai6 si1 lei6 pou2",
         "pinyin": "ai4 si1 li4 pu3",
         "en": "Islip, New York",
         "zh": "紐約州艾斯利普"
@@ -146,7 +146,7 @@
     {
         "trad": "布魯克海文",
         "simp": "布鲁克海文",
-        "jyutping": "bou3 lou1 hak1 hoi2 man4",
+        "jyutping": "bou3 lou5 hak1 hoi2 man4",
         "pinyin": "bu4 luo2 ke4 hai3 wen2",
         "en": "Brookhaven, New York",
         "zh": "紐約州布魯克海文"
@@ -194,7 +194,7 @@
     {
         "trad": "北赫姆斯特德",
         "simp": "北赫姆斯特德",
-        "jyutping": "bak1 hak1 mou5 si1 dak1 dak1",
+        "jyutping": "bak1 haak1 mou5 si1 dak6 dak1",
         "pinyin": "bei3 he4 mu3 si1 te4 de2",
         "en": "North Hempstead, New York",
         "zh": "紐約州北赫姆斯特德"
@@ -226,7 +226,7 @@
     {
         "trad": "霍博肯",
         "simp": "霍博肯",
-        "jyutping": "fok3 bok3 hak1",
+        "jyutping": "fok3 bok3 hang2",
         "pinyin": "huo4 bo2 ke4",
         "en": "Hoboken, New Jersey",
         "zh": "新澤西州霍博肯"
@@ -266,7 +266,7 @@
     {
         "trad": "威霍肯",
         "simp": "威霍肯",
-        "jyutping": "wai1 fok3 hak1",
+        "jyutping": "wai1 fok3 hang2",
         "pinyin": "wei1 huo4 ke4",
         "en": "Weehawken, New Jersey",
         "zh": "新澤西州威霍肯"
@@ -274,7 +274,7 @@
     {
         "trad": "塞考克斯",
         "simp": "塞考克斯",
-        "jyutping": "coi1 haau2 hak1 si1",
+        "jyutping": "sak1 haau2 hak1 si1",
         "pinyin": "sai1 kao3 ke4 si1",
         "en": "Secaucus, New Jersey",
         "zh": "新澤西州塞考克斯"
@@ -298,7 +298,7 @@
     {
         "trad": "哈肯薩克",
         "simp": "哈肯萨克",
-        "jyutping": "haa1 hak1 saat3 hak1",
+        "jyutping": "haa1 hang2 saat3 hak1",
         "pinyin": "ha1 ke4 sa4 ke4",
         "en": "Hackensack, New Jersey",
         "zh": "新澤西州哈肯薩克"
@@ -314,7 +314,7 @@
     {
         "trad": "英格爾伍德",
         "simp": "英格尔伍德",
-        "jyutping": "jing1 gaak3 ji3 ng5 dak1",
+        "jyutping": "jing1 gaak3 ji5 ng5 dak1",
         "pinyin": "ying1 ge2 er3 wu3 de2",
         "en": "Englewood, New Jersey",
         "zh": "新澤西州英格爾伍德"
@@ -338,7 +338,7 @@
     {
         "trad": "加菲爾德",
         "simp": "加菲尔德",
-        "jyutping": "gaa1 fai3 ji3 dak1",
+        "jyutping": "gaa1 fei2 ji5 dak1",
         "pinyin": "jia1 fei4 er3 de2",
         "en": "Garfield, New Jersey",
         "zh": "新澤西州加菲爾德"
@@ -346,7 +346,7 @@
     {
         "trad": "費爾勞恩",
         "simp": "费尔劳恩",
-        "jyutping": "fai3 ji3 lou4 jan1",
+        "jyutping": "fai3 ji5 lou4 jan1",
         "pinyin": "fei4 er3 lao2 en1",
         "en": "Fair Lawn, New Jersey",
         "zh": "新澤西州費爾勞恩"
@@ -354,7 +354,7 @@
     {
         "trad": "博根菲爾德",
         "simp": "博根菲尔德",
-        "jyutping": "bok3 gan1 fai3 ji3 dak1",
+        "jyutping": "bok3 gan1 fei2 ji5 dak1",
         "pinyin": "bo2 gen1 fei4 er3 de2",
         "en": "Bergenfield, New Jersey",
         "zh": "新澤西州博根菲爾德"
@@ -362,7 +362,7 @@
     {
         "trad": "克利夫頓",
         "simp": "克利夫顿",
-        "jyutping": "hak1 lei6 fu1 deon1",
+        "jyutping": "hak1 lei6 fu1 deon6",
         "pinyin": "ke4 li4 fu1 dun2",
         "en": "Clifton, New Jersey",
         "zh": "新澤西州克利夫頓"
@@ -370,7 +370,7 @@
     {
         "trad": "韋恩",
         "simp": "韦恩",
-        "jyutping": "wai1 jan1",
+        "jyutping": "wai5 jan1",
         "pinyin": "wei2 en1",
         "en": "Wayne, New Jersey",
         "zh": "新澤西州韋恩"
@@ -378,7 +378,7 @@
     {
         "trad": "帕塞伊克",
         "simp": "帕塞伊克",
-        "jyutping": "paak3 coi1 ji1 hak1",
+        "jyutping": "paak3 sak1 ji1 hak1",
         "pinyin": "pa4 sai1 yi1 ke4",
         "en": "Passaic, New Jersey",
         "zh": "新澤西州帕塞伊克"
@@ -418,7 +418,7 @@
     {
         "trad": "蒙特克萊爾",
         "simp": "蒙特克莱尔",
-        "jyutping": "mung4 dak1 hak1 loi4 ji3",
+        "jyutping": "mung4 dak6 hak1 loi4 ji5",
         "pinyin": "meng2 te4 ke4 lai2 er3",
         "en": "Montclair, New Jersey",
         "zh": "新澤西州蒙特克萊爾"
@@ -426,7 +426,7 @@
     {
         "trad": "布魯姆菲爾德",
         "simp": "布鲁姆菲尔德",
-        "jyutping": "bou3 lou1 mou5 fai3 ji3 dak1",
+        "jyutping": "bou3 lou5 mou5 fei2 ji5 dak1",
         "pinyin": "bu4 luo2 mu3 fei4 er3 de2",
         "en": "Bloomfield, New Jersey",
         "zh": "新澤西州布魯姆菲爾德"
@@ -434,7 +434,7 @@
     {
         "trad": "貝爾維爾",
         "simp": "贝尔维尔",
-        "jyutping": "bui3 ji3 wai4 ji3",
+        "jyutping": "bui3 ji5 wai4 ji5",
         "pinyin": "bei3 er3 wei2 er3",
         "en": "Belleville, New Jersey",
         "zh": "新澤西州貝爾維爾"
@@ -442,7 +442,7 @@
     {
         "trad": "歐文頓",
         "simp": "欧文顿",
-        "jyutping": "au1 man4 deon1",
+        "jyutping": "au1 man4 deon6",
         "pinyin": "ou1 wen2 dun2",
         "en": "Irvington, New Jersey",
         "zh": "新澤西州歐文頓"
@@ -474,7 +474,7 @@
     {
         "trad": "韋斯特菲爾德",
         "simp": "韦斯特菲尔德",
-        "jyutping": "wai1 si1 dak1 fai3 ji3 dak1",
+        "jyutping": "wai5 si1 dak6 fei2 ji5 dak1",
         "pinyin": "wei2 si1 te4 fei4 er3 de2",
         "en": "Westfield, New Jersey",
         "zh": "新澤西州韋斯特菲爾德"
@@ -482,7 +482,7 @@
     {
         "trad": "蘇密特",
         "simp": "苏密特",
-        "jyutping": "sou1 mat6 dak1",
+        "jyutping": "sou1 mat6 dak6",
         "pinyin": "su1 mi4 te4",
         "en": "Summit, New Jersey",
         "zh": "新澤西州蘇密特"
@@ -490,7 +490,7 @@
     {
         "trad": "莫里斯敦",
         "simp": "莫里斯敦",
-        "jyutping": "mok6 lei6 si1 deon1",
+        "jyutping": "mok6 lei5 si1 deon1",
         "pinyin": "mo4 li3 si1 dun1",
         "en": "Morristown, New Jersey",
         "zh": "新澤西州莫里斯敦"
@@ -522,7 +522,7 @@
     {
         "trad": "皮斯卡特維",
         "simp": "皮斯卡特维",
-        "jyutping": "pei4 si1 kaa1 dak1 wai1",
+        "jyutping": "pei4 si1 kaa1 dak6 wai4",
         "pinyin": "pi2 si1 ka3 te4 wei1",
         "en": "Piscataway, New Jersey",
         "zh": "新澤西州皮斯卡特維"
@@ -530,7 +530,7 @@
     {
         "trad": "普林斯頓",
         "simp": "普林斯顿",
-        "jyutping": "pou2 lam4 si1 deon1",
+        "jyutping": "pou2 lam4 si1 deon6",
         "pinyin": "pu3 lin2 si1 dun2",
         "en": "Princeton, New Jersey",
         "zh": "新澤西州普林斯頓"
@@ -538,7 +538,7 @@
     {
         "trad": "特倫頓",
         "simp": "特伦顿",
-        "jyutping": "dak1 leon4 deon1",
+        "jyutping": "dak6 leon4 deon6",
         "pinyin": "te4 lun2 dun2",
         "en": "Trenton, New Jersey",
         "zh": "新澤西州特倫頓"
@@ -554,7 +554,7 @@
     {
         "trad": "費爾菲爾德",
         "simp": "费尔菲尔德",
-        "jyutping": "fai3 ji3 fai3 ji3 dak1",
+        "jyutping": "fai3 ji5 fei2 ji5 dak1",
         "pinyin": "fei4 er3 fei4 er3 de2",
         "en": "Fairfield, Connecticut",
         "zh": "康涅狄格州費爾菲爾德"
@@ -562,7 +562,7 @@
     {
         "trad": "斯特拉特福德",
         "simp": "斯特拉特福德",
-        "jyutping": "si1 dak1 laai1 dak1 fuk1 dak1",
+        "jyutping": "si1 dak6 laai1 dak6 fuk1 dak1",
         "pinyin": "si1 te4 la1 te4 fu2 de2",
         "en": "Stratford, Connecticut",
         "zh": "康涅狄格州斯特拉特福德"
@@ -570,7 +570,7 @@
     {
         "trad": "米爾福德",
         "simp": "米尔福德",
-        "jyutping": "mai5 ji3 fuk1 dak1",
+        "jyutping": "mai5 ji5 fuk1 dak1",
         "pinyin": "mi3 er3 fu2 de2",
         "en": "Milford, Connecticut",
         "zh": "康涅狄格州米爾福德"
@@ -602,7 +602,7 @@
     {
         "trad": "華盛頓谷",
         "simp": "华盛顿谷",
-        "jyutping": "waa4 sing6 deon1 guk1",
+        "jyutping": "waa4 sing6 deon6 guk1",
         "pinyin": "hua2 sheng4 dun1 gu3",
         "en": "Washington Valley, New Jersey",
         "zh": "新澤西州華盛頓谷"
@@ -610,7 +610,7 @@
     {
         "trad": "沃特伯里",
         "simp": "沃特伯里",
-        "jyutping": "ak1 dak1 baak3 lei5",
+        "jyutping": "juk1 dak6 baak3 lei5",
         "pinyin": "wo4 te4 bo2 li3",
         "en": "Waterbury, Connecticut",
         "zh": "康涅狄格州沃特伯里"
@@ -618,7 +618,7 @@
     {
         "trad": "梅里登",
         "simp": "梅里登",
-        "jyutping": "mui4 lei6 dang1",
+        "jyutping": "mui4 lei5 dang1",
         "pinyin": "mei2 li4 deng1",
         "en": "Meriden, Connecticut",
         "zh": "康涅狄格州梅里登"
@@ -626,7 +626,7 @@
     {
         "trad": "布里斯托爾",
         "simp": "布里斯托尔",
-        "jyutping": "bou3 lei6 si1 tok3 ji3",
+        "jyutping": "bou3 lei5 si1 tok3 ji5",
         "pinyin": "bu4 li3 si1 tuo2 er3",
         "en": "Bristol, Connecticut",
         "zh": "康涅狄格州布里斯托爾"
@@ -642,7 +642,7 @@
     {
         "trad": "米德爾敦",
         "simp": "米德尔敦",
-        "jyutping": "mai5 dak1 ji3 deon1",
+        "jyutping": "mai5 dak1 ji5 deon1",
         "pinyin": "mi3 de2 er3 dun1",
         "en": "Middletown, Connecticut",
         "zh": "康涅狄格州米德爾敦"
@@ -650,7 +650,7 @@
     {
         "trad": "斯卡斯代爾",
         "simp": "斯卡斯代尔",
-        "jyutping": "si1 kaa1 si1 doi6 ji3",
+        "jyutping": "si1 kaa1 si1 doi6 ji5",
         "pinyin": "si1 ka1 si1 dai4 er3",
         "en": "Scarsdale, New York",
         "zh": "紐約州斯卡斯代爾"
@@ -682,7 +682,7 @@
     {
         "trad": "皮克斯基爾",
         "simp": "皮克斯基尔",
-        "jyutping": "pei4 hak1 si1 kei1 ji3",
+        "jyutping": "pei4 hak1 si1 gei1 ji5",
         "pinyin": "pi2 ke4 si1 ji1 er3",
         "en": "Peekskill, New York",
         "zh": "紐約州皮克斯基爾"
@@ -698,7 +698,7 @@
     {
         "trad": "金斯頓",
         "simp": "金斯顿",
-        "jyutping": "gam1 si1 deon1",
+        "jyutping": "gam1 si1 deon6",
         "pinyin": "jin1 si1 dun2",
         "en": "Kingston, New York",
         "zh": "紐約州金斯頓"
@@ -738,7 +738,7 @@
     {
         "trad": "黑弗斯特羅",
         "simp": "黑弗斯特罗",
-        "jyutping": "hak1 fu1 si1 dak1 lo4",
+        "jyutping": "hak1 fat1 si1 dak6 lo4",
         "pinyin": "hei1 fu1 si1 te4 luo2",
         "en": "Haverstraw, New York",
         "zh": "紐約州黑弗斯特羅"
@@ -794,7 +794,7 @@
     {
         "trad": "克羅頓哈德遜",
         "simp": "克罗顿哈德逊",
-        "jyutping": "hak1 lo4 deon1 haa1 dak1 seon3",
+        "jyutping": "hak1 lo4 deon6 haa1 dak1 seon3",
         "pinyin": "ke4 luo2 dun2 ha1 de2 xun4",
         "en": "Croton-on-Hudson, New York",
         "zh": "紐約州克羅頓哈德遜"

@@ -2,7 +2,7 @@
     {
         "trad": "洗澡",
         "simp": "洗澡",
-        "jyutping": "sai2 zou2",
+        "jyutping": "sai2 cou3",
         "pinyin": "xi3 zao3",
         "en": "Take a shower",
         "zh": "洗澡 / 洗澡"
@@ -10,7 +10,7 @@
     {
         "trad": "刷牙",
         "simp": "刷牙",
-        "jyutping": "caat2 ngaa4",
+        "jyutping": "caat3 ngaa4",
         "pinyin": "shua1 ya2",
         "en": "Brush teeth",
         "zh": "刷牙 / 刷牙"
@@ -26,7 +26,7 @@
     {
         "trad": "上班",
         "simp": "上班",
-        "jyutping": "soeng6 baan1",
+        "jyutping": "soeng5 baan1",
         "pinyin": "shang4 ban1",
         "en": "Go to work",
         "zh": "上班 / 上班"
@@ -106,7 +106,7 @@
     {
         "trad": "去咖啡廳",
         "simp": "去咖啡厅",
-        "jyutping": "heoi3 gaa3 fei1 teng1",
+        "jyutping": "heoi3 gaa3 fe1 teng1",
         "pinyin": "qu4 ka1 fei1 ting1",
         "en": "Go to the cafe",
         "zh": "去咖啡廳 / 去咖啡厅"
@@ -138,7 +138,7 @@
     {
         "trad": "在餐廳吃飯",
         "simp": "在餐厅吃饭",
-        "jyutping": "zoi6 caan1 teng1 hek3 faan6",
+        "jyutping": "zoi6 caan1 teng1 jaak3 faan6",
         "pinyin": "zai4 can1 ting1 chi1 fan4",
         "en": "Eat at a restaurant",
         "zh": "在餐廳吃飯 / 在餐厅吃饭"
@@ -154,7 +154,7 @@
     {
         "trad": "辦公室上班",
         "simp": "办公室上班",
-        "jyutping": "baan6 gung1 sat1 soeng6 baan1",
+        "jyutping": "baan6 gung1 sat1 soeng5 baan1",
         "pinyin": "ban4 gong1 shi4 shang4 ban1",
         "en": "Work in the office",
         "zh": "辦公室上班 / 办公室上班"
@@ -162,7 +162,7 @@
     {
         "trad": "準備洗個熱水澡",
         "simp": "准备洗个热水澡",
-        "jyutping": "zeon2 bei6 sai2 go3 jit6 seoi2 zou2",
+        "jyutping": "zeon2 bei6 sai2 go3 jit6 seoi2 cou3",
         "pinyin": "zhun3 bei4 xi3 ge4 re4 shui3 zao3",
         "en": "Prepare to take a hot shower",
         "zh": "準備洗個熱水澡 / 准备洗个热水澡"
@@ -170,7 +170,7 @@
     {
         "trad": "早晨起來先刷牙",
         "simp": "早晨起来先刷牙",
-        "jyutping": "zou2 san4 hei2 loi4 sin1 caat2 ngaa4",
+        "jyutping": "zou2 san4 hei2 loi4 sin1 caat3 ngaa4",
         "pinyin": "zao3 chen2 qi3 lai2 xian1 shua1 ya2",
         "en": "Brush teeth first thing in the morning",
         "zh": "早晨起來先刷牙 / 早晨起来先刷牙"
@@ -178,7 +178,7 @@
     {
         "trad": "客廳沙發要擦乾淨",
         "simp": "客厅沙发要擦干净",
-        "jyutping": "haak3 ting1 saa1 faat3 jiu3 caat3 gon2 zing6",
+        "jyutping": "haak3 teng1 saa1 faat3 jiu3 caat3 gon1 zeng6",
         "pinyin": "ke4 ting1 sha1 fa1 yao4 ca1 gan1 jing4",
         "en": "The living room sofa needs wiping clean",
         "zh": "客廳沙發要擦乾淨 / 客厅沙发要擦干净"
@@ -202,7 +202,7 @@
     {
         "trad": "今晚我來親自做飯",
         "simp": "今晚我来亲自做饭",
-        "jyutping": "gam1 maan5 ngo5 loi4 can1 zi2 zou6 faan6",
+        "jyutping": "gam1 maan5 ngo5 loi4 can1 zi6 zou6 faan6",
         "pinyin": "jin1 wan3 wo3 lai2 qin1 zi4 zuo4 fan4",
         "en": "I will cook dinner myself tonight",
         "zh": "今晚我來親自做飯 / 今晚我来亲自做饭"
@@ -210,7 +210,7 @@
     {
         "trad": "週末去跳搖擺舞吧",
         "simp": "周末去跳摇摆舞吧",
-        "jyutping": "zau1 mut6 heoi3 tiu3 jiu4 baa2 mou5 baa1",
+        "jyutping": "zau1 mut6 heoi3 tiu3 jiu4 baai2 mou5 baa6",
         "pinyin": "zhou1 mo4 qu4 tiao4 yao2 bai3 wu3 ba",
         "en": "Let's go swing dancing this weekend",
         "zh": "週末去跳搖擺舞吧 / 周末去跳摇摆舞吧"
@@ -226,7 +226,7 @@
     {
         "trad": "同事正在開工作會",
         "simp": "同事正在开工作会",
-        "jyutping": "tung4 si6 zing1 zoi6 hoi1 gung1 zok3 wui2",
+        "jyutping": "tung4 si6 zing3 zoi6 hoi1 gung1 zok3 wui5",
         "pinyin": "tong2 shi4 zheng4 zai4 kai1 gong1 zuo4 hui4",
         "en": "Colleagues are holding a work meeting",
         "zh": "同事正在開工作會 / 同事正在开工作会"
@@ -242,7 +242,7 @@
     {
         "trad": "晚上我們去餐廳吃飯",
         "simp": "晚上我们去餐厅吃饭",
-        "jyutping": "maan5 soeng5 ngo5 mun4 heoi3 caan1 teng1 hek3 faan6",
+        "jyutping": "maan5 soeng6 ngo5 mun4 heoi3 caan1 teng1 jaak3 faan6",
         "pinyin": "wan3 shang4 wo3 men qu4 can1 ting1 chi1 fan4",
         "en": "We will go eat at a restaurant tonight",
         "zh": "晚上我們去餐廳吃飯 / 晚上我们去餐厅吃饭"
@@ -250,7 +250,7 @@
     {
         "trad": "開車路上要注意安全",
         "simp": "开车路上要注意安全",
-        "jyutping": "hoi1 ce1 lou6 soeng5 jiu3 zyu3 ji3 on1 cyun4",
+        "jyutping": "hoi1 ce1 lou6 soeng6 jiu3 zyu3 ji3 on1 cyun4",
         "pinyin": "kai1 che1 lu4 shang4 yao4 zhu3 yi4 an1 quan2",
         "en": "Pay attention to safety while driving on the road",
         "zh": "開車路上要注意安全 / 开车路上要注意安全"
@@ -258,7 +258,7 @@
     {
         "trad": "體育課上踢足球鍛煉",
         "simp": "体育课上踢足球锻炼",
-        "jyutping": "tai2 juk6 fo3 soeng5 tek3 zuk1 kau4 dyun3 lin6",
+        "jyutping": "tai2 juk6 fo3 soeng6 tek3 zuk1 kau4 dyun3 lin6",
         "pinyin": "ti3 yu4 ke4 shang4 ti1 zu2 qiu2 duan4 lian4",
         "en": "Play soccer and exercise during PE class",
         "zh": "體育課上踢足球鍛煉 / 体育课上踢足球锻炼"
@@ -266,7 +266,7 @@
     {
         "trad": "科學實驗室裡做研究",
         "simp": "科学实验室里做研究",
-        "jyutping": "fo3 hok6 sat6 jim6 sat1 lei5 zou6 jin4 gau3",
+        "jyutping": "fo1 hok6 sat6 jim6 sat1 leoi5 zou6 jin4 gau3",
         "pinyin": "ke1 xue2 shi2 yan4 shi4 li3 zuo4 yan2 jiu1",
         "en": "Do research in the science laboratory",
         "zh": "科學實驗室裡做研究 / 科学实验室里做研究"
@@ -282,7 +282,7 @@
     {
         "trad": "去街角咖啡廳喝拿鐵",
         "simp": "去街角咖啡厅喝拿铁",
-        "jyutping": "heoi3 gaai1 gok3 gaa3 fei1 teng1 hot3 naa4 tit3",
+        "jyutping": "heoi3 gaai1 gok3 gaa3 fe1 teng1 hot3 naa4 tit3",
         "pinyin": "qu4 jie1 jiao3 ka1 fei1 ting1 he1 na2 tie3",
         "en": "Go to the corner cafe to drink a latte",
         "zh": "去街角咖啡廳喝拿鐵 / 去街角咖啡厅喝拿铁"
@@ -290,7 +290,7 @@
     {
         "trad": "整理房间把沙发擦干净",
         "simp": "整理房间把沙发擦干净",
-        "jyutping": "zing2 lei5 fong4 gaan1 baa2 saa1 faat3 caat3 gon2 zing6",
+        "jyutping": "zing2 lei5 fong4 gaan1 baa2 saa1 faat3 caat3 gon1 zeng6",
         "pinyin": "zheng3 li3 fang2 jian1 ba3 sha1 fa1 ca1 gan1 jing4",
         "en": "Clean the room and wipe the sofa clean",
         "zh": "整理房間把沙發擦乾淨 / 整理房间把沙发擦干净"
@@ -298,7 +298,7 @@
     {
         "trad": "每天早晨起來都要刷牙",
         "simp": "每天早晨起来都要刷牙",
-        "jyutping": "mui5 tin1 zou2 san4 hei2 loi4 dou1 jiu3 caat2 ngaa4",
+        "jyutping": "mui5 tin1 zou2 san4 hei2 loi4 dou1 jiu3 caat3 ngaa4",
         "pinyin": "mei3 tian1 zao3 chen2 qi3 lai2 dou1 yao4 shua1 ya2",
         "en": "Must brush teeth every morning when waking up",
         "zh": "每天早晨起來都要刷牙 / 每天早晨起来都要刷牙"
@@ -306,7 +306,7 @@
     {
         "trad": "吃完午飯後洗個熱水澡",
         "simp": "吃完午饭后洗个热水澡",
-        "jyutping": "hot3 jyun4 ng5 faan6 hau6 sai2 go3 jit6 seoi2 zou2",
+        "jyutping": "hek3 jyun4 ng5 faan6 hau6 sai2 go3 jit6 seoi2 cou3",
         "pinyin": "chi1 wan2 wu3 fan4 hou4 xi3 ge4 re4 shui3 zao3",
         "en": "Take a hot shower after finishing lunch",
         "zh": "吃完午飯後洗個熱水澡 / 吃完午饭后洗个热水澡"
@@ -322,7 +322,7 @@
     {
         "trad": "週末把積攢的衣服洗了",
         "simp": "周末把积攒的衣服洗了",
-        "jyutping": "zau1 mut6 baa2 zik1 zaan2 dik1 ji1 fuk6 sai2 liu5",
+        "jyutping": "zau1 mut6 baa2 zik1 cyun4 dik1 ji1 fuk6 sai2 liu5",
         "pinyin": "zhou1 mo4 ba3 ji1 zan3 de5 yi1 fu2 xi3 le",
         "en": "Wash the accumulated laundry on the weekend",
         "zh": "週末把積攢的衣服洗了 / 周末把积攒的衣服洗了"
@@ -330,7 +330,7 @@
     {
         "trad": "今天輪到我在家裡做飯",
         "simp": "今天轮到我在家里做饭",
-        "jyutping": "gam1 tin1 leon4 dou3 ngo5 zoi6 gaa1 lei5 zou6 faan6",
+        "jyutping": "gam1 tin1 leon4 dou3 ngo5 zoi6 gaa1 leoi5 zou6 faan6",
         "pinyin": "jin1 tian1 lun2 dao4 wo3 zai4 jia1 li3 zuo4 fan4",
         "en": "It's my turn to cook at home today",
         "zh": "今天輪到我在家裡做飯 / 今天轮到我在家里做饭"
@@ -354,7 +354,7 @@
     {
         "trad": "上班途中遇到嚴重堵車",
         "simp": "上班途中遇到严重堵车",
-        "jyutping": "soeng6 baan1 tou4 zung1 jyu6 dou3 jim4 zung6 dou2 ce1",
+        "jyutping": "soeng5 baan1 tou4 zung1 jyu6 dou3 jim4 zung6 dou2 ce1",
         "pinyin": "shang4 ban1 tu2 zhong1 yu4 dao4 yan2 zhong4 du2 che1",
         "en": "Encounter a serious traffic jam on the way to work",
         "zh": "上班途中遇到嚴重堵車 / 上班途中遇到严重堵车"
@@ -370,7 +370,7 @@
     {
         "trad": "約朋友去市中心餐廳吃飯",
         "simp": "约朋友去市中心餐厅吃饭",
-        "jyutping": "joek3 pang4 jau5 heoi3 si5 zung1 sam1 caan1 teng1 hek3 faan6",
+        "jyutping": "joek3 pang4 jau5 heoi3 si5 zung1 sam1 caan1 teng1 jaak3 faan6",
         "pinyin": "yue1 peng2 you5 qu4 shi4 zhong1 xin1 can1 ting1 chi1 fan4",
         "en": "Invite friends to eat at a downtown restaurant",
         "zh": "約朋友去市中心餐廳吃飯 / 约朋友去市中心餐厅吃饭"
@@ -378,7 +378,7 @@
     {
         "trad": "物理老師在黑板講科學定律",
         "simp": "物理老师在黑板讲科学定律",
-        "jyutping": "mat6 lei5 lou5 si1 zoi6 hak1 baan2 gong2 fo3 hok6 ding6 leot6",
+        "jyutping": "mat6 lei5 lou5 si1 zoi6 haak1 baan2 gong2 fo1 hok6 ding6 leot6",
         "pinyin": "wu4 li3 lao3 shi1 zai4 hei1 ban3 jiang3 ke1 xue2 ding4 lv4",
         "en": "The physics teacher explains scientific laws on the blackboard",
         "zh": "物理老師在黑板講科學定律 / 物理老师在黑板讲科学定律"
@@ -394,7 +394,7 @@
     {
         "trad": "週末和好友去咖啡廳聊天",
         "simp": "周末和好友去咖啡厅聊天",
-        "jyutping": "zau1 mut6 wo4 hou2 jau5 heoi3 gaa3 fei1 teng1 liu4 tin2",
+        "jyutping": "zau1 mut6 wo4 hou2 jau5 heoi3 gaa3 fe1 teng1 liu4 tin1",
         "pinyin": "zhou1 mo4 he2 hao3 you5 qu4 ka1 fei1 ting1 liao2 tian1",
         "en": "Go chat at a cafe with close friends on the weekend",
         "zh": "週末和好友去咖啡廳聊天 / 周末和好友去咖啡厅聊天"
@@ -402,7 +402,7 @@
     {
         "trad": "起床後記得先去刷牙洗臉",
         "simp": "起床后记得先去刷牙洗脸",
-        "jyutping": "hei2 cong4 hau6 gei3 dak1 sin1 heoi3 caat2 ngaa4 sai2 lim5",
+        "jyutping": "hei2 cong4 hau6 gei3 dak1 sin1 heoi3 caat3 ngaa4 sai2 lim5",
         "pinyin": "qi3 chuang2 hou4 ji4 de5 xian1 qu4 shua1 ya2 xi3 lian3",
         "en": "Remember to brush your teeth and wash your face after waking up",
         "zh": "起床後記得先去刷牙洗臉 / 起床后记得先去刷牙洗脸"
@@ -410,7 +410,7 @@
     {
         "trad": "客廳裡灰塵很多需要擦沙發",
         "simp": "客厅里灰尘很多需要擦沙发",
-        "jyutping": "haak3 ting1 leoi5 fui1 can4 han2 do1 seoi1 jiu3 caat3 saa1 faat3",
+        "jyutping": "haak3 teng1 leoi5 fui1 can4 han2 do1 seoi1 jiu3 caat3 saa1 faat3",
         "pinyin": "ke4 ting1 li3 hui1 chen2 hen3 duo1 xu1 yao4 ca1 sha1 fa1",
         "en": "There is a lot of dust in the living room, need to wipe the sofa",
         "zh": "客廳裡灰塵很多需要擦沙發 / 客厅里灰尘很多需要擦沙发"
@@ -418,7 +418,7 @@
     {
         "trad": "傍晚帶著淘氣的小狗去散步",
         "simp": "傍晚带着淘气的小狗去散步",
-        "jyutping": "pong6 maan5 daai3 zoek63 tou4 hei3 dik1 siu2 gau2 heoi3 saan3 bou6",
+        "jyutping": "pong4 maan5 daai3 zoek6 tou4 hei3 dik1 siu2 gau2 heoi3 saan3 bou6",
         "pinyin": "bang4 wan3 dai4 zhe5 tao2 qi4 de5 xiao3 gou3 qu4 san4 bu4",
         "en": "Take the naughty puppy for a walk in the evening",
         "zh": "傍晚帶著淘氣的小狗去散步 / 傍晚带着淘气的小狗去散步"
@@ -426,7 +426,7 @@
     {
         "trad": "把衣服放進全自動洗衣機裡",
         "simp": "把衣服放入全自动洗衣机里",
-        "jyutping": "baa2 ji1 fuk6 fong3 jap6 cyun4 zi6 dung6 sai2 ji1 gei1 leoi5",
+        "jyutping": "baa2 ji1 fuk6 fong3 zeon3 cyun4 zi6 dung6 sai2 ji1 gei1 leoi5",
         "pinyin": "ba3 yi1 fu2 fang4 ru4 quan2 zi4 dong4 xi3 yi1 ji1 li3",
         "en": "Put the clothes into the fully automatic washing machine",
         "zh": "把衣服放進全自動洗衣機裡 / 把衣服放入全自动洗衣机里"
@@ -442,7 +442,7 @@
     {
         "trad": "今晚舞蹈俱樂部有排練活動",
         "simp": "今晚舞蹈俱乐部有排练活动",
-        "jyutping": "gam1 maan5 mou5 dou6 keoi5 lok6 bou6 jau5 paai4 lin6 wut6 dung6",
+        "jyutping": "gam1 maan5 mou5 dou6 keoi1 lok6 bou6 jau5 paai4 lin6 wut6 dung6",
         "pinyin": "jin1 wan3 wu3 dao3 ju4 le bu4 you3 pai2 lian4 huo2 dong4",
         "en": "The dance club has a rehearsal event tonight",
         "zh": "今晚舞蹈俱樂部有排練活動 / 今晚舞蹈俱乐部有排练活动"
@@ -458,7 +458,7 @@
     {
         "trad": "早高峰開車上班非常堵塞",
         "simp": "早高峰开车上班非常堵塞",
-        "jyutping": "zou2 gou1 fung1 hoi1 ce1 soeng6 baan1 fei1 soeng4 dou2 sak1",
+        "jyutping": "zou2 gou1 fung1 hoi1 ce1 soeng5 baan1 fei1 soeng4 dou2 sak1",
         "pinyin": "zao3 gao1 feng1 kai1 che1 shang4 ban1 fei1 chang2 du3 se4",
         "en": "Driving to work during morning rush hour is very jammed",
         "zh": "早高峰開車上班非常堵塞 / 早高峰开车上班非常堵塞"
@@ -466,7 +466,7 @@
     {
         "trad": "感冒嚴重需要去醫院看病",
         "simp": "感冒严重需要去医院看病",
-        "jyutping": "gam2 mou6 jim6 zung6 seoi1 jiu3 heoi3 ji1 jyun2 hon3 beng6",
+        "jyutping": "gam2 mou6 jim4 zung6 seoi1 jiu3 heoi3 ji1 jyun2 hon3 beng6",
         "pinyin": "gan3 mao4 yan2 zhong4 xu1 yao4 qu4 yi1 yuan4 kan4 bing4",
         "en": "Severe cold requires going to the hospital to see a doctor",
         "zh": "感冒嚴重需要去醫院看病 / 感冒严重需要去医院看病"
@@ -474,7 +474,7 @@
     {
         "trad": "晚上和客戶去高級餐廳吃飯",
         "simp": "晚上和客户去高级餐厅吃饭",
-        "jyutping": "maan5 soeng5 wo4 haak3 wou6 heoi3 gou1 kap1 caan1 teng1 hek3 faan6",
+        "jyutping": "maan5 soeng6 wo4 haak3 wu6 heoi3 gou1 kap1 caan1 teng1 jaak3 faan6",
         "pinyin": "wan3 shang4 he2 ke4 hu4 qu4 gao1 ji2 can1 ting1 chi1 fan4",
         "en": "Go eat at a high-end restaurant with clients at night",
         "zh": "晚上和客戶去高級餐廳吃飯 / 晚上和客户去高级餐厅吃饭"
@@ -482,7 +482,7 @@
     {
         "trad": "物理實驗室裡正在測量數據",
         "simp": "物理实验室里正在测量数据",
-        "jyutping": "mat6 lei5 sat6 jim6 sat1 lei5 zing6 zoi6 cak3 loeng4 sou3 geoi3",
+        "jyutping": "mat6 lei5 sat6 jim6 sat1 leoi5 zing3 zoi6 caak1 loeng4 sou3 geoi3",
         "pinyin": "wu4 li3 shi2 yan4 shi4 li3 zheng4 zai4 ce4 liang2 shu4 ju4",
         "en": "Data is being measured in the physics lab",
         "zh": "物理實驗室裡正在測量數據 / 物理实验室里正在测量数据"
@@ -490,7 +490,7 @@
     {
         "trad": "這道高難度數學題終於解开了",
         "simp": "这道高难度数学题终于解开了",
-        "jyutping": "ze5 dou6 gou1 naan4 dou3 sou3 hok6 tai4 zung1 jyu1 gaai2 hoi1 liu5",
+        "jyutping": "ze5 dou6 gou1 naan4 dou6 sou3 hok6 tai4 zung1 jyu1 gaai2 hoi1 liu5",
         "pinyin": "zhe4 dao4 gao1 nan2 du4 shu4 xue2 ti2 zhong1 yu2 jie3 kai1 le",
         "en": "This high-difficulty math problem was finally solved",
         "zh": "這道高難度數學題終於解开了 / 这道高难度数学题终于解开了"
@@ -498,7 +498,7 @@
     {
         "trad": "下午去轉角咖啡廳喝拿鐵咖啡",
         "simp": "下午去转角咖啡厅喝拿铁咖啡",
-        "jyutping": "haa6 ng5 heoi3 zyun2 gok3 gaa3 fei1 teng1 hot3 naa4 tit3 gaa3 fei1",
+        "jyutping": "haa6 ng5 heoi3 zyun3 gok3 gaa3 fe1 teng1 hot3 naa4 tit3 gaa3 fe1",
         "pinyin": "xia4 wu3 qu4 zhuan3 jiao3 ka1 fei1 ting1 he1 na2 tie3 ka1 fei1",
         "en": "Go to the corner cafe to drink a latte in the afternoon",
         "zh": "下午去轉角咖啡廳喝拿鐵咖啡 / 下午去转角咖啡厅喝拿铁咖啡"
@@ -506,7 +506,7 @@
     {
         "trad": "早上起床後第一件事是去刷牙",
         "simp": "早上起床后第一件事是去刷牙",
-        "jyutping": "zou2 soeng6 hei2 cong4 hau6 dai6 jat1 gin6 si6 si6 heoi3 caat2 ngaa4",
+        "jyutping": "zou2 soeng6 hei2 cong4 hau6 dai6 jat1 gin6 si6 si6 heoi3 caat3 ngaa4",
         "pinyin": "zao3 shang4 qi3 chuang2 hou4 di4 yi1 jian4 shi4 shi4 qu4 shua1 ya2",
         "en": "The first thing after getting up in the morning is to brush teeth",
         "zh": "早上起床後第一件事是去刷牙 / 早上起床后第一件事是去刷牙"
@@ -514,7 +514,7 @@
     {
         "trad": "客廳沙發上面有灰塵要拿布擦",
         "simp": "客厅沙发上面有灰尘要拿布擦",
-        "jyutping": "haak3 ting1 saa1 faat3 soeng5 min6 jau5 fui1 can4 jiu3 naa4 bou3 caat3",
+        "jyutping": "haak3 teng1 saa1 faat3 soeng6 min6 jau5 fui1 can4 jiu3 naa4 bou3 caat3",
         "pinyin": "ke4 ting1 sha1 fa1 shang4 mian4 you3 hui1 chen2 yao4 na2 bu4 ca1",
         "en": "There is dust on the living room sofa that needs wiping with a cloth",
         "zh": "客廳沙發上面有灰塵要拿布擦 / 客厅沙发上面有灰尘要拿布擦"
@@ -530,7 +530,7 @@
     {
         "trad": "洗衣機正在運作幫忙洗衣服",
         "simp": "洗衣机正在运作帮忙洗衣服",
-        "jyutping": "sai2 ji1 gei1 zing6 zoi6 wan6 zok3 bong1 mong4 sai2 ji1 fuk6",
+        "jyutping": "sai2 ji1 gei1 zing3 zoi6 wan6 zok3 bong1 mong4 sai2 ji1 fuk6",
         "pinyin": "xi3 yi1 ji1 zheng4 zai4 yun4 zuo4 bang1 mang2 xi3 yi1 fu2",
         "en": "The washing machine is operating to help wash clothes",
         "zh": "洗衣機正在運作幫忙洗衣服 / 洗衣机正在运作帮忙洗衣服"
@@ -538,7 +538,7 @@
     {
         "trad": "下班回家後要親自做一頓晚飯",
         "simp": "下班回家后要亲自做一顿晚饭",
-        "jyutping": "haa6 baan1 wui4 gaa1 hau6 jiu3 can1 zi2 zou6 jat1 deon6 maan5 faan6",
+        "jyutping": "haa6 baan1 wui4 gaa1 hau6 jiu3 can1 zi6 zou6 jat1 deon6 maan5 faan6",
         "pinyin": "xia4 ban1 hui2 jia1 hou4 yao4 qin1 zi4 zuo4 yi2 dun4 wan3 fan4",
         "en": "Need to cook dinner personally after returning home from work",
         "zh": "下班回家後要親自做一頓晚飯 / 下班回家后要亲自做一顿晚饭"
@@ -546,7 +546,7 @@
     {
         "trad": "今晚去舞蹈俱樂部練習搖擺舞",
         "simp": "今晚去舞蹈俱乐部练习摇摆舞",
-        "jyutping": "gam1 maan5 heoi3 mou5 dou6 keoi5 lok6 bou6 lin6 zaap6 jiu4 baai2 mou5",
+        "jyutping": "gam1 maan5 heoi3 mou5 dou6 keoi1 lok6 bou6 lin6 zaap6 jiu4 baai2 mou5",
         "pinyin": "jin1 wan3 qu4 wu3 dao3 ju4 le bu4 lian4 xi2 yao2 bai3 wu3",
         "en": "Go to the dance club tonight to practice swing dancing",
         "zh": "今晚去舞蹈俱樂部練習搖擺舞 / 今晚去舞蹈俱乐部练习摇摆舞"
@@ -562,7 +562,7 @@
     {
         "trad": "開車上班遇到堵車需要耐心等待",
         "simp": "开车上班遇到堵车需要耐心等待",
-        "jyutping": "hoi1 ce1 soeng6 baan1 jyu6 dou3 dou2 ce1 seoi1 jiu3 noi6 sam1 dang2 doi6",
+        "jyutping": "hoi1 ce1 soeng5 baan1 jyu6 dou3 dou2 ce1 seoi1 jiu3 noi6 sam1 dang2 doi6",
         "pinyin": "kai1 che1 shang4 ban1 yu4 dao4 du3 che1 xu1 yao4 nai4 xin1 deng3 dai4",
         "en": "Driving to work and encountering a traffic jam requires patient waiting",
         "zh": "開車上班遇到堵車需要耐心等待 / 开车上班遇到堵车需要耐心等待"
@@ -578,7 +578,7 @@
     {
         "trad": "晚上和朋友去義大利餐廳吃飯",
         "simp": "晚上和朋友去意大利餐厅吃饭",
-        "jyutping": "maan5 soeng5 wo4 pang4 jau5 heoi3 ji3 daai6 lei6 caan1 teng1 hek3 faan6",
+        "jyutping": "maan5 soeng6 wo4 pang4 jau5 heoi3 ji6 daai6 lei6 caan1 teng1 jaak3 faan6",
         "pinyin": "wan3 shang4 he2 peng2 you5 qu4 yi4 da4 li4 can1 ting1 chi1 fan4",
         "en": "Go eat at an Italian restaurant with friends at night",
         "zh": "晚上和朋友去義大利餐廳吃飯 / 晚上和朋友去意大利餐厅吃饭"
@@ -586,7 +586,7 @@
     {
         "trad": "物理課上老師做了一個趣味實驗",
         "simp": "物理课上老师做了一个趣味实验",
-        "jyutping": "mat6 lei5 fo3 soeng5 lou5 si1 zou6 了 jat1 go3 ceoi3 mei6 sat6 jim6",
+        "jyutping": "mat6 lei5 fo3 soeng6 lou5 si1 zou6 liu5 jat1 go3 ceoi3 mei6 sat6 jim6",
         "pinyin": "wu4 li3 ke4 shang4 lao3 shi1 zuo4 le yi2 ge4 qu4 wei4 shi2 yan4",
         "en": "The physics teacher did a fun experiment during class",
         "zh": "物理課上老師做了一個趣味實驗 / 物理课上老师做了一个趣味实验"
@@ -594,7 +594,7 @@
     {
         "trad": "這道複雜數學題經過思考終於解开",
         "simp": "这道复杂数学题经过思考终于解开",
-        "jyutping": "ze5 dou6 fuk6 zaap6 sou3 hok6 tai4 ging1 gwo3 si1 haau2 zung1 jyu1 gaai2 hoi1",
+        "jyutping": "ze5 dou6 fuk1 zaap6 sou3 hok6 tai4 ging1 gwo3 si1 haau2 zung1 jyu1 gaai2 hoi1",
         "pinyin": "zhe4 dao4 fu2 za3 shu4 xue2 ti2 jing1 guo4 si1 kao3 zhong1 yu2 jie3 kai1",
         "en": "This complex math problem was finally solved after thinking",
         "zh": "這道複雜數學題經過思考終於解开 / 这道复杂数学题经过思考终于解开"
@@ -602,7 +602,7 @@
     {
         "trad": "午後在安靜咖啡廳享受香濃拿鐵",
         "simp": "午后在安静咖啡厅享受香浓拿铁",
-        "jyutping": "ng5 hau6 zoi6 on1 zing6 gaa3 fei1 teng1 hoeng2受 hoeng1 nung4 naa4 tit3",
+        "jyutping": "ng5 hau6 zoi6 on1 zing6 gaa3 fe1 teng1 hoeng2 sau6 hoeng1 nung4 naa4 tit3",
         "pinyin": "wu3 hou4 zai4 an1 jing4 ka1 fei1 ting1 xiang3 shou4 xiang1 nong2 na2 tie3",
         "en": "Enjoy a rich latte in a quiet cafe in the afternoon",
         "zh": "午後在安靜咖啡廳享受香濃拿鐵 / 午后在安静咖啡厅享受香浓拿铁"
@@ -610,7 +610,7 @@
     {
         "trad": "每天早晨起床後第一件事情就是刷牙",
         "simp": "每天早晨起床后第一件事情就是刷牙",
-        "jyutping": "mui5 tin1 zou2 san4 hei2 cong4 hau6 dai6 jat1 gin6 si6 cing6 zau6 si6 caat2 ngaa4",
+        "jyutping": "mui5 tin1 zou2 san4 hei2 cong4 hau6 dai6 jat1 gin6 si6 cing4 zau6 si6 caat3 ngaa4",
         "pinyin": "mei3 tian1 zao3 chen2 qi3 chuang2 hou4 di4 yi1 jian4 shi4 qing2 jiu4 shi4 shua1 ya2",
         "en": "The very first thing to do every morning after waking up is brush teeth",
         "zh": "每天早晨起床後第一件事情就是刷牙 / 每天早晨起床后第一件事情就是刷牙"
@@ -618,7 +618,7 @@
     {
         "trad": "客廳沙發上面積累了灰塵需要仔細擦",
         "simp": "客厅沙发上面积累了灰尘需要仔细擦",
-        "jyutping": "haak3 ting1 saa1 faat3 soeng5 min6 zik1 leoi5 liu5 fui1 can4 seoi1 jiu3 zai2 zai3 caat3",
+        "jyutping": "haak3 teng1 saa1 faat3 soeng6 min6 zik1 leoi6 liu5 fui1 can4 seoi1 jiu3 zi2 sai3 caat3",
         "pinyin": "ke4 ting1 sha1 fa1 shang4 mian4 ji1 lei4 le hui1 chen2 xu1 yao4 zi3 xi4 ca1",
         "en": "There is accumulated dust on the living room sofa that needs careful wiping",
         "zh": "客廳沙發上面積累了灰塵需要仔細擦 / 客厅沙发上面积累了灰尘需要仔细擦"
@@ -626,7 +626,7 @@
     {
         "trad": "吃完豐盛晚飯後帶可愛小狗去散步",
         "simp": "吃完丰盛晚饭后带可爱小狗去散步",
-        "jyutping": "hot3 jyun4 fung1 sing6 maan5 faan6 hau6 daai3 ho2 oi3 siu2 gau2 heoi3 saan3 bou6",
+        "jyutping": "hek3 jyun4 fung1 sing6 maan5 faan6 hau6 daai3 ho2 oi3 siu2 gau2 heoi3 saan3 bou6",
         "pinyin": "chi1 wan2 feng1 sheng4 wan3 fan4 hou4 dai4 ke3 ai4 xiao3 gou3 qu4 san4 bu4",
         "en": "Take the cute puppy for a walk after eating a hearty dinner",
         "zh": "吃完豐盛晚飯後帶可愛小狗去散步 / 吃完丰盛晚饭后带可爱小狗去散步"
@@ -642,7 +642,7 @@
     {
         "trad": "下班回到家裡開始動手做美味晚飯",
         "simp": "下班回到家里开始动手做美味晚饭",
-        "jyutping": "haa6 baan1 wui4 dou3 gaa1 lei5 hoi1 ci2 dung6 sau2 zou6 mei5 mei6 maan5 faan6",
+        "jyutping": "haa6 baan1 wui4 dou3 gaa1 leoi5 hoi1 ci2 dung6 sau2 zou6 mei5 mei6 maan5 faan6",
         "pinyin": "xia4 ban1 hui2 dao4 jia1 li3 kai1 shi3 dong4 shou3 zuo4 mei3 wei4 wan3 fan4",
         "en": "Return home from work and start making a delicious dinner",
         "zh": "下班回到家裡開始動手做美味晚飯 / 下班回到家里开始动手做美味晚饭"
@@ -650,7 +650,7 @@
     {
         "trad": "今晚去舞蹈俱樂部跟老師學搖擺舞",
         "simp": "今晚去舞蹈俱乐部跟老师学摇摆舞",
-        "jyutping": "gam1 maan5 heoi3 mou5 dou6 keoi5 lok6 bou6 gan1 lou5 si1 hok6 jiu4 baai2 mou5",
+        "jyutping": "gam1 maan5 heoi3 mou5 dou6 keoi1 lok6 bou6 gan1 lou5 si1 hok6 jiu4 baai2 mou5",
         "pinyin": "jin1 wan3 qu4 wu3 dao3 ju4 le bu4 gen1 lao3 shi1 xue2 yao2 bai3 wu3",
         "en": "Go to the dance club tonight to learn swing dancing from the teacher",
         "zh": "今晚去舞蹈俱樂部跟老師學搖擺舞 / 今晚去舞蹈俱乐部跟老师学摇摆舞"
@@ -666,7 +666,7 @@
     {
         "trad": "開車上班途中遇到嚴重堵車感到無奈",
         "simp": "开车上班途中遇到严重堵车感到无奈",
-        "jyutping": "hoi1 ce1 soeng6 baan1 tou4 zung1 jyu6 dou3 jim4 zung6 dou2 ce1 gam2 dou3 mou4 noi6",
+        "jyutping": "hoi1 ce1 soeng5 baan1 tou4 zung1 jyu6 dou3 jim4 zung6 dou2 ce1 gam2 dou3 mou4 noi6",
         "pinyin": "kai1 che1 shang4 ban1 tu2 zhong1 yu4 dao4 yan2 zhong4 du2 che1 gan3 dao4 wu2 nai4",
         "en": "Feel helpless when encountering a serious traffic jam on the way to work",
         "zh": "開車上班途中遇到嚴重堵車感到無奈 / 开车上班途中遇到严重堵车感到无奈"
@@ -682,7 +682,7 @@
     {
         "trad": "晚上和幾位好友去法國餐廳吃晚餐",
         "simp": "晚上和几位好友去法国餐厅吃晚餐",
-        "jyutping": "maan5 soeng5 wo4 gei2 wai6 hou2 jau5 heoi3 faat3 gwok3 caan1 teng1 hek3 maan5 faan6",
+        "jyutping": "maan5 soeng6 wo4 gei2 wai6 hou2 jau5 heoi3 faat3 gwok3 caan1 teng1 hek3 maan5 caan1",
         "pinyin": "wan3 shang4 he2 ji3 wei4 hao3 you5 qu4 fa3 guo2 can1 ting1 chi1 wan3 fan4",
         "en": "Go eat dinner at a French restaurant with several good friends at night",
         "zh": "晚上和幾位好友去法國餐廳吃晚餐 / 晚上和几位好友去法国餐厅吃晚餐"
@@ -690,7 +690,7 @@
     {
         "trad": "物理實驗課上大家認真做光學實驗",
         "simp": "物理实验课上大家认真做光学实验",
-        "jyutping": "mat6 lei5 sat6 jim6 fo3 soeng5 daai6 gaa1 jing6 zan1 zou6 gwong1 hok6 sat6 jim6",
+        "jyutping": "mat6 lei5 sat6 jim6 fo3 soeng6 daai6 gaa1 jing6 zan1 zou6 gwong1 hok6 sat6 jim6",
         "pinyin": "wu4 li3 shi2 yan4 ke4 shang4 daai jia1 ren4 zhen1 zuo4 guang1 xue2 shi2 yan4",
         "en": "Everyone seriously does optical experiments during physics lab class",
         "zh": "物理實驗課上大家認真做光學實驗 / 物理实验课上大家认真做光学实验"
@@ -698,7 +698,7 @@
     {
         "trad": "這道高難度的微積分數學題终于解开",
         "simp": "这道高难度的微积分数学题终于解开",
-        "jyutping": "ze5 dou6 gou1 naan4 dou3 dik1 mei4 gik1 fan1 sou3 hok6 tai4 zung1 jyu1 gaai2 hoi1",
+        "jyutping": "ze5 dou6 gou1 naan4 dou6 dik1 mei4 zik1 fan1 sou3 hok6 tai4 zung1 jyu1 gaai2 hoi1",
         "pinyin": "zhe4 dao4 gao1 nan2 du4 de5 wei1 ji2 fen1 shu4 xue2 ti2 zhong1 yu2 jie3 kai1",
         "en": "This high-difficulty calculus math problem was finally solved",
         "zh": "這道高難度的微積分數學題终于解开 / 这道高难度的微积分数学题终于解开"
@@ -706,7 +706,7 @@
     {
         "trad": "午後坐在安靜咖啡廳裡品嚐香濃拿鐵",
         "simp": "午后坐在安静咖啡厅里品尝香浓拿铁",
-        "jyutping": "ng5 hau6 co5 zoi6 on1 zing6 gaa3 fei1 teng1 leoi5 ban2 soeng4 hoeng1 nung4 naa4 tit3",
+        "jyutping": "ng5 hau6 zo6 zoi6 on1 zing6 gaa3 fe1 teng1 leoi5 ban2 soeng4 hoeng1 nung4 naa4 tit3",
         "pinyin": "wu3 hou4 zuo4 zai4 an1 jing4 ka1 fei1 ting1 li3 pin3 chang2 xiang1 nong2 na2 tie3",
         "en": "Sit in a quiet cafe in the afternoon and taste a rich latte",
         "zh": "午後坐在安靜咖啡廳裡品嚐香濃拿鐵 / 午后坐在安静咖啡厅里品尝香浓拿铁"
@@ -738,7 +738,7 @@
     {
         "trad": "倒垃圾",
         "simp": "倒垃圾",
-        "jyutping": "dou3 laap6 saap3",
+        "jyutping": "dou2 laap6 saap3",
         "pinyin": "dao3 la ji",
         "en": "Take out trash",
         "zh": "倒垃圾 / 倒垃圾"
@@ -746,7 +746,7 @@
     {
         "trad": "買咖啡",
         "simp": "买咖啡",
-        "jyutping": "maai5 gaa3 fei1",
+        "jyutping": "maai5 gaa3 fe1",
         "pinyin": "mai3 ka1 fei1",
         "en": "Buy coffee",
         "zh": "買咖啡 / 买咖啡"
@@ -770,7 +770,7 @@
     {
         "trad": "吃午餐",
         "simp": "吃午餐",
-        "jyutping": "hot3 ng5 caan1",
+        "jyutping": "hek3 ng5 caan1",
         "pinyin": "chi1 wu3 can1",
         "en": "Eat lunch",
         "zh": "吃午餐 / 吃午餐"
@@ -778,7 +778,7 @@
     {
         "trad": "去上班",
         "simp": "去上班",
-        "jyutping": "heoi3 soeng6 baan1",
+        "jyutping": "heoi3 soeng5 baan1",
         "pinyin": "qu4 shang4 ban1",
         "en": "Go to work",
         "zh": "去上班 / 去上班"
@@ -810,7 +810,7 @@
     {
         "trad": "請進",
         "simp": "请进",
-        "jyutping": "ceng2 zeoi3",
+        "jyutping": "ceng2 zeon3",
         "pinyin": "qing3 jin4",
         "en": "Please come in",
         "zh": "請進 / 请进"
@@ -882,7 +882,7 @@
     {
         "trad": "你吃了嗎",
         "simp": "你吃了吗",
-        "jyutping": "nei5 hek3 liu5 maa3",
+        "jyutping": "nei5 hek3 liu5 maa1",
         "pinyin": "ni3 chi1 le ma",
         "en": "Have you eaten?",
         "zh": "你吃了嗎？ / 你吃了吗？"
@@ -890,7 +890,7 @@
     {
         "trad": "我在家裡",
         "simp": "我在家里",
-        "jyutping": "ngo5 zoi6 gaa1 lei5",
+        "jyutping": "ngo5 zoi6 gaa1 leoi5",
         "pinyin": "wo3 zai4 jia1 li3",
         "en": "I am at home",
         "zh": "我在家裡 / 我在家里"
@@ -898,7 +898,7 @@
     {
         "trad": "你忙什麼呢",
         "simp": "你忙什么呢",
-        "jyutping": "nei5 mong4 sam1 mo1 ne1",
+        "jyutping": "nei5 mong4 sam6 mo1 ne1",
         "pinyin": "ni3 mang2 shen2 me ne",
         "en": "What are you busy with?",
         "zh": "你忙什麼呢？ / 你忙什么呢？"
@@ -906,7 +906,7 @@
     {
         "trad": "我們走吧",
         "simp": "我们走吧",
-        "jyutping": "ngo5 mun4 zau2 baa1",
+        "jyutping": "ngo5 mun4 zau2 baa6",
         "pinyin": "wo3 men zou3 ba",
         "en": "Let's go",
         "zh": "我們走吧 / 我们走吧"
@@ -922,7 +922,7 @@
     {
         "trad": "明天見面吧",
         "simp": "明天见面吧",
-        "jyutping": "ming4 tin1 gin3 min6 baa1",
+        "jyutping": "ming4 tin1 gin3 min6 baa6",
         "pinyin": "ming2 tian1 jian4 mian4 ba",
         "en": "Let's meet tomorrow",
         "zh": "明天見面吧 / 明天见面吧"
@@ -938,7 +938,7 @@
     {
         "trad": "路上小心點",
         "simp": "路上小心点",
-        "jyutping": "lou5 soeng5 siu2 sam1 dim2",
+        "jyutping": "lou6 soeng6 siu2 sam1 dim2",
         "pinyin": "lu4 shang4 xiao3 xin1 dian3",
         "en": "Be careful on the road",
         "zh": "路上小心點 / 路上小心点"
@@ -962,7 +962,7 @@
     {
         "trad": "請幫我買一杯熱咖啡",
         "simp": "请帮我买一杯热咖啡",
-        "jyutping": "ceng2 bong1 ngo5 maai5 jat1 bui1 jit6 gaa3 fei1",
+        "jyutping": "ceng2 bong1 ngo5 maai5 jat1 bui1 jit6 gaa3 fe1",
         "pinyin": "qing3 bang1 wo3 mai3 yi4 bei1 re4 ka1 fei1",
         "en": "Please help me buy a cup of hot coffee",
         "zh": "請幫我買一杯熱咖啡 / 请帮我买一杯热咖啡"
@@ -986,7 +986,7 @@
     {
         "trad": "開車去上班路上很堵",
         "simp": "开车去上班路上很堵",
-        "jyutping": "hoi1 ce1 heoi3 soeng6 baan1 lou5 soeng5 han2 dou2",
+        "jyutping": "hoi1 ce1 heoi3 soeng5 baan1 lou6 soeng6 han2 dou2",
         "pinyin": "kai1 che1 qu4 shang4 ban1 lu4 shang4 hen3 du3",
         "en": "Driving to work, the road is very jammed",
         "zh": "開車去上班路上很堵 / 开车去上班路上很堵"
@@ -994,7 +994,7 @@
     {
         "trad": "科學實驗需要嚴謹態度",
         "simp": "科学实验需要严谨态度",
-        "jyutping": "fo3 hok6 sat6 jim6 seoi1 jiu3 jim4 gan2 taai3 dou6",
+        "jyutping": "fo1 hok6 sat6 jim6 seoi1 jiu3 jim4 gan2 taai3 dou6",
         "pinyin": "ke1 xue2 shi2 yan4 xu1 yao4 yan2 jin3 tai4 du4",
         "en": "Scientific experiments require a rigorous attitude",
         "zh": "科學實驗需要嚴謹態度 / 科学实验需要严谨态度"
@@ -1018,7 +1018,7 @@
     {
         "trad": "客廳裡灰塵很多記得要打掃",
         "simp": "客厅里灰尘很多记得要打扫",
-        "jyutping": "haak3 ting1 leoi5 fui1 can4 han2 do1 gei3 dak1 jiu3 daa2 sou2",
+        "jyutping": "haak3 teng1 leoi5 fui1 can4 han2 do1 gei3 dak1 jiu3 daa2 sou3",
         "pinyin": "ke4 ting1 li3 hui1 chen2 hen3 duo1 ji4 de5 yao4 da3 sao3",
         "en": "There is a lot of dust in the living room, remember to clean it",
         "zh": "客廳裡灰塵很多記得要打掃 / 客厅里灰尘很多记得要打扫"
@@ -1026,7 +1026,7 @@
     {
         "trad": "傍晚帶可愛的小狗去散步吧",
         "simp": "傍晚带可爱的小狗去散步吧",
-        "jyutping": "pong6 maan5 daai3 ho2 oi3 dik1 siu2 gau2 heoi3 saan3 bou6 baa1",
+        "jyutping": "pong4 maan5 daai3 ho2 oi3 dik1 siu2 gau2 heoi3 saan3 bou6 baa6",
         "pinyin": "bang4 wan3 dai4 ke3 ai4 de5 xiao3 gou3 qu4 san4 bu4 ba",
         "en": "Let's take the cute puppy for a walk in the evening",
         "zh": "傍晚帶可愛的小狗去散步吧 / 傍晚带可爱的小狗去散步吧"
