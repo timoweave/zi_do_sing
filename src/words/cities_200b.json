@@ -122,7 +122,7 @@
     {
         "trad": "巴塞隆拿",
         "simp": "巴塞罗那",
-        "jyutping": "baa1 coi3 leung4 naa1",
+        "jyutping": "baa1 coi3 lung4 naa1",
         "pinyin": "ba1 sai1 luo2 na4",
         "en": "Barcelona",
         "zh": "巴塞隆拿 / 巴塞罗那"
@@ -226,7 +226,7 @@
     {
         "trad": "華盛頓",
         "simp": "华盛顿",
-        "jyutping": "waa4 sing6 deun1",
+        "jyutping": "waa4 sing6 deon1",
         "pinyin": "hua2 sheng4 dun1",
         "en": "Washington",
         "zh": "華盛頓 / 华盛顿"
@@ -354,7 +354,7 @@
     {
         "trad": "埃德蒙頓",
         "simp": "埃德蒙顿",
-        "jyutping": "oi1 dak1 mung4 deun1",
+        "jyutping": "oi1 dak1 mung4 deon1",
         "pinyin": "ai1 de2 meng2 dun1",
         "en": "Edmonton",
         "zh": "埃德蒙頓 / 埃德蒙顿"
@@ -530,7 +530,7 @@
     {
         "trad": "耶路撒冷",
         "simp": "耶路撒冷",
-        "jyutping": "je4 lo4 saat3 laang5",
+        "jyutping": "je4 lou4 saat3 laang5",
         "pinyin": "ye1 luo2 sa1 leng3",
         "en": "Jerusalem",
         "zh": "耶路撒冷 / 耶路撒冷"
@@ -1002,7 +1002,7 @@
     {
         "trad": "頓河畔羅斯托夫",
         "simp": "顿河畔罗斯托夫",
-        "jyutping": "deun1 ho4 bun6 lo4 si1 tok3 fu1",
+        "jyutping": "deon1 ho4 bun6 lo4 si1 tok3 fu1",
         "pinyin": "dun4 he2 pan4 luo2 si1 tuo1 fu1",
         "en": "Rostov-on-Don",
         "zh": "頓河畔羅斯托夫 / 顿河畔罗斯托夫"
@@ -1210,7 +1210,7 @@
     {
         "trad": "馬爾代夫馬累",
         "simp": "马累",
-        "jyutping": "maa5 leui4",
+        "jyutping": "maa5 leoi4",
         "pinyin": "ma3 lei2",
         "en": "Male",
         "zh": "馬累 / 马累"
@@ -1250,7 +1250,7 @@
     {
         "trad": "順化",
         "simp": "顺化",
-        "jyutping": "seun6 faa3",
+        "jyutping": "seon6 faa3",
         "pinyin": "shun4 hua4",
         "en": "Hue",
         "zh": "順化 / 顺化"
@@ -1290,7 +1290,7 @@
     {
         "trad": "古晉",
         "simp": "古晋",
-        "jyutping": "gu2 zeun3",
+        "jyutping": "gu2 zeon3",
         "pinyin": "gu3 jin3",
         "en": "Kuching",
         "zh": "古晉 / 古晋"
@@ -1386,7 +1386,7 @@
     {
         "trad": "威靈頓",
         "simp": "惠灵顿",
-        "jyutping": "wai1 ling4 deun1",
+        "jyutping": "wai1 ling4 deon1",
         "pinyin": "hui4 ling2 dun1",
         "en": "Wellington",
         "zh": "威靈頓 / 惠灵顿"
@@ -1498,7 +1498,7 @@
     {
         "trad": "哈密爾頓",
         "simp": "哈密尔顿",
-        "jyutping": "haa1 mat6 ji5 deun1",
+        "jyutping": "haa1 mat6 ji5 deon1",
         "pinyin": "ha1 mi4 er3 dun1",
         "en": "Hamilton",
         "zh": "哈密爾頓 / 哈密尔顿"
@@ -1530,7 +1530,7 @@
     {
         "trad": "金斯頓",
         "simp": "金斯敦",
-        "jyutping": "gam1 si1 deun1",
+        "jyutping": "gam1 si1 deon1",
         "pinyin": "jin1 si1 dun1",
         "en": "Kingston",
         "zh": "金斯頓 / 金斯敦"
@@ -1570,7 +1570,7 @@
     {
         "trad": "安克雷奇",
         "simp": "安克雷奇",
-        "jyutping": "on1 hak1 leui4 kei4",
+        "jyutping": "on1 hak1 leoi4 kei4",
         "pinyin": "an1 ke4 lei2 qi2",
         "en": "Anchorage",
         "zh": "安克雷奇 / 安克雷奇"
@@ -1634,7 +1634,7 @@
     {
         "trad": "阿靈頓",
         "simp": "阿灵顿",
-        "jyutping": "aa3 ling4 deun1",
+        "jyutping": "aa3 ling4 deon1",
         "pinyin": "a1 ling2 dun1",
         "en": "Arlington",
         "zh": "阿靈頓 / 阿灵顿"
@@ -1682,7 +1682,7 @@
     {
         "trad": "新奧爾良",
         "simp": "新奥尔良",
-        "jyutping": "san1 ou3 ji5 leung4",
+        "jyutping": "san1 ou3 ji5 loeng4",
         "pinyin": "xin1 ao4 er3 liang2",
         "en": "New Orleans",
         "zh": "新奧爾良 / 新奥尔良"
@@ -1706,7 +1706,7 @@
     {
         "trad": "查爾斯頓",
         "simp": "查尔斯顿",
-        "jyutping": "caa4 ji5 si1 deun1",
+        "jyutping": "caa4 ji5 si1 deon1",
         "pinyin": "cha2 er3 si1 dun1",
         "en": "Charleston",
         "zh": "查爾斯頓 / 查尔斯顿"
@@ -1762,7 +1762,7 @@
     {
         "trad": "水牛城",
         "simp": "布法罗",
-        "jyutping": "seui2 ngau4 sing4",
+        "jyutping": "seoi2 ngau4 sing4",
         "pinyin": "bu4 fa3 luo2",
         "en": "Buffalo",
         "zh": "水牛城 / 布法罗"
@@ -1826,7 +1826,7 @@
     {
         "trad": "伯靈頓",
         "simp": "伯灵顿",
-        "jyutping": "baak3 ling4 deun1",
+        "jyutping": "baak3 ling4 deon1",
         "pinyin": "bo2 ling2 dun1",
         "en": "Burlington",
         "zh": "伯靈頓 / 伯灵顿"
