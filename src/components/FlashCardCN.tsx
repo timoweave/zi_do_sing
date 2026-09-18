@@ -837,7 +837,7 @@ function FlashCardCN() {
         <div
             id="words-flash-card-deck-container"
             data-testid="words-flash-card-deck-container"
-            className="font-cn-fontsource-975-maru-sc m-v-4 flex min-h-dvh w-full flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
+            className="font-m-plus m-v-4 flex min-h-dvh w-full flex-col items-center justify-center gap-2 bg-gray-50 p-4 transition-colors dark:bg-gray-900"
             style={{
                 minHeight: vvHeight ? `${vvHeight}px` : '100dvh',
             }}
