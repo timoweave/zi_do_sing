@@ -522,7 +522,7 @@ function FlashCardCN() {
                 React.SetStateAction<boolean[]>
             >
         ): boolean => {
-            const inputList = input.toLowerCase().match(/[a-zA-Z]+\d*/g);
+            const inputList = input.toLowerCase().match(/[a-zA-Z,.]+\d*/g);
             const answerList = answer.toLowerCase().split(/ +/);
             const answerWithoutToneList = answer
                 .replace(/\d/g, '')
