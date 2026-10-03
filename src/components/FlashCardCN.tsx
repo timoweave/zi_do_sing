@@ -168,7 +168,7 @@ function WordAndSound({
             {/* word */}
             <div
                 data-testid={`words-trad-text-${ith}`}
-                className={`cursor-pointer pt-1 text-center text-[${isSmall ? '1.25rem' : '2.5rem'}] leading-none font-medium text-gray-800 dark:text-gray-200`}
+                className={`cursor-pointer pt-1 text-center ${isSmall ? 'text-[1.25rem]' : 'text-[2.5rem]'} leading-none font-medium text-gray-800 dark:text-gray-200`}
             >
                 {word}
             </div>
@@ -1222,7 +1222,7 @@ function FlashCardCN() {
                     <div
                         ref={scrollableChineseWordsRef}
                         data-testid="words-chinese-scrollable-container"
-                        className="[scrollbar-none] flex flex-row items-center gap-2 overflow-x-auto px-0 py-2 pb-2 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
+                        className="flex scrollbar-none flex-row items-center gap-2 overflow-x-auto px-0 py-2 pb-2 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
                         onTouchStart={stopPropagation}
                         onTouchEnd={stopPropagation}
                     >
