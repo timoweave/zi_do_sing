@@ -1,14 +1,41 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import {
+    BookSearchIcon,
     CheckMarkIcon,
     ChevronLeftIcon,
     ChevronRightIcon,
     ClosedEyeIcon,
+    DeepSeekIcon,
+    FlaskIcon,
+    GearIcon,
     OpenEyeIcon,
+    ShuffleIcon,
+    TextIcon,
     UploadFileIcon,
+    type TestIdProps,
 } from './Icons';
-
+import * as OpenCC from 'opencc-js';
+import ZhCnFlagIcon from '../assets/cn_flag.png';
+import ZhHkFlagIcon from '../assets/hk_flag.png';
+import EnUsFlagIcon from '../assets/uk_flag.png';
 import defaultWords from '../words/sentences_002.json';
+import charListJson from '../canto_dicts/canto_charlist.json';
+import wordsListJson from '../canto_dicts/canto_wordslist.json';
+import toJyutping from 'to-jyutping';
+import { pinyin as toPinyin } from 'pinyin-pro';
+// @ts-expect-error: hanzi types don't include definitionLookup
+import hanzi from 'hanzi';
+import createEphone from 'ephone';
+
+hanzi.start();
+const ephone = await createEphone();
+
+const LANGS = ['zh-HK', 'zh-CN', 'en-US'] as const;
+type Lang = (typeof LANGS)[number];
+
+function isOnlyChineseWithPunctuation(str: string): boolean {
+    return /^[\p{Script=Han}\p{Punctuation}\s]+$/u.test(str);
+}
 
 export interface CardItem {
     trad: string;
@@ -82,6 +109,8 @@ const speak = ({
     speechSynthesis.speak(utterance);
 };
 
+export const getSimplified = OpenCC.Converter({ from: 'hk', to: 'cn' });
+
 export interface WordAndSound {
     word: string; // single word
     sound: string; // written sound in jyutping, pinyin, ipa, ...
@@ -91,6 +120,7 @@ export interface WordAndSound {
     isWordMatched: boolean;
     isSoundMatched: boolean;
     isAllSoundRevealed: boolean;
+    isSmall: boolean;
 }
 
 function WordAndSound({
@@ -102,6 +132,7 @@ function WordAndSound({
     isAllMatched, // either all text or all sound
     isSoundMatched,
     isWordMatched,
+    isSmall = false,
 }: WordAndSound) {
     const clickTimeoutRef = useRef<number | null>(null);
     const clickCountRef = useRef(0);
@@ -134,10 +165,10 @@ function WordAndSound({
             className={`flex flex-col pt-1 ${(isSoundMatched || isWordMatched) && !isAllMatched ? 'rounded-md bg-gray-600' : 'text-gray-800'}`}
             onClick={speakWord}
         >
-            {/* char */}
+            {/* word */}
             <div
                 data-testid={`words-trad-text-${ith}`}
-                className={`cursor-pointer pt-1 text-center text-[2.5rem] leading-none font-medium text-gray-800 dark:text-gray-200`}
+                className={`cursor-pointer pt-1 text-center text-[${isSmall ? '1.25rem' : '2.5rem'}] leading-none font-medium text-gray-800 dark:text-gray-200`}
             >
                 {word}
             </div>
@@ -194,7 +225,7 @@ function MoveForwardButton({
             title="go to next card"
             onClick={onClick}
             onMouseDown={onMouseDown}
-            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
             aria-label="Next"
         >
             <ChevronRightIcon />
@@ -215,10 +246,99 @@ function MoveBackwardButton({
             title="go to previous card"
             onClick={onClick}
             onMouseDown={onMouseDown}
-            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
             aria-label="Previous"
         >
             <ChevronLeftIcon />
+        </button>
+    );
+}
+
+function FlippingButton({
+    isFlipped,
+    onClick,
+    onMouseDown,
+}: {
+    isFlipped: boolean;
+} & Pick<React.ComponentPropsWithoutRef<'button'>, 'onClick' | 'onMouseDown'>) {
+    return (
+        <button
+            data-testid="flipping-button"
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            aria-label="Flip card"
+            onClick={onClick}
+            onMouseDown={onMouseDown}
+        >
+            {isFlipped ? <FlaskIcon /> : <GearIcon />}
+        </button>
+    );
+}
+
+function LingualButton({
+    'data-testid': dataTestid,
+    isOn,
+    onClick,
+    src,
+    alt = 'icon',
+}: { isOn: boolean } & Pick<
+    React.ComponentPropsWithoutRef<'button'>,
+    'onClick'
+> &
+    Pick<React.ComponentPropsWithoutRef<'img'>, 'src' | 'alt'> &
+    TestIdProps) {
+    return (
+        <button
+            data-testid={dataTestid}
+            className="flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-gray-100 dark:hover:bg-gray-700"
+            onClick={onClick}
+            onMouseDown={(e) => e.preventDefault()}
+        >
+            <img
+                src={src}
+                alt={alt}
+                className={`h-6 w-6 object-contain ${isOn ? 'brightness-100' : 'brightness-50'}`}
+            />
+        </button>
+    );
+}
+
+function DeepSeekButton({
+    onClick,
+    'data-testid': dataTestid = 'deepseek-button',
+    title = 'use deepseek to get chinese words',
+}: {} & TestIdProps &
+    Pick<React.ComponentPropsWithoutRef<'button'>, 'onClick' | 'title'>) {
+    return (
+        <button
+            data-testid={dataTestid}
+            title={title}
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            onClick={onClick}
+            onMouseDown={(e) => e.preventDefault()}
+        >
+            <DeepSeekIcon />
+        </button>
+    );
+}
+
+function DictionaryButton({
+    onClick,
+    icon,
+    title,
+}: { icon: React.ReactNode } & Pick<
+    React.ComponentPropsWithoutRef<'button'>,
+    'onClick' | 'title'
+>) {
+    return (
+        <button
+            data-testid="dictionary-button"
+            title={title}
+            className="flex h-11 w-11 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+            onClick={onClick}
+            onMouseDown={(e) => e.preventDefault()}
+        >
+            {icon}
+            {/* <BookSearchIcon /> */}
         </button>
     );
 }
@@ -261,7 +381,13 @@ function UploadFileButton({
 function Pagination({
     currentIndex,
     totalCards,
+    goToPrevCard,
+    goToNextCard,
+    handlePopupKeyboardBlur,
 }: {
+    goToPrevCard: () => void;
+    goToNextCard: () => void;
+    handlePopupKeyboardBlur: () => void;
     currentIndex: number;
     totalCards: number;
 }) {
@@ -271,7 +397,23 @@ function Pagination({
             data-testid="words-progress-status-label"
             className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
         >
-            {currentIndex + 1} / {totalCards}
+            <MoveBackwardButton
+                onClick={() => {
+                    goToPrevCard();
+                    handlePopupKeyboardBlur();
+                }}
+                onMouseDown={(e) => e.preventDefault()}
+            />
+            <div className="self-center">
+                {currentIndex + 1} / {totalCards}
+            </div>
+            <MoveForwardButton
+                onClick={() => {
+                    goToNextCard();
+                    handlePopupKeyboardBlur();
+                }}
+                onMouseDown={(e) => e.preventDefault()}
+            />
         </div>
     );
 }
@@ -336,7 +478,9 @@ function SentenceAndSounds({
     onMouseDown,
     inputMatched,
     isSoundShown,
+    showLangs,
 }: {
+    showLangs: readonly Lang[];
     wordsAndSounds: WordsAndSounds[];
     inputMatched: boolean;
     isSoundShown: boolean;
@@ -346,52 +490,57 @@ function SentenceAndSounds({
             data-testid="words-chinese-container"
             className="mx-auto flex flex-col items-center justify-center gap-1"
         >
-            {wordsAndSounds.map((wordAndSound, row) => (
-                <div
-                    key={row}
-                    data-testid={`words-traditional-label-${row}`}
-                    className="flex flex-col items-center gap-1"
-                    onDoubleClick={(e) => {
-                        speak({
-                            text: wordAndSound.words.join(''),
-                            lang: wordAndSound.lang,
-                        });
-                        e.preventDefault();
-                        e.stopPropagation();
-                    }}
-                    onMouseDown={onMouseDown}
-                >
-                    {/* Chinese characters row i-th */}
+            {wordsAndSounds
+                .filter((wordAndSound) =>
+                    showLangs.includes(wordAndSound.lang as Lang)
+                )
+                .map((wordAndSound, row) => (
                     <div
-                        className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
+                        key={row}
+                        data-testid={`words-traditional-label-${row}`}
+                        className="flex flex-col items-center gap-1"
+                        onDoubleClick={(e) => {
+                            speak({
+                                text: wordAndSound.words.join(''),
+                                lang: wordAndSound.lang,
+                            });
+                            e.preventDefault();
+                            e.stopPropagation();
+                        }}
+                        onMouseDown={onMouseDown}
                     >
-                        {wordAndSound.words.map((word, i) => {
-                            const key =
-                                /* TBD: react need help to redraw when revealed is changed */
-                                100 * Number(isSoundShown) + 10 * row + i;
-                            const sound = wordAndSound.sounds[i];
-                            const isCharMatched =
-                                wordAndSound.isWordsMatched[i];
-                            const isSoundMatched =
-                                wordAndSound.isSoundMatched[i];
+                        {/* Chinese characters row i-th */}
+                        <div
+                            className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
+                        >
+                            {wordAndSound.words.map((word, i) => {
+                                const key =
+                                    /* TBD: react need help to redraw when revealed is changed */
+                                    100 * Number(isSoundShown) + 10 * row + i;
+                                const sound = wordAndSound.sounds[i];
+                                const isCharMatched =
+                                    wordAndSound.isWordsMatched[i];
+                                const isSoundMatched =
+                                    wordAndSound.isSoundMatched[i];
 
-                            return (
-                                <WordAndSound
-                                    key={key}
-                                    ith={i}
-                                    word={word}
-                                    sound={sound}
-                                    lang={wordAndSound.lang}
-                                    isAllMatched={inputMatched}
-                                    isWordMatched={isCharMatched}
-                                    isSoundMatched={isSoundMatched}
-                                    isAllSoundRevealed={isSoundShown}
-                                />
-                            );
-                        })}
+                                return (
+                                    <WordAndSound
+                                        key={key}
+                                        ith={i}
+                                        word={word}
+                                        sound={sound}
+                                        lang={wordAndSound.lang}
+                                        isAllMatched={inputMatched}
+                                        isWordMatched={isCharMatched}
+                                        isSoundMatched={isSoundMatched}
+                                        isAllSoundRevealed={isSoundShown}
+                                        isSmall={wordAndSound.lang === 'en-US'}
+                                    />
+                                );
+                            })}
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
         </div>
     );
 }
@@ -416,8 +565,9 @@ function FlashCardCN() {
     >([]);
     const [inputValue, setInputValue] = useState<string>('');
     const [isInputFocused, setIsInputFocused] = useState(false);
-    const [descriptionVisible, setDescriptionVisible] = useState(true);
-
+    const [_descriptionVisible, _setDescriptionVisible] = useState(true);
+    const [isFlipped, setIsFlipped] = useState<boolean>(false);
+    const [showLangs, setShowLangs] = useState<readonly Lang[]>(LANGS);
     const inputRowRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const cardRef = useRef(null);
@@ -426,16 +576,22 @@ function FlashCardCN() {
     const touchStartY = useRef(0);
     const [isThemeDark, _setIsThemeDark] = useState(true);
     const [_vvWidth, vvHeight] = useVisualViewport();
+    const [scrollThumb, setScrollThumb] = useState<{
+        widthPct: number;
+        leftPct: number;
+    } | null>(null);
+    const scrollTrackRef = useRef<HTMLDivElement>(null);
+    const scrollDragRef = useRef<{
+        startX: number;
+        startScrollLeft: number;
+    } | null>(null);
 
-    const currentCard = useMemo(
-        () => cards[currentIndex] || null,
-        [cards, currentIndex]
-    );
+    const currentCard = cards[currentIndex] || null;
     const totalCards = cards.length;
-    const currentCardTrads = currentCard?.trad.split('');
-    const currentCardJyutpings = currentCard?.jyutping.split(/ +/);
-    const currentCardSimps = currentCard?.simp.split('');
-    const currentCardPinyins = currentCard?.pinyin.split(/ +/);
+    const currentCardTrads = currentCard?.trad?.split('') ?? [];
+    const currentCardJyutpings = currentCard?.jyutping?.split(/ +/) ?? [];
+    const currentCardSimps = currentCard?.simp?.split('') ?? [];
+    const currentCardPinyins = currentCard?.pinyin?.split(/ +/) ?? [];
 
     const isPopupKeyboardOpenProbably = () => {
         const viewport = window.visualViewport;
@@ -472,8 +628,12 @@ function FlashCardCN() {
         setRevealed((prev) => !prev);
     }, []);
 
-    const toggleRevealDescription = useCallback(() => {
-        setDescriptionVisible((prev) => !prev);
+    // const toggleRevealDescription = useCallback(() => {
+    //     setDescriptionVisible((prev) => !prev);
+    // }, []);
+
+    const toggleFlipCard = useCallback(() => {
+        setIsFlipped((prev) => !prev);
     }, []);
 
     const goToPrevCard = useCallback(() => {
@@ -627,9 +787,34 @@ function FlashCardCN() {
                 toggleRevealPhonetic();
                 return;
             }
+            if (e.key === ',') {
+                e.preventDefault();
+                scrollToStart();
+                return;
+            }
+            if (e.key === '<') {
+                e.preventDefault();
+                scrollByWidth(-1);
+                return;
+            }
+            if (e.key === "'") {
+                e.preventDefault();
+                scrollToMiddle('smooth');
+                return;
+            }
+            if (e.key === '>') {
+                e.preventDefault();
+                scrollByWidth(1);
+                return;
+            }
+            if (e.key === '.') {
+                e.preventDefault();
+                scrollToEnd();
+                return;
+            }
             if (e.key === '?') {
                 e.preventDefault();
-                toggleRevealDescription();
+                speak({ text: currentCard.trad, lang: 'zh-HK' });
                 return;
             }
             if (e.key === 'ArrowLeft' && isInputEmpty) {
@@ -638,6 +823,7 @@ function FlashCardCN() {
                     setRevealed(false);
                 }
                 goToPrevCard();
+                setTimeout(() => scrollToMiddle(), 0);
                 return;
             }
             if (e.key === 'ArrowRight' && isInputEmpty) {
@@ -646,13 +832,14 @@ function FlashCardCN() {
                     setRevealed(false);
                 }
                 goToNextCard();
+                setTimeout(() => scrollToMiddle(), 0);
                 return;
             }
             if (e.key === 'Enter' && inputMatched && !isInputEmpty) {
                 e.preventDefault();
                 setRevealed(false);
                 goToNextCard();
-                scrollToStart();
+                setTimeout(() => scrollToMiddle(), 0);
             }
         },
         [
@@ -660,7 +847,7 @@ function FlashCardCN() {
             currentIndex,
             speak,
             toggleRevealPhonetic,
-            toggleRevealDescription,
+            // toggleRevealDescription,
             goToPrevCard,
             goToNextCard,
             inputMatched,
@@ -690,6 +877,21 @@ function FlashCardCN() {
                         setInputMatchedJyutpings([]);
                         setInputMatchedPinyins([]);
                     }
+
+                    const newCards = parsedCards.map((card) => {
+                        const jyutping = toJyutping.getJyutpingText(card.trad);
+                        const pinyin = toPinyin(card.simp, {
+                            toneType: 'num',
+                            pattern: 'pinyin',
+                            v: true,
+                        });
+                        return {
+                            ...card,
+                            jyutping,
+                            pinyin,
+                        };
+                    });
+                    console.log(newCards.length);
                 } catch (err) {
                     console.error('Failed to parse uploaded JSON file', err);
                 }
@@ -702,6 +904,19 @@ function FlashCardCN() {
         },
         []
     );
+
+    const hasShowLang = useCallback(
+        (lang: Lang): boolean => showLangs.includes(lang),
+        [showLangs]
+    );
+
+    const toggleShowLang = useCallback((lang: Lang): void => {
+        setShowLangs((prevLangs) =>
+            prevLangs.includes(lang)
+                ? prevLangs.filter((prevLang) => prevLang !== lang)
+                : prevLangs.concat(lang)
+        );
+    }, []);
 
     // Swipe handlers
     const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
@@ -748,6 +963,40 @@ function FlashCardCN() {
         el.scrollTo({ left: movePosition, behavior: 'smooth' });
     };
 
+    const scrollByWidth = (direction: 1 | -1 | null = 1) => {
+        if (
+            scrollableChineseWordsRef.current == null ||
+            currentCard.trad == null
+        ) {
+            return;
+        }
+
+        const el = scrollableChineseWordsRef.current;
+        // const tradLength = currentCard.trad.trim().split('').length;
+        // const tradIndexCharacterSize = el.scrollWidth / tradLength;
+
+        const movePosition =
+            direction == null
+                ? (el.scrollWidth - el.clientWidth) / 2
+                : el.scrollLeft + (direction * el.clientWidth) / 2;
+
+        el.scrollTo({ left: movePosition, behavior: 'smooth' });
+    };
+
+    const scrollToMiddle = (behavior: ScrollBehavior = 'instant') => {
+        if (
+            scrollableChineseWordsRef.current == null ||
+            currentCard.trad == null
+        ) {
+            return;
+        }
+
+        const el = scrollableChineseWordsRef.current;
+        const movePosition = (el.scrollWidth - el.clientWidth) / 2;
+
+        el.scrollTo({ left: movePosition, behavior });
+    };
+
     const scrollToStart = () => {
         scrollableChineseWordsRef.current?.scrollTo({
             left: 0,
@@ -755,13 +1004,34 @@ function FlashCardCN() {
         });
     };
 
-    // Initialize cards
-    useEffect(() => {
-        const initialCards = shuffleCardItems(defaultWords);
+    const scrollToEnd = () => {
+        if (
+            scrollableChineseWordsRef.current == null ||
+            currentCard.trad == null
+        ) {
+            return;
+        }
+
+        const el = scrollableChineseWordsRef.current;
+        const movePosition = el.scrollWidth - el.clientWidth;
+
+        scrollableChineseWordsRef.current?.scrollTo({
+            left: movePosition,
+            behavior: 'smooth',
+        });
+    };
+
+    const shuffleCards = useCallback((words: CardItem[]) => {
+        const initialCards = shuffleCardItems(words);
         const randomIndex = Math.floor(Math.random() * initialCards.length);
 
         setCards(initialCards);
         setCurrentIndex(randomIndex);
+    }, []);
+
+    // Initialize cards
+    useEffect(() => {
+        shuffleCards(defaultWords);
     }, []);
 
     // Global keyboard listener
@@ -792,6 +1062,87 @@ function FlashCardCN() {
             (inputRef.current?.value.trim().split(/ +/).length ?? 1) - 1
         );
     }, [inputRef.current?.value]);
+
+    const updateScrollThumb = useCallback(() => {
+        const el = scrollableChineseWordsRef.current;
+        if (!el || el.scrollWidth <= el.clientWidth + 1) {
+            setScrollThumb(null);
+            return;
+        }
+        setScrollThumb({
+            widthPct: (el.clientWidth / el.scrollWidth) * 100,
+            leftPct: (el.scrollLeft / el.scrollWidth) * 100,
+        });
+    }, []);
+
+    useEffect(() => {
+        const el = scrollableChineseWordsRef.current;
+        if (!el) return;
+        updateScrollThumb();
+        el.addEventListener('scroll', updateScrollThumb, {
+            passive: true,
+        });
+        const observer = new ResizeObserver(updateScrollThumb);
+        observer.observe(el);
+        if (el.firstElementChild) observer.observe(el.firstElementChild);
+        return () => {
+            el.removeEventListener('scroll', updateScrollThumb);
+            observer.disconnect();
+        };
+    }, [updateScrollThumb, currentCard?.trad]);
+
+    const handleScrollTrackPointerDown = (
+        e: React.PointerEvent<HTMLDivElement>
+    ) => {
+        const el = scrollableChineseWordsRef.current;
+        const track = scrollTrackRef.current;
+        if (!el || !track) return;
+        e.preventDefault();
+
+        const rect = track.getBoundingClientRect();
+        const thumbWidth = (el.clientWidth / el.scrollWidth) * rect.width;
+        const thumbLeft =
+            rect.left + (el.scrollLeft / el.scrollWidth) * rect.width;
+        const isOnThumb =
+            e.clientX >= thumbLeft && e.clientX <= thumbLeft + thumbWidth;
+
+        // Pressed on the empty track: jump so the thumb centers on the pointer
+        if (!isOnThumb) {
+            const fraction =
+                (e.clientX - rect.left - thumbWidth / 2) / rect.width;
+            el.scrollLeft = fraction * el.scrollWidth;
+        }
+
+        scrollDragRef.current = {
+            startX: e.clientX,
+            startScrollLeft: el.scrollLeft,
+        };
+        e.currentTarget.setPointerCapture(e.pointerId);
+    };
+
+    const handleScrollTrackPointerMove = (
+        e: React.PointerEvent<HTMLDivElement>
+    ) => {
+        const drag = scrollDragRef.current;
+        const el = scrollableChineseWordsRef.current;
+        const track = scrollTrackRef.current;
+        if (!drag || !el || !track) return;
+
+        // Thumb moves dx px along the track => content moves dx * (scrollWidth / trackWidth)
+        const dx = e.clientX - drag.startX;
+        el.scrollLeft =
+            drag.startScrollLeft +
+            dx * (el.scrollWidth / track.getBoundingClientRect().width);
+    };
+
+    const handleScrollTrackPointerUp = (
+        e: React.PointerEvent<HTMLDivElement>
+    ) => {
+        scrollDragRef.current = null;
+        if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+            e.currentTarget.releasePointerCapture(e.pointerId);
+        }
+    };
 
     useEffect(() => {
         const inputMatchedJyutpingsAll =
@@ -830,6 +1181,13 @@ function FlashCardCN() {
             isWordsMatched: inputMatchedSimpls,
             isSoundMatched: inputMatchedPinyins,
         },
+        {
+            words: currentCard.en?.split(' ') ?? [],
+            sounds: ephone.textToIpa(currentCard.en ?? '')?.split(' ') ?? [],
+            lang: 'en-US',
+            isWordsMatched: [false],
+            isSoundMatched: [false],
+        },
     ];
 
     return (
@@ -844,59 +1202,212 @@ function FlashCardCN() {
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
         >
-            {/* Card */}
+            {/* Card front & back side Container */}
             <div
-                id="words-flash-card-container"
-                data-testid="words-flash-card-container"
-                ref={cardRef}
-                className="relative flex w-full max-w-120 touch-pan-y flex-col place-content-around rounded-3xl bg-white p-6 shadow-lg transition-colors dark:bg-gray-800"
+                data-testid="words-flash-card-front-and-back-container"
+                className="relative w-full max-w-120 perspective-[1000px]"
             >
-                {/* Chinese characters rows container */}
+                {/* Card front side Container */}
                 <div
-                    ref={scrollableChineseWordsRef}
-                    data-testid="words-chinese-scrollable-container"
-                    className="[&::-webkit-scrollbar] flex flex-row items-center gap-2 overflow-x-auto px-0 py-2 pb-2 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-slate-700"
-                    onTouchStart={stopPropagation}
-                    onTouchEnd={stopPropagation}
+                    id="words-flash-card-container"
+                    data-testid="words-flash-card-container"
+                    ref={cardRef}
+                    className={`relative flex w-full max-w-120 touch-pan-y flex-col place-content-around rounded-3xl bg-white p-6 pb-0 shadow-lg transition-transform duration-500 backface-hidden dark:bg-gray-800 ${
+                        isFlipped
+                            ? 'transform-[rotateY(180deg)]'
+                            : 'transform-[rotateY(0deg)]'
+                    }`}
                 >
-                    <SentenceAndSounds
-                        wordsAndSounds={wordsAndSounds}
-                        onMouseDown={preventDefault}
-                        inputMatched={inputMatched}
-                        isSoundShown={revealed}
-                    />
+                    {/* Chinese characters rows container */}
+                    <div
+                        ref={scrollableChineseWordsRef}
+                        data-testid="words-chinese-scrollable-container"
+                        className="[scrollbar-none] flex flex-row items-center gap-2 overflow-x-auto px-0 py-2 pb-2 whitespace-nowrap [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
+                        onTouchStart={stopPropagation}
+                        onTouchEnd={stopPropagation}
+                    >
+                        <SentenceAndSounds
+                            showLangs={showLangs}
+                            wordsAndSounds={wordsAndSounds}
+                            onMouseDown={preventDefault}
+                            inputMatched={inputMatched}
+                            isSoundShown={revealed}
+                        />
+                    </div>
+                    {/* Custom scroll indicator (iOS hides native scrollbars) */}
+                    <div
+                        aria-hidden="true"
+                        data-testid="words-chinese-scroll-track"
+                        className={`-mt-3 cursor-pointer touch-none py-2 select-none ${scrollThumb ? '' : 'invisible'}`}
+                        onPointerDown={handleScrollTrackPointerDown}
+                        onPointerMove={handleScrollTrackPointerMove}
+                        onPointerUp={handleScrollTrackPointerUp}
+                        onPointerCancel={handleScrollTrackPointerUp}
+                        onTouchStart={stopPropagation}
+                        onTouchEnd={stopPropagation}
+                    >
+                        <div
+                            ref={scrollTrackRef}
+                            className="relative h-1 rounded-full bg-slate-200 dark:bg-slate-700"
+                        >
+                            {scrollThumb && (
+                                <div
+                                    className="absolute inset-y-0 rounded-full bg-slate-400 dark:bg-slate-500"
+                                    style={{
+                                        width: `${scrollThumb.widthPct}%`,
+                                        left: `${scrollThumb.leftPct}%`,
+                                    }}
+                                />
+                            )}
+                        </div>
+                    </div>
                 </div>
 
-                {/* Description */}
+                {/* Card Back Side Container */}
                 <div
-                    data-testid="words-description-label"
-                    className={`overflow-x-auto text-center whitespace-nowrap text-gray-500 dark:border-gray-700 dark:text-gray-300 ${descriptionVisible ? 'visible' : 'invisible'}`}
-                    onMouseDown={preventDefault}
-                    onTouchStart={stopPropagation}
-                    onTouchEnd={stopPropagation}
+                    data-testid="words-flash-card-back-side-container"
+                    className={`absolute inset-0 flex w-full max-w-120 touch-pan-y flex-col items-center justify-center rounded-3xl bg-white p-6 shadow-lg transition-transform duration-500 backface-hidden dark:bg-gray-800 ${
+                        isFlipped
+                            ? 'transform-[rotateY(0deg)]'
+                            : 'transform-[rotateY(-180deg)]'
+                    }`}
                 >
-                    {currentCard.en}
+                    <div className="flex flex-wrap gap-2 py-4 text-center text-xl font-medium text-gray-800 dark:text-gray-200">
+                        <UploadFileButton
+                            handleUploadFile={handleUploadFile}
+                            handlePopupKeyboardBlur={handlePopupKeyboardBlur}
+                        />
+                        <DictionaryButton
+                            title="shuffle dictionary"
+                            data-testid="en-us-button"
+                            icon={<ShuffleIcon />}
+                            onClick={() => {
+                                shuffleCards(cards);
+                            }}
+                        />
+                        <DeepSeekButton onClick={() => {}} />
+                        <DictionaryButton
+                            title="use char list chinese dictionary"
+                            icon={<BookSearchIcon />}
+                            onClick={() => {
+                                const items = Object.entries(charListJson)
+                                    .filter(([trad]) => {
+                                        return isOnlyChineseWithPunctuation(
+                                            trad
+                                        );
+                                    })
+                                    .map(([trad, sounds]) => {
+                                        const simp = getSimplified(trad);
+                                        const pinyin = toPinyin(simp, {
+                                            toneType: 'num',
+                                            pattern: 'pinyin',
+                                            v: true,
+                                        });
+                                        let en = '❔';
+                                        try {
+                                            const lookup =
+                                                hanzi.definitionLookup(trad);
+                                            en = (lookup?.[0]?.definition ??
+                                                '❔') as string;
+                                        } catch {
+                                            en = '❔';
+                                        }
+                                        if (trad === '一傳十，十傳百') {
+                                            console.log({ sounds });
+                                        }
+                                        return {
+                                            trad,
+                                            simp,
+                                            jyutping: Object.keys(sounds).at(0),
+                                            pinyin,
+                                            en,
+                                            zh: '',
+                                        } as CardItem;
+                                    });
+
+                                console.log({ items });
+                                setCards(items);
+                            }}
+                        />
+                        <DictionaryButton
+                            title="use words list chinese dictionary"
+                            icon={<TextIcon />}
+                            onClick={() => {
+                                console.log({ wordsListJson });
+                                const items = Object.entries(wordsListJson)
+                                    .filter(([trad]) => {
+                                        return isOnlyChineseWithPunctuation(
+                                            trad
+                                        );
+                                    })
+                                    .map(([trad, sounds]) => {
+                                        const simp = getSimplified(trad);
+                                        const pinyin = toPinyin(simp, {
+                                            toneType: 'num',
+                                            pattern: 'pinyin',
+                                            v: true,
+                                        });
+                                        let en = '❔';
+                                        try {
+                                            const lookup =
+                                                hanzi.definitionLookup(trad);
+                                            en = (lookup?.[0]?.definition ??
+                                                '❔') as string;
+                                        } catch {
+                                            en = '❔';
+                                        }
+                                        return {
+                                            trad,
+                                            simp,
+                                            jyutping: sounds.at(0),
+                                            pinyin,
+                                            en,
+                                            zh: '',
+                                        } as CardItem;
+                                    });
+
+                                console.log({ items });
+                                setCards(items);
+                            }}
+                        />
+                        {/* <TextIcon />
+                        <CharacterIcon />
+                        <WordIcon /> */}
+                        <LingualButton
+                            data-testid="zh-hk-button"
+                            src={ZhHkFlagIcon}
+                            isOn={hasShowLang('zh-HK')}
+                            onClick={() => toggleShowLang('zh-HK')}
+                        />
+                        <LingualButton
+                            data-testid="zh-cn-button"
+                            src={ZhCnFlagIcon}
+                            isOn={hasShowLang('zh-CN')}
+                            onClick={() => toggleShowLang('zh-CN')}
+                        />
+                        <LingualButton
+                            data-testid="en-us-button"
+                            src={EnUsFlagIcon}
+                            isOn={hasShowLang('en-US')}
+                            onClick={() => toggleShowLang('en-US')}
+                        />
+                    </div>
                 </div>
             </div>
-
-            <Pagination currentIndex={currentIndex} totalCards={totalCards} />
 
             {/* Input row */}
             <div
                 ref={inputRowRef}
                 data-testid="words-input-row"
-                className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1"
+                className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1 pt-3"
             >
-                <MoveBackwardButton
+                <FlippingButton
+                    isFlipped={isFlipped}
                     onClick={() => {
-                        goToPrevCard();
+                        toggleFlipCard();
                         handlePopupKeyboardBlur();
                     }}
                     onMouseDown={preventDefault}
-                />
-                <UploadFileButton
-                    handleUploadFile={handleUploadFile}
-                    handlePopupKeyboardBlur={handlePopupKeyboardBlur}
                 />
                 <InputWithCheckMark
                     inputRef={inputRef}
@@ -932,14 +1443,16 @@ function FlashCardCN() {
                     }}
                     onMouseDown={preventDefault}
                 />
-                <MoveForwardButton
-                    onClick={() => {
-                        goToNextCard();
-                        handlePopupKeyboardBlur();
-                    }}
-                    onMouseDown={preventDefault}
-                />
             </div>
+
+            {/* Pagination */}
+            <Pagination
+                goToPrevCard={goToPrevCard}
+                goToNextCard={goToNextCard}
+                handlePopupKeyboardBlur={handlePopupKeyboardBlur}
+                currentIndex={currentIndex}
+                totalCards={totalCards}
+            />
         </div>
     );
 }

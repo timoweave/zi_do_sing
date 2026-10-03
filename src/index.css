@@ -13,7 +13,7 @@
   }
   [id="words-flash-card-container"] {
     padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
   }
   [id="words-progress-status-label"] {
     padding-top: 0.5rem;
@@ -84,4 +84,11 @@ body {
 
 p {
   margin: 0;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  [data-testid="words-chinese-scrollable-container"] {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-slate-400) transparent;
+  }
 }
