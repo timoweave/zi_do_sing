@@ -298,14 +298,9 @@ export const UploadFileIcon = ({
             strokeLinejoin="round"
             className="h-8 w-8"
         >
-            <g transform="translate(0, 1) scale(0.87)" transform-origin="12 12">
-                {/* Tray/Base */}
-                <path d="M21 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-
-                {/* Arrow Up */}
-                <polyline points="17 8 12 3 7 8" />
-                <line x1="12" y1="3" x2="12" y2="13" />
-            </g>
+            <path d="M19.83 13v3.48a1.74 1.74 0 0 1-1.74 1.74H5.91a1.74 1.74 0 0 1-1.74-1.74V13" />
+            <polyline points="16.35 9.52 12 5.17 7.65 9.52" />
+            <line x1="12" y1="5.17" x2="12" y2="13.87" />
         </svg>
     );
 };
@@ -520,20 +515,18 @@ export const WordIcon = ({ 'data-testid': dataTestid }: {} & TestIdProps) => (
         strokeLinecap="round"
         strokeLinejoin="round"
     >
-        <g strokeWidth="1.4">
-            {/* Left radical 言: dot, three horizontal strokes, box */}
-            <line x1="7.2" y1="2.2" x2="7.8" y2="3.2" />
-            <line x1="4" y1="4.8" x2="10" y2="4.8" />
-            <line x1="4.8" y1="7.4" x2="9.4" y2="7.4" />
-            <line x1="4.8" y1="10" x2="9.4" y2="10" />
-            <rect x="5" y="12.2" width="4.4" height="5.4" rx="0.4" />
+        {/* Left radical 言: dot, three horizontal strokes, box */}
+        <line x1="7.2" y1="2.2" x2="7.8" y2="3.2" />
+        <line x1="4" y1="4.8" x2="10" y2="4.8" />
+        <line x1="4.8" y1="7.4" x2="9.4" y2="7.4" />
+        <line x1="4.8" y1="10" x2="9.4" y2="10" />
+        <rect x="5" y="12.2" width="4.4" height="5.4" rx="0.4" />
 
-            {/* Right part 司: top bar with hooked right side */}
-            <path d="M12.6 4.8H20.2V16.8Q20.2 18.2 18.8 17.9" />
-            {/* Inner stroke and box of 司 */}
-            <line x1="13" y1="8.2" x2="17" y2="8.2" />
-            <rect x="13.4" y="11" width="3.6" height="4.6" rx="0.4" />
-        </g>
+        {/* Right part 司: top bar with hooked right side */}
+        <path d="M12.6 4.8H20.2V16.8Q20.2 18.2 18.8 17.9" />
+        {/* Inner stroke and box of 司 */}
+        <line x1="13" y1="8.2" x2="17" y2="8.2" />
+        <rect x="13.4" y="11" width="3.6" height="4.6" rx="0.4" />
     </svg>
 );
 
@@ -570,9 +563,7 @@ export const CharacterIcon = ({
     </svg>
 );
 
-export const ShuffleIcon = ({
-    'data-testid': dataTestid,
-}: {} & TestIdProps) => (
+export const ShuffleIcon = ({ 'data-testid': dataTestid }: {} & TestIdProps) => (
     <svg
         data-testid={dataTestid}
         viewBox="0 0 24 24"
@@ -586,15 +577,13 @@ export const ShuffleIcon = ({
         strokeLinecap="round"
         strokeLinejoin="round"
     >
-        <g transform="scale(1.25)" transform-origin="12 12">
-            {/* Path from upper left curving down to the lower right */}
-            <path d="M3 7H6C10 7 10.5 17 15 17H20" />
-            <polyline points="17.5,14.5 20,17 17.5,19.5" />
+        {/* Path from upper left curving down to the lower right */}
+        <path d="M0.75 5.75H4.5C9.5 5.75 10.125 18.25 15.75 18.25H22" />
+        <polyline points="18.875,15.125 22,18.25 18.875,21.375" />
 
-            {/* Path from lower left curving up to the upper right */}
-            <path d="M3 17H6C10 17 10.5 7 15 7H20" />
-            <polyline points="17.5,4.5 20,7 17.5,9.5" />
-        </g>
+        {/* Path from lower left curving up to the upper right */}
+        <path d="M0.75 18.25H4.5C9.5 18.25 10.125 5.75 15.75 5.75H22" />
+        <polyline points="18.875,2.625 22,5.75 18.875,8.875" />
     </svg>
 );
 
@@ -613,20 +602,18 @@ export const SpeakerIcon = ({
             strokeLinejoin="round"
             className="h-8 w-8"
         >
-            <g transform="scale(0.86)" transform-origin="12 12">
-                {/* Speaker body filled with current color */}
-                <path
-                    d="M11 4.727 6.4 8.5H3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h3.4l4.6 3.773a1 1 0 0 0 1.6-.8V5.527a1 1 0 0 0-1.6-.8Z"
-                    fill="currentColor"
-                    stroke="none"
-                />
+            {/* Speaker body filled with current color */}
+            <path
+                d="M11.14 5.745 7.184 8.99H4.26a0.86 0.86 0 0 0-0.86 0.86v4.3a0.86 0.86 0 0 0 0.86 0.86h2.924l3.956 3.245a0.86 0.86 0 0 0 1.376-0.688V6.433a0.86 0.86 0 0 0-1.376-0.688Z"
+                fill="currentColor"
+                stroke="none"
+            />
 
-                {/* Inner sound wave arc */}
-                <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+            {/* Inner sound wave arc */}
+            <path d="M15.01 8.99a4.3 4.3 0 0 1 0 6.02" />
 
-                {/* Outer sound wave arc */}
-                <path d="M18.5 5.5a9 9 0 0 1 0 13" />
-            </g>
+            {/* Outer sound wave arc */}
+            <path d="M17.59 6.41a7.74 7.74 0 0 1 0 11.18" />
         </svg>
     );
 };
@@ -641,19 +628,17 @@ export const SpeakerMutedIcon = ({
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth={2}
+            strokeWidth={1.72}
             strokeLinecap="round"
             strokeLinejoin="round"
             className="h-8 w-8"
         >
-            <g transform="scale(0.86)" transform-origin="12 12">
-                {/* Speaker body filled with current color */}
-                <path
-                    d="M11 4.727 6.4 8.5H3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h3.4l4.6 3.773a1 1 0 0 0 1.6-.8V5.527a1 1 0 0 0-1.6-.8Z"
-                    fill="currentColor"
-                    stroke="none"
-                />
-            </g>
+            {/* Speaker body filled with current color */}
+            <path
+                d="M11.14 5.745 7.184 8.99H4.26a0.86 0.86 0 0 0-0.86 0.86v4.3a0.86 0.86 0 0 0 0.86 0.86h2.924l3.956 3.245a0.86 0.86 0 0 0 1.376-0.688V6.433a0.86 0.86 0 0 0-1.376-0.688Z"
+                fill="currentColor"
+                stroke="none"
+            />
         </svg>
     );
 };

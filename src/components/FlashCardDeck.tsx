@@ -35,8 +35,10 @@ import { pinyin as toPinyin } from 'pinyin-pro';
 import hanzi from 'hanzi';
 import createEphone from 'ephone';
 
-hanzi.start();
-const ephone = await createEphone();
+type Ephone = Awaited<ReturnType<typeof createEphone>>;
+let EPHONE: Ephone | null = null;
+
+EPHONE = await createEphone();
 
 const LINGUALS = ['zh-HK', 'zh-CN', 'en-US'] as const;
 type Lingual = (typeof LINGUALS)[number];
@@ -48,7 +50,7 @@ function isOnlyChineseWithPunctuation(str: string): boolean {
 export function repairWords(words: string): string {
     return words
         .replaceAll(/[，,]/g, '')
-        .replaceAll(/[…]/g, '')
+        .replaceAll(/[…*]/g, '')
         .replaceAll(/[.]+/g, '')
         .replaceAll(/  /g, ' ');
 }
@@ -118,7 +120,7 @@ export const convertCardItemtoEquivalentWordSoundLingual = (
     } as WordSoundLingual,
     {
         words: card.en ?? '',
-        sounds: ephone.textToIpa(card.en ?? '') ?? '',
+        sounds: EPHONE?.textToIpa(card.en ?? '') ?? '',
         lingual: 'en-US',
     } as WordSoundLingual,
 ];
@@ -632,7 +634,7 @@ function FlashCardDeck() {
     const [isInputFocused, setIsInputFocused] = useState(false);
     const [isFlipped, setIsFlipped] = useState<boolean>(false);
     const [isSpeakingOnChanged, setIsSpeakingOnChanged] =
-        useState<boolean>(false);
+        useState<boolean>(true);
     const [showLangs, setShowLangs] = useState<readonly Lingual[]>(LINGUALS);
     const inputRowRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
@@ -1071,6 +1073,18 @@ function FlashCardDeck() {
         shuffleCards(defaultWords as EquivalentWordSoundLingual[]);
     }, []);
 
+    useEffect(() => {
+        hanzi.start();
+    }, []);
+
+    useEffect(() => {
+        if (EPHONE != null) {
+            createEphone().then((ephone) => {
+                EPHONE = ephone;
+            });
+        }
+    }, []);
+
     // Global keyboard listener
     useEffect(() => {
         document.addEventListener('keydown', handleKeyDown);
@@ -1107,15 +1121,15 @@ function FlashCardDeck() {
     }, [currentTrad]);
 
     useLayoutEffect(() => {
+        if (speechSynthesis.speaking) {
+            speechSynthesis.cancel();
+        }
         if (isSpeakingOnChanged && !isFlipped) {
-            if (speechSynthesis.speaking) {
-                speechSynthesis.cancel();
-            }
             const lang = 'zh-HK' as Lingual;
             const text = findLingual(currentCard, lang)?.words ?? '';
             speak({ text, lang });
         }
-    }, [isSpeakingOnChanged, currentCard, currentTrad, speechSynthesis]);
+    }, [isSpeakingOnChanged, currentCard, speechSynthesis, isFlipped]);
 
     useEffect(() => {
         setTradIndex(
@@ -1218,8 +1232,8 @@ function FlashCardDeck() {
 
     if (!currentCard) {
         return (
-            <div className="flex min-h-dvh items-center justify-center bg-gray-50 dark:bg-gray-900">
-                <div className="text-gray-600 dark:text-gray-400">
+            <div className="flex min-h-dvh items-center justify-center bg-gray-900 dark:bg-gray-900">
+                <div className="text-gray-400 dark:text-gray-400">
                     Loading...
                 </div>
             </div>
@@ -1399,7 +1413,7 @@ function FlashCardDeck() {
                                                 en = (lookup?.[0]?.definition ??
                                                     '❔') as string;
                                                 ipa =
-                                                    ephone.textToIpa(
+                                                    EPHONE?.textToIpa(
                                                         en ?? ''
                                                     ) ?? '';
                                             } catch {
@@ -1462,7 +1476,7 @@ function FlashCardDeck() {
                                             en = (lookup?.[0]?.definition ??
                                                 '❔') as string;
                                             ipa =
-                                                ephone.textToIpa(en ?? '') ??
+                                                EPHONE?.textToIpa(en ?? '') ??
                                                 '';
                                         } catch {
                                             en = '❔';
