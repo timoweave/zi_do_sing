@@ -121,6 +121,9 @@ export interface WordAndSound {
     word: string; // single word
     sound: string; // written sound in jyutping, pinyin, ipa, ...
     lang: string; // speech lang, like zh-HK, zh-CN, en-US
+}
+
+export interface WordAndSoundAux {
     ith: number; // ith word in a sentence
     isAllMatched: boolean;
     isWordMatched: boolean;
@@ -130,16 +133,21 @@ export interface WordAndSound {
 }
 
 function WordAndSound({
-    word,
-    sound,
-    lang,
-    ith,
-    isAllSoundRevealed,
-    isAllMatched, // either all text or all sound
-    isSoundMatched,
-    isWordMatched,
-    isSmall = false,
-}: WordAndSound) {
+    wordAndSound,
+    wordAndSoundAux,
+}: {
+    wordAndSound: WordAndSound;
+    wordAndSoundAux: WordAndSoundAux;
+}) {
+    const { word, sound, lang } = wordAndSound;
+    const {
+        ith,
+        isAllSoundRevealed,
+        isAllMatched, // either all text or all sound
+        isSoundMatched,
+        isWordMatched,
+        isSmall = false,
+    } = wordAndSoundAux;
     const clickTimeoutRef = useRef<number | null>(null);
     const clickCountRef = useRef(0);
 
@@ -193,6 +201,9 @@ interface WordsAndSounds {
     words: string[];
     sounds: string[];
     lang: string;
+}
+
+interface WordsAndSoundsAux {
     isWordsMatched: boolean[];
     isSoundMatched: boolean[];
 }
@@ -344,7 +355,6 @@ function DictionaryButton({
             onMouseDown={(e) => e.preventDefault()}
         >
             {icon}
-            {/* <BookSearchIcon /> */}
         </button>
     );
 }
@@ -445,6 +455,7 @@ function InputWithCheckMark({
 
 function SentenceAndSounds({
     wordsAndSounds,
+    wordsAndSoundsAux,
     onMouseDown,
     inputMatched,
     isSoundShown,
@@ -452,6 +463,7 @@ function SentenceAndSounds({
 }: {
     showLangs: readonly Lang[];
     wordsAndSounds: WordsAndSounds[];
+    wordsAndSoundsAux: WordsAndSoundsAux[];
     inputMatched: boolean;
     isSoundShown: boolean;
 } & Pick<React.ComponentPropsWithoutRef<'div'>, 'onMouseDown'>) {
@@ -461,10 +473,12 @@ function SentenceAndSounds({
             className="mx-auto flex flex-col items-center justify-center gap-1"
         >
             {wordsAndSounds
-                .filter((wordAndSound) =>
+                .flatMap((wordAndSound, index) =>
                     showLangs.includes(wordAndSound.lang as Lang)
+                        ? [{ wordAndSound, aux: wordsAndSoundsAux[index] }]
+                        : []
                 )
-                .map((wordAndSound, row) => (
+                .map(({ wordAndSound, aux }, row) => (
                     <div
                         key={row}
                         data-testid={`words-traditional-label-${row}`}
@@ -481,30 +495,33 @@ function SentenceAndSounds({
                     >
                         {/* Chinese characters row i-th */}
                         <div
-                            className={`${inputMatched && wordAndSound.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
+                            className={`${inputMatched && aux.isSoundMatched.every((a) => a == true) ? 'rounded-md bg-gray-600' : ''} flex gap-1`}
                         >
                             {wordAndSound.words.map((word, i) => {
                                 const key =
                                     /* TBD: react need help to redraw when revealed is changed */
                                     100 * Number(isSoundShown) + 10 * row + i;
                                 const sound = wordAndSound.sounds[i];
-                                const isCharMatched =
-                                    wordAndSound.isWordsMatched[i];
-                                const isSoundMatched =
-                                    wordAndSound.isSoundMatched[i];
+                                const isCharMatched = aux.isWordsMatched[i];
+                                const isSoundMatched = aux.isSoundMatched[i];
 
                                 return (
                                     <WordAndSound
                                         key={key}
-                                        ith={i}
-                                        word={word}
-                                        sound={sound}
-                                        lang={wordAndSound.lang}
-                                        isAllMatched={inputMatched}
-                                        isWordMatched={isCharMatched}
-                                        isSoundMatched={isSoundMatched}
-                                        isAllSoundRevealed={isSoundShown}
-                                        isSmall={wordAndSound.lang === 'en-US'}
+                                        wordAndSound={{
+                                            word,
+                                            sound,
+                                            lang: wordAndSound.lang,
+                                        }}
+                                        wordAndSoundAux={{
+                                            ith: i,
+                                            isAllMatched: inputMatched,
+                                            isWordMatched: isCharMatched,
+                                            isSoundMatched,
+                                            isAllSoundRevealed: isSoundShown,
+                                            isSmall:
+                                                wordAndSound.lang === 'en-US',
+                                        }}
                                     />
                                 );
                             })}
@@ -535,7 +552,6 @@ function FlashCardCN() {
     >([]);
     const [inputValue, setInputValue] = useState<string>('');
     const [isInputFocused, setIsInputFocused] = useState(false);
-    const [_descriptionVisible, _setDescriptionVisible] = useState(true);
     const [isFlipped, setIsFlipped] = useState<boolean>(false);
     const [showLangs, setShowLangs] = useState<readonly Lang[]>(LANGS);
     const inputRowRef = useRef<HTMLDivElement>(null);
@@ -597,10 +613,6 @@ function FlashCardCN() {
     const toggleRevealPhonetic = useCallback(() => {
         setRevealed((prev) => !prev);
     }, []);
-
-    // const toggleRevealDescription = useCallback(() => {
-    //     setDescriptionVisible((prev) => !prev);
-    // }, []);
 
     const toggleFlipCard = useCallback(() => {
         setIsFlipped((prev) => !prev);
@@ -814,7 +826,6 @@ function FlashCardCN() {
             currentIndex,
             speak,
             toggleRevealPhonetic,
-            // toggleRevealDescription,
             goToPrevCard,
             goToNextCard,
             inputMatched,
@@ -939,9 +950,6 @@ function FlashCardCN() {
         }
 
         const el = scrollableChineseWordsRef.current;
-        // const tradLength = currentCard.trad.trim().split('').length;
-        // const tradIndexCharacterSize = el.scrollWidth / tradLength;
-
         const movePosition =
             direction == null
                 ? (el.scrollWidth - el.clientWidth) / 2
@@ -1150,20 +1158,29 @@ function FlashCardCN() {
             words: currentCardTrads,
             sounds: currentCardJyutpings,
             lang: 'zh-HK',
-            isWordsMatched: inputMatchedTrads,
-            isSoundMatched: inputMatchedJyutpings,
         },
         {
             words: currentCardSimps,
             sounds: currentCardPinyins,
             lang: 'zh-CN',
-            isWordsMatched: inputMatchedSimpls,
-            isSoundMatched: inputMatchedPinyins,
         },
         {
             words: currentCard.en?.split(' ') ?? [],
             sounds: ephone.textToIpa(currentCard.en ?? '')?.split(' ') ?? [],
             lang: 'en-US',
+        },
+    ];
+
+    const wordsAndSoundsAux: WordsAndSoundsAux[] = [
+        {
+            isWordsMatched: inputMatchedTrads,
+            isSoundMatched: inputMatchedJyutpings,
+        },
+        {
+            isWordsMatched: inputMatchedSimpls,
+            isSoundMatched: inputMatchedPinyins,
+        },
+        {
             isWordsMatched: [false],
             isSoundMatched: [false],
         },
@@ -1208,6 +1225,7 @@ function FlashCardCN() {
                         <SentenceAndSounds
                             showLangs={showLangs}
                             wordsAndSounds={wordsAndSounds}
+                            wordsAndSoundsAux={wordsAndSoundsAux}
                             onMouseDown={preventDefault}
                             inputMatched={inputMatched}
                             isSoundShown={revealed}
@@ -1349,9 +1367,6 @@ function FlashCardCN() {
                                 setCards(items);
                             }}
                         />
-                        {/* <TextIcon />
-                        <CharacterIcon />
-                        <WordIcon /> */}
                         <LingualButton
                             data-testid="zh-hk-button"
                             src={ZhHkFlagIcon}
