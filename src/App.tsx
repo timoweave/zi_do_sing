@@ -1,5 +1,5 @@
 import './App.css';
-import FlashCardDeck from './components/FlashCardCN';
+import FlashCardDeck from './components/FlashCardDeck';
 
 function App() {
 
