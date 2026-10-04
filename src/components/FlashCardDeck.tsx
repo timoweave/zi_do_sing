@@ -36,9 +36,7 @@ import hanzi from 'hanzi';
 import createEphone from 'ephone';
 
 type Ephone = Awaited<ReturnType<typeof createEphone>>;
-let EPHONE: Ephone | null = null;
-
-EPHONE = await createEphone();
+let EPHONE: Ephone = await createEphone();
 
 const LINGUALS = ['zh-HK', 'zh-CN', 'en-US'] as const;
 type Lingual = (typeof LINGUALS)[number];
@@ -120,7 +118,7 @@ export const convertCardItemtoEquivalentWordSoundLingual = (
     } as WordSoundLingual,
     {
         words: card.en ?? '',
-        sounds: EPHONE?.textToIpa(card.en ?? '') ?? '',
+        sounds: EPHONE.textToIpa(card.en ?? '') ?? '',
         lingual: 'en-US',
     } as WordSoundLingual,
 ];
@@ -1413,7 +1411,7 @@ function FlashCardDeck() {
                                                 en = (lookup?.[0]?.definition ??
                                                     '❔') as string;
                                                 ipa =
-                                                    EPHONE?.textToIpa(
+                                                    EPHONE.textToIpa(
                                                         en ?? ''
                                                     ) ?? '';
                                             } catch {
@@ -1476,7 +1474,7 @@ function FlashCardDeck() {
                                             en = (lookup?.[0]?.definition ??
                                                 '❔') as string;
                                             ipa =
-                                                EPHONE?.textToIpa(en ?? '') ??
+                                                EPHONE.textToIpa(en ?? '') ??
                                                 '';
                                         } catch {
                                             en = '❔';
