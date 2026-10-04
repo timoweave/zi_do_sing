@@ -27,7 +27,6 @@ import EnUsFlagIcon from '../assets/uk_flag.png';
 import defaultWords from '../words/sentences_002.json';
 import charListJson from '../canto_dicts/canto_charlist.json';
 import wordsListJson from '../canto_dicts/canto_wordslist.json';
-import toJyutping from 'to-jyutping';
 import { pinyin as toPinyin } from 'pinyin-pro';
 // @ts-expect-error: hanzi types don't include definitionLookup
 import hanzi from 'hanzi';
@@ -36,12 +35,20 @@ import createEphone from 'ephone';
 hanzi.start();
 const ephone = await createEphone();
 
-const LANGS = ['zh-HK', 'zh-CN', 'en-US'] as const;
-type Lang = (typeof LANGS)[number];
+const LINGUALS = ['zh-HK', 'zh-CN', 'en-US'] as const;
+type Lingual = (typeof LINGUALS)[number];
 
 function isOnlyChineseWithPunctuation(str: string): boolean {
     return /^[\p{Script=Han}\p{Punctuation}\s]+$/u.test(str);
 }
+
+export interface WordSoundLingual {
+    words: string;
+    sounds: string;
+    lingual: Lingual;
+}
+
+export type EquivalentWordSoundLingual = WordSoundLingual[];
 
 export interface CardItem {
     trad: string;
@@ -52,12 +59,38 @@ export interface CardItem {
     zh: string;
 }
 
-export const shuffleCardItems = (words: CardItem[]): CardItem[] => {
-    let list = [];
+export const convertCardItemtoEquivalentWordSoundLingual = (
+    card: CardItem
+): EquivalentWordSoundLingual => [
+    {
+        words: card.trad ?? '',
+        sounds: card.jyutping ?? '',
+        lingual: 'zh-HK',
+    } as WordSoundLingual,
+    {
+        words: card.simp ?? '',
+        sounds: card.pinyin ?? '',
+        lingual: 'zh-CN',
+    } as WordSoundLingual,
+    {
+        words: card.en ?? '',
+        sounds: ephone.textToIpa(card.en ?? '') ?? '',
+        lingual: 'en-US',
+    } as WordSoundLingual,
+];
+
+const findLingual = (
+    card: EquivalentWordSoundLingual | null,
+    lingual: Lingual
+): WordSoundLingual | undefined =>
+    card?.find((entry) => entry.lingual === lingual);
+
+export const shuffleItems = <T,>(words: T[]): T[] => {
+    let list: T[] = [];
     while (list.length < words.length) {
         for (let w of words) {
             if (list.length >= words.length) break;
-            list.push({ ...w });
+            list.push(structuredClone(w));
         }
     }
     // Shuffle
@@ -182,14 +215,14 @@ function WordAndSound({
             {/* word */}
             <div
                 data-testid={`words-trad-text-${ith}`}
-                className={`cursor-pointer pt-1 text-center ${isSmall ? 'text-[1.25rem]' : 'text-[2.5rem]'} leading-none font-medium text-gray-800 dark:text-gray-200`}
+                className={`cursor-pointer pt-1 text-center ${isSmall ? 'text-[1.5rem]' : 'text-[2.5rem]'} leading-none font-medium text-gray-800 dark:text-gray-200`}
             >
                 {word}
             </div>
             {/* sound */}
             <div
                 data-testid={`words-trad-phonetic-${ith}`}
-                className={`wrap-break-words text-center text-[0.6rem] text-gray-600 transition-opacity dark:text-gray-200 ${isSoundMatched || isAllSoundRevealed ? 'opacity-100' : 'opacity-0'} `}
+                className={`wrap-break-words text-center text-[1rem] text-gray-600 transition-opacity dark:text-gray-400 ${isSoundMatched || isAllSoundRevealed ? 'opacity-100' : 'opacity-0'} `}
             >
                 {sound}
             </div>
@@ -461,7 +494,7 @@ function SentenceAndSounds({
     isSoundShown,
     showLangs,
 }: {
-    showLangs: readonly Lang[];
+    showLangs: readonly Lingual[];
     wordsAndSounds: WordsAndSounds[];
     wordsAndSoundsAux: WordsAndSoundsAux[];
     inputMatched: boolean;
@@ -470,11 +503,11 @@ function SentenceAndSounds({
     return (
         <div
             data-testid="words-chinese-container"
-            className="mx-auto flex flex-col items-center justify-center gap-1"
+            className="mx-auto flex flex-col items-center justify-center gap-2"
         >
             {wordsAndSounds
                 .flatMap((wordAndSound, index) =>
-                    showLangs.includes(wordAndSound.lang as Lang)
+                    showLangs.includes(wordAndSound.lang as Lingual)
                         ? [{ wordAndSound, aux: wordsAndSoundsAux[index] }]
                         : []
                 )
@@ -533,7 +566,8 @@ function SentenceAndSounds({
 }
 
 function FlashCardCN() {
-    const [cards, setCards] = useState<CardItem[]>([]);
+    const [equivalentWordSoundLinguals, setEquivalentWordSoundLinguals] =
+        useState<EquivalentWordSoundLingual[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [tradIndex, setTradIndex] = useState(0);
     const [revealed, setRevealed] = useState(false);
@@ -553,7 +587,7 @@ function FlashCardCN() {
     const [inputValue, setInputValue] = useState<string>('');
     const [isInputFocused, setIsInputFocused] = useState(false);
     const [isFlipped, setIsFlipped] = useState<boolean>(false);
-    const [showLangs, setShowLangs] = useState<readonly Lang[]>(LANGS);
+    const [showLangs, setShowLangs] = useState<readonly Lingual[]>(LINGUALS);
     const inputRowRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const cardRef = useRef(null);
@@ -572,12 +606,19 @@ function FlashCardCN() {
         startScrollLeft: number;
     } | null>(null);
 
-    const currentCard = cards[currentIndex] || null;
-    const totalCards = cards.length;
-    const currentCardTrads = currentCard?.trad?.split('') ?? [];
-    const currentCardJyutpings = currentCard?.jyutping?.split(/ +/) ?? [];
-    const currentCardSimps = currentCard?.simp?.split('') ?? [];
-    const currentCardPinyins = currentCard?.pinyin?.split(/ +/) ?? [];
+    const currentCard = equivalentWordSoundLinguals[currentIndex] || null;
+    const totalCards = equivalentWordSoundLinguals.length;
+    const currentZhHk = findLingual(currentCard, 'zh-HK');
+    const currentZhCn = findLingual(currentCard, 'zh-CN');
+    const currentEnUs = findLingual(currentCard, 'en-US');
+    const currentTrad = currentZhHk?.words ?? '';
+    const currentJyutping = currentZhHk?.sounds ?? '';
+    const currentSimp = currentZhCn?.words ?? '';
+    const currentPinyin = currentZhCn?.sounds ?? '';
+    const currentCardTrads = currentTrad.split('');
+    const currentCardJyutpings = currentJyutping.split(/ +/);
+    const currentCardSimps = currentSimp.split('');
+    const currentCardPinyins = currentPinyin.split(/ +/);
 
     const isPopupKeyboardOpenProbably = () => {
         const viewport = window.visualViewport;
@@ -711,11 +752,11 @@ function FlashCardCN() {
 
             const checkList: ExpectedPhoneticAndSetMatchedPhonetic[] = [
                 {
-                    expectedPhonetic: currentCard.jyutping,
+                    expectedPhonetic: currentJyutping,
                     setMatchedPhonetic: setInputMatchedJyutpings,
                 },
                 {
-                    expectedPhonetic: currentCard.pinyin,
+                    expectedPhonetic: currentPinyin,
                     setMatchedPhonetic: setInputMatchedPinyins,
                 },
             ];
@@ -732,8 +773,9 @@ function FlashCardCN() {
             });
         },
         [
-            currentCard,
-            inputMatched,
+            currentJyutping,
+            currentPinyin,
+            // inputMatched,
             setInputValue,
             verifyInputPhonetic,
             setInputMatchedJyutpings,
@@ -746,22 +788,12 @@ function FlashCardCN() {
             const isInputEmpty = inputValue.length == 0;
             if (e.key === 'ArrowUp' && e.shiftKey && !isInputFocused) {
                 e.preventDefault();
-                speak({ text: currentCard.trad, lang: 'zh-HK' });
+                speak({ text: currentTrad, lang: 'zh-HK' });
                 return;
             }
             if (e.key === 'ArrowDown' && e.shiftKey && !isInputFocused) {
                 e.preventDefault();
-                speak({ text: currentCard.simp, lang: 'zh-CN' });
-                return;
-            }
-            if (e.key === '1') {
-                e.preventDefault();
-                speak({ text: currentCard.trad, lang: 'zh-HK' });
-                return;
-            }
-            if (e.key === '2') {
-                e.preventDefault();
-                speak({ text: currentCard.simp, lang: 'zh-CN' });
+                speak({ text: currentSimp, lang: 'zh-CN' });
                 return;
             }
             if (e.key === '/') {
@@ -796,7 +828,7 @@ function FlashCardCN() {
             }
             if (e.key === '?') {
                 e.preventDefault();
-                speak({ text: currentCard.trad, lang: 'zh-HK' });
+                speak({ text: currentTrad, lang: 'zh-HK' });
                 return;
             }
             if (e.key === 'ArrowLeft' && isInputEmpty) {
@@ -822,7 +854,8 @@ function FlashCardCN() {
             }
         },
         [
-            currentCard,
+            currentTrad,
+            currentSimp,
             currentIndex,
             speak,
             toggleRevealPhonetic,
@@ -845,31 +878,23 @@ function FlashCardCN() {
             reader.onload = (event) => {
                 try {
                     const content = event.target?.result as string;
-                    const parsedCards: CardItem[] = JSON.parse(content);
+                    const equivalentWordSoundLinguals = (
+                        JSON.parse(content) as CardItem[]
+                    ).map(convertCardItemtoEquivalentWordSoundLingual);
 
-                    if (Array.isArray(parsedCards) && parsedCards.length > 0) {
-                        setCards(parsedCards);
+                    if (
+                        Array.isArray(equivalentWordSoundLinguals) &&
+                        equivalentWordSoundLinguals.length > 0
+                    ) {
+                        setEquivalentWordSoundLinguals(
+                            equivalentWordSoundLinguals
+                        );
                         setCurrentIndex(0);
                         setInputValue('');
                         setInputMatched(false);
                         setInputMatchedJyutpings([]);
                         setInputMatchedPinyins([]);
                     }
-
-                    const newCards = parsedCards.map((card) => {
-                        const jyutping = toJyutping.getJyutpingText(card.trad);
-                        const pinyin = toPinyin(card.simp, {
-                            toneType: 'num',
-                            pattern: 'pinyin',
-                            v: true,
-                        });
-                        return {
-                            ...card,
-                            jyutping,
-                            pinyin,
-                        };
-                    });
-                    console.log(newCards.length);
                 } catch (err) {
                     console.error('Failed to parse uploaded JSON file', err);
                 }
@@ -884,11 +909,11 @@ function FlashCardCN() {
     );
 
     const hasShowLang = useCallback(
-        (lang: Lang): boolean => showLangs.includes(lang),
+        (lang: Lingual): boolean => showLangs.includes(lang),
         [showLangs]
     );
 
-    const toggleShowLang = useCallback((lang: Lang): void => {
+    const toggleShowLang = useCallback((lang: Lingual): void => {
         setShowLangs((prevLangs) =>
             prevLangs.includes(lang)
                 ? prevLangs.filter((prevLang) => prevLang !== lang)
@@ -916,15 +941,12 @@ function FlashCardCN() {
     };
 
     const scroll = () => {
-        if (
-            scrollableChineseWordsRef.current == null ||
-            currentCard.trad == null
-        ) {
+        if (scrollableChineseWordsRef.current == null || currentZhHk == null) {
             return;
         }
 
         const el = scrollableChineseWordsRef.current;
-        const tradLength = currentCard.trad.trim().split('').length;
+        const tradLength = currentTrad.trim().split('').length;
         const tradIndexCharacterSize = el.scrollWidth / tradLength;
         const tradIndexLength = Math.floor(
             el.clientWidth / tradIndexCharacterSize
@@ -942,10 +964,7 @@ function FlashCardCN() {
     };
 
     const scrollByWidth = (direction: 1 | -1 | null = 1) => {
-        if (
-            scrollableChineseWordsRef.current == null ||
-            currentCard.trad == null
-        ) {
+        if (scrollableChineseWordsRef.current == null || currentZhHk == null) {
             return;
         }
 
@@ -959,10 +978,7 @@ function FlashCardCN() {
     };
 
     const scrollToMiddle = (behavior: ScrollBehavior = 'auto') => {
-        if (
-            scrollableChineseWordsRef.current == null ||
-            currentCard?.trad == null
-        ) {
+        if (scrollableChineseWordsRef.current == null || currentZhHk == null) {
             return;
         }
 
@@ -980,10 +996,7 @@ function FlashCardCN() {
     };
 
     const scrollToEnd = () => {
-        if (
-            scrollableChineseWordsRef.current == null ||
-            currentCard.trad == null
-        ) {
+        if (scrollableChineseWordsRef.current == null || currentZhHk == null) {
             return;
         }
 
@@ -996,17 +1009,17 @@ function FlashCardCN() {
         });
     };
 
-    const shuffleCards = useCallback((words: CardItem[]) => {
-        const initialCards = shuffleCardItems(words);
+    const shuffleCards = useCallback((words: EquivalentWordSoundLingual[]) => {
+        const initialCards = shuffleItems(words);
         const randomIndex = Math.floor(Math.random() * initialCards.length);
 
-        setCards(initialCards);
+        setEquivalentWordSoundLinguals(initialCards);
         setCurrentIndex(randomIndex);
     }, []);
 
     // Initialize cards
     useEffect(() => {
-        shuffleCards(defaultWords);
+        shuffleCards(defaultWords as EquivalentWordSoundLingual[]);
     }, []);
 
     // Global keyboard listener
@@ -1042,7 +1055,7 @@ function FlashCardCN() {
         return () => {
             isCancelled = true;
         };
-    }, [currentCard?.trad]);
+    }, [currentTrad]);
 
     useEffect(() => {
         setTradIndex(
@@ -1076,7 +1089,7 @@ function FlashCardCN() {
             el.removeEventListener('scroll', updateScrollThumb);
             observer.disconnect();
         };
-    }, [updateScrollThumb, currentCard?.trad]);
+    }, [updateScrollThumb, currentTrad]);
 
     const handleScrollTrackPointerDown = (
         e: React.PointerEvent<HTMLDivElement>
@@ -1165,8 +1178,8 @@ function FlashCardCN() {
             lang: 'zh-CN',
         },
         {
-            words: currentCard.en?.split(' ') ?? [],
-            sounds: ephone.textToIpa(currentCard.en ?? '')?.split(' ') ?? [],
+            words: currentEnUs?.words?.split(/[ ]/) ?? [],
+            sounds: currentEnUs?.sounds?.split(/[ ]/) ?? [],
             lang: 'en-US',
         },
     ];
@@ -1279,7 +1292,7 @@ function FlashCardCN() {
                             data-testid="en-us-button"
                             icon={<ShuffleIcon />}
                             onClick={() => {
-                                shuffleCards(cards);
+                                shuffleCards(equivalentWordSoundLinguals);
                             }}
                         />
                         <DeepSeekButton onClick={() => {}} />
@@ -1287,50 +1300,67 @@ function FlashCardCN() {
                             title="use char list chinese dictionary"
                             icon={<BookSearchIcon />}
                             onClick={() => {
-                                const items = Object.entries(charListJson)
-                                    .filter(([trad]) => {
-                                        return isOnlyChineseWithPunctuation(
-                                            trad
-                                        );
-                                    })
-                                    .map(([trad, sounds]) => {
-                                        const simp = getSimplified(trad);
-                                        const pinyin = toPinyin(simp, {
-                                            toneType: 'num',
-                                            pattern: 'pinyin',
-                                            v: true,
-                                        });
-                                        let en = '❔';
-                                        try {
-                                            const lookup =
-                                                hanzi.definitionLookup(trad);
-                                            en = (lookup?.[0]?.definition ??
-                                                '❔') as string;
-                                        } catch {
-                                            en = '❔';
-                                        }
-                                        if (trad === '一傳十，十傳百') {
-                                            console.log({ sounds });
-                                        }
-                                        return {
-                                            trad,
-                                            simp,
-                                            jyutping: Object.keys(sounds).at(0),
-                                            pinyin,
-                                            en,
-                                            zh: '',
-                                        } as CardItem;
-                                    });
+                                const items: EquivalentWordSoundLingual[] =
+                                    Object.entries(charListJson)
+                                        .filter(([trad]) => {
+                                            return isOnlyChineseWithPunctuation(
+                                                trad
+                                            );
+                                        })
+                                        .map(([trad, sounds]) => {
+                                            const simp = getSimplified(trad);
+                                            const pinyin = toPinyin(simp, {
+                                                toneType: 'num',
+                                                pattern: 'pinyin',
+                                                v: true,
+                                            });
+                                            let en = '❔';
+                                            let ipa = '';
+                                            try {
+                                                const lookup =
+                                                    hanzi.definitionLookup(
+                                                        trad
+                                                    );
+                                                en = (lookup?.[0]?.definition ??
+                                                    '❔') as string;
+                                                ipa =
+                                                    ephone.textToIpa(
+                                                        en ?? ''
+                                                    ) ?? '';
+                                            } catch {
+                                                en = '❔';
+                                                ipa = '';
+                                            }
 
-                                console.log({ items });
-                                setCards(items);
+                                            const jyutping =
+                                                Object.keys(sounds).at(0);
+
+                                            return [
+                                                {
+                                                    words: trad,
+                                                    sounds: jyutping,
+                                                    lingual: 'zh-HK',
+                                                } as WordSoundLingual,
+                                                {
+                                                    words: simp,
+                                                    sounds: pinyin,
+                                                    lingual: 'zh-CN',
+                                                } as WordSoundLingual,
+                                                {
+                                                    words: en,
+                                                    sounds: ipa,
+                                                    lingual: 'en-US',
+                                                } as WordSoundLingual,
+                                            ];
+                                        });
+
+                                setEquivalentWordSoundLinguals(items);
                             }}
                         />
                         <DictionaryButton
                             title="use words list chinese dictionary"
                             icon={<TextIcon />}
                             onClick={() => {
-                                console.log({ wordsListJson });
                                 const items = Object.entries(wordsListJson)
                                     .filter(([trad]) => {
                                         return isOnlyChineseWithPunctuation(
@@ -1338,6 +1368,7 @@ function FlashCardCN() {
                                         );
                                     })
                                     .map(([trad, sounds]) => {
+                                        const jyutping = sounds.at(0) ?? '';
                                         const simp = getSimplified(trad);
                                         const pinyin = toPinyin(simp, {
                                             toneType: 'num',
@@ -1345,26 +1376,39 @@ function FlashCardCN() {
                                             v: true,
                                         });
                                         let en = '❔';
+                                        let ipa = '';
                                         try {
                                             const lookup =
                                                 hanzi.definitionLookup(trad);
                                             en = (lookup?.[0]?.definition ??
                                                 '❔') as string;
+                                            ipa =
+                                                ephone.textToIpa(en ?? '') ??
+                                                '';
                                         } catch {
                                             en = '❔';
+                                            ipa = '';
                                         }
-                                        return {
-                                            trad,
-                                            simp,
-                                            jyutping: sounds.at(0),
-                                            pinyin,
-                                            en,
-                                            zh: '',
-                                        } as CardItem;
+                                        return [
+                                            {
+                                                words: trad,
+                                                sounds: jyutping,
+                                                lingual: 'zh-HK',
+                                            } as WordSoundLingual,
+                                            {
+                                                words: simp,
+                                                sounds: pinyin,
+                                                lingual: 'zh-CN',
+                                            } as WordSoundLingual,
+                                            {
+                                                words: en,
+                                                sounds: ipa,
+                                                lingual: 'en-US',
+                                            } as WordSoundLingual,
+                                        ];
                                     });
 
-                                console.log({ items });
-                                setCards(items);
+                                setEquivalentWordSoundLinguals(items);
                             }}
                         />
                         <LingualButton
