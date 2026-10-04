@@ -4,6 +4,7 @@ import {
     useRef,
     useCallback,
     useLayoutEffect,
+    useMemo,
 } from 'react';
 import {
     BookSearchIcon,
@@ -16,6 +17,8 @@ import {
     GearIcon,
     OpenEyeIcon,
     ShuffleIcon,
+    SpeakerIcon,
+    SpeakerMutedIcon,
     TextIcon,
     UploadFileIcon,
     type TestIdProps,
@@ -42,6 +45,47 @@ function isOnlyChineseWithPunctuation(str: string): boolean {
     return /^[\p{Script=Han}\p{Punctuation}\s]+$/u.test(str);
 }
 
+export function repairWords(words: string): string {
+    return words
+        .replaceAll(/[，,]/g, '')
+        .replaceAll(/[…]/g, '')
+        .replaceAll(/[.]+/g, '')
+        .replaceAll(/  /g, ' ');
+}
+
+export const CHINESE_CHARACTER_REGEX =
+    /[\u4e00-\u9fff\u3400-\u4dbf\uf900-\ufaff]/g;
+
+export function repairSounds<FB extends string | null = null>(
+    sounds: string | null,
+    fallback: FB = null as FB
+): string | FB {
+    if (sounds == null) {
+        return fallback;
+    }
+    let ans = sounds.toLocaleLowerCase();
+    ans = ans.replaceAll(CHINESE_CHARACTER_REGEX, '');
+    // ans = ans.replaceAll(/\b\d\b\s*/g, '');
+    ans = ans.replaceAll(
+        /(?<![\p{L}\p{N}\p{P}])\d(?![\p{L}\p{N}\p{P}])\s*/gu,
+        ''
+    );
+    ans = ans.replaceAll(/[\[\]\{\}]/g, '');
+    ans = ans.replaceAll(/u:/g, 'v'); // "u:"" -> "v"
+    ans = ans.replaceAll(/[^ ]*:/g, '');
+    ans = ans.replaceAll(/[…] /g, ' ');
+    ans = ans.replaceAll(/ […]/g, ' ');
+    ans = ans.replaceAll(/([1-6])[…]([a-z])/g, '$1 $2');
+    ans = ans.replaceAll(/[…]/g, '');
+    ans = ans.replaceAll(/([1-6])+,/g, '$1');
+    ans = ans.replaceAll(/[，,]/g, '');
+    ans = ans.replaceAll(/。/g, '.');
+    ans = ans.replaceAll(/([1-6])([a-z])/g, '$1 $2');
+    ans = ans.replaceAll(/([1-6]),/g, '$1 ,');
+    ans = ans.replaceAll(/  /g, ' ');
+    return ans;
+}
+
 export interface WordSoundLingual {
     words: string;
     sounds: string;
@@ -63,13 +107,13 @@ export const convertCardItemtoEquivalentWordSoundLingual = (
     card: CardItem
 ): EquivalentWordSoundLingual => [
     {
-        words: card.trad ?? '',
-        sounds: card.jyutping ?? '',
+        words: repairWords(card.trad ?? ''),
+        sounds: repairSounds(card.jyutping ?? ''),
         lingual: 'zh-HK',
     } as WordSoundLingual,
     {
-        words: card.simp ?? '',
-        sounds: card.pinyin ?? '',
+        words: repairWords(card.simp ?? ''),
+        sounds: repairSounds(card.pinyin ?? ''),
         lingual: 'zh-CN',
     } as WordSoundLingual,
     {
@@ -565,7 +609,7 @@ function SentenceAndSounds({
     );
 }
 
-function FlashCardCN() {
+function FlashCardDeck() {
     const [equivalentWordSoundLinguals, setEquivalentWordSoundLinguals] =
         useState<EquivalentWordSoundLingual[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -587,6 +631,8 @@ function FlashCardCN() {
     const [inputValue, setInputValue] = useState<string>('');
     const [isInputFocused, setIsInputFocused] = useState(false);
     const [isFlipped, setIsFlipped] = useState<boolean>(false);
+    const [isSpeakingOnChanged, setIsSpeakingOnChanged] =
+        useState<boolean>(false);
     const [showLangs, setShowLangs] = useState<readonly Lingual[]>(LINGUALS);
     const inputRowRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
@@ -606,7 +652,10 @@ function FlashCardCN() {
         startScrollLeft: number;
     } | null>(null);
 
-    const currentCard = equivalentWordSoundLinguals[currentIndex] || null;
+    const currentCard = useMemo(
+        () => equivalentWordSoundLinguals[currentIndex] || null,
+        [equivalentWordSoundLinguals, currentIndex]
+    );
     const totalCards = equivalentWordSoundLinguals.length;
     const currentZhHk = findLingual(currentCard, 'zh-HK');
     const currentZhCn = findLingual(currentCard, 'zh-CN');
@@ -1057,6 +1106,17 @@ function FlashCardCN() {
         };
     }, [currentTrad]);
 
+    useLayoutEffect(() => {
+        if (isSpeakingOnChanged && !isFlipped) {
+            if (speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+            }
+            const lang = 'zh-HK' as Lingual;
+            const text = findLingual(currentCard, lang)?.words ?? '';
+            speak({ text, lang });
+        }
+    }, [isSpeakingOnChanged, currentCard, currentTrad, speechSynthesis]);
+
     useEffect(() => {
         setTradIndex(
             (inputRef.current?.value.trim().split(/ +/).length ?? 1) - 1
@@ -1288,6 +1348,21 @@ function FlashCardCN() {
                             handlePopupKeyboardBlur={handlePopupKeyboardBlur}
                         />
                         <DictionaryButton
+                            title="speak the traditional words"
+                            data-testid="en-us-button"
+                            icon={
+                                isSpeakingOnChanged ? (
+                                    <SpeakerIcon />
+                                ) : (
+                                    <SpeakerMutedIcon />
+                                )
+                            }
+                            onClick={() => {
+                                setIsSpeakingOnChanged((prev) => !prev);
+                            }}
+                        />
+
+                        <DictionaryButton
                             title="shuffle dictionary"
                             data-testid="en-us-button"
                             icon={<ShuffleIcon />}
@@ -1333,17 +1408,21 @@ function FlashCardCN() {
                                             }
 
                                             const jyutping =
-                                                Object.keys(sounds).at(0);
+                                                Object.keys(sounds).at(0) ?? '';
 
                                             return [
                                                 {
-                                                    words: trad,
-                                                    sounds: jyutping,
+                                                    words: repairWords(trad),
+                                                    sounds: repairSounds(
+                                                        jyutping
+                                                    ),
                                                     lingual: 'zh-HK',
                                                 } as WordSoundLingual,
                                                 {
-                                                    words: simp,
-                                                    sounds: pinyin,
+                                                    words: repairWords(simp),
+                                                    sounds: repairSounds(
+                                                        pinyin
+                                                    ),
                                                     lingual: 'zh-CN',
                                                 } as WordSoundLingual,
                                                 {
@@ -1391,13 +1470,13 @@ function FlashCardCN() {
                                         }
                                         return [
                                             {
-                                                words: trad,
-                                                sounds: jyutping,
+                                                words: repairWords(trad),
+                                                sounds: repairSounds(jyutping),
                                                 lingual: 'zh-HK',
                                             } as WordSoundLingual,
                                             {
-                                                words: simp,
-                                                sounds: pinyin,
+                                                words: repairWords(simp),
+                                                sounds: repairSounds(pinyin),
                                                 lingual: 'zh-CN',
                                             } as WordSoundLingual,
                                             {
@@ -1503,4 +1582,4 @@ function FlashCardCN() {
     );
 }
 
-export default FlashCardCN;
+export default FlashCardDeck;

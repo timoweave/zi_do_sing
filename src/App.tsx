@@ -1,11 +1,9 @@
 import './App.css';
-import FlashCardCN from './components/FlashCardCN';
+import FlashCardDeck from './components/FlashCardCN';
 
 function App() {
 
-    return (
-      <FlashCardCN/>
-    );
+    return <FlashCardDeck />;
 }
 
 export default App;

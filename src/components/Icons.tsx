@@ -298,12 +298,14 @@ export const UploadFileIcon = ({
             strokeLinejoin="round"
             className="h-8 w-8"
         >
-            {/* Tray/Base */}
-            <path d="M21 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <g transform="translate(0, 1) scale(0.87)" transform-origin="12 12">
+                {/* Tray/Base */}
+                <path d="M21 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
 
-            {/* Arrow Up */}
-            <polyline points="17 8 12 3 7 8" />
-            <line x1="12" y1="3" x2="12" y2="13" />
+                {/* Arrow Up */}
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="13" />
+            </g>
         </svg>
     );
 };
@@ -584,12 +586,74 @@ export const ShuffleIcon = ({
         strokeLinecap="round"
         strokeLinejoin="round"
     >
-        {/* Path from upper left curving down to the lower right */}
-        <path d="M3 7H6C10 7 10.5 17 15 17H20" />
-        <polyline points="17.5,14.5 20,17 17.5,19.5" />
+        <g transform="scale(1.25)" transform-origin="12 12">
+            {/* Path from upper left curving down to the lower right */}
+            <path d="M3 7H6C10 7 10.5 17 15 17H20" />
+            <polyline points="17.5,14.5 20,17 17.5,19.5" />
 
-        {/* Path from lower left curving up to the upper right */}
-        <path d="M3 17H6C10 17 10.5 7 15 7H20" />
-        <polyline points="17.5,4.5 20,7 17.5,9.5" />
+            {/* Path from lower left curving up to the upper right */}
+            <path d="M3 17H6C10 17 10.5 7 15 7H20" />
+            <polyline points="17.5,4.5 20,7 17.5,9.5" />
+        </g>
     </svg>
 );
+
+export const SpeakerIcon = ({
+    'data-testid': dataTestid,
+}: {} & TestIdProps) => {
+    return (
+        <svg
+            data-testid={dataTestid}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-8 w-8"
+        >
+            <g transform="scale(0.86)" transform-origin="12 12">
+                {/* Speaker body filled with current color */}
+                <path
+                    d="M11 4.727 6.4 8.5H3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h3.4l4.6 3.773a1 1 0 0 0 1.6-.8V5.527a1 1 0 0 0-1.6-.8Z"
+                    fill="currentColor"
+                    stroke="none"
+                />
+
+                {/* Inner sound wave arc */}
+                <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+
+                {/* Outer sound wave arc */}
+                <path d="M18.5 5.5a9 9 0 0 1 0 13" />
+            </g>
+        </svg>
+    );
+};
+
+export const SpeakerMutedIcon = ({
+    'data-testid': dataTestid,
+}: {} & TestIdProps) => {
+    return (
+        <svg
+            data-testid={dataTestid}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-8 w-8"
+        >
+            <g transform="scale(0.86)" transform-origin="12 12">
+                {/* Speaker body filled with current color */}
+                <path
+                    d="M11 4.727 6.4 8.5H3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h3.4l4.6 3.773a1 1 0 0 0 1.6-.8V5.527a1 1 0 0 0-1.6-.8Z"
+                    fill="currentColor"
+                    stroke="none"
+                />
+            </g>
+        </svg>
+    );
+};
