@@ -384,46 +384,6 @@ function UploadFileButton({
     );
 }
 
-function Pagination({
-    currentIndex,
-    totalCards,
-    goToPrevCard,
-    goToNextCard,
-    handlePopupKeyboardBlur,
-}: {
-    goToPrevCard: () => void;
-    goToNextCard: () => void;
-    handlePopupKeyboardBlur: () => void;
-    currentIndex: number;
-    totalCards: number;
-}) {
-    return (
-        <div
-            id="words-progress-status-label"
-            data-testid="words-progress-status-label"
-            className="flex justify-center self-center py-1 text-center text-sm font-medium text-gray-600 dark:border-gray-700 dark:text-gray-300"
-        >
-            <MoveBackwardButton
-                onClick={() => {
-                    goToPrevCard();
-                    handlePopupKeyboardBlur();
-                }}
-                onMouseDown={(e) => e.preventDefault()}
-            />
-            <div className="self-center">
-                {currentIndex + 1} / {totalCards}
-            </div>
-            <MoveForwardButton
-                onClick={() => {
-                    goToNextCard();
-                    handlePopupKeyboardBlur();
-                }}
-                onMouseDown={(e) => e.preventDefault()}
-            />
-        </div>
-    );
-}
-
 function InputWithCheckMark({
     inputValue,
     inputRef,
@@ -432,12 +392,16 @@ function InputWithCheckMark({
     onBlur,
     onChange,
     onFocus,
+    currentIndex,
+    totalCards,
 }: {
     inputRef: React.ForwardedRef<HTMLInputElement>;
     inputValue: string;
     inputMatched: boolean;
     handlePopupKeyboardBlur: () => void;
     setIsInputFocused: React.Dispatch<React.SetStateAction<boolean>>;
+    currentIndex: number;
+    totalCards: number;
 } & Pick<
     React.ComponentPropsWithoutRef<'input'>,
     'onChange' | 'onFocus' | 'onBlur'
@@ -458,7 +422,7 @@ function InputWithCheckMark({
                 onChange={onChange}
                 onFocus={onFocus}
                 onBlur={onBlur}
-                placeholder="粵／普"
+                placeholder={`${currentIndex + 1}/${totalCards} 粵拼／拼音`}
                 className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none dark:text-gray-200"
                 autoCapitalize="none"
                 autoCorrect="off"
@@ -1253,7 +1217,7 @@ function FlashCardCN() {
                     <div
                         aria-hidden="true"
                         data-testid="words-chinese-scroll-track"
-                        className={`-mt-3 cursor-pointer touch-none py-2 select-none ${scrollThumb ? '' : 'invisible'}`}
+                        className={`-mt-3 cursor-pointer touch-none py-1 select-none ${scrollThumb ? '' : 'invisible'}`}
                         onPointerDown={handleScrollTrackPointerDown}
                         onPointerMove={handleScrollTrackPointerMove}
                         onPointerUp={handleScrollTrackPointerUp}
@@ -1263,7 +1227,7 @@ function FlashCardCN() {
                     >
                         <div
                             ref={scrollTrackRef}
-                            className="relative h-1 rounded-full bg-slate-200 dark:bg-slate-700"
+                            className="relative h-4 rounded-full bg-slate-200 dark:bg-slate-700"
                         >
                             {scrollThumb && (
                                 <div
@@ -1416,6 +1380,14 @@ function FlashCardCN() {
                 data-testid="words-input-row"
                 className="flex w-full max-w-120 flex-wrap items-center justify-center gap-1 pt-3"
             >
+                <MoveBackwardButton
+                    onClick={() => {
+                        goToPrevCard();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={(e) => e.preventDefault()}
+                />
+
                 <FlippingButton
                     isFlipped={isFlipped}
                     onClick={() => {
@@ -1426,6 +1398,8 @@ function FlashCardCN() {
                 />
                 <InputWithCheckMark
                     inputRef={inputRef}
+                    currentIndex={currentIndex}
+                    totalCards={totalCards}
                     inputValue={inputValue}
                     inputMatched={inputMatched}
                     setIsInputFocused={setIsInputFocused}
@@ -1458,16 +1432,14 @@ function FlashCardCN() {
                     }}
                     onMouseDown={preventDefault}
                 />
+                <MoveForwardButton
+                    onClick={() => {
+                        goToNextCard();
+                        handlePopupKeyboardBlur();
+                    }}
+                    onMouseDown={(e) => e.preventDefault()}
+                />
             </div>
-
-            {/* Pagination */}
-            <Pagination
-                goToPrevCard={goToPrevCard}
-                goToNextCard={goToNextCard}
-                handlePopupKeyboardBlur={handlePopupKeyboardBlur}
-                currentIndex={currentIndex}
-                totalCards={totalCards}
-            />
         </div>
     );
 }
