@@ -1,4 +1,10 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import {
+    useState,
+    useEffect,
+    useRef,
+    useCallback,
+    useLayoutEffect,
+} from 'react';
 import {
     BookSearchIcon,
     CheckMarkIcon,
@@ -823,7 +829,6 @@ function FlashCardCN() {
                     setRevealed(false);
                 }
                 goToPrevCard();
-                setTimeout(() => scrollToMiddle(), 0);
                 return;
             }
             if (e.key === 'ArrowRight' && isInputEmpty) {
@@ -832,14 +837,12 @@ function FlashCardCN() {
                     setRevealed(false);
                 }
                 goToNextCard();
-                setTimeout(() => scrollToMiddle(), 0);
                 return;
             }
             if (e.key === 'Enter' && inputMatched && !isInputEmpty) {
                 e.preventDefault();
                 setRevealed(false);
                 goToNextCard();
-                setTimeout(() => scrollToMiddle(), 0);
             }
         },
         [
@@ -983,16 +986,16 @@ function FlashCardCN() {
         el.scrollTo({ left: movePosition, behavior: 'smooth' });
     };
 
-    const scrollToMiddle = (behavior: ScrollBehavior = 'instant') => {
+    const scrollToMiddle = (behavior: ScrollBehavior = 'auto') => {
         if (
             scrollableChineseWordsRef.current == null ||
-            currentCard.trad == null
+            currentCard?.trad == null
         ) {
             return;
         }
 
         const el = scrollableChineseWordsRef.current;
-        const movePosition = (el.scrollWidth - el.clientWidth) / 2;
+        const movePosition = Math.max(0, (el.scrollWidth - el.clientWidth) / 2);
 
         el.scrollTo({ left: movePosition, behavior });
     };
@@ -1048,13 +1051,25 @@ function FlashCardCN() {
         }
     }, [isThemeDark]);
 
-    useEffect(() => {
-        if (scrollableChineseWordsRef.current) {
-            scrollableChineseWordsRef.current?.scrollTo({
-                left: 0,
-                behavior: 'auto',
-            });
+    useLayoutEffect(() => {
+        const el = scrollableChineseWordsRef.current;
+        if (el == null) {
+            return;
         }
+
+        scrollToMiddle('instant');
+        // iOS may swap in the web font after the first layout, changing scrollWidth
+        let isCancelled = false;
+        document.fonts.ready.then(() => {
+            if (isCancelled) {
+                return;
+            }
+            scrollToMiddle('instant');
+        });
+
+        return () => {
+            isCancelled = true;
+        };
     }, [currentCard?.trad]);
 
     useEffect(() => {
