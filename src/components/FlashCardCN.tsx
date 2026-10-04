@@ -465,8 +465,8 @@ function InputWithCheckMark({
                 onChange={onChange}
                 onFocus={onFocus}
                 onBlur={onBlur}
-                placeholder={`${currentIndex + 1}/${totalCards} 粵拼／拼音`}
-                className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none dark:text-gray-200"
+                placeholder={`${currentIndex + 1}/${totalCards}`}
+                className="flex w-full flex-1 bg-transparent py-1 text-base text-gray-800 outline-none placeholder:text-center dark:text-gray-200"
                 autoCapitalize="none"
                 autoCorrect="off"
                 autoComplete="off"
